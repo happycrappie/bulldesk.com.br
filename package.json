@@ -1,0 +1,19 @@
+{
+  "name": "bulldesk.com.br",
+  "private": true,
+  "scripts": {
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore"
+  },
+  "dependencies": {
+    "@gridsome/plugin-google-analytics": "^0.1.0",
+    "@gridsome/plugin-sitemap": "^0.2.1",
+    "bootstrap-vue": "^2.0.0-rc.22",
+    "gridsome": "^0.6.0",
+    "node-sass": "^4.12.0",
+    "pug": "^2.0.3",
+    "pug-plain-loader": "^1.0.0",
+    "sass-loader": "^7.1.0"
+  }
+}
