@@ -3,21 +3,22 @@
 
   header
     padding: 20px 0
+    background-size: 70%
     background-position: 100% 0
     background-repeat: no-repeat
     height: 80%
 
     @media only screen and (max-width: 980px)
       background-image: url(../assets/images/header@700.png)
-      background-size: 70%
 
     @media only screen and (max-width: 1440px)
       background-image: url(../assets/images/header@1000.png)
-      background-size: 70%
 
-    @media only screen and (min-width: 3000px)
-      background-image: url(../assets/images/header@3200.png)
-      background-size: 40%
+    @media only screen and (max-width: 2000px)
+      background-image: url(../assets/images/header@1600.png)
+
+    @media only screen and (min-width: 2001px)
+      background-image: url(../assets/images/header@2200.png)
 
     .logo
       width: 150px
