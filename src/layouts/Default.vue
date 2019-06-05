@@ -5,7 +5,6 @@
   body
     font-family: Montserrat, Helvetica, Arial, sans-serif
     font-weight: 300
-    // font-size: 14px
 </style>
 
 <template lang="pug">

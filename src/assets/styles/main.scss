@@ -34,3 +34,16 @@ $grid-breakpoints: (
 
 @import 'node_modules/bootstrap/scss/bootstrap';
 @import 'node_modules/bootstrap-vue/src/index.scss';
+
+span.dot {
+  width: 15px;
+  height: 15px;
+
+  &.green {
+    background: $green;
+  }
+
+  &.purple {
+    background: $purple;
+  }
+}

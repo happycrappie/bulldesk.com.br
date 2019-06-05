@@ -1,7 +1,5 @@
 <style lang="sass" scoped>
   @import '../assets/styles/_variables.sass';
-
-
 </style>
 
 <template lang="pug">
