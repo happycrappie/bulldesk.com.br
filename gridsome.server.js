@@ -4,10 +4,23 @@
 
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
+const axios = require('axios');
 
 module.exports = function (api) {
   api.loadSource(({ addContentType }) => {
-    // Use the Data Store API here: https://gridsome.org/docs/data-store-api
+    // Load plans
+    // const { plans } = await axios.get('https://api.bulldesk.com.br/plans')
+
+    // const contentType = store.addContentType({
+    //   typeName: 'plans'
+    // })
+
+    // for (const item of plans) {
+    //   contentType.addNode({
+    //     id: plan.id,
+    //     name: plan.name
+    //   })
+    // }
   })
 
   api.createPages(({ createPage }) => {
