@@ -6,7 +6,7 @@
     background-size: 70%
     background-position: 100% 0
     background-repeat: no-repeat
-    min-height: 80%
+    height: 100%
 
     @media only screen and (max-width: 980px)
       background-image: url(~@/assets/images/header@700.png)
@@ -21,20 +21,20 @@
       background-image: url(~@/assets/images/header@2200.png)
 
     .logo
-      width: 150px
+      width: 140px
 
     nav
-      margin-bottom: 1.5rem
+      margin-bottom: 1rem
 
     .hero
-      height: 100%
+      height: 90%
+      width: 40%
 
       h1
         font-size: 4rem
 
         span
-          display: block
-          color: $green
+          color: $pink
 
       p
         font-size: 1.5rem
@@ -54,10 +54,13 @@
             b-nav-item(href="/") Pra quem é
             b-nav-item(href="/cases") Cases
             b-nav-item(href="/") Planos
+            b-nav-item(href="https://app.bulldesk.com.br" target="_blank") Login
+            b-nav-item(href="/cadastro") Teste grátis
 
-      .hero.flex-shrink-0.d-flex.align-items-center
+      .hero.d-flex.align-items-center
         div
-          h1 Inteligência comercial
-            span de forma simples.
-          p Ferramenta de controle vendas, gerenciamento de contatos<br> e automação de relacionamento.
+          h1 Inteligência comercial de forma
+            span  simples
+            span.dot.green
+          p Ferramenta de controle vendas, gerenciamento de contatos e automação de relacionamento.
 </template>
