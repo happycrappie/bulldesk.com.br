@@ -10,9 +10,8 @@
 <template lang="pug">
   main.d-flex.flex-column
     Header
-    .flex-shrink-0
-      .container
-        slot
+    .container
+      slot
     Footer
 </template>
 

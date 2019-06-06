@@ -6,7 +6,7 @@
 </style>
 
 <template lang="pug">
-  footer.footer.mt-auto.py-3
+  footer.footer.py-3
     .footer-copyright.text-center
       a(href="https://bulldesk.com.br") Bulldesk
 </template>

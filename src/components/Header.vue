@@ -6,7 +6,7 @@
     background-size: 70%
     background-position: 100% 0
     background-repeat: no-repeat
-    height: 80%
+    min-height: 80%
 
     @media only screen and (max-width: 980px)
       background-image: url(~@/assets/images/header@700.png)
@@ -27,7 +27,10 @@
       padding-bottom: 20px
 
     .hero
-      height: 100%
+      padding-top: 15%
+      height: auto
+      min-height: 60%
+      max-height: 100%
 
       h1
         font-size: 4rem
@@ -43,10 +46,10 @@
 <template lang="pug">
   header.d-flex
     .container
-      b-navbar.p-0(toggleable="md" type="light")
+      b-navbar.d-flex.p-0(toggleable="md" type="light")
         b-navbar-brand
           g-link(to="/")
-            img.logo(src="../assets/images/logo.png")
+            g-image.logo(src="../assets/images/logo.png" alt="Bulldesk")
         b-navbar-toggle(target="collapse")
         b-collapse#collapse(is-nav)
           b-navbar-nav.ml-auto
@@ -55,7 +58,7 @@
             b-nav-item(href="/") Cases
             b-nav-item(href="/") Planos
 
-      .hero.d-flex.align-items-center
+      .hero.flex-shrink-0.d-flex.align-items-center
         div
           h1 Inteligência comercial
             span de forma simples.
