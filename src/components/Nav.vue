@@ -16,7 +16,7 @@
         b-nav-item(to="/") Pra quem é
         b-nav-item(to="/cases") Cases
         b-nav-item(to="/") Planos
-        b-nav-item(class="strong" href="https://app.bulldesk.com.br" target="_blank") Login
+        b-nav-item.font-weight-bold(href="https://app.bulldesk.com.br" target="_blank") Login
         b-nav-item(href="/cadastro") Teste grátis
 </template>
 
