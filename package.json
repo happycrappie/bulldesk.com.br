@@ -2,9 +2,10 @@
   "name": "bulldesk.com.br",
   "private": true,
   "scripts": {
-    "build": "gridsome build",
+    "build": "gridsome build && npm run purgecss",
     "develop": "gridsome develop",
-    "explore": "gridsome explore"
+    "explore": "gridsome explore",
+    "purgecss": "node_modules/purgecss/bin/purgecss --config ./purgecss.config.js --out ./dist/assets/css"
   },
   "dependencies": {
     "@gridsome/plugin-critical": "^0.1.2",
@@ -14,8 +15,10 @@
     "bootstrap-vue": "^2.0.0-rc.22",
     "gridsome": "^0.6.0",
     "node-sass": "^4.12.0",
+    "postcss-loader": "^3.0.0",
     "pug": "^2.0.3",
     "pug-plain-loader": "^1.0.0",
+    "purgecss": "^1.3.0",
     "sass-loader": "^7.1.0"
   }
 }
