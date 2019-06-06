@@ -8,7 +8,7 @@
 </style>
 
 <template lang="pug">
-  main.d-flex.flex-column
+  main
     Header
     .container
       slot

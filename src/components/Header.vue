@@ -24,13 +24,10 @@
       width: 150px
 
     nav
-      padding-bottom: 20px
+      margin-bottom: 1.5rem
 
     .hero
-      padding-top: 15%
-      height: auto
-      min-height: 60%
-      max-height: 100%
+      height: 100%
 
       h1
         font-size: 4rem
