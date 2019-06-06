@@ -41,7 +41,7 @@
 <template lang="pug">
   header.d-flex
     .container
-      Nav
+      Nav(type="dark")
 
       .hero.d-flex.align-items-center
         div
