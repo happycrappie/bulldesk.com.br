@@ -10,8 +10,7 @@
 <template lang="pug">
   main
     Header
-    .container
-      slot
+    slot
     Footer
 </template>
 

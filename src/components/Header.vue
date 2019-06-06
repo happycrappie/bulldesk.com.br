@@ -52,7 +52,7 @@
           b-navbar-nav.ml-auto
             b-nav-item(href="/") Home
             b-nav-item(href="/") Pra quem é
-            b-nav-item(href="/") Cases
+            b-nav-item(href="/cases") Cases
             b-nav-item(href="/") Planos
 
       .hero.flex-shrink-0.d-flex.align-items-center

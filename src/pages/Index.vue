@@ -4,7 +4,8 @@
 
 <template lang="pug">
   Layout
-    h2 Hello World
+    .container
+      h2 Hello World
 </template>
 
 <script>
