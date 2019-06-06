@@ -7,6 +7,7 @@
     background-position: 100% 0
     background-repeat: no-repeat
     height: 100%
+    min-height: 700px
 
     @media only screen and (max-width: 980px)
       background-image: url(~@/assets/images/header@700.png)
