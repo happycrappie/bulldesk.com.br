@@ -1,10 +1,6 @@
 <style lang="sass">
   html, body, main
     height: 100%
-
-  body
-    font-family: Montserrat, Helvetica, Arial, sans-serif
-    font-weight: 300
 </style>
 
 <template lang="pug">

@@ -11,11 +11,10 @@
     b-navbar-toggle(target="collapse")
     b-collapse#collapse(is-nav)
       b-navbar-nav.ml-auto
-        b-nav-item(to="/") Home
-        b-nav-item(to="/") O que faz
-        b-nav-item(to="/") Pra quem é
-        b-nav-item(to="/cases") Cases
-        b-nav-item(to="/") Planos
+        b-nav-item(to="/") O que faz.
+        b-nav-item(to="/") Pra quem é.
+        b-nav-item(to="/cases") Conheça.
+        b-nav-item(to="/") Planos.
         b-nav-item.font-weight-bold(href="https://app.bulldesk.com.br" target="_blank") Login
         b-nav-item(href="/cadastro") Teste grátis
 </template>

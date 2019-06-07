@@ -7,7 +7,7 @@
     background-position: 100% 0
     background-repeat: no-repeat
     height: 100%
-    min-height: 700px
+    min-height: 600px
 
     @media only screen and (max-width: 980px)
       background-image: url(~@/assets/images/header@700.png)
@@ -23,32 +23,12 @@
 
     .logo
       width: 140px
-
-    .hero
-      height: 90%
-      width: 40%
-
-      h1
-        font-size: 4rem
-
-        span
-          color: $pink
-
-      p
-        font-size: 1.5rem
 </style>
 
 <template lang="pug">
   header.d-flex
     .container
       Nav(type="dark")
-
-      .hero.d-flex.align-items-center
-        div
-          h1 Inteligência comercial de forma
-            span  simples
-            span.dot.green
-          p Ferramenta de controle vendas, gerenciamento de contatos e automação de relacionamento.
 </template>
 
 <script>
