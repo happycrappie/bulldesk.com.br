@@ -1,6 +1,10 @@
 <style lang="sass" scoped>
   nav
+    font-size: 0.95rem
     margin-bottom: 1rem
+
+    .logo
+      width: 140px
 </style>
 
 <template lang="pug">
@@ -16,7 +20,7 @@
         b-nav-item(to="/cases") Conheça.
         b-nav-item(to="/") Planos.
         b-nav-item.font-weight-bold(href="https://app.bulldesk.com.br" target="_blank") Login
-        b-nav-item(href="/cadastro") Teste grátis
+        b-nav-item(to="/cadastro") Teste grátis
 </template>
 
 <script>

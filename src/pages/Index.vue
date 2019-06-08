@@ -1,42 +1,68 @@
 <style lang="sass" scoped>
   @import '../assets/styles/_variables.sass';
 
-  .hero
-    &:before
-      //
-    margin-top: -600px
+  header
+    padding: 20px 0
+    background-size: 70%
+    background-position: 100% 0
+    background-repeat: no-repeat
     height: 100%
-    width: 450px
+    min-height: 600px
 
-    h1
-      color: $gray-dark
-      line-height: 1
-      font-size: 4.5rem
+    @media only screen and (max-width: 980px)
+      background-image: url(~@/assets/images/header@700.png)
 
-      span
-        color: $pink
+    @media only screen and (max-width: 1440px)
+      background-image: url(~@/assets/images/header@1000.png)
 
-    p
-      margin-top: 1rem
-      font-size: 1.1rem
-      font-weight: 100
-      width: 420px
+    @media only screen and (max-width: 2000px)
+      background-image: url(~@/assets/images/header@1600.png)
+
+    @media only screen and (min-width: 2001px)
+      background-image: url(~@/assets/images/header@2200.png)
+
+    .hero
+      height: 100%
+      width: 450px
+
+      h1
+        color: $gray-dark
+        line-height: 1
+        font-size: 4.5rem
+
+        span
+          color: $pink
+
+      p
+        margin-top: 1rem
+        font-size: 1.1rem
+        font-weight: 100
+        width: 420px
 </style>
 
 <template lang="pug">
   Layout
-    .container
-      .hero.d-flex.align-items-center
-        div
-          h1.font-weight-bold Inteligência comercial de forma simples
-            span.dot.green
-          p Ferramenta de controle vendas, gerenciamento de contatos e automação de relacionamento.
+    header.d-flex
+      .container
+        Nav(type="dark")
+
+        .hero.d-flex.align-items-center
+          div
+            h1.font-weight-bold Inteligência comercial de forma simples
+              span.dot.green
+            p Ferramenta de controle vendas, gerenciamento de contatos e automação de relacionamento.
 </template>
 
 <script>
+  import Nav from '../components/Nav'
+
   export default {
+    components: {
+      Nav,
+    },
+
     metaInfo: {
-      title: 'Bulldesk'
+      title: 'Inteligência comercial de forma simples'
     }
   }
 </script>
