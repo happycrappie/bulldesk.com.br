@@ -5,7 +5,6 @@ import './assets/styles/main.sass'
 
 export default function (Vue, { router, head, isClient }) {
   Vue.use(BootstrapVue)
-  Vue.component('Layout', Layout)
 
   head.link.push({
     rel: 'stylesheet',

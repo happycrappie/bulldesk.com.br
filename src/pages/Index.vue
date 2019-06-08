@@ -54,6 +54,7 @@
 </template>
 
 <script>
+  import Layout from '../layouts/Default'
   import Nav from '../components/Nav'
 
   export default {
