@@ -22,7 +22,7 @@
 
     .hero
       height: 100%
-      width: 450px
+      width: 480px
 
       h1
         color: $gray-dark
@@ -58,6 +58,7 @@
 
   export default {
     components: {
+      Layout,
       Nav,
     },
 
