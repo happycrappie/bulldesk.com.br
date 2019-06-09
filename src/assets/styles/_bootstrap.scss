@@ -35,4 +35,6 @@ $font-family-sans-serif:  Montserrat, -apple-system, BlinkMacSystemFont, "Segoe 
 $navbar-dark-color: $white !default;
 $navbar-light-color: $black !default;
 
+$navbar-nav-link-padding-x: 1.2rem !default;
+
 @import 'node_modules/bootstrap/scss/bootstrap';
