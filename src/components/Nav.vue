@@ -4,7 +4,6 @@
   nav
     padding: 15px 0
     font-size: 0.9rem
-    margin-bottom: 1rem
 
     .logo
       width: 140px
@@ -33,7 +32,7 @@
       b-navbar-nav.ml-auto
         b-nav-item(to="/") O que faz
         b-nav-item(to="/") Pra quem é
-        b-nav-item(to="/cases") Conheça
+        b-nav-item(to="/cases") Cases
         b-nav-item(to="/") Planos
         b-nav-item(href="https://app.bulldesk.com.br" target="_blank") Login
         b-nav-item.font-weight-bold.trial(to="/cadastro") Teste grátis
