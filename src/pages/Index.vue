@@ -2,7 +2,6 @@
   @import '../assets/styles/_variables.sass';
 
   header
-    padding: 20px 0
     background-size: 70%
     background-position: 100% 0
     background-repeat: no-repeat

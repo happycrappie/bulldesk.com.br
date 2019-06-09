@@ -1,14 +1,29 @@
 <style lang="sass" scoped>
+  @import '../assets/styles/_variables.sass';
+
   nav
-    font-size: 0.95rem
+    padding: 15px 0
+    font-size: 0.9rem
     margin-bottom: 1rem
 
     .logo
       width: 140px
+
+    .nav-item
+      &.trial
+        .nav-link
+          padding: 8px 25px
+          background: $green
+          color: $black
+          border-radius: 30px
+
+          &:hover
+            color: $black
+            background: $white
 </style>
 
 <template lang="pug">
-  b-navbar.d-flex.p-0(toggleable="md" :type="type")
+  b-navbar.d-flex(toggleable="md" :type="type")
     b-navbar-brand
       g-link(to="/")
         g-image.logo(src="../assets/images/logo.png" alt="Bulldesk")
@@ -19,8 +34,8 @@
         b-nav-item(to="/") Pra quem é.
         b-nav-item(to="/cases") Conheça.
         b-nav-item(to="/") Planos.
-        b-nav-item.font-weight-bold(href="https://app.bulldesk.com.br" target="_blank") Login
-        b-nav-item(to="/cadastro") Teste grátis
+        b-nav-item.font-weight-bold(href="https://app.bulldesk.com.br" target="_blank") Login.
+        b-nav-item.font-weight-bold.trial(to="/cadastro") Teste grátis
 </template>
 
 <script>
