@@ -22,12 +22,15 @@
 
     .hero
       height: 100%
-      width: 480px
+      max-width: 480px
 
       h1
         color: $gray-dark
         line-height: 1
         font-size: 4.5rem
+
+        @media only screen and (max-width: 700px)
+          font-size: 3.5rem
 
         span
           color: $pink
@@ -36,7 +39,7 @@
         margin-top: 1rem
         font-size: 1.1rem
         font-weight: 100
-        width: 420px
+        max-width: 420px
 </style>
 
 <template lang="pug">
