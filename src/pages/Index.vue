@@ -62,7 +62,7 @@
         margin-left: -63px
         margin-top: 6px
         z-index: 999
-        background-color: $green-light
+        background-color: $green
 
         img
           margin-left: 3px
