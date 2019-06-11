@@ -91,8 +91,9 @@
             p Ferramenta de controle vendas, gerenciamento de contatos e automação de relacionamento.
             b-input-group.email-group
               b-form-input.email-input(placeholder='Insira seu email aqui' v-model='email')
-              b-button.email-button
-                g-image(src='~/assets/icons/play-button.svg')
+              b-input-group-append
+                b-button.email-button
+                  g-image(src='~/assets/icons/play-button.svg')
             p.email-paragraph
               | Experimente de graça.
               br
