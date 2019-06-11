@@ -43,7 +43,7 @@
 
       .email-group
         text-align: left
-        margin-top: 34px
+        margin-top: 2.1rem
         width: 381px
 
       .email-input
@@ -51,7 +51,7 @@
         background-color: $white
         border-radius: 30px
         padding-left: 30px
-        font-size: 14px
+        font-size: 0.9rem
         height: 68px
 
       .email-button
@@ -59,23 +59,23 @@
         height: 56px
         border: 0px
         border-radius: 28px
-        margin-left: -63px
-        margin-top: 6px
+        margin-left: -3.9rem
+        margin-top: 0.4rem
         z-index: 999
         background-color: $green
 
         img
-          margin-left: 3px
+          margin-left: 0.3rem
 
       .email-paragraph
         width: 207px
         height: 53px
         color: $gray-light
-        font-size: 10px
+        font-size: 0.6rem
         font-weight: 400
         letter-spacing: 0.2px
         line-height: 20px
-        margin: 21px 144px 0px 30px
+        margin: 1.4rem 0rem 0rem 1.9rem
 </style>
 
 <template lang="pug">
