@@ -1,5 +1,5 @@
 <style lang="sass" scoped>
-  @import '../assets/styles/_variables.sass';
+  @import '../assets/styles/_variables.scss';
 
   nav
     padding: 15px 0

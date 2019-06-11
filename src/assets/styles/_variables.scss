@@ -1,3 +1,11 @@
+$green: #1FEAA4;
+$purple: #7123DB;
+$orange: #FF7F00;
+$pink: #F31357;
+$gray-dark: #3B334A;
+$white: #fff;
+$black: #130f19;
+
 $theme-colors: (
   blue: #007bff,
   indigo: #6610f2,
@@ -36,5 +44,3 @@ $navbar-dark-color: $white !default;
 $navbar-light-color: $black !default;
 
 $navbar-nav-link-padding-x: 1.1rem !default;
-
-@import 'node_modules/bootstrap/scss/bootstrap';
