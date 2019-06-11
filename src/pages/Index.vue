@@ -79,6 +79,17 @@
         letter-spacing: 0.2px
         line-height: 20px
         margin: 1.4rem 0rem 0rem 1.9rem
+
+      .doted-square
+        position: absolute
+        left: 986px
+
+        &:nth-child(1n)
+          top: 724px
+
+        &:nth-child(2)
+          top: 754px
+
 </style>
 
 <template lang="pug">
@@ -103,6 +114,8 @@
               | Nenhum cartão de crédito é necessário.
               br
               | Configuração simples e rápida
+          g-image(src='~/assets/images/doted-square.jpg' class='doted-square d-none d-xl-block')
+          g-image(src='~/assets/images/doted-square.jpg' class='doted-square d-none d-xl-block')
 
 </template>
 
