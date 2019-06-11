@@ -44,7 +44,9 @@
       .email-group
         text-align: left
         margin-top: 2.1rem
-        width: 381px
+        padding-right: 0.5rem
+        width: auto
+        max-width: 381px
 
       .email-input
         box-shadow: 0 10px 20px rgba(165, 131, 224, 0.18)
@@ -68,10 +70,11 @@
           margin-left: 0.3rem
 
       .email-paragraph
-        width: 207px
+        width: auto
+        max-width: 207px
         height: 53px
         color: $gray-light
-        font-size: 0.6rem
+        font-size: 0.7rem
         font-weight: 400
         letter-spacing: 0.2px
         line-height: 20px
