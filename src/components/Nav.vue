@@ -8,18 +8,17 @@
     .logo
       width: 140px
 
-    .nav-item
-      &.trial
-        .nav-link
-          text-align: center
-          padding: 8px 25px
-          background: $green
-          color: $black
-          border-radius: 30px
+    .nav-item.trial
+      .nav-link
+        text-align: center
+        padding: 8px 25px
+        background: $green
+        color: $black
+        border-radius: 30px
 
-          &:hover
-            color: $black
-            background: $white
+        &:hover
+          color: $black
+          background: $white
 </style>
 
 <template lang="pug">
