@@ -5,7 +5,7 @@
     background-size: 70%
     background-position: 100% 0
     background-repeat: no-repeat
-    height: 80%
+    height: 100%
     min-height: 600px
 
     @media only screen and (max-width: 980px)
