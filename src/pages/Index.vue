@@ -83,6 +83,9 @@
       .doted-square
         position: absolute
 
+        @media only screen and (max-height: 820px)
+          display: none !important
+
         @media only screen and (min-width: 1300px) and (max-width: 1400px)
           left: 44rem
 
@@ -143,27 +146,186 @@
       @media only screen and (min-width: 671px) and (max-width: 1000px)
         padding-top: 34rem
 
-    h3
-      width: auto
-      max-width: 294px
-      color: $gray-dark
-      font-size: 1.6rem
-      font-weight: 700
-      letter-spacing: -0.39px
-      line-height: 30px
+      h3
+        width: auto
+        max-width: 294px
+        color: $gray-dark
+        font-size: 1.6rem
+        font-weight: 700
+        letter-spacing: -0.39px
+        line-height: 30px
 
-      @media only screen and (max-width: 670px)
-        font-size: 1.2rem
+        @media only screen and (max-width: 670px)
+          font-size: 1.2rem
+          padding-top: 20px
 
-    .sub-title
-      width: auto
-      max-width: 286px
-      color: $gray-light
-      font-size: 0.8rem
-      font-weight: 400
-      letter-spacing: 0.24px
-      line-height: 25px
-      margin-top: 1.2rem
+      .sub-title
+        width: auto
+        max-width: 286px
+        color: $gray-light
+        font-size: 0.8rem
+        font-weight: 400
+        letter-spacing: 0.24px
+        line-height: 25px
+        margin-top: 1.2rem
+
+      .steps-col
+        margin-top: -55px
+
+        @media only screen and (max-width: 990px)
+          margin-top: 60px
+
+      .nav
+        padding-left: 20px
+
+        @media only screen and (max-width: 990px)
+          padding-left: 0px
+
+        @media only screen and (min-width: 991px) and (max-width: 1300px)
+          padding-left: 30px
+
+      .nav-item
+        width: 20%
+        text-align: center
+        vertical-align: middle
+
+        .nav-link
+          color: #c9c1d5
+          font-weight: 700
+          font-size: 0.6rem
+          letter-spacing: 0.2px
+          line-height: 25px
+          text-transform: uppercase
+
+          @media only screen and (max-width: 600px)
+            font-size: 0.4rem
+            line-height: 15px
+
+          @media only screen and (min-width: 1300px)
+            white-space: nowrap
+            font-size: 0.7rem
+
+        .active
+          background-color: $purple
+          color: #f6f5f8
+          border-radius: 25px
+
+    .steps
+      list-style: none
+      padding: 0px
+      margin-top: 80px
+      margin-left: -50px
+
+      @media only screen and (max-width: 1300px)
+        margin-top: 60px
+        margin-left: -25px
+
+      li
+        text-align: center
+        display: list-item
+        float: left
+        width: 25%
+
+        .step
+          padding: 0 10px
+          z-index: 999
+
+          // &:after
+          //   content: ''
+          //   background-image: url(~@/assets/images/line.png)
+          //   background-repeat: no-repeat
+          //   position: relative
+          //   display: block
+          //   top: -102px
+          //   right: -135px
+          //   width: 150px
+          //   height: 5px
+          //   z-index: 1
+
+          //   @media only screen and (max-width: 600px)
+          //     right: -94px
+          //     width: 32px
+          //     top: -97px
+
+          //   @media only screen and (min-width: 601px) and (max-width: 1024px)
+          //     right: -110px
+          //     width: 78px
+          //     top: -97px
+
+          //   @media only screen and (min-width: 1025px) and (max-width: 1440px)
+          //     right: -135px
+          //     width: 100px
+
+          .title
+            height: 20px
+            color: $pink
+            font-size: 0.8rem
+            font-weight: 700
+            letter-spacing: 0.2px
+            line-height: 20px
+            text-transform: uppercase
+            margin-bottom: 30px
+
+            @media only screen and (max-width: 440px)
+              font-size: 0.5rem
+
+            @media only screen and (min-width: 441px) and (max-width: 990px)
+              font-size: 0.6rem
+
+            @media only screen and (min-width: 991px) and (max-width: 1300px)
+              font-size: 0.7rem
+
+          .icon
+            background-color: $white
+            height: 92px
+            width: 92px
+            line-height: 92px
+            border-radius: 41px
+            margin: auto
+
+            @media only screen and (max-width: 440px)
+              border: 1px solid $gray-light
+              height: 42px
+              width: 42px
+              line-height: 42px
+
+            @media only screen and (min-width: 441px) and (max-width: 990px)
+              border: 1px solid $gray-light
+              height: 62px
+              width: 62px
+              line-height: 62px
+
+            @media only screen and (min-width: 991px) and (max-width: 1300px)
+              height: 82px
+              width: 82px
+              line-height: 82px
+
+            img
+              @media only screen and (max-width: 440px)
+                width: 14px
+
+              @media only screen and (min-width: 441px) and (max-width: 990px)
+                width: 22px
+
+          .subtitle
+            color: $gray-light
+            height: 36px
+            max-width: 162px
+            margin: auto
+            font-size: 0.8rem
+            font-weight: 400
+            letter-spacing: 0.24px
+            line-height: 20px
+            margin-top: 20px
+
+            @media only screen and (max-width: 440px)
+              font-size: 0.5rem
+
+            @media only screen and (min-width: 441px) and (max-width: 990px)
+              font-size: 0.6rem
+
+            @media only screen and (min-width: 991px) and (max-width: 1300px)
+              font-size: 0.7rem
 </style>
 
 <template lang="pug">
@@ -197,15 +359,41 @@
           .col-lg-4
             h3 Direcione campanhas multicanais para cada momento da jornada do cliente
             p.sub-title Veja como organizar essas e outras campanhas em réguas de relacionamento
-          .col-lg-8
-              <b-nav pills>
-                <b-nav-item active>Active</b-nav-item>
-                <b-nav-item>Link</b-nav-item>
-                <b-nav-item>Another Link</b-nav-item>
-                <b-nav-item disabled>Disabled</b-nav-item>
-              </b-nav>
-
-
+          .col-lg-8.steps-col
+              b-nav(pills)
+                b-nav-item(active) Aniversário
+                b-nav-item Reaquecimento
+                b-nav-item Inbound Marketing
+                b-nav-item Whatsapp
+                b-nav-item Check-in Hotel
+              ul.steps
+                li
+                  .step
+                    .title &nbsp;
+                    .icon
+                      g-image(src='~/assets/icons/person.svg')
+                    .subtitle Bruno vai fazer aniversário
+                li
+                  .step
+                    .title 10 Dias antes
+                    .icon
+                      g-image(src='~/assets/icons/envelope.svg')
+                    .subtitle Email:
+                      strong  "seu aniversário está chegando"
+                li
+                  .step
+                    .title 1 Dia antes
+                    .icon
+                      g-image(src='~/assets/icons/envelope.svg')
+                    .subtitle Email:
+                      strong  "é amanhã"
+                li
+                  .step
+                    .title No dia do aniversário
+                    .icon
+                      g-image(src='~/assets/icons/envelope.svg')
+                    .subtitle Email:
+                      strong  “mensagem de aniversário + cupom desconto”
 </template>
 
 <script>
