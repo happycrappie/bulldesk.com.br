@@ -90,6 +90,60 @@
         &:nth-child(2)
           top: 754px
 
+  .campaigns
+    height: 1076px
+    margin-top: -25rem
+    background-repeat: no-repeat
+    background-size: cover
+    background-image: url(~@/assets/images/home-bg-a.png)
+    background-position: -40rem
+
+    @media only screen and (min-width: 800px) and (max-width: 1800px)
+      background-position: -35rem
+
+    @media only screen and (min-width: 1801px) and (max-width: 1990px)
+      background-position: -30rem
+
+    @media only screen and (min-width: 1991px) and (max-width: 2150px)
+      background-position: -25rem
+
+    @media only screen and (min-width: 2151px) and (max-width: 2300px)
+      background-position: -15rem
+
+    @media only screen and (min-width: 2301px)
+      background-position: 0rem
+
+    .container
+      padding-top: 38rem
+      font-size: 1rem
+
+      @media only screen and (max-width: 670px)
+        padding-top: 32rem
+
+      @media only screen and (min-width: 671px) and (max-width: 1000px)
+        padding-top: 34rem
+
+    h3
+      width: auto
+      max-width: 294px
+      color: $gray-dark
+      font-size: 1.6rem
+      font-weight: 700
+      letter-spacing: -0.39px
+      line-height: 30px
+
+      @media only screen and (max-width: 670px)
+        font-size: 1.2rem
+
+    .sub-title
+      width: auto
+      max-width: 286px
+      color: $gray-light
+      font-size: 0.8rem
+      font-weight: 400
+      letter-spacing: 0.24px
+      line-height: 25px
+      margin-top: 1.2rem
 </style>
 
 <template lang="pug">
@@ -116,6 +170,21 @@
               | Configuração simples e rápida
           g-image(src='~/assets/images/doted-square.jpg' class='doted-square d-none d-xl-block')
           g-image(src='~/assets/images/doted-square.jpg' class='doted-square d-none d-xl-block')
+
+    .campaigns
+      .container
+        .row
+          .col-lg-4
+            h3 Direcione campanhas multicanais para cada momento da jornada do cliente
+            p.sub-title Veja como organizar essas e outras campanhas em réguas de relacionamento
+          .col-lg-8
+              <b-nav pills>
+                <b-nav-item active>Active</b-nav-item>
+                <b-nav-item>Link</b-nav-item>
+                <b-nav-item>Another Link</b-nav-item>
+                <b-nav-item disabled>Disabled</b-nav-item>
+              </b-nav>
+
 
 </template>
 
