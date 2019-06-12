@@ -32,7 +32,7 @@
         b-nav-item(to="/") O que faz
         b-nav-item(to="/") Pra quem é
         b-nav-item(to="/cases") Cases
-        b-nav-item(to="/") Planos
+        b-nav-item(to="/planos") Planos
         b-nav-item(href="https://app.bulldesk.com.br" target="_blank") Login
         b-nav-item.font-weight-bold.trial(to="/cadastro") Teste grátis
 </template>
