@@ -82,7 +82,27 @@
 
       .doted-square
         position: absolute
-        left: 986px
+
+        @media only screen and (min-width: 1300px) and (max-width: 1400px)
+          left: 44rem
+
+        @media only screen and (min-width: 1401px) and (max-width: 1600px)
+          left: 50rem
+
+        @media only screen and (min-width: 1601px) and (max-width: 1800px)
+          left: 56rem
+
+        @media only screen and (min-width: 1801px) and (max-width: 2000px)
+          left: 62rem
+
+        @media only screen and (min-width: 2001px) and (max-width: 2200px)
+          left: 68rem
+
+        @media only screen and (min-width: 2201px) and (max-width: 2400px)
+          left: 74rem
+
+        @media only screen and (min-width: 2401px)
+          left: 80rem
 
         &:nth-child(1n)
           top: 724px
