@@ -208,7 +208,11 @@
             line-height: 25px
             text-transform: uppercase
 
-            @media only screen and (max-width: 600px)
+            @media only screen and (max-width: 400px)
+              font-size: 0.3rem
+              line-height: 15px
+
+            @media only screen and (min-width: 401px) and (max-width: 600px)
               font-size: 0.4rem
               line-height: 15px
 
