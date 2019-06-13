@@ -332,6 +332,10 @@
 
   .section-b
     margin-top: 10rem
+    background-image: url(~@/assets/images/elipse@opaque.png), url(~@/assets/images/home-bg-b.png)
+    background-size: 160px 160px, 25% 82%
+    background-position: 52% 320px, 56% 20px
+    background-repeat: no-repeat
 
     .subtitle
       width: auto
@@ -372,6 +376,8 @@
           margin-left: 5px
 
     .right-col
+      height: 500px
+
       .header
         width: 336px
         height: 61px
@@ -383,6 +389,7 @@
         background-color: $white-gray
         padding: 0 20px
         margin: auto
+        box-shadow: 0 10px 20px rgba(165, 131, 224, 0.18)
 
         .contacts
           float: right
@@ -392,13 +399,13 @@
       .content
         width: 518px
         height: 342px
-        box-shadow: 0 10px 20px rgba(165, 131, 224, 0.18)
         border-radius: 10px
         background-color: $white
         margin: 2rem auto
         padding: 30px
         font-size: 0.8rem
         color: $gray-light
+        box-shadow: 0 10px 20px rgba(165, 131, 224, 0.18)
 
         .name
           background-color: $white-gray
