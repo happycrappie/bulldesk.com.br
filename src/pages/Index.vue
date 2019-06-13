@@ -159,6 +159,9 @@
           font-size: 1.2rem
           padding-top: 20px
 
+        @media only screen and (max-width: 990px)
+          max-width: 100%
+
       .sub-title
         width: auto
         max-width: 286px
@@ -168,6 +171,9 @@
         letter-spacing: 0.24px
         line-height: 25px
         margin-top: 1.2rem
+
+        @media only screen and (max-width: 990px)
+          max-width: 100%
 
       .steps-col
         margin-top: -55px
@@ -230,32 +236,6 @@
           padding: 0 10px
           z-index: 999
 
-          // &:after
-          //   content: ''
-          //   background-image: url(~@/assets/images/line.png)
-          //   background-repeat: no-repeat
-          //   position: relative
-          //   display: block
-          //   top: -102px
-          //   right: -135px
-          //   width: 150px
-          //   height: 5px
-          //   z-index: 1
-
-          //   @media only screen and (max-width: 600px)
-          //     right: -94px
-          //     width: 32px
-          //     top: -97px
-
-          //   @media only screen and (min-width: 601px) and (max-width: 1024px)
-          //     right: -110px
-          //     width: 78px
-          //     top: -97px
-
-          //   @media only screen and (min-width: 1025px) and (max-width: 1440px)
-          //     right: -135px
-          //     width: 100px
-
           .title
             height: 20px
             color: $pink
@@ -282,6 +262,8 @@
             line-height: 92px
             border-radius: 41px
             margin: auto
+            z-index: 2
+            position: relative
 
             @media only screen and (max-width: 440px)
               border: 1px solid $gray-light
@@ -306,6 +288,18 @@
 
               @media only screen and (min-width: 441px) and (max-width: 990px)
                 width: 22px
+
+            &:after
+              content: ''
+              background-image: url(~@/assets/images/line.png)
+              background-repeat: no-repeat
+              position: relative
+              display: block
+              top: -50%
+              right: -100%
+              height: 5px
+              width: 110%
+              z-index: 0
 
           .subtitle
             color: $gray-light
