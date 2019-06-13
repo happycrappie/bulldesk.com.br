@@ -15,8 +15,7 @@
         Nav(type="light")
 
     .container
-      h1 Cases
-      p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error doloremque omnis animi, eligendi magni a voluptatum, vitae, consequuntur rerum illum odit fugit assumenda rem dolores inventore iste reprehenderit maxime! Iusto.
+      h1 Planos e Preços
 </template>
 
 <script>
@@ -30,7 +29,7 @@
     },
 
     metaInfo: {
-      title: 'Cases'
+      title: 'Planos e Preços'
     }
   }
 </script>
