@@ -331,16 +331,50 @@
                   background-image: none
 
   .section-b
-    margin-top: 10rem
+    margin-top: 8rem
     background-image: url(~@/assets/images/elipse@opaque.png), url(~@/assets/images/home-bg-b.png)
-    background-size: 160px 160px, 25% 82%
-    background-position: 52% 320px, 56% 20px
+    background-size: 160px 160px, 400px 400px
+    background-position: 52% 320px, 60% 20px
     background-repeat: no-repeat
+
+    @media only screen and (max-width: 600px)
+      background-image: url(~@/assets/images/home-bg-b.png)
+      background-size: 400px 400px
+      background-position: -120px 495px
+
+    @media only screen and (min-width: 601px) and (max-width: 750px)
+      background-image: url(~@/assets/images/home-bg-b.png)
+      background-size: 400px 400px
+      background-position: 0px 455px
+
+    @media only screen and (min-width: 751px) and (max-width: 990px)
+      background-image: url(~@/assets/images/home-bg-b.png)
+      background-size: 400px 400px
+      background-position: 85px 445px
+
+    @media only screen and (min-width: 1300px) and (max-width: 1800px)
+      background-size: 160px 160px, 450px 400px
+
+    @media only screen and (min-width: 1801px)
+      background-size: 160px 160px, 500px 400px
+      background-position: 52% 320px, 55% 20px
+
+    @media only screen and (min-width: 1600px) and (max-width: 1900px)
+      margin-top: 10rem
+
+    @media only screen and (min-width: 1901px) and (max-width: 2200px)
+      margin-top: 12rem
+
+    @media only screen and (min-width: 2201px)
+      margin-top: 14rem
 
     .subtitle
       width: auto
       max-width: 286px
       margin-top: 2rem
+
+      @media only screen and (max-width: 990px)
+        max-width: 100%
 
     .items
       padding: 0px
@@ -354,6 +388,10 @@
         font-weight: 400
         letter-spacing: 0.24px
         line-height: 25px
+
+        @media only screen and (max-width: 440px)
+          font-size: 0.7rem
+          padding: 30px 0px
 
         img
           margin-right: 10px
@@ -369,6 +407,9 @@
         font-weight: 700
         padding: 20px 25px
 
+        @media only screen and (max-width: 990px)
+          padding: 15px 20px
+
         &:hover
           cursor: pointer
 
@@ -377,6 +418,9 @@
 
     .right-col
       height: 500px
+
+      @media only screen and (max-width: 990px)
+          margin-top: 80px
 
       .header
         width: 336px
@@ -390,6 +434,13 @@
         padding: 0 20px
         margin: auto
         box-shadow: 0 10px 20px rgba(165, 131, 224, 0.18)
+
+        @media only screen and (max-width: 480px)
+          width: 236px
+          text-align: center
+
+        @media only screen and (max-width: 990px)
+          font-size: 0.7rem
 
         .contacts
           float: right
@@ -407,6 +458,15 @@
         color: $gray-light
         box-shadow: 0 10px 20px rgba(165, 131, 224, 0.18)
 
+        @media only screen and (max-width: 480px)
+          width: 318px
+          font-size: 0.7rem
+
+        @media only screen and (min-width: 481px) and (max-width: 990px)
+          width: 418px
+          height: 352px
+          font-size: 0.7rem
+
         .name
           background-color: $white-gray
           border-radius: 30px
@@ -417,6 +477,12 @@
         img
           margin-top: 20px
           margin-left: -30px
+
+          @media only screen and (max-width: 480px)
+            width: 318px
+
+          @media only screen and (min-width: 481px) and (max-width: 990px)
+            width: 418px
 </style>
 
 <template lang="pug">
@@ -497,17 +563,17 @@
 
             .container.items
               .row.no-gutters
-                .col-4.item
+                .col-6.col-lg-4.item
                   g-image(src='~/assets/icons/check.svg')
                   | CRM de vendas
-                .col-4.item
+                .col-6.col-lg-4.item
                   g-image(src='~/assets/icons/check.svg')
                   | Automações prontas
               .row.no-gutters
-                .col-4.item
+                .col-6.col-lg-4.item
                   g-image(src='~/assets/icons/check.svg')
                   | Campanhas
-                .col-4.item
+                .col-6.col-lg-4.item
                   g-image(src='~/assets/icons/check.svg')
                   | Relatórios ao vivo
 
@@ -520,7 +586,7 @@
             .header
               | Segmento:
               strong.text-pink  Novos leads
-              span.contacts 180 contatos
+              span.contacts.d-none.d-sm-block 180 contatos
             .content
                 | Olá,
                 span.text-pink.name Fulano de tal
