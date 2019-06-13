@@ -117,25 +117,25 @@
     h3
       width: auto
       color: $gray-dark
-      font-size: 1.6rem
+      font-size: 1.8rem
       font-weight: 700
       letter-spacing: -0.39px
       line-height: 30px
 
       @media only screen and (max-width: 670px)
-        font-size: 1.2rem
+        font-size: 1.4rem
         padding-top: 20px
 
     .subtitle
       color: $gray-light
-      font-size: 0.8rem
+      font-size: 0.9rem
       font-weight: 400
       letter-spacing: 0.24px
       line-height: 25px
 
   .section-a
     height: 1076px
-    margin-top: -25rem
+    margin-top: -23rem
     background-repeat: no-repeat
     background-size: cover
     background-image: url(~@/assets/images/home-bg-a.png)
@@ -157,7 +157,7 @@
       background-position: 0rem
 
     h3
-      max-width: 294px
+      max-width: 304px
 
       @media only screen and (max-width: 990px)
         max-width: 100%
@@ -167,7 +167,7 @@
       font-size: 1rem
 
       @media only screen and (max-width: 670px)
-        padding-top: 32rem
+        padding-top: 33rem
 
       @media only screen and (min-width: 671px) and (max-width: 1000px)
         padding-top: 34rem
