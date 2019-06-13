@@ -201,7 +201,7 @@
           vertical-align: middle
 
           .nav-link
-            color: #c9c1d5
+            color: $gray-soft
             font-weight: 700
             font-size: 0.6rem
             letter-spacing: 0.2px
@@ -370,6 +370,46 @@
 
         img
           margin-left: 5px
+
+    .right-col
+      .header
+        width: 336px
+        height: 61px
+        border-radius: 10px
+        font-size: 0.8rem
+        font-weight: 500
+        letter-spacing: 0.24px
+        line-height: 61px
+        background-color: $white-gray
+        padding: 0 20px
+        margin: auto
+
+        .contacts
+          float: right
+          color: $gray-soft
+          font-weight: 400
+
+      .content
+        width: 518px
+        height: 342px
+        box-shadow: 0 10px 20px rgba(165, 131, 224, 0.18)
+        border-radius: 10px
+        background-color: $white
+        margin: 2rem auto
+        padding: 30px
+        font-size: 0.8rem
+        color: $gray-light
+
+        .name
+          background-color: $white-gray
+          border-radius: 30px
+          padding: 10px
+          font-weight: 600
+          margin-left: 10px
+
+        img
+          margin-top: 20px
+          margin-left: -30px
 </style>
 
 <template lang="pug">
@@ -445,7 +485,7 @@
           .col-lg-6
             h3 Uma ferramenta completa
               br
-              span.pink para criar |
+              span.text-pink para criar |
             .subtitle De maneira simples e intuitiva, criamos um software com tudo que você precisa quando o assunto é marketing e vendas. Conheça o Bulldesk e comece a gerar mais resultados através da inteligência comercial.
 
             .container.items
@@ -469,7 +509,29 @@
                 | Conheça mais
                 g-image(src='~/assets/icons/play-button@white.svg')
 
-          .col-lg-6 Left Col
+          .col-lg-6.right-col
+            .header
+              | Segmento:
+              strong.text-pink  Novos leads
+              span.contacts 180 contatos
+            .content
+                | Olá,
+                span.text-pink.name Fulano de tal
+                br
+                br
+                br
+                | Seja bem-vindo ao seu editor de mensagem e e-mail personalizado.
+                br
+                br
+                br
+                | A partir de agora você pode selecionar todos seus  contatos e disparar um determinado conteúdo para seus clusters selecionados.
+                br
+                br
+                br
+                | Atenciosamente,
+                br
+                | - Bulldesk
+                g-image(src='~/assets/images/editor-footer.png')
 </template>
 
 <script>
