@@ -113,7 +113,7 @@
         &:nth-child(2)
           top: 754px
 
-  .campaigns
+  .section-a
     height: 1076px
     margin-top: -25rem
     background-repeat: no-repeat
@@ -162,7 +162,7 @@
         @media only screen and (max-width: 990px)
           max-width: 100%
 
-      .sub-title
+      .subtitle
         width: auto
         max-width: 286px
         color: $gray-light
@@ -347,12 +347,12 @@
           g-image(src='~/assets/images/doted-square.jpg' class='doted-square d-none d-xl-block')
           g-image(src='~/assets/images/doted-square.jpg' class='doted-square d-none d-xl-block')
 
-    .campaigns
+    .section-a
       .container
         .row
           .col-lg-4
             h3 Direcione campanhas multicanais para cada momento da jornada do cliente
-            p.sub-title Veja como organizar essas e outras campanhas em réguas de relacionamento
+            p.subtitle Veja como organizar essas e outras campanhas em réguas de relacionamento
           .col-lg-8.steps-col
               b-nav(pills)
                 b-nav-item(active) Aniversário
