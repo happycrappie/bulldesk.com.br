@@ -113,6 +113,26 @@
         &:nth-child(2)
           top: 754px
 
+  .section
+    h3
+      width: auto
+      color: $gray-dark
+      font-size: 1.6rem
+      font-weight: 700
+      letter-spacing: -0.39px
+      line-height: 30px
+
+      @media only screen and (max-width: 670px)
+        font-size: 1.2rem
+        padding-top: 20px
+
+    .subtitle
+      color: $gray-light
+      font-size: 0.8rem
+      font-weight: 400
+      letter-spacing: 0.24px
+      line-height: 25px
+
   .section-a
     height: 1076px
     margin-top: -25rem
@@ -136,6 +156,12 @@
     @media only screen and (min-width: 2301px)
       background-position: 0rem
 
+    h3
+      max-width: 294px
+
+      @media only screen and (max-width: 990px)
+        max-width: 100%
+
     .container
       padding-top: 38rem
       font-size: 1rem
@@ -146,30 +172,9 @@
       @media only screen and (min-width: 671px) and (max-width: 1000px)
         padding-top: 34rem
 
-      h3
-        width: auto
-        max-width: 294px
-        color: $gray-dark
-        font-size: 1.6rem
-        font-weight: 700
-        letter-spacing: -0.39px
-        line-height: 30px
-
-        @media only screen and (max-width: 670px)
-          font-size: 1.2rem
-          padding-top: 20px
-
-        @media only screen and (max-width: 990px)
-          max-width: 100%
-
       .subtitle
         width: auto
         max-width: 286px
-        color: $gray-light
-        font-size: 0.8rem
-        font-weight: 400
-        letter-spacing: 0.24px
-        line-height: 25px
         margin-top: 1.2rem
 
         @media only screen and (max-width: 990px)
@@ -190,136 +195,172 @@
         @media only screen and (min-width: 991px) and (max-width: 1300px)
           padding-left: 30px
 
-      .nav-item
-        width: 20%
-        text-align: center
-        vertical-align: middle
+        .nav-item
+          width: 20%
+          text-align: center
+          vertical-align: middle
 
-        .nav-link
-          color: #c9c1d5
-          font-weight: 700
-          font-size: 0.6rem
-          letter-spacing: 0.2px
-          line-height: 25px
-          text-transform: uppercase
-
-          @media only screen and (max-width: 600px)
-            font-size: 0.4rem
-            line-height: 15px
-
-          @media only screen and (min-width: 1300px)
-            white-space: nowrap
-            font-size: 0.7rem
-
-        .active
-          background-color: $purple
-          color: #f6f5f8
-          border-radius: 25px
-
-    .steps
-      list-style: none
-      padding: 0px
-      margin-top: 80px
-      margin-left: -50px
-
-      @media only screen and (max-width: 1300px)
-        margin-top: 60px
-        margin-left: -25px
-
-      li
-        text-align: center
-        display: list-item
-        float: left
-        width: 25%
-
-        .step
-          padding: 0 10px
-          z-index: 999
-
-          .title
-            height: 20px
-            color: $pink
-            font-size: 0.8rem
+          .nav-link
+            color: #c9c1d5
             font-weight: 700
+            font-size: 0.6rem
             letter-spacing: 0.2px
-            line-height: 20px
+            line-height: 25px
             text-transform: uppercase
-            margin-bottom: 30px
 
-            @media only screen and (max-width: 440px)
-              font-size: 0.5rem
+            @media only screen and (max-width: 600px)
+              font-size: 0.4rem
+              line-height: 15px
 
-            @media only screen and (min-width: 441px) and (max-width: 990px)
-              font-size: 0.6rem
-
-            @media only screen and (min-width: 991px) and (max-width: 1300px)
+            @media only screen and (min-width: 1300px)
+              white-space: nowrap
               font-size: 0.7rem
 
-          .icon
-            background-color: $white
-            height: 92px
-            width: 92px
-            line-height: 92px
-            border-radius: 41px
-            margin: auto
-            z-index: 2
-            position: relative
+          .active
+            background-color: $purple
+            color: $white-gray
+            border-radius: 25px
 
-            @media only screen and (max-width: 440px)
-              border: 1px solid $gray-light
-              height: 42px
-              width: 42px
-              line-height: 42px
+      .steps
+        list-style: none
+        padding: 0px
+        margin-top: 80px
+        margin-left: -50px
 
-            @media only screen and (min-width: 441px) and (max-width: 990px)
-              border: 1px solid $gray-light
-              height: 62px
-              width: 62px
-              line-height: 62px
+        @media only screen and (max-width: 1300px)
+          margin-top: 60px
+          margin-left: -25px
 
-            @media only screen and (min-width: 991px) and (max-width: 1300px)
-              height: 82px
-              width: 82px
-              line-height: 82px
+        li
+          text-align: center
+          display: list-item
+          float: left
+          width: 25%
 
-            img
+          .step
+            padding: 0 10px
+            z-index: 999
+
+            .step-title
+              height: 20px
+              color: $pink
+              font-size: 0.8rem
+              font-weight: 700
+              letter-spacing: 0.2px
+              line-height: 20px
+              text-transform: uppercase
+              margin-bottom: 30px
+
               @media only screen and (max-width: 440px)
-                width: 14px
+                font-size: 0.5rem
 
               @media only screen and (min-width: 441px) and (max-width: 990px)
-                width: 22px
+                font-size: 0.6rem
 
-            &:after
-              content: ''
-              background-image: url(~@/assets/images/line.png)
-              background-repeat: no-repeat
+              @media only screen and (min-width: 991px) and (max-width: 1300px)
+                font-size: 0.7rem
+
+            .step-icon
+              background-color: $white
+              height: 92px
+              width: 92px
+              line-height: 92px
+              border-radius: 41px
+              margin: auto
+              z-index: 2
               position: relative
-              display: block
-              top: -50%
-              right: -100%
-              height: 5px
-              width: 110%
-              z-index: 0
 
-          .subtitle
-            color: $gray-light
-            height: 36px
-            max-width: 162px
-            margin: auto
-            font-size: 0.8rem
-            font-weight: 400
-            letter-spacing: 0.24px
-            line-height: 20px
-            margin-top: 20px
+              @media only screen and (max-width: 440px)
+                border: 1px solid $gray-light
+                height: 42px
+                width: 42px
+                line-height: 42px
 
-            @media only screen and (max-width: 440px)
-              font-size: 0.5rem
+              @media only screen and (min-width: 441px) and (max-width: 990px)
+                border: 1px solid $gray-light
+                height: 62px
+                width: 62px
+                line-height: 62px
 
-            @media only screen and (min-width: 441px) and (max-width: 990px)
-              font-size: 0.6rem
+              @media only screen and (min-width: 991px) and (max-width: 1300px)
+                height: 82px
+                width: 82px
+                line-height: 82px
 
-            @media only screen and (min-width: 991px) and (max-width: 1300px)
-              font-size: 0.7rem
+              img
+                @media only screen and (max-width: 440px)
+                  width: 14px
+
+                @media only screen and (min-width: 441px) and (max-width: 990px)
+                  width: 22px
+
+              &:after
+                content: ''
+                background-image: url(~@/assets/images/line.png)
+                background-repeat: no-repeat
+                position: relative
+                display: block
+                top: -50%
+                right: -100%
+                height: 5px
+                width: 110%
+                z-index: 0
+
+            .step-subtitle
+              height: 36px
+              max-width: 162px
+              margin: auto
+              margin-top: 20px
+
+              @media only screen and (max-width: 440px)
+                font-size: 0.5rem
+
+              @media only screen and (min-width: 441px) and (max-width: 990px)
+                font-size: 0.6rem
+
+              @media only screen and (min-width: 991px) and (max-width: 1300px)
+                font-size: 0.7rem
+
+  .section-b
+    margin-top: 10rem
+
+    .subtitle
+      width: auto
+      max-width: 286px
+      margin-top: 2rem
+
+    .items
+      padding: 0px
+      margin-top: 1rem
+
+      .item
+        color: $purple
+        height: 25px
+        padding: 20px 0px
+        font-size: 0.8rem
+        font-weight: 400
+        letter-spacing: 0.24px
+        line-height: 25px
+
+        img
+          margin-right: 10px
+
+    .know-more
+      margin-top: 3rem
+
+      .btn-know-more
+        background-color: $purple
+        color: $white-gray
+        border-radius: 30px
+        font-size: 0.8rem
+        font-weight: 700
+        padding: 20px 25px
+
+        &:hover
+          cursor: pointer
+
+        img
+          margin-left: 5px
 </style>
 
 <template lang="pug">
@@ -337,7 +378,7 @@
               b-form-input.email-input(placeholder='Insira seu email aqui' v-model='email')
               b-input-group-append
                 b-button.email-button
-                  g-image(src='~/assets/icons/play-button.svg')
+                  g-image(src='~/assets/icons/play-button@black.svg')
             p.email-paragraph
               | Experimente de graça.
               br
@@ -347,7 +388,7 @@
           g-image(src='~/assets/images/doted-square.jpg' class='doted-square d-none d-xl-block')
           g-image(src='~/assets/images/doted-square.jpg' class='doted-square d-none d-xl-block')
 
-    .section-a
+    .section.section-a
       .container
         .row
           .col-lg-4
@@ -363,31 +404,63 @@
               ul.steps
                 li
                   .step
-                    .title &nbsp;
-                    .icon
+                    .step-title &nbsp;
+                    .step-icon
                       g-image(src='~/assets/icons/person.svg')
-                    .subtitle Bruno vai fazer aniversário
+                    .subtitle.step-subtitle Bruno vai fazer aniversário
                 li
                   .step
-                    .title 10 Dias antes
-                    .icon
+                    .step-title 10 Dias antes
+                    .step-icon
                       g-image(src='~/assets/icons/envelope.svg')
-                    .subtitle Email:
+                    .subtitle.step-subtitle Email:
                       strong  "seu aniversário está chegando"
                 li
                   .step
-                    .title 1 Dia antes
-                    .icon
+                    .step-title 1 Dia antes
+                    .step-icon
                       g-image(src='~/assets/icons/envelope.svg')
-                    .subtitle Email:
+                    .subtitle.step-subtitle Email:
                       strong  "é amanhã"
                 li
                   .step
-                    .title No dia do aniversário
-                    .icon
+                    .step-title No dia do aniversário
+                    .step-icon
                       g-image(src='~/assets/icons/envelope.svg')
-                    .subtitle Email:
+                    .subtitle.step-subtitle Email:
                       strong  “mensagem de aniversário + cupom desconto”
+
+    .section.section-b
+      .container
+        .row
+          .col-lg-6
+            h3 Uma ferramenta completa
+              br
+              span.pink para criar |
+            .subtitle De maneira simples e intuitiva, criamos um software com tudo que você precisa quando o assunto é marketing e vendas. Conheça o Bulldesk e comece a gerar mais resultados através da inteligência comercial.
+
+            .container.items
+              .row.no-gutters
+                .col-4.item
+                  g-image(src='~/assets/icons/check.svg')
+                  | CRM de vendas
+                .col-4.item
+                  g-image(src='~/assets/icons/check.svg')
+                  | Automações prontas
+              .row.no-gutters
+                .col-4.item
+                  g-image(src='~/assets/icons/check.svg')
+                  | Campanhas
+                .col-4.item
+                  g-image(src='~/assets/icons/check.svg')
+                  | Relatórios ao vivo
+
+            .know-more
+              a.btn-know-more
+                | Conheça mais
+                g-image(src='~/assets/icons/play-button@white.svg')
+
+          .col-lg-6 Left Col
 </template>
 
 <script>
