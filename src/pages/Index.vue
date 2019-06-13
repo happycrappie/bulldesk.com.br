@@ -265,7 +265,7 @@
               height: 92px
               width: 92px
               line-height: 92px
-              border-radius: 41px
+              border-radius: 45px
               margin: auto
               z-index: 2
               position: relative
@@ -320,6 +320,15 @@
 
               @media only screen and (min-width: 991px) and (max-width: 1300px)
                 font-size: 0.7rem
+
+          &:last-child
+            .step
+              .step-icon
+                background-color: $pink
+                border: 0px
+
+                &:after
+                  background-image: none
 
   .section-b
     margin-top: 10rem
@@ -412,21 +421,21 @@
                   .step
                     .step-title 10 Dias antes
                     .step-icon
-                      g-image(src='~/assets/icons/envelope.svg')
+                      g-image(src='~/assets/icons/envelope@black.svg')
                     .subtitle.step-subtitle Email:
                       strong  "seu aniversário está chegando"
                 li
                   .step
                     .step-title 1 Dia antes
                     .step-icon
-                      g-image(src='~/assets/icons/envelope.svg')
+                      g-image(src='~/assets/icons/envelope@black.svg')
                     .subtitle.step-subtitle Email:
                       strong  "é amanhã"
                 li
                   .step
                     .step-title No dia do aniversário
                     .step-icon
-                      g-image(src='~/assets/icons/envelope.svg')
+                      g-image(src='~/assets/icons/envelope@white.svg')
                     .subtitle.step-subtitle Email:
                       strong  “mensagem de aniversário + cupom desconto”
 
