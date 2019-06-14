@@ -29,7 +29,10 @@
         line-height: 1
         font-size: 4.5rem
 
-        @media only screen and (max-width: 700px)
+        @media only screen and (max-width: 400px)
+          font-size: 3.1rem
+
+        @media only screen and (min-width: 401px) and (max-width: 700px)
           font-size: 3.5rem
 
         span
@@ -47,6 +50,9 @@
         padding-right: 0.5rem
         width: auto
         max-width: 381px
+
+        @media only screen and (max-width: 400px)
+          max-width: 320px
 
       .email-input
         box-shadow: 0 10px 20px rgba(165, 131, 224, 0.18)
@@ -229,10 +235,12 @@
             @media only screen and (max-width: 400px)
               font-size: 0.3rem
               line-height: 15px
+              padding: 0.3rem 0.3rem
 
             @media only screen and (min-width: 401px) and (max-width: 600px)
               font-size: 0.4rem
               line-height: 15px
+              padding: 0.3rem 0.5rem
 
             @media only screen and (min-width: 1300px)
               white-space: nowrap
@@ -469,7 +477,7 @@
 
         @media only screen and (max-width: 480px)
           width: 300px
-          max-height: 325px
+          max-height: 340px
           font-size: 0.7rem
 
         @media only screen and (min-width: 481px) and (max-width: 990px)
