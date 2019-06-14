@@ -7,23 +7,18 @@
 const axios = require('axios');
 
 module.exports = function (api) {
-  api.loadSource(({ addContentType }) => {
-    // Load plans
-    // const { plans } = await axios.get('https://api.bulldesk.com.br/plans')
+  api.loadSource(async store => {
+    const { data } = await axios.get('https://staging.bulldesk.com.br/api/plan')
 
-    // const contentType = store.addContentType({
-    //   typeName: 'plans'
-    // })
+    console.log(data);
 
-    // for (const item of plans) {
-    //   contentType.addNode({
-    //     id: plan.id,
-    //     name: plan.name
-    //   })
-    // }
-  })
+    const contentType = store.addContentType({
+      typeName: 'MonthlyPlans',
+      // route: '/blog/:year/:slug'
+    })
 
-  api.createPages(({ createPage }) => {
-    // Use the Pages API here: https://gridsome.org/docs/pages-api
+    for (const plans of data.month) {
+      contentType.addNode(plans)
+    }
   })
 }

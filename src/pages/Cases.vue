@@ -4,6 +4,7 @@
 
   .container
     h1
+      font-weight: 700
       text-align: center
       padding-bottom: 1.2rem
 </style>
