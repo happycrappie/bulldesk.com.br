@@ -22,7 +22,7 @@ module.exports = {
         width: 1400,
         height: 800
       }
-    }
+    },
   ],
   css: {
     loaderOptions: {
