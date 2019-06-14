@@ -34,7 +34,25 @@
         br
         span.font-weight-bold De burocrático já basta a concorrência. 🤪
 
+    section.plans.text-center
+      .plan(v-for="edge in $page.plans.edges" :key="edge.node.id")
+        | {{ edge.node.name }} R$ {{ edge.node.price_per_user }}
+
 </template>
+
+<page-query>
+  query Plans {
+    plans: allMonthlyPlans {
+      edges {
+        node {
+          id
+          name
+          price_per_user
+        }
+      }
+    }
+  }
+</page-query>
 
 <script>
   import Layout from '../layouts/Default'
@@ -48,6 +66,6 @@
 
     metaInfo: {
       title: 'Planos e Preços'
-    }
+    },
   }
 </script>

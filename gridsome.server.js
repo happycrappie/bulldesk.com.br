@@ -10,15 +10,12 @@ module.exports = function (api) {
   api.loadSource(async store => {
     const { data } = await axios.get('https://staging.bulldesk.com.br/api/plan')
 
-    console.log(data);
-
     const contentType = store.addContentType({
       typeName: 'MonthlyPlans',
-      // route: '/blog/:year/:slug'
     })
 
-    for (const plans of data.month) {
-      contentType.addNode(plans)
+    for (const plan of data.month) {
+      contentType.addNode(plan)
     }
   })
 }
