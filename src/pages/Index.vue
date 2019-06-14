@@ -931,7 +931,7 @@
   export default {
     components: {
       Layout,
-      Nav
+      Nav,
     },
 
     metaInfo: {
