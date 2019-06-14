@@ -920,8 +920,6 @@
               .btn-default
                 | Veja mais histórias de sucesso
                 g-image(src='~/assets/icons/play-button@white.svg')
-
-
 </template>
 
 <script>
