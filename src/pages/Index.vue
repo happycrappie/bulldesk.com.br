@@ -468,6 +468,7 @@
         box-shadow: 0 10px 20px rgba(165, 131, 224, 0.18)
 
         @media only screen and (max-width: 480px)
+          width: 300px
           max-height: 325px
           font-size: 0.7rem
 
@@ -494,8 +495,14 @@
     background-image: url(~@/assets/images/home-bg-c.png)
     background-position: -58rem
 
+    @media only screen and (max-width: 990px)
+      margin-top: -30rem
+
     .container
       padding-top: 57rem
+
+      @media only screen and (max-width: 990px)
+        padding-top: 35rem
 
       .col-left
 
@@ -508,6 +515,9 @@
           h3
             color: $white-gray
             text-align: center
+
+            @media only screen and (max-width: 990px)
+              color: $purple
 
         .image-a
           width: 80%
@@ -526,6 +536,9 @@
           margin-top: -220px
           margin-left: 255px
 
+          @media only screen and (max-width: 990px)
+            background-image: none
+
         .image-c
           width: 145%
           height: 580px
@@ -535,10 +548,29 @@
           margin-top: -570px
           margin-left: -275px
 
+          @media only screen and (max-width: 400px)
+            width: 90%
+            height: 300px
+            margin-left: 20px
+
+          @media only screen and (min-width: 401px) and (max-width: 690px)
+            width: 100%
+            height: 420px
+            margin-left: -20px
+
+          @media only screen and (min-width: 691px) and (max-width: 990px)
+            width: 120%
+            height: 480px
+            margin-left: -160px
+
       .col-right
         padding-top: 105px
         margin-left: -20px
         color: $white-gray
+
+        @media only screen and (max-width: 990px)
+          margin-left: 0px
+          padding-top: 0px
 
         h4
           font-size: 1rem
