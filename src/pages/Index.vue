@@ -133,6 +133,24 @@
       letter-spacing: 0.24px
       line-height: 25px
 
+    .btn-default
+        background-color: $green
+        color: $black
+        border-radius: 30px
+        font-size: 0.8rem
+        font-weight: 700
+        padding: 20px 25px
+
+        @media only screen and (max-width: 990px)
+          padding: 15px 20px
+
+        &:hover
+          cursor: pointer
+          color: $black
+
+        img
+          margin-left: 5px
+
   .section-a
     height: 1076px
     margin-top: -23rem
@@ -403,22 +421,9 @@
     .know-more
       margin-top: 3rem
 
-      .btn-know-more
+      .btn-default
         background-color: $purple
         color: $white-gray
-        border-radius: 30px
-        font-size: 0.8rem
-        font-weight: 700
-        padding: 20px 25px
-
-        @media only screen and (max-width: 990px)
-          padding: 15px 20px
-
-        &:hover
-          cursor: pointer
-
-        img
-          margin-left: 5px
 
     .right-col
       height: 500px
@@ -452,8 +457,8 @@
           font-weight: 400
 
       .content
-        width: 518px
-        height: 342px
+        width: 418px
+        max-height: 365px
         border-radius: 10px
         background-color: $white
         margin: 2rem auto
@@ -463,12 +468,10 @@
         box-shadow: 0 10px 20px rgba(165, 131, 224, 0.18)
 
         @media only screen and (max-width: 480px)
-          width: 318px
+          max-height: 325px
           font-size: 0.7rem
 
         @media only screen and (min-width: 481px) and (max-width: 990px)
-          width: 418px
-          height: 352px
           font-size: 0.7rem
 
         .name
@@ -481,12 +484,93 @@
         img
           margin-top: 20px
           margin-left: -30px
+          width: inherit
 
-          @media only screen and (max-width: 480px)
-            width: 318px
+  .section-c
+    height: 1800px
+    margin-top: -42rem
+    background-repeat: no-repeat
+    background-size: cover
+    background-image: url(~@/assets/images/home-bg-c.png)
+    background-position: -58rem
 
-          @media only screen and (min-width: 481px) and (max-width: 990px)
-            width: 418px
+    .container
+      padding-top: 57rem
+
+      .col-left
+
+        .title
+          width: auto
+          max-width: 480px
+          float: right
+          margin-right: 40px
+
+          h3
+            color: $white-gray
+            text-align: center
+
+        .image-a
+          width: 80%
+          height: 500px
+          margin: 50px auto
+          background-image: url(~@/assets/images/home-bg-c-2.png)
+          background-size: 100%
+          background-repeat: no-repeat
+
+        .image-b
+          height: 250px
+          width: 40%
+          background-image: url(~@/assets/images/elipse@opaque.png)
+          background-size: 100%
+          background-repeat: no-repeat
+          margin-top: -220px
+          margin-left: 255px
+
+        .image-c
+          width: 145%
+          height: 580px
+          background-image: url(~@/assets/images/home-bg-c-3.png)
+          background-size: 100%
+          background-repeat: no-repeat
+          margin-top: -570px
+          margin-left: -275px
+
+      .col-right
+        padding-top: 105px
+        margin-left: -20px
+        color: $white-gray
+
+        h4
+          font-size: 1rem
+          font-weight: 700
+          letter-spacing: -0.21px
+          line-height: 30px
+
+        .subtitle
+          width: auto
+          font-family: Montserrat
+          font-size: 0.7rem
+          font-weight: 400
+          letter-spacing: 0.24px
+          line-height: 25px
+          color: $white-gray
+
+        table
+          margin-top: 10px
+          margin-bottom: 30px
+
+          tr
+            td
+              padding: 8px 16px 8px 0px
+              font-size: 0.7rem
+              font-weight: 400
+              letter-spacing: 0.24px
+              line-height: 25px
+
+        .btn-default
+          img
+            width: 12px
+
 </style>
 
 <template lang="pug">
@@ -567,22 +651,22 @@
 
             .container.items
               .row.no-gutters
-                .col-6.col-lg-4.item
+                .col-6.col-xl-4.item
                   g-image(src='~/assets/icons/check.svg')
                   | CRM de vendas
-                .col-6.col-lg-4.item
+                .col-6.col-xl-4.item
                   g-image(src='~/assets/icons/check.svg')
                   | Automações prontas
               .row.no-gutters
-                .col-6.col-lg-4.item
+                .col-6.col-xl-4.item
                   g-image(src='~/assets/icons/check.svg')
                   | Campanhas
-                .col-6.col-lg-4.item
+                .col-6.col-xl-4.item
                   g-image(src='~/assets/icons/check.svg')
                   | Relatórios ao vivo
 
             .know-more
-              a.btn-know-more
+              a.btn-default
                 | Conheça mais
                 g-image(src='~/assets/icons/play-button@white.svg')
 
@@ -609,6 +693,33 @@
                 br
                 | - Bulldesk
                 g-image(src='~/assets/images/editor-footer.png')
+
+    .section.section-c
+      .container
+        .row
+          .col-lg-9.col-left
+              .title
+                h3 Você vai conhecer o verdadeiro software de automação
+                .image-a
+                .image-b
+                .image-c
+          .col-lg-3.col-right
+              h4 O que você pode fazer com o Bulldesk?
+              .subtitle São diversas funcionalidades que oferecemos dentro da ferramenta. Entre elas, podemos destacar as seguintes:
+              table
+                tr
+                  td
+                    g-image(src='~/assets/icons/content.svg')
+                  td
+                    | Organizar o seu processo comercial
+                tr
+                  td
+                    g-image(src='~/assets/icons/income.svg')
+                  td
+                    | Automatizar marketing e vendas
+              a.btn-default
+                | Teste grátis
+                g-image(src='~/assets/icons/play-button@black.svg')
 </template>
 
 <script>
