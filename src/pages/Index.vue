@@ -611,6 +611,109 @@
           img
             width: 12px
 
+  .section-d
+    margin-top: 80px
+
+    @media only screen and (max-width: 990px)
+      margin-top: -120px
+
+    .container
+      h3
+        margin: auto
+        text-align: center
+
+      .swiper
+        margin-top: 60px
+
+        .swiper-button-prev
+          background-image: none
+
+          .button:before
+            content: ''
+            background-image: url(~@/assets/images/cases/swiper-prev.png)
+            background-size: cover
+            width: 45px
+            height: 45px
+            display: block
+
+
+        .swiper-button-next
+          background-image: none
+          right: 25px
+
+          .button:before
+            content: ''
+            background-image: url(~@/assets/images/cases/swiper-next.png)
+            background-size: cover
+            width: 45px
+            height: 45px
+            display: block
+
+        .image
+          img
+            width: 100%
+
+        .content
+          .logo
+            text-align: center
+            margin-top: 4rem
+
+            img
+              width: 25%
+
+          .description
+            color: $gray-dark
+            font-size: 0.8rem
+            text-align: center
+            margin-top: 2rem
+            margin-left: auto
+            margin-right: auto
+            width: 70%
+
+          .author
+            color: $gray-light
+            font-size: 0.7rem
+            font-weight: 700
+            letter-spacing: 0.2px
+            line-height: 20px
+            text-transform: uppercase
+            text-align: center
+            margin-top: 4rem
+            margin-bottom: 2rem
+
+      .footer
+        margin-top: 4rem
+
+        .image-row
+          p
+            color: $gray-dark
+            font-size: 0.8rem
+            font-weight: 400
+            letter-spacing: 0.24px
+            line-height: 20px
+
+            @media only screen and (max-width: 640px)
+              text-align: center
+
+            @media only screen and (max-width: 990px)
+              font-size: 0.7rem
+              line-height: 15px
+
+          img
+            width: 90%
+            margin: 10px auto
+
+        .button-row
+          margin-top: 2rem
+          text-align: center
+
+          .btn-default
+            background-color: $purple
+            color: $white-gray
+            max-width: 300px
+            width: auto
+            margin: auto
+
 </style>
 
 <template lang="pug">
@@ -760,6 +863,63 @@
               a.btn-default
                 | Teste grátis
                 g-image(src='~/assets/icons/play-button@black.svg')
+
+    .section.section-d
+      .container
+        .row
+          .col-12
+            h3
+              | Fique tranquilo,
+              br
+              | você está em boa companhia
+        .row
+          .col-12.swiper
+            swiper(ref='swiper' :options='swiperOptions')
+              swiper-slide
+                .container
+                  .row
+                    .col-12.col-md-6.image
+                      g-image(src='~/assets/images/cases/buscape.png')
+                    .col-12.col-md-6.content
+                      .logo
+                        g-image(src='~/assets/images/cases/buscape-logo.png')
+                      .description Com o Bulldesk foi possível captar dados, enviar e-mails automáticos, e-mail que acontecem em tempo real.
+                      .author ANTÔNIO FRANCISCO
+              swiper-slide
+                .container
+                  .row
+                    .col-12.col-md-6.content
+                      .logo
+                        g-image(src='~/assets/images/cases/buscape-logo.png')
+                      .description Com o Bulldesk foi possível captar dados, enviar e-mails automáticos, e-mail que acontecem em tempo real.
+                      .author ANTÔNIO FRANCISCO
+                    .col-12.col-md-6.image
+                      g-image(src='~/assets/images/cases/buscape.png')
+              swiper-slide
+                .container
+                  .row
+                    .col-12.col-md-6.image
+                      g-image(src='~/assets/images/cases/buscape.png')
+                    .col-12.col-md-6.content
+                      .logo
+                        g-image(src='~/assets/images/cases/buscape-logo.png')
+                      .description Com o Bulldesk foi possível captar dados, enviar e-mails automáticos, e-mail que acontecem em tempo real.
+                      .author ANTÔNIO FRANCISCO
+              .swiper-button-prev(slot='button-prev')
+                .button
+              .swiper-button-next(slot='button-next')
+                .button
+        .footer
+          .row.image-row
+            .col-12.col-md-3
+              p Veja alguns outros clientes que também utilizam Bulldesk
+            .col-12.col-md-9
+              g-image(src='~/assets/images/cases/other-cases.png')
+          .row.button-row
+            .col-12
+              .btn-default
+                | Veja mais histórias de sucesso
+                g-image(src='~/assets/icons/play-button@white.svg')
 </template>
 
 <script>
@@ -774,6 +934,18 @@
 
     metaInfo: {
       title: 'Inteligência comercial de forma simples'
+    },
+
+    data() {
+      return {
+        email: '',
+        swiperOptions: {
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
+          }
+        }
+      }
     }
   }
 </script>
