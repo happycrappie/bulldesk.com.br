@@ -874,41 +874,41 @@
               | você está em boa companhia
         .row
           .col-12.swiper
-            swiper(ref='swiper' :options='swiperOptions')
-              swiper-slide
-                .container
-                  .row
-                    .col-12.col-md-6.image
-                      g-image(src='~/assets/images/cases/buscape.png')
-                    .col-12.col-md-6.content
-                      .logo
-                        g-image(src='~/assets/images/cases/buscape-logo.png')
-                      .description Com o Bulldesk foi possível captar dados, enviar e-mails automáticos, e-mail que acontecem em tempo real.
-                      .author ANTÔNIO FRANCISCO
-              swiper-slide
-                .container
-                  .row
-                    .col-12.col-md-6.content
-                      .logo
-                        g-image(src='~/assets/images/cases/buscape-logo.png')
-                      .description Com o Bulldesk foi possível captar dados, enviar e-mails automáticos, e-mail que acontecem em tempo real.
-                      .author ANTÔNIO FRANCISCO
-                    .col-12.col-md-6.image
-                      g-image(src='~/assets/images/cases/buscape.png')
-              swiper-slide
-                .container
-                  .row
-                    .col-12.col-md-6.image
-                      g-image(src='~/assets/images/cases/buscape.png')
-                    .col-12.col-md-6.content
-                      .logo
-                        g-image(src='~/assets/images/cases/buscape-logo.png')
-                      .description Com o Bulldesk foi possível captar dados, enviar e-mails automáticos, e-mail que acontecem em tempo real.
-                      .author ANTÔNIO FRANCISCO
-              .swiper-button-prev(slot='button-prev')
-                .button
-              .swiper-button-next(slot='button-next')
-                .button
+            //- swiper(ref='swiper' :options='swiperOptions')
+            //-   swiper-slide
+            //-     .container
+            //-       .row
+            //-         .col-12.col-md-6.image
+            //-           g-image(src='~/assets/images/cases/buscape.png')
+            //-         .col-12.col-md-6.content
+            //-           .logo
+            //-             g-image(src='~/assets/images/cases/buscape-logo.png')
+            //-           .description Com o Bulldesk foi possível captar dados, enviar e-mails automáticos, e-mail que acontecem em tempo real.
+            //-           .author ANTÔNIO FRANCISCO
+            //-   swiper-slide
+            //-     .container
+            //-       .row
+            //-         .col-12.col-md-6.content
+            //-           .logo
+            //-             g-image(src='~/assets/images/cases/buscape-logo.png')
+            //-           .description Com o Bulldesk foi possível captar dados, enviar e-mails automáticos, e-mail que acontecem em tempo real.
+            //-           .author ANTÔNIO FRANCISCO
+            //-         .col-12.col-md-6.image
+            //-           g-image(src='~/assets/images/cases/buscape.png')
+            //-   swiper-slide
+            //-     .container
+            //-       .row
+            //-         .col-12.col-md-6.image
+            //-           g-image(src='~/assets/images/cases/buscape.png')
+            //-         .col-12.col-md-6.content
+            //-           .logo
+            //-             g-image(src='~/assets/images/cases/buscape-logo.png')
+            //-           .description Com o Bulldesk foi possível captar dados, enviar e-mails automáticos, e-mail que acontecem em tempo real.
+            //-           .author ANTÔNIO FRANCISCO
+            //-   .swiper-button-prev(slot='button-prev')
+            //-     .button
+            //-   .swiper-button-next(slot='button-next')
+            //-     .button
         .footer
           .row.image-row
             .col-12.col-md-3
