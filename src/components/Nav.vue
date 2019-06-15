@@ -12,10 +12,14 @@
       .nav-link
         font-size: 0.8rem
         text-align: center
-        padding: px 25px
+        padding: 9px 25px
         background: $green
         color: $black
         border-radius: 30px
+
+        img
+          width: 12px
+          margin: 0 0 2px 5px
 
         &:hover
           color: $black
