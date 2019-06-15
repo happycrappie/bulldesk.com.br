@@ -49,11 +49,11 @@
           background-color: $white-gray
 
       &:nth-child(2)
-        margin-top: -25px
+        margin-top: -30px
 
         .detail
           background-color: $white
-          height: 385px + 25px
+          height: 385px + 30px
           border-radius: 0 10px 10px 0
 
       &:nth-child(3)
