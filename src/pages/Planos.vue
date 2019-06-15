@@ -43,10 +43,21 @@
         color: $white
 
       .detail
+        text-align: center
         min-height: 400px
-        padding: 40px
+        padding: 60px 20px
         box-shadow: 0 10px 20px rgba(69, 39, 123, 0.09)
         border-radius: 10px 0 0 10px
+
+        .title
+          font-size: 1rem
+          color: $gray-dark
+
+        .price
+          font-size: 2.25rem
+
+        .per-user
+          font-size: 0.8rem
 
       &:first-child
         .detail
@@ -93,6 +104,9 @@
           .plan.col-lg-3(v-for="(edge, index) in $page.plans.edges" :key="edge.node.id")
             .best-choice(v-if="index === 1") Melhor escolha
             .detail
+              .title {{ edge.node.name }}
+              .price R$ {{ edge.node.price_per_user }}
+              .per-user por usuário
               //- | {{ edge.node.name }} R$ {{ edge.node.price_per_user }}
               //- b-button Testar agora
 
