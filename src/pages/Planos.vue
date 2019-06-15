@@ -116,7 +116,7 @@
 
 <page-query>
   query Plans {
-    plans: allMonthlyPlans {
+    plans: allMonthlyPlans(sortBy: "price_per_user", order: ASC, limit: 2) {
       edges {
         node {
           id
