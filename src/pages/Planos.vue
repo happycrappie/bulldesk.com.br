@@ -27,6 +27,10 @@
     padding-top: 280px
 
     .plan
+      @media only screen and (max-width: 992px)
+        margin-left: 15%
+        margin-right: 15%
+
       .best-choice
         margin: -40px 30px 0
         padding: 10px
@@ -86,16 +90,14 @@
     section.plans
       .container
         .row.no-gutters
-          .plan.col-md-3(v-for="(edge, index) in $page.plans.edges" :key="edge.node.id")
+          .plan.col-lg-3(v-for="(edge, index) in $page.plans.edges" :key="edge.node.id")
             .best-choice(v-if="index === 1") Melhor escolha
             .detail
               | {{ edge.node.name }} R$ {{ edge.node.price_per_user }}
               b-button Testar agora
 
-          .plan.col-md-3
-            .detail hi
-
-
+          .plan.col-lg-3
+            .detail
 </template>
 
 <page-query>
