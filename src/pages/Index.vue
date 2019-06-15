@@ -28,6 +28,7 @@
         color: $gray-dark
         line-height: 1
         font-size: 4.5rem
+        font-weight: 700
 
         @media only screen and (max-width: 400px)
           font-size: 3.1rem
@@ -724,7 +725,7 @@
 
         .hero.d-flex.align-items-center
           div
-            h1.font-weight-bold Inteligência comercial de forma simples
+            h1 Inteligência comercial de forma simples
               span.dot.green
             p Ferramenta de controle vendas, gerenciamento de contatos e automação de relacionamento.
             b-input-group.email-group
