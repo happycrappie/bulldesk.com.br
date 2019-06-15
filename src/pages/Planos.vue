@@ -45,7 +45,7 @@
       .detail
         text-align: center
         min-height: 400px
-        padding: 60px 20px
+        padding: 60px 30px
         box-shadow: 0 10px 20px rgba(69, 39, 123, 0.09)
         border-radius: 10px 0 0 10px
 
@@ -81,6 +81,17 @@
           color: $white-gray
           background-color: $gray-dark
           border-radius: 0 10px 10px 0
+
+          .title
+            color: $white-gray
+
+          .price
+            margin-top: 10px
+            font-size: 1.7rem
+            line-height: 1
+
+          hr
+            border-top: 1px solid $gray-soft
 </style>
 
 <template lang="pug">
@@ -107,11 +118,15 @@
               .title {{ edge.node.name }}
               .price R$ {{ edge.node.price_per_user }}
               .per-user por usuário
+              hr
               //- | {{ edge.node.name }} R$ {{ edge.node.price_per_user }}
               //- b-button Testar agora
 
           .plan.col-lg-3
             .detail
+              .title Enterprise
+              .price Valor sob consulta
+              hr
 </template>
 
 <page-query>
