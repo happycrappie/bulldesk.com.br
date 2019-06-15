@@ -77,7 +77,7 @@
 
       .email-paragraph
         width: auto
-        max-width: 207px
+        max-width: 265px
         height: 53px
         color: $gray-light
         font-size: 0.7rem
