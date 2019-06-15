@@ -63,6 +63,7 @@
 
       &:last-child
         .detail
+          color: $white-gray
           background-color: $gray-dark
           border-radius: 0 10px 10px 0
 </style>
@@ -92,6 +93,7 @@
               b-button Testar agora
 
           .plan.col-md-3
+            .detail hi
 
 
 </template>
