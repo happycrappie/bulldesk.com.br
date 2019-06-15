@@ -113,7 +113,7 @@
       .container
         .row.no-gutters
           .plan.col-lg-3(v-for="(edge, index) in $page.plans.edges" :key="edge.node.id")
-            .best-choice(v-if="index === 1") Melhor escolha
+            .best-choice(v-if="index === 1") Melhor escolha 👌
             .detail
               .title {{ edge.node.name }}
               .price R$ {{ edge.node.price_per_user }}
