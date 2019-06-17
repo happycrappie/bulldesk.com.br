@@ -618,7 +618,7 @@
     background-repeat: no-repeat
     background-size: 100% 1022px
     background-image: url(~@/assets/images/home-bg-d.png)
-    background-position: 0px 100px
+    background-position: 0px 0px
     height: 1128px
     z-index: 9
     position: relative
@@ -697,7 +697,7 @@
             margin-bottom: 2rem
 
       .footer
-        margin-top: 4rem
+        margin-top: 6rem
 
         .image-row
           p
@@ -746,7 +746,7 @@
       margin-top: -50rem
 
     .container
-      padding-top: 50rem
+      padding-top: 45rem
 
       @media only screen and (max-width: 990px)
         padding-top: 42rem
