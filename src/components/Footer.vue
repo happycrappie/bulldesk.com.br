@@ -35,9 +35,10 @@
         max-width: 129px
         margin-bottom: 5px
 
-        @media only screen and (max-width: 400px)
+        @media only screen and (max-width: 440px)
           max-width: 100px
-          max-height: 50px
+          max-height: 40px
+          margin-top: 1.1rem
 
         @media only screen and (max-width: 1400px)
           margin-right: 3.8rem
