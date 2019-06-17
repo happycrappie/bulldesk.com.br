@@ -35,6 +35,10 @@
         max-width: 129px
         margin-bottom: 5px
 
+        @media only screen and (max-width: 400px)
+          max-width: 100px
+          max-height: 50px
+
         @media only screen and (max-width: 1400px)
           margin-right: 3.8rem
 
@@ -59,6 +63,9 @@
         font-weight: 700
         letter-spacing: 0.28px
         line-height: 25px
+
+        @media only screen and (max-width: 1400px)
+          margin-top: 1rem
 
       ul
         li

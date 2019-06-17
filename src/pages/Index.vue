@@ -609,14 +609,17 @@
     z-index: 9
     position: relative
 
-    @media only screen and (max-width: 990px)
+    @media only screen and (max-width: 440px)
+      margin-top: -120px
+      height: 1378px
+      background-size: 160% 1222px
+      background-position: -125px 125px
+
+    @media only screen and (min-width: 441px) and (max-width: 990px)
       margin-top: -120px
       height: 1328px
       background-size: 160% 1222px
       background-position: -150px 100px
-
-    @media only screen and (max-width: 440px)
-      background-position: -125px 100px
 
     .container
       h3
