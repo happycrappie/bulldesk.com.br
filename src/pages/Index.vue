@@ -502,10 +502,11 @@
     background-repeat: no-repeat
     background-size: cover
     background-image: url(~@/assets/images/home-bg-c.png)
-    background-position: -58rem
+    background-position: -42rem
 
     @media only screen and (max-width: 990px)
       margin-top: -30rem
+      background-position: -58rem
 
     .container
       padding-top: 57rem
