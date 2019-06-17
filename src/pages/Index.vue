@@ -797,7 +797,7 @@
 
     .section.section-a
       .container
-        .row
+        .row(v-scroll-reveal.reset='{ delay: 350 }')
           .col-lg-4
             h3 Direcione campanhas multicanais para cada momento da jornada do cliente
             p.subtitle Veja como organizar essas e outras campanhas em réguas de relacionamento
@@ -839,7 +839,7 @@
 
     .section.section-b
       .container
-        .row
+        .row(v-scroll-reveal.reset='{ delay: 350 }')
           .col-lg-6
             h3 Uma ferramenta completa
               br
@@ -893,7 +893,7 @@
 
     .section.section-c
       .container
-        .row
+        .row(v-scroll-reveal.reset='{ delay: 350 }')
           .col-lg-9.col-left
               .title
                 h3 Você vai conhecer o verdadeiro software de automação
@@ -920,13 +920,13 @@
 
     .section.section-d
       .container
-        .row
+        .row(v-scroll-reveal.reset='{ delay: 350 }')
           .col-12
             h3
               | Fique tranquilo,
               br
               | você está em boa companhia
-        .row
+        .row(v-scroll-reveal.reset='{ delay: 350 }')
           .col-12.swiper
             ClientOnly
               swiper(ref='swiper' :options='swiperOptions')
@@ -969,7 +969,7 @@
                   .button
                 .swiper-button-next(slot='button-next')
                   .button
-        .footer
+        .footer(v-scroll-reveal.reset='{ delay: 350 }')
           .row.image-row
             .col-12.col-md-3
               p Veja alguns outros clientes que também utilizam Bulldesk
@@ -981,9 +981,9 @@
                 | Veja mais histórias de sucesso
                 g-image(src='~/assets/icons/play-button@white.svg')
 
-    .section.section-e
+    .section.section-e(v-scroll-reveal.reset='{ delay: 250 }')
       .container
-        .row
+        .row(v-scroll-reveal.reset='{ delay: 350 }')
           .col-12.col-lg-3
             h3 Ainda está com dúvidas?
             .subtitle
