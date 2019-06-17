@@ -629,6 +629,9 @@
       background-size: 160% 1222px
       background-position: -150px 100px
 
+    @media only screen and (max-width: 440px)
+      background-position: -100px 100px
+
     .container
       h3
         margin: auto
