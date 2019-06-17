@@ -630,7 +630,7 @@
       background-position: -150px 100px
 
     @media only screen and (max-width: 440px)
-      background-position: -100px 100px
+      background-position: -125px 100px
 
     .container
       h3
@@ -738,6 +738,9 @@
     margin-top: -50rem
     z-index: 1
     position: relative
+
+    @media only screen and (max-width: 440px)
+      background-size: 180% 100%
 
     @media only screen and (max-width: 990px)
       margin-top: -50rem
