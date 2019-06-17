@@ -614,9 +614,19 @@
 
   .section-d
     margin-top: 80px
+    background-repeat: no-repeat
+    background-size: 100% 1022px
+    background-image: url(~@/assets/images/home-bg-d.png)
+    background-position: 0px 100px
+    height: 1128px
+    z-index: 9
+    position: relative
 
     @media only screen and (max-width: 990px)
       margin-top: -120px
+      height: 1328px
+      background-size: 160% 1222px
+      background-position: -150px 100px
 
     .container
       h3
@@ -715,6 +725,49 @@
             width: auto
             margin: auto
 
+  .section-e
+    background-repeat: no-repeat
+    background-size: 120% 100%
+    background-image: url(~@/assets/images/home-bg-e.png)
+    background-position: 30% 0px
+    height: 1623px
+    margin-top: -50rem
+    z-index: 1
+    position: relative
+
+    @media only screen and (max-width: 990px)
+      margin-top: -50rem
+
+    .container
+      padding-top: 50rem
+
+      @media only screen and (max-width: 990px)
+        padding-top: 42rem
+        text-align: center
+
+      h3
+        margin-top: 8rem
+        color: $white-gray
+
+        @media only screen and (max-width: 1400px)
+          margin-top: 6rem
+
+      .subtitle
+        color: $gray-soft
+        margin-top: 1.5rem
+        margin-bottom: 3rem
+
+      .video-container
+        width: 100%
+        padding-top: 2.2rem
+        padding-left: 2rem
+
+        @media only screen and (max-width: 990px)
+          padding-top: 0rem
+          margin-bottom: 4rem
+
+        img
+          width: 100%
 </style>
 
 <template lang="pug">
@@ -927,6 +980,25 @@
               .btn-default
                 | Veja mais histórias de sucesso
                 g-image(src='~/assets/icons/play-button@white.svg')
+
+    .section.section-e
+      .container
+        .row
+          .col-12.col-lg-3
+            h3 Ainda está com dúvidas?
+            .subtitle
+              | Veja como funciona o Bulldesk e suas principais funções em um vídeo direto ao ponto.
+              strong  Você vai se surpreender.
+            a.btn-default.d-none.d-lg-inline
+              | Teste grátis
+              g-image(src='~/assets/icons/play-button@black.svg')
+          .col-12.col-lg-9
+            .video-container
+              g-image(src='~/assets/images/home-video.png')
+            a.btn-default.d-inline.d-lg-none
+              | Teste grátis
+              g-image(src='~/assets/icons/play-button@black.svg')
+
 </template>
 
 <script>
