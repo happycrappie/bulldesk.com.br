@@ -890,13 +890,18 @@
                 swiper-slide
                   .container
                     .row
-                      .col-12.col-md-6.content
+                      .col-12.col-md-6.content.d-none.d-md-block
                         .logo
                           g-image(src='~/assets/images/cases/buscape-logo.png')
                         .description Com o Bulldesk foi possível captar dados, enviar e-mails automáticos, e-mail que acontecem em tempo real.
                         .author ANTÔNIO FRANCISCO
                       .col-12.col-md-6.image
                         g-image(src='~/assets/images/cases/buscape.png')
+                      .col-12.col-md-6.content.d-block.d-md-none
+                        .logo
+                          g-image(src='~/assets/images/cases/buscape-logo.png')
+                        .description Com o Bulldesk foi possível captar dados, enviar e-mails automáticos, e-mail que acontecem em tempo real.
+                        .author ANTÔNIO FRANCISCO
                 swiper-slide
                   .container
                     .row
