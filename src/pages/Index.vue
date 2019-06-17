@@ -1,5 +1,5 @@
 <style lang="sass" scoped>
-  @import '../assets/styles/_variables.scss';
+  @import '../assets/styles/_variables.scss'
 
   header
     background-size: 70%
@@ -141,22 +141,8 @@
       line-height: 25px
 
     .btn-default
-        background-color: $green
-        color: $black
-        border-radius: 30px
-        font-size: 0.8rem
-        font-weight: 700
-        padding: 20px 25px
-
-        @media only screen and (max-width: 990px)
-          padding: 15px 20px
-
-        &:hover
-          cursor: pointer
-          color: $black
-
-        img
-          margin-left: 5px
+      @media only screen and (max-width: 990px)
+        padding: 15px 20px
 
   .section-a
     height: 1076px
@@ -775,6 +761,10 @@
 
         img
           width: 100%
+
+      .btn-default
+        img
+          width: 12px
 </style>
 
 <template lang="pug">
@@ -923,7 +913,7 @@
                     | Automatizar marketing e vendas
               a.btn-default
                 | Teste grátis
-                g-image(src='~/assets/icons/play-button@black.svg')
+                g-image(src='~/assets/icons/play-button@white.svg')
 
     .section.section-d
       .container
@@ -1005,7 +995,6 @@
             a.btn-default.d-inline.d-lg-none
               | Teste grátis
               g-image(src='~/assets/icons/play-button@black.svg')
-
 </template>
 
 <script>
