@@ -683,9 +683,10 @@
           .button:before
             content: ''
             background-image: url(~@/assets/images/cases/swiper-next.png)
-            background-size: cover
-            width: 45px
-            height: 45px
+            background-size: 99%
+            background-repeat: no-repeat
+            width: 50px
+            height: 50px
             display: block
 
         .image
