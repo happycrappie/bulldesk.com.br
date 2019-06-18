@@ -180,9 +180,9 @@
             li
               a(href='') Marketing
             li
-              a(href='') Vendas em produção
+              a(href='') Vendas
             li
-              a(href='') Gerentes em produção
+              a(href='') Gerentes
         .column.column-d
           h5 Sobre nós
           ul
