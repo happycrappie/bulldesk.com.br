@@ -422,6 +422,10 @@
     .know-more
       margin-top: 3rem
 
+      @media only screen and (max-width: 600px)
+        text-align: center
+        padding-top: 0.5rem
+
       .btn-default
         background-color: $purple
         color: $white-gray
@@ -590,6 +594,7 @@
         @media only screen and (max-width: 990px)
           margin-left: 0px
           padding-top: 0px
+          text-align: center
 
         h4
           font-size: 1rem
@@ -599,7 +604,6 @@
 
         .subtitle
           width: auto
-          font-family: Montserrat
           font-size: 0.7rem
           font-weight: 400
           letter-spacing: 0.24px
@@ -609,6 +613,10 @@
         table
           margin-top: 10px
           margin-bottom: 30px
+
+          @media only screen and (max-width: 990px)
+            margin-left: auto
+            margin-right: auto
 
           tr
             td
