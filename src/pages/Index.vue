@@ -145,12 +145,16 @@
         padding: 15px 20px
 
   .section-a
-    height: 1076px
+    height: 1156px
     margin-top: -23rem
     background-repeat: no-repeat
     background-size: cover
     background-image: url(~@/assets/images/home-bg-a.png)
     background-position: -40rem
+
+    @media only screen and (max-width: 990px)
+      background-image: url(~@/assets/images/home-bg-a.png), url(~@/assets/images/home-bg-a.png)
+      background-position: -40rem 0rem, -40rem 15rem
 
     @media only screen and (min-width: 800px) and (max-width: 1800px)
       background-position: -35rem
@@ -178,10 +182,10 @@
       font-size: 1rem
 
       @media only screen and (max-width: 670px)
-        padding-top: 33rem
+        padding-top: 35rem
 
       @media only screen and (min-width: 671px) and (max-width: 1000px)
-        padding-top: 34rem
+        padding-top: 36rem
 
       .subtitle
         width: auto
@@ -192,10 +196,10 @@
           max-width: 100%
 
       .steps-col
-        margin-top: -55px
+        margin-top: -1.5rem
 
         @media only screen and (max-width: 990px)
-          margin-top: 60px
+          margin-top: 2.5rem
 
       .nav
         padding-left: 20px
@@ -245,7 +249,7 @@
         margin-left: -50px
 
         @media only screen and (max-width: 1300px)
-          margin-top: 60px
+          margin-top: 40px
           margin-left: -25px
 
         li
@@ -331,9 +335,11 @@
 
               @media only screen and (max-width: 440px)
                 font-size: 0.5rem
+                line-height: 15px
 
               @media only screen and (min-width: 441px) and (max-width: 990px)
                 font-size: 0.6rem
+                line-height: 20px
 
               @media only screen and (min-width: 991px) and (max-width: 1300px)
                 font-size: 0.7rem
