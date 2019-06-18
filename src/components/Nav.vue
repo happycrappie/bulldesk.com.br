@@ -24,7 +24,7 @@
 
         &:hover
           color: $gray-dark
-          background: $pink
+          // background: $pink
 
     .nav-item
       .dropdown-menu
@@ -106,7 +106,7 @@
 <template lang="pug">
   b-navbar.d-flex.nav-layout(toggleable="ipad" :type="type")
     b-navbar-brand
-      g-link(to="/")
+      g-link(href="/")
         g-image.logo(src="../assets/images/logo.png" alt="Bulldesk")
     b-navbar-toggle(target="collapse")
     b-collapse#collapse(is-nav)
@@ -118,30 +118,30 @@
             .row.no-gutters
               .col-6
                 h6.dropdown-header Vertical
-                b-dropdown-item(href="#") Agências
-                b-dropdown-item(href="#") Construtoras
-                b-dropdown-item(href="#") Ecommerce
-                b-dropdown-item(href="#") Ensino
-                b-dropdown-item(href="#") Hotéis
-                b-dropdown-item(href="#") SaaS
+                b-dropdown-item(href="/para-quem/agencias") Agências
+                b-dropdown-item(href="/para-quem/construtoras") Construtoras
+                b-dropdown-item(href="/para-quem/ecommerce") Ecommerce
+                b-dropdown-item(href="/para-quem/ensino") Ensino
+                b-dropdown-item(href="/para-quem/hoteis") Hotéis
+                b-dropdown-item(href="/para-quem/ecommerce") SaaS
               .col-6
                 h6.dropdown-header Equipes
-                b-dropdown-item(href="#") Marketing
-                b-dropdown-item(href="#") Vendas
-                b-dropdown-item(href="#") Gerentes
+                b-dropdown-item(href="/para-quem/marketing") Marketing
+                b-dropdown-item(href="/para-quem/vendas") Vendas
+                b-dropdown-item(href="/para-quem/gerentes") Gerentes
         b-nav-item-dropdown.what-it-does(text="O que faz")
           .dropdon-icon
             g-image(src='~/assets/icons/poligono.svg')
           .dropdown-container
             .row.no-gutters
               .col-12
-                b-dropdown-item(href="#") Marketing
-                b-dropdown-item(href="#") Vendas
-        b-nav-item(to="/cases") Cases
-        b-nav-item(to="/") Exemplos
-        b-nav-item(to="/planos") Planos
+                b-dropdown-item(href="/o-que-faz/marketing") Marketing
+                b-dropdown-item(href="/o-que-faz/vendas") Vendas
+        b-nav-item(href="/cases") Cases
+        b-nav-item(href="/exemplos") Exemplos
+        b-nav-item(href="/planos") Planos
         b-nav-item(href="https://app.bulldesk.com.br" target="_blank") Login
-        b-nav-item.trial(to="/cadastro") Teste grátis
+        b-nav-item.trial(href="https://app.bulldesk.com.br/cadastro") Teste grátis
           g-image(src='~/assets/icons/play-button@black.svg')
 </template>
 
