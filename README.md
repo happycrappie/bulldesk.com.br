@@ -14,7 +14,7 @@ Bulldesk website, powered by [Gridsome](https://gridsome.org)
 
 ### 3. Guidelines
 
-1. Don not reinvent the wheel. Check [Bootstrap Variables](https://github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/bootstrap/_variables.scss) and [Bootstrap Vue Components](https://bootstrap-vue.js.org/) before creating your classes and components.
+1. Do not reinvent the wheel. Check [Bootstrap Variables](https://github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/bootstrap/_variables.scss) and [Bootstrap Vue Components](https://bootstrap-vue.js.org/) before creating your classes and components.
 2. Always declare the variables in [src/assets/styles/_variables.scss](src/assets/styles/_variables.scss)
 3. Need reusable classes? Add them to [src/assets/styles/main.sass](src/assets/styles/main.sass)
 4. Happy coding 🎉🙌
