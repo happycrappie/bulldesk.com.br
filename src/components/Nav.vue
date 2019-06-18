@@ -26,7 +26,6 @@
           color: $gray-dark
           // background: $pink
 
-
     .nav-item
       .dropdown-menu
         left: -45%
@@ -68,14 +67,44 @@
         left: -35%
 
         .dropdon-icon
-          left: 6rem
+          left: 5rem
 
         .dropdown-container
           min-width: 12rem
+
+    .navbar-collapse
+      @media only screen and (max-width: map-get($grid-breakpoints, 'ipad'))
+        background: $white
+        margin-top: 0.8rem
+        box-shadow: 0 1.5rem 4rem rgba(22,28,45,.15)
+        padding: 2rem 2.5rem
+        border-radius: 5px
+
+        .nav-link
+          color: $gray-light
+
+          &:hover
+            color: $gray-dark
+
+        .nav-item.trial
+          padding-top: 2rem
+
+        .nav-item
+          .dropdown-menu
+            .dropdown-icon
+              display: none
+
+            .dropdown-container
+              padding: 0rem
+              padding-bottom: 1.5rem
+              font-size: 0.7rem
+
+              .dropdown-header
+                font-weight: 600
 </style>
 
 <template lang="pug">
-  b-navbar.d-flex.nav-layout(toggleable="lg" :type="type")
+  b-navbar.d-flex.nav-layout(toggleable="ipad" :type="type")
     b-navbar-brand
       g-link(href="/")
         g-image.logo(src="../assets/images/logo.png" alt="Bulldesk")
