@@ -29,11 +29,10 @@
 
     .nav-item
       .dropdown-menu
-        left: -50%
+        left: -45%
 
         .dropdon-icon
           max-width: 20px
-          left: 25%
           top: -0.9rem
           position: absolute
           z-index: 1
@@ -42,8 +41,7 @@
             width: 100%
 
         .dropdown-container
-          min-width: 28rem
-          padding: 1.2rem 0rem 1.2rem 2.5rem
+          padding: 1.2rem 2.5rem
           letter-spacing: 0.22px
           line-height: 25px
           font-size: 0.8rem
@@ -57,6 +55,23 @@
           li
             color: $gray-light
             font-weight: 400
+
+    .nav-item.for-whom
+      .dropdon-icon
+        left: 7.5rem
+
+      .dropdown-container
+        min-width: 28rem
+
+    .nav-item.what-it-does
+      .dropdown-menu
+        left: -35%
+
+        .dropdon-icon
+          left: 6rem
+
+        .dropdown-container
+          min-width: 12rem
 </style>
 
 <template lang="pug">
@@ -67,7 +82,7 @@
     b-navbar-toggle(target="collapse")
     b-collapse#collapse(is-nav)
       b-navbar-nav.ml-auto
-        b-nav-item-dropdown(text="Pra quem é")
+        b-nav-item-dropdown.for-whom(text="Pra quem é")
           .dropdon-icon
             g-image(src='~/assets/icons/poligono.svg')
           .dropdown-container
@@ -85,16 +100,14 @@
                 b-dropdown-item(href="#") Marketing
                 b-dropdown-item(href="#") Vendas
                 b-dropdown-item(href="#") Gerentes
-        b-nav-item-dropdown(text="O que faz")
+        b-nav-item-dropdown.what-it-does(text="O que faz")
           .dropdon-icon
             g-image(src='~/assets/icons/poligono.svg')
           .dropdown-container
             .row.no-gutters
               .col-12
-                h6.dropdown-header Funcionalidades
-                b-dropdown-item(href="#") Organiza processos comerciais
-                b-dropdown-item(href="#") Automações de venda
-                b-dropdown-item(href="#") Automações de marketing
+                b-dropdown-item(href="#") Marketing
+                b-dropdown-item(href="#") Vendas
         b-nav-item(to="/cases") Cases
         b-nav-item(to="/") Exemplos
         b-nav-item(to="/planos") Planos
