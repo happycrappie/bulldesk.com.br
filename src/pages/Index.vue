@@ -639,7 +639,7 @@
     background-repeat: no-repeat
     background-size: 100% 1022px
     background-image: url(~@/assets/images/home-bg-d.png)
-    background-position: 0px 0px
+    background-position: 0px 1rem
     height: 1128px
     z-index: 9
     position: relative
@@ -648,13 +648,13 @@
       margin-top: -4rem
       height: 1378px
       background-size: 160% 1222px
-      background-position: -125px 125px
+      background-position: -125px 135px
 
     @media only screen and (min-width: 441px) and (max-width: 990px)
       margin-top: -4rem
       height: 1328px
       background-size: 160% 1222px
-      background-position: -150px 100px
+      background-position: -150px 110px
 
     .container
       h3
