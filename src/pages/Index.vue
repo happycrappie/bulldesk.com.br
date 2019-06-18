@@ -500,8 +500,12 @@
     background-image: url(~@/assets/images/home-bg-c.png)
     background-position: -42rem
 
-    @media only screen and (max-width: 990px)
-      margin-top: -30rem
+    @media only screen and (max-width: 440px)
+      margin-top: -28rem
+      background-position: -48rem 3rem
+
+    @media only screen and (min-width: 441px) and (max-width: 990px)
+      margin-top: -28rem
       background-position: -58rem
 
     @media only screen and (min-width: 1800px) and (max-width: 2000px)
@@ -631,7 +635,7 @@
             width: 12px
 
   .section-d
-    margin-top: 80px
+    margin-top: 8rem
     background-repeat: no-repeat
     background-size: 100% 1022px
     background-image: url(~@/assets/images/home-bg-d.png)
@@ -641,13 +645,13 @@
     position: relative
 
     @media only screen and (max-width: 440px)
-      margin-top: -120px
+      margin-top: -4rem
       height: 1378px
       background-size: 160% 1222px
       background-position: -125px 125px
 
     @media only screen and (min-width: 441px) and (max-width: 990px)
-      margin-top: -120px
+      margin-top: -4rem
       height: 1328px
       background-size: 160% 1222px
       background-position: -150px 100px
