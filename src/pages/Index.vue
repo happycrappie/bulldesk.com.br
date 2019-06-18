@@ -1,5 +1,5 @@
 <style lang="sass" scoped>
-  @import '../assets/styles/_variables.scss';
+  @import '../assets/styles/_variables.scss'
 
   header
     background-size: 70%
@@ -141,22 +141,8 @@
       line-height: 25px
 
     .btn-default
-        background-color: $green
-        color: $black
-        border-radius: 30px
-        font-size: 0.8rem
-        font-weight: 700
-        padding: 20px 25px
-
-        @media only screen and (max-width: 990px)
-          padding: 15px 20px
-
-        &:hover
-          cursor: pointer
-          color: $black
-
-        img
-          margin-left: 5px
+      @media only screen and (max-width: 990px)
+        padding: 15px 20px
 
   .section-a
     height: 1076px
@@ -502,10 +488,11 @@
     background-repeat: no-repeat
     background-size: cover
     background-image: url(~@/assets/images/home-bg-c.png)
-    background-position: -58rem
+    background-position: -42rem
 
     @media only screen and (max-width: 990px)
       margin-top: -30rem
+      background-position: -58rem
 
     .container
       padding-top: 57rem
@@ -614,9 +601,25 @@
 
   .section-d
     margin-top: 80px
+    background-repeat: no-repeat
+    background-size: 100% 1022px
+    background-image: url(~@/assets/images/home-bg-d.png)
+    background-position: 0px 0px
+    height: 1128px
+    z-index: 9
+    position: relative
 
-    @media only screen and (max-width: 990px)
+    @media only screen and (max-width: 440px)
       margin-top: -120px
+      height: 1378px
+      background-size: 160% 1222px
+      background-position: -125px 125px
+
+    @media only screen and (min-width: 441px) and (max-width: 990px)
+      margin-top: -120px
+      height: 1328px
+      background-size: 160% 1222px
+      background-position: -150px 100px
 
     .container
       h3
@@ -683,7 +686,7 @@
             margin-bottom: 2rem
 
       .footer
-        margin-top: 4rem
+        margin-top: 6rem
 
         .image-row
           p
@@ -715,6 +718,56 @@
             width: auto
             margin: auto
 
+  .section-e
+    background-repeat: no-repeat
+    background-size: 120% 100%
+    background-image: url(~@/assets/images/home-bg-e.png)
+    background-position: 30% 0px
+    height: 1623px
+    margin-top: -50rem
+    z-index: 1
+    position: relative
+
+    @media only screen and (max-width: 440px)
+      background-size: 180% 100%
+
+    @media only screen and (max-width: 990px)
+      margin-top: -50rem
+
+    .container
+      padding-top: 45rem
+
+      @media only screen and (max-width: 990px)
+        padding-top: 42rem
+        text-align: center
+
+      h3
+        margin-top: 8rem
+        color: $white-gray
+
+        @media only screen and (max-width: 1400px)
+          margin-top: 6rem
+
+      .subtitle
+        color: $gray-soft
+        margin-top: 1.5rem
+        margin-bottom: 3rem
+
+      .video-container
+        width: 100%
+        padding-top: 2.2rem
+        padding-left: 2rem
+
+        @media only screen and (max-width: 990px)
+          padding-top: 0rem
+          margin-bottom: 4rem
+
+        img
+          width: 100%
+
+      .btn-default
+        img
+          width: 12px
 </style>
 
 <template lang="pug">
@@ -863,7 +916,7 @@
                     | Automatizar marketing e vendas
               a.btn-default
                 | Teste grátis
-                g-image(src='~/assets/icons/play-button@black.svg')
+                g-image(src='~/assets/icons/play-button@white.svg')
 
     .section.section-d
       .container
@@ -875,41 +928,47 @@
               | você está em boa companhia
         .row
           .col-12.swiper
-            //- swiper(ref='swiper' :options='swiperOptions')
-            //-   swiper-slide
-            //-     .container
-            //-       .row
-            //-         .col-12.col-md-6.image
-            //-           g-image(src='~/assets/images/cases/buscape.png')
-            //-         .col-12.col-md-6.content
-            //-           .logo
-            //-             g-image(src='~/assets/images/cases/buscape-logo.png')
-            //-           .description Com o Bulldesk foi possível captar dados, enviar e-mails automáticos, e-mail que acontecem em tempo real.
-            //-           .author ANTÔNIO FRANCISCO
-            //-   swiper-slide
-            //-     .container
-            //-       .row
-            //-         .col-12.col-md-6.content
-            //-           .logo
-            //-             g-image(src='~/assets/images/cases/buscape-logo.png')
-            //-           .description Com o Bulldesk foi possível captar dados, enviar e-mails automáticos, e-mail que acontecem em tempo real.
-            //-           .author ANTÔNIO FRANCISCO
-            //-         .col-12.col-md-6.image
-            //-           g-image(src='~/assets/images/cases/buscape.png')
-            //-   swiper-slide
-            //-     .container
-            //-       .row
-            //-         .col-12.col-md-6.image
-            //-           g-image(src='~/assets/images/cases/buscape.png')
-            //-         .col-12.col-md-6.content
-            //-           .logo
-            //-             g-image(src='~/assets/images/cases/buscape-logo.png')
-            //-           .description Com o Bulldesk foi possível captar dados, enviar e-mails automáticos, e-mail que acontecem em tempo real.
-            //-           .author ANTÔNIO FRANCISCO
-            //-   .swiper-button-prev(slot='button-prev')
-            //-     .button
-            //-   .swiper-button-next(slot='button-next')
-            //-     .button
+            ClientOnly
+              swiper(ref='swiper' :options='swiperOptions')
+                swiper-slide
+                  .container
+                    .row
+                      .col-12.col-md-6.image
+                        g-image(src='~/assets/images/cases/buscape.png')
+                      .col-12.col-md-6.content
+                        .logo
+                          g-image(src='~/assets/images/cases/buscape-logo.png')
+                        .description Com o Bulldesk foi possível captar dados, enviar e-mails automáticos, e-mail que acontecem em tempo real.
+                        .author ANTÔNIO FRANCISCO
+                swiper-slide
+                  .container
+                    .row
+                      .col-12.col-md-6.content.d-none.d-md-block
+                        .logo
+                          g-image(src='~/assets/images/cases/buscape-logo.png')
+                        .description Com o Bulldesk foi possível captar dados, enviar e-mails automáticos, e-mail que acontecem em tempo real.
+                        .author ANTÔNIO FRANCISCO
+                      .col-12.col-md-6.image
+                        g-image(src='~/assets/images/cases/buscape.png')
+                      .col-12.col-md-6.content.d-block.d-md-none
+                        .logo
+                          g-image(src='~/assets/images/cases/buscape-logo.png')
+                        .description Com o Bulldesk foi possível captar dados, enviar e-mails automáticos, e-mail que acontecem em tempo real.
+                        .author ANTÔNIO FRANCISCO
+                swiper-slide
+                  .container
+                    .row
+                      .col-12.col-md-6.image
+                        g-image(src='~/assets/images/cases/buscape.png')
+                      .col-12.col-md-6.content
+                        .logo
+                          g-image(src='~/assets/images/cases/buscape-logo.png')
+                        .description Com o Bulldesk foi possível captar dados, enviar e-mails automáticos, e-mail que acontecem em tempo real.
+                        .author ANTÔNIO FRANCISCO
+                .swiper-button-prev(slot='button-prev')
+                  .button
+                .swiper-button-next(slot='button-next')
+                  .button
         .footer
           .row.image-row
             .col-12.col-md-3
@@ -921,16 +980,44 @@
               .btn-default
                 | Veja mais histórias de sucesso
                 g-image(src='~/assets/icons/play-button@white.svg')
+
+    .section.section-e
+      .container
+        .row
+          .col-12.col-lg-3
+            h3 Ainda está com dúvidas?
+            .subtitle
+              | Veja como funciona o Bulldesk e suas principais funções em um vídeo direto ao ponto.
+              strong  Você vai se surpreender.
+            a.btn-default.d-none.d-lg-inline
+              | Teste grátis
+              g-image(src='~/assets/icons/play-button@black.svg')
+          .col-12.col-lg-9
+            .video-container
+              g-image(src='~/assets/images/home-video.png')
+            a.btn-default.d-inline.d-lg-none
+              | Teste grátis
+              g-image(src='~/assets/icons/play-button@black.svg')
 </template>
 
 <script>
   import Layout from '../layouts/Default'
   import Nav from '../components/Nav'
 
+  import 'swiper/dist/css/swiper.css'
+
   export default {
     components: {
       Layout,
       Nav,
+      swiper: () =>
+        import ('vue-awesome-swiper')
+        .then(m => m.swiper)
+        .catch(),
+      swiperSlide: () =>
+        import ('vue-awesome-swiper')
+        .then(m => m.swiperSlide)
+        .catch(),
     },
 
     metaInfo: {
