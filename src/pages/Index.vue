@@ -782,7 +782,7 @@
         padding-left: 2rem
 
         @media only screen and (max-width: 990px)
-          padding-top: 0rem
+          padding: 0.2rem
           margin-bottom: 4rem
 
         img
