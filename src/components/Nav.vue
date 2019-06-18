@@ -77,7 +77,7 @@
 <template lang="pug">
   b-navbar.d-flex.nav-layout(toggleable="lg" :type="type")
     b-navbar-brand
-      g-link(to="/")
+      g-link(href="/")
         g-image.logo(src="../assets/images/logo.png" alt="Bulldesk")
     b-navbar-toggle(target="collapse")
     b-collapse#collapse(is-nav)
