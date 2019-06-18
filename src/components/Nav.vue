@@ -101,7 +101,6 @@
 
               .dropdown-header
                 font-weight: 600
-
 </style>
 
 <template lang="pug">
