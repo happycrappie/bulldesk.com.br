@@ -1,7 +1,7 @@
-<style lang="sass" scoped>
+<style lang="sass">
   @import '../assets/styles/_variables.scss'
 
-  nav.navbar
+  nav.navbar.nav-layout
     padding: 15px 0
     font-size: 0.9rem
 
@@ -25,10 +25,42 @@
         &:hover
           color: $gray-dark
           background: $pink
+
+
+    .nav-item
+      .dropdown-menu
+        left: -50%
+
+        .dropdon-icon
+          max-width: 20px
+          left: 25%
+          top: -0.9rem
+          position: absolute
+          z-index: 1
+
+          img
+            width: 100%
+
+        .dropdown-container
+          min-width: 28rem
+          padding: 1.2rem 0rem 1.2rem 2.5rem
+          letter-spacing: 0.22px
+          line-height: 25px
+          font-size: 0.8rem
+          position: relative
+          z-index: 2
+
+          h6
+            color: $gray-dark
+            font-weight: 700
+
+          li
+            color: $gray-light
+            font-weight: 400
 </style>
 
 <template lang="pug">
-  b-navbar.d-flex(toggleable="lg" :type="type")
+  b-navbar.d-flex.nav-layout(toggleable="lg" :type="type")
     b-navbar-brand
       g-link(to="/")
         g-image.logo(src="../assets/images/logo.png" alt="Bulldesk")
@@ -36,9 +68,33 @@
     b-collapse#collapse(is-nav)
       b-navbar-nav.ml-auto
         b-nav-item-dropdown(text="Pra quem é")
-          <b-dropdown-item href="#">Não sei?</b-dropdown-item>
+          .dropdon-icon
+            g-image(src='~/assets/icons/poligono.svg')
+          .dropdown-container
+            .row.no-gutters
+              .col-6
+                h6.dropdown-header Vertical
+                b-dropdown-item(href="#") Agências
+                b-dropdown-item(href="#") Construtoras
+                b-dropdown-item(href="#") Ecommerce
+                b-dropdown-item(href="#") Ensino
+                b-dropdown-item(href="#") Hotéis
+                b-dropdown-item(href="#") SaaS
+              .col-6
+                h6.dropdown-header Equipes
+                b-dropdown-item(href="#") Marketing
+                b-dropdown-item(href="#") Vendas
+                b-dropdown-item(href="#") Gerentes
         b-nav-item-dropdown(text="O que faz")
-          <b-dropdown-item href="#">Ninguém sabe</b-dropdown-item>
+          .dropdon-icon
+            g-image(src='~/assets/icons/poligono.svg')
+          .dropdown-container
+            .row.no-gutters
+              .col-12
+                h6.dropdown-header Funcionalidades
+                b-dropdown-item(href="#") Organiza processos comerciais
+                b-dropdown-item(href="#") Automações de venda
+                b-dropdown-item(href="#") Automações de marketing
         b-nav-item(to="/cases") Cases
         b-nav-item(to="/") Exemplos
         b-nav-item(to="/planos") Planos
