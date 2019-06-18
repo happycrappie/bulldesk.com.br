@@ -490,7 +490,7 @@
 
   .section-c
     height: 1800px
-    margin-top: -42rem
+    margin-top: -32rem
     background-repeat: no-repeat
     background-size: cover
     background-image: url(~@/assets/images/home-bg-c.png)
@@ -500,6 +500,23 @@
       margin-top: -30rem
       background-position: -58rem
 
+    @media only screen and (min-width: 1800px) and (max-width: 2000px)
+      background-position: -38rem
+
+    @media only screen and (min-width: 2001px) and (max-width: 2200px)
+      background-position: -32rem
+
+    @media only screen and (min-width: 2201px) and (max-width: 2300px)
+      background-position: -26rem
+
+    @media only screen and (min-width: 2301px) and (max-width: 2400px)
+      background-position: -22rem
+
+    @media only screen and (min-width: 2401px) and (max-width: 2500px)
+      background-position: -18rem
+
+    @media only screen and (min-width: 2501px)
+      background-position: -10rem
     .container
       padding-top: 57rem
 
