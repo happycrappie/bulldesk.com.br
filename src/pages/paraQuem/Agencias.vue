@@ -11,6 +11,7 @@
 
     @include media('screen', '<=ipad')
       background-image: url(~@/assets/images/verticals-header@no-btn.png)
+      background-position: -22rem
 
     @include media('screen', '>ipad', '<=laptop')
       background-position: -54rem
@@ -20,6 +21,9 @@
 
     @include media('screen', '>desktop-md', '<=desktop-lg')
       background-position: -34rem
+
+    @include media('screen', '>desktop-lg', '<=desktop-xl')
+      background-position: -24rem
 
     .hero
       padding-top: 3rem
@@ -34,10 +38,13 @@
         letter-spacing: -0.94px
         line-height: 55px
 
-        @media only screen and (max-width: 400px)
-          font-size: 3.1rem
+        @include media('screen', '<=phone')
+          font-size: 3rem
 
-        @media only screen and (min-width: 401px) and (max-width: 700px)
+        @include media('screen', '>phone', '<=ipad')
+          font-size: 3.2rem
+
+        @include media('screen', '>ipad', '<=laptop')
           font-size: 3.5rem
 
       p
@@ -50,6 +57,14 @@
         max-width: 325px
         margin-top: 2rem
 
+        @include media('screen', '<=phone')
+          font-size: 0.8rem
+          margin-top: 1rem
+
+        @include media('screen', '>phone', '<=laptop')
+          font-size: 1rem
+          margin-top: 1rem
+
     .icon
       position: absolute
       left: 48%
@@ -57,6 +72,9 @@
 
   .section-a
     margin-top: -18rem
+
+    @media only screen and (max-width: map-get($grid-breakpoints, 'sm'))
+      margin-top: -22rem
 
     .item
       padding: 1.5rem 2rem
@@ -107,8 +125,26 @@
     margin-top: 10rem
     background-image: url(~@/assets/images/verticals-bg-c.png)
     background-repeat: no-repeat
-    background-position: 30% 300px
+    background-position: 37rem 300px
     min-height: 900px
+
+    @include media('screen', '>ipad', '<=laptop')
+      background-position: 0rem 300px
+
+    @media only screen and (max-width: map-get($grid-breakpoints, 'xl'))
+      background-image: none
+
+    @include media('screen', '>laptop', '<=desktop-md')
+      background-position: 8rem 300px
+
+    @include media('screen', '>desktop-md', '<=desktop-lg')
+      background-position: 14rem 300px
+
+    @include media('screen', '>desktop-lg', '<=desktop-xl')
+      background-position: 24rem 300px
+
+    @media only screen and (max-width: map-get($grid-breakpoints, 'lg2'))
+      text-align: center
 
     .col-left
       .subtitle
@@ -118,9 +154,16 @@
     .col-right
       padding-left: 6rem
 
+      @include media('screen', '<=phone')
+        padding-left: 2rem
+
       ul
         list-style: none
         padding: 0px
+
+        @media only screen and (max-width: map-get($grid-breakpoints, 'lg2'))
+          text-align: left
+          margin-top: 2rem
 
         li
           color: $gray-dark
@@ -137,13 +180,24 @@
         margin-top: 5rem
         margin-left: 6rem
 
+        @media only screen and (max-width: map-get($grid-breakpoints, 'lg2'))
+          display: none
+
       h3
         margin-top: 5rem
         max-width: 260px
 
+        @media only screen and (max-width: map-get($grid-breakpoints, 'lg2'))
+          max-width: none
+          text-align: left
+
       .subtitle
         margin-top: 2rem
         max-width: 600px
+
+        @media only screen and (max-width: map-get($grid-breakpoints, 'lg2'))
+          max-width: none
+          text-align: left
 
   .section-d
     background-image: url(~@/assets/images/verticals-bg-d.png)
@@ -153,12 +207,37 @@
     margin-top: -6rem
     text-align: center
 
+    @include media('screen', '>phone', '<=ipad')
+      background-position: -52rem
+
+    @media only screen and (max-width: map-get($grid-breakpoints, 'sm'))
+      height: 1300px
+      background-position: -62rem
+
+    @include media('screen', '>ipad', '<=laptop')
+      background-position: -42rem
+
+    @include media('screen', '>laptop', '<=desktop-md')
+      background-position: -32rem
+
+    @include media('screen', '>desktop-md', '<=desktop-lg')
+      background-position: -22rem
+
+    @include media('screen', '>desktop-lg', '<=desktop-xl')
+      background-position: -12rem
+
     h3
       margin: auto
       margin-top: 18rem
 
+      @media only screen and (max-width: map-get($grid-breakpoints, 'sm'))
+        margin-top: 14rem
+
     .cases
       margin-top: 12rem
+
+      @media only screen and (max-width: map-get($grid-breakpoints, 'sm'))
+        margin-top: 17rem
 
       .col
         padding: 0rem 3.2rem
@@ -184,6 +263,9 @@
           letter-spacing: 0.2px
           line-height: 20px
           text-transform: uppercase
+
+          @media only screen and (max-width: map-get($grid-breakpoints, 'sm'))
+            margin-bottom: 4rem
 </style>
 
 <template lang="pug">
@@ -201,23 +283,23 @@
     .section.section-a
       .container
         .row
-          .item.col-4
+          .item.col-12.col-sm-4
             h4 Crie campanhas de marketing com alguns cliques
             p Já enviamos até um carro em direção a marte e você ainda perde horas de trabalho criando campanhas? Com o Bulldesk em alguns cliques suas campanhas de inbound, geração de leads, qualificação e etc, estarão prontas.
-          .item.col-4
+          .item.col-12.col-sm-4
             h4 Comprove o ROI e o fee da sua agência
             p Você só continuará clientes se continuar comprovando o ROI frequentemente. Já pensou ter informações como Custo de Aquisição de Cliente (CAC), Custo por Lead (CPL), Origem do Lead, Quantidade de Leads, entre outras métricas importantes em tempo real? No Bulldesk todos os resultados são atrelados ao nosso bigdata analytics e exibidos em tempo real.
-          .item.col-4
+          .item.col-12.col-sm-4
             h4 Aumente seu lucro sem diminuir os seus custos
             p Nossos preços foram pensados em você. Por isso que você não irá encontrar no Brasil nenhuma ferramenta com todas as funcionalidades que oferecemos no preço que oferecemos. Garantimos isso, se encontrar, vem falar com a gente.
         .row
-          .item.col-4
+          .item.col-12.col-sm-4
             h4 Trabalhe em parceria com o seu cliente
             p Do que adianta a sua agência gerar diversos leads mas o seu cliente não conseguir gerar nenhuma venda? Assim que você gerar os leads, coloque os vendedores do seu cliente no CRM do Bulldesk para que eles possam dar atendimento aos leads gerados e você possa acompanhar as vendas.
-          .item.col-4
+          .item.col-12.col-sm-4
             h4 Crie campanhas omnichannel
             p Mandar email é fácil. Mas quero ver mandar uma campanha que começa com um visitante preenchendo um formulário em uma landing page, depois recebe um email, se abrir o email entra em uma campanha de SMS e termina com o lead recebendo um Whatsapp de um vendedor. É fácil também, mas só no Bulldesk.
-          .item.col-4
+          .item.col-12.col-sm-4
             h4 Fuja da burocracia
             p Pagar uma taxa de implementação obrigatória? Não ter privilégios por não ser Diamond? Ser parceiro Gold por 8 meses e depois virar member porque perdeu 1 cliente? Por isso que o Bulldesk tem uma única categoria de parceiro e um programa de parcerias simples. Venha conhecer!
 
@@ -234,10 +316,10 @@
     .section.section-c
       .container
         .row
-          .col-4.col-left
+          .col-12.col-lg2-4.col-left
             h3 Toda as ferramentas que você precisa em um único lugar
             .subtitle Porque utilizar diversas ferramentas quando a gente tem tudo a sua agência precisa?
-          .col-8.col-right
+          .col-12.col-lg2-8.col-right
             ul
               li
                 g-image(src='~/assets/icons/check.svg')
@@ -280,11 +362,11 @@
             br
             | você está em boa companhia
         .row.cases
-          .col-6.col
+          .col.col-12.col-sm-6
             g-image(src='~/assets/images/cases/buscape-logo.png')
             p.description O jeito mais rápido e simples que encontramos para criar automações de marketing para nós e nossos clientes. Super recomendo!
             p.author BEATRIZ ALMEIDA
-          .col-6.col
+          .col.col-12.col-sm-6
             g-image(src='~/assets/images/cases/buscape-logo.png')
             p.description Com o Bulldesk foi possível captar dados, enviar e-mails automáticos, e-mail marketing e diversas outras funcionalidades que acontecem em tempo real.
             p.author ANTÔNIO FRANCISCO

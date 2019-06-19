@@ -39,7 +39,7 @@ $grid-breakpoints: (
   sm: 480px,
   md: 640px,
   lg: 992px,
-  lg-2: 1025px,
+  lg2: 1025px,
   xl: 1300px
 );
 
@@ -49,7 +49,8 @@ $breakpoints: (
   laptop: 1440px,
   desktop-md: 1680px,
   desktop-lg: 1920px,
-  desktop-xl: 2560px
+  desktop-xl: 2300px,
+  monitor: 2560px
 );
 
 $font-family-sans-serif:  Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif !default;

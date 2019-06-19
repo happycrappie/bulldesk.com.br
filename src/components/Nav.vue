@@ -111,7 +111,7 @@
 </style>
 
 <template lang="pug">
-  b-navbar.d-flex.nav-layout(toggleable="lg-2" :type="type")
+  b-navbar.d-flex.nav-layout(toggleable="lg2" :type="type")
     b-navbar-brand
       g-link(href="/")
         g-image.logo(src="~/assets/images/logo.png" v-if="! logo || logo == 'black'" alt="Bulldesk")
