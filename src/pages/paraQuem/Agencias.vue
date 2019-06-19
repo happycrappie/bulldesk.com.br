@@ -2,12 +2,11 @@
   @import '../../assets/styles/_variables.scss'
 
   header
-    background-image: url(~@/assets/images/forWhom/agencies-header-b.png), url(~@/assets/images/forWhom/agencies-header-a.png)
-    background-size: 50%, cover
+    background-image: url(~@/assets/images/verticals-header-b.png), url(~@/assets/images/verticals-header-a.png)
+    background-size: 70% 50%, cover
     background-repeat: no-repeat
-    background-position: 75% 10%
-    height: 100%
-    min-height: 800px
+    background-position: 85% 10%
+    height: 1200px
 
     .hero
       padding-top: 3rem
@@ -37,6 +36,11 @@
         width: auto
         max-width: 325px
         margin-top: 2rem
+
+    .icon
+      position: absolute
+      left: 48%
+      top: 620px
 </style>
 
 <template lang="pug">
@@ -50,6 +54,9 @@
             h1 Transforme sua agência em uma máquina de resultados
               span.dot.green
             p Conheça o software mais completo de CRM com Automação de Marketing com o melhor custo benefício para a sua agência. Você duvida?
+
+        .icon
+          g-image(src='~/assets/images/verticals-down-btn.png')
 </template>
 
 <script>
