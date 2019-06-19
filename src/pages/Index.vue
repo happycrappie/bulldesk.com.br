@@ -90,12 +90,16 @@
           top: 754px
 
   .section-a
-    height: 1076px
+    height: 1156px
     margin-top: -23rem
     background-repeat: no-repeat
     background-size: cover
     background-image: url(~@/assets/images/home-bg-a.png)
     background-position: -40rem
+
+    @media only screen and (max-width: 990px)
+      background-image: url(~@/assets/images/home-bg-a.png), url(~@/assets/images/home-bg-a.png)
+      background-position: -40rem 0rem, -40rem 15rem
 
     @media only screen and (min-width: 800px) and (max-width: 1800px)
       background-position: -35rem
@@ -123,10 +127,10 @@
       font-size: 1rem
 
       @media only screen and (max-width: 670px)
-        padding-top: 33rem
+        padding-top: 35rem
 
       @media only screen and (min-width: 671px) and (max-width: 1000px)
-        padding-top: 34rem
+        padding-top: 36rem
 
       .subtitle
         width: auto
@@ -137,10 +141,10 @@
           max-width: 100%
 
       .steps-col
-        margin-top: -55px
+        margin-top: -1.5rem
 
         @media only screen and (max-width: 990px)
-          margin-top: 60px
+          margin-top: 2.5rem
 
       .nav
         padding-left: 20px
@@ -190,7 +194,7 @@
         margin-left: -50px
 
         @media only screen and (max-width: 1300px)
-          margin-top: 60px
+          margin-top: 40px
           margin-left: -25px
 
         li
@@ -276,9 +280,11 @@
 
               @media only screen and (max-width: 440px)
                 font-size: 0.5rem
+                line-height: 15px
 
               @media only screen and (min-width: 441px) and (max-width: 990px)
                 font-size: 0.6rem
+                line-height: 20px
 
               @media only screen and (min-width: 991px) and (max-width: 1300px)
                 font-size: 0.7rem
@@ -361,6 +367,10 @@
     .know-more
       margin-top: 3rem
 
+      @media only screen and (max-width: 600px)
+        text-align: center
+        padding-top: 0.5rem
+
       .btn-default
         background-color: $purple
         color: $white-gray
@@ -429,16 +439,37 @@
 
   .section-c
     height: 1800px
-    margin-top: -42rem
+    margin-top: -32rem
     background-repeat: no-repeat
     background-size: cover
     background-image: url(~@/assets/images/home-bg-c.png)
     background-position: -42rem
 
-    @media only screen and (max-width: 990px)
-      margin-top: -30rem
+    @media only screen and (max-width: 440px)
+      margin-top: -28rem
+      background-position: -48rem 3rem
+
+    @media only screen and (min-width: 441px) and (max-width: 990px)
+      margin-top: -28rem
       background-position: -58rem
 
+    @media only screen and (min-width: 1800px) and (max-width: 2000px)
+      background-position: -38rem
+
+    @media only screen and (min-width: 2001px) and (max-width: 2200px)
+      background-position: -32rem
+
+    @media only screen and (min-width: 2201px) and (max-width: 2300px)
+      background-position: -26rem
+
+    @media only screen and (min-width: 2301px) and (max-width: 2400px)
+      background-position: -22rem
+
+    @media only screen and (min-width: 2401px) and (max-width: 2500px)
+      background-position: -18rem
+
+    @media only screen and (min-width: 2501px)
+      background-position: -10rem
     .container
       padding-top: 57rem
 
@@ -512,6 +543,7 @@
         @media only screen and (max-width: 990px)
           margin-left: 0px
           padding-top: 0px
+          text-align: center
 
         h4
           font-size: 1rem
@@ -521,7 +553,6 @@
 
         .subtitle
           width: auto
-          font-family: Montserrat
           font-size: 0.7rem
           font-weight: 400
           letter-spacing: 0.24px
@@ -531,6 +562,10 @@
         table
           margin-top: 10px
           margin-bottom: 30px
+
+          @media only screen and (max-width: 990px)
+            margin-left: auto
+            margin-right: auto
 
           tr
             td
@@ -545,26 +580,26 @@
             width: 12px
 
   .section-d
-    margin-top: 80px
+    margin-top: 8rem
     background-repeat: no-repeat
     background-size: 100% 1022px
     background-image: url(~@/assets/images/home-bg-d.png)
-    background-position: 0px 0px
+    background-position: 0px 1rem
     height: 1128px
     z-index: 9
     position: relative
 
     @media only screen and (max-width: 440px)
-      margin-top: -120px
+      margin-top: -4rem
       height: 1378px
       background-size: 160% 1222px
-      background-position: -125px 125px
+      background-position: -125px 135px
 
     @media only screen and (min-width: 441px) and (max-width: 990px)
-      margin-top: -120px
+      margin-top: -4rem
       height: 1328px
       background-size: 160% 1222px
-      background-position: -150px 100px
+      background-position: -150px 110px
 
     .container
       h3
@@ -593,9 +628,10 @@
           .button:before
             content: ''
             background-image: url(~@/assets/images/cases/swiper-next.png)
-            background-size: cover
-            width: 45px
-            height: 45px
+            background-size: 99%
+            background-repeat: no-repeat
+            width: 50px
+            height: 50px
             display: block
 
         .image
@@ -704,7 +740,7 @@
         padding-left: 2rem
 
         @media only screen and (max-width: 990px)
-          padding-top: 0rem
+          padding: 1rem
           margin-bottom: 4rem
 
         img
