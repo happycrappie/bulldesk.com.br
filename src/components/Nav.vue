@@ -84,6 +84,7 @@
         top: 3rem
         right: 0.2rem
         min-width: 300px
+        z-index: 999
 
         .nav-link
           color: $gray-light
