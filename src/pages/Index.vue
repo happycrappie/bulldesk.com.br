@@ -120,30 +120,6 @@
         &:nth-child(2)
           top: 754px
 
-  .section
-    h3
-      width: auto
-      color: $gray-dark
-      font-size: 1.8rem
-      font-weight: 700
-      letter-spacing: -0.39px
-      line-height: 30px
-
-      @media only screen and (max-width: 670px)
-        font-size: 1.4rem
-        padding-top: 20px
-
-    .subtitle
-      color: $gray-light
-      font-size: 0.9rem
-      font-weight: 400
-      letter-spacing: 0.24px
-      line-height: 25px
-
-    .btn-default
-      @media only screen and (max-width: 990px)
-        padding: 15px 20px
-
   .section-a
     height: 1076px
     margin-top: -23rem
