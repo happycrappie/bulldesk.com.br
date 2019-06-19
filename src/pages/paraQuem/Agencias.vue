@@ -42,7 +42,7 @@
       top: 620px
 
   .section-a
-    margin-top: -18rem
+    margin-top: -24rem
 
     .item
       padding: 1.5rem 2rem
@@ -88,7 +88,7 @@
       .email-group
         margin-left: auto
         margin-right: auto
-        padding-top: 1.5rem
+        padding-top: 0.5rem
 
   .section-c
     margin-top: 6rem
@@ -131,7 +131,6 @@
       .subtitle
         margin-top: 2rem
         max-width: 600px
-
 </style>
 
 <template lang="pug">
@@ -144,7 +143,7 @@
           div
             h1 Transforme sua agência em uma máquina de resultados
               span.dot.green
-            p Conheça o software mais completo de CRM com Automação de Marketing com o melhor custo benefício para a sua agência. Você duvida?
+            p Conheça o software mais completo de CRM com Automação de Marketing e com o melhor custo benefício para a sua agência. Você duvida?
 
     .section.section-a
       .container
