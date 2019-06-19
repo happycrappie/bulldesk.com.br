@@ -3,7 +3,7 @@
 
   header
     background-image: url(~@/assets/images/verticals-header.png)
-    background-size:cover
+    background-size: cover
     background-repeat: no-repeat
     height: 1200px
 
@@ -42,7 +42,7 @@
       top: 620px
 
   .section-a
-    margin-top: -24rem
+    margin-top: -18rem
 
     .item
       padding: 1.5rem 2rem
@@ -66,7 +66,7 @@
     background-image: url(~@/assets/images/verticals-bg-b.png)
     background-size: cover
     height: 911px
-    margin-top: -14rem
+    margin-top: -10rem
 
     .container
       text-align: center
@@ -90,7 +90,7 @@
         margin-right: auto
 
   .section-c
-    margin-top: 6rem
+    margin-top: 10rem
     background-image: url(~@/assets/images/verticals-bg-c.png)
     background-repeat: no-repeat
     background-position: 30% 300px
@@ -136,7 +136,7 @@
     background-repeat: no-repeat
     background-size: cover
     height: 1000px
-    margin-top: -10rem
+    margin-top: -6rem
     text-align: center
 
     h3
