@@ -88,7 +88,6 @@
       .email-group
         margin-left: auto
         margin-right: auto
-        padding-top: 0.5rem
 
   .section-c
     margin-top: 6rem
@@ -131,6 +130,46 @@
       .subtitle
         margin-top: 2rem
         max-width: 600px
+
+  .section-d
+    background-image: url(~@/assets/images/verticals-bg-d.png)
+    background-repeat: no-repeat
+    background-size: cover
+    height: 1000px
+    margin-top: -10rem
+    text-align: center
+
+    h3
+      margin: auto
+      margin-top: 18rem
+
+    .cases
+      margin-top: 12rem
+
+      .col
+        padding: 0rem 3.2rem
+
+        img
+          max-width: 120px
+
+        p
+          color: $gray-white
+          font-size: 0.8rem
+          font-weight: 400
+          letter-spacing: 0.24px
+          line-height: 25px
+          margin-top: 2rem
+
+        .description
+          min-height: 85px
+
+        .author
+          color: $gray-light
+          font-size: 0.7rem
+          font-weight: 700
+          letter-spacing: 0.2px
+          line-height: 20px
+          text-transform: uppercase
 </style>
 
 <template lang="pug">
@@ -218,6 +257,23 @@
 
             h3 Porque ser nosso parceiro?
             .subtitle Nosso programa de parceria é simples, oferecemos uma conta gratuita para a sua agência assim que você coloca um cliente pagante para o Bulldesk e além disso uma comissão recorrente de 20%. Sem burocracia, sem taxa de implementação, sem níveis ou seja lá o que for para complicar o que tem que ser descomplicado.
+
+    .section.section-d
+      .container
+        .row
+          h3
+            | Fique tranquilo,
+            br
+            | você está em boa companhia
+        .row.cases
+          .col-6.col
+            g-image(src='~/assets/images/cases/buscape-logo.png')
+            p.description O jeito mais rápido e simples que encontramos para criar automações de marketing para nós e nossos clientes. Super recomendo!
+            p.author BEATRIZ ALMEIDA
+          .col-6.col
+            g-image(src='~/assets/images/cases/buscape-logo.png')
+            p.description Com o Bulldesk foi possível captar dados, enviar e-mails automáticos, e-mail marketing e diversas outras funcionalidades que acontecem em tempo real.
+            p.author ANTÔNIO FRANCISCO
 </template>
 
 <script>
