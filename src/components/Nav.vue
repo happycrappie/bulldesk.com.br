@@ -1,4 +1,5 @@
 <style lang="sass">
+  @import 'node_modules/include-media/dist/_include-media.scss'
   @import '../assets/styles/_variables.scss'
 
   nav.navbar.nav-layout
@@ -73,7 +74,7 @@
           min-width: 12rem
 
     .navbar-collapse
-      @media only screen and (max-width: map-get($grid-breakpoints, 'ipad'))
+      @include media('screen', '<ipad')
         background: $white
         margin-top: 0.8rem
         box-shadow: 0 1.5rem 4rem rgba(22,28,45,.15)
@@ -104,7 +105,7 @@
 </style>
 
 <template lang="pug">
-  b-navbar.d-flex.nav-layout(toggleable="ipad" :type="type")
+  b-navbar.d-flex.nav-layout(toggleable="lg-2" :type="type")
     b-navbar-brand
       g-link(href="/")
         g-image.logo(src="~/assets/images/logo.png" v-if="! logo || logo == 'black'" alt="Bulldesk")

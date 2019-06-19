@@ -1,11 +1,25 @@
 <style lang="sass" scoped>
+  @import 'node_modules/include-media/dist/_include-media.scss'
   @import '../../assets/styles/_variables.scss'
 
   header
     background-image: url(~@/assets/images/verticals-header.png)
     background-size: cover
     background-repeat: no-repeat
+    background-position: -12rem
     height: 1200px
+
+    @include media('screen', '<=ipad')
+      background-image: url(~@/assets/images/verticals-header@no-btn.png)
+
+    @include media('screen', '>ipad', '<=laptop')
+      background-position: -54rem
+
+    @include media('screen', '>laptop', '<=desktop-md')
+      background-position: -44rem
+
+    @include media('screen', '>desktop-md', '<=desktop-lg')
+      background-position: -34rem
 
     .hero
       padding-top: 3rem
