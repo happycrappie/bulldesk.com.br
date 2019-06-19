@@ -67,7 +67,7 @@
     background-image: url(~@/assets/images/verticals-bg-b.png)
     background-size: cover
     height: 911px
-    margin-top: -14rem
+    margin-top: -12rem
 
     .container
       text-align: center
@@ -75,7 +75,7 @@
 
       h3
         width: auto
-        max-width: 352px
+        max-width: 362px
         margin: auto
         color: $white-gray
 
@@ -83,8 +83,13 @@
         width: auto
         max-width: 228px
         margin: auto
-        margin-top: 1rem
+        margin-top: 1.5rem
         color: $white-gray
+
+      .email-group
+        margin-left: auto
+        margin-right: auto
+        padding-top: 1.5rem
 </style>
 
 <template lang="pug">
@@ -129,6 +134,11 @@
       .container
         h3 Se ainda faltam motivos faça um teste gratuito e veja na prática
         .subtitle Insira seu e-mail abaixo e crie sua conta agora mesmo
+        b-input-group.email-group
+          b-form-input.email-input(placeholder='Email' v-model='email')
+          b-input-group-append
+            b-button.email-button
+              g-image(src='~/assets/icons/play-button@black.svg')
 </template>
 
 <script>
@@ -147,6 +157,7 @@
 
     data() {
       return {
+        email: ''
       }
     }
   }
