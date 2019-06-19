@@ -2,10 +2,9 @@
   @import '../../assets/styles/_variables.scss'
 
   header
-    background-image: url(~@/assets/images/verticals-header-b.png), url(~@/assets/images/verticals-header-a.png)
-    background-size: 70% 50%, cover
+    background-image: url(~@/assets/images/verticals-header.png)
+    background-size:cover
     background-repeat: no-repeat
-    background-position: 85% 10%
     height: 1200px
 
     .hero
@@ -67,7 +66,7 @@
     background-image: url(~@/assets/images/verticals-bg-b.png)
     background-size: cover
     height: 911px
-    margin-top: -12rem
+    margin-top: -14rem
 
     .container
       text-align: center
@@ -90,6 +89,49 @@
         margin-left: auto
         margin-right: auto
         padding-top: 1.5rem
+
+  .section-c
+    margin-top: 6rem
+    background-image: url(~@/assets/images/verticals-bg-c.png)
+    background-repeat: no-repeat
+    background-position: 30% 300px
+    min-height: 900px
+
+    .col-left
+      .subtitle
+        margin-top: 2rem
+        padding-right: 1.2rem
+
+    .col-right
+      padding-left: 6rem
+
+      ul
+        list-style: none
+        padding: 0px
+
+        li
+          color: $gray-dark
+          font-size: 0.8rem
+          font-weight: 400
+          letter-spacing: 0.24px
+          line-height: 30px
+          padding-bottom: 0.5rem
+
+          img
+            margin-right: 10px
+
+      .doted-square-a
+        margin-top: 5rem
+        margin-left: 6rem
+
+      h3
+        margin-top: 5rem
+        max-width: 260px
+
+      .subtitle
+        margin-top: 2rem
+        max-width: 600px
+
 </style>
 
 <template lang="pug">
@@ -103,9 +145,6 @@
             h1 Transforme sua agência em uma máquina de resultados
               span.dot.green
             p Conheça o software mais completo de CRM com Automação de Marketing com o melhor custo benefício para a sua agência. Você duvida?
-
-        .icon
-          g-image(src='~/assets/images/verticals-down-btn.png')
 
     .section.section-a
       .container
@@ -139,6 +178,47 @@
           b-input-group-append
             b-button.email-button
               g-image(src='~/assets/icons/play-button@black.svg')
+
+    .section.section-c
+      .container
+        .row
+          .col-4.col-left
+            h3 Toda as ferramentas que você precisa em um único lugar
+            .subtitle Porque utilizar diversas ferramentas quando a gente tem tudo a sua agência precisa?
+          .col-8.col-right
+            ul
+              li
+                g-image(src='~/assets/icons/check.svg')
+                | Receba os contatos do seu chat dentro do Bulldesk
+              li
+                g-image(src='~/assets/icons/check.svg')
+                | Envie campanhas de WhatsApp
+              li
+                g-image(src='~/assets/icons/check.svg')
+                | Integre com portais como Zap Imóveis, Vivá Real, e outros
+              li
+                g-image(src='~/assets/icons/check.svg')
+                | Crie campanhas de email marketing divulgando seus empreendimentos
+              li
+                g-image(src='~/assets/icons/check.svg')
+                | Acompanhe todo o processo comercial em um único lugar
+              li
+                g-image(src='~/assets/icons/check.svg')
+                | Construa páginas específicas para divulgar determinados empreendimentos
+              li
+                g-image(src='~/assets/icons/check.svg')
+                | Automação de marketing: Automatize os processos que ninguém tem tempo de gerenciar
+              li
+                g-image(src='~/assets/icons/check.svg')
+                | Email marketing: Construa sua marca e seja referência para seus clientes e leads
+              li
+                g-image(src='~/assets/icons/check.svg')
+                | Omnichannel: Crie campanhas que comecem por email, SMS ou WhatApp
+
+            g-image.doted-square-a(src='~/assets/images/doted-square.jpg')
+
+            h3 Porque ser nosso parceiro?
+            .subtitle Nosso programa de parceria é simples, oferecemos uma conta gratuita para a sua agência assim que você coloca um cliente pagante para o Bulldesk e além disso uma comissão recorrente de 20%. Sem burocracia, sem taxa de implementação, sem níveis ou seja lá o que for para complicar o que tem que ser descomplicado.
 </template>
 
 <script>
