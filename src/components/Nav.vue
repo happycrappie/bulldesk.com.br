@@ -31,7 +31,7 @@
       .dropdown-menu
         left: -45%
 
-        .dropdon-icon
+        .dropdonw-icon
           max-width: 20px
           top: -0.9rem
           position: absolute
@@ -57,7 +57,7 @@
             font-weight: 400
 
     .nav-item.for-whom
-      .dropdon-icon
+      .dropdonw-icon
         left: 7.5rem
 
       .dropdown-container
@@ -67,7 +67,7 @@
       .dropdown-menu
         left: -35%
 
-        .dropdon-icon
+        .dropdonw-icon
           left: 5rem
 
         .dropdown-container
@@ -80,6 +80,10 @@
         box-shadow: 0 1.5rem 4rem rgba(22,28,45,.15)
         padding: 2rem 2.5rem
         border-radius: 5px
+        position: absolute
+        top: 3rem
+        right: 0.2rem
+        min-width: 300px
 
         .nav-link
           color: $gray-light
@@ -99,6 +103,7 @@
               padding: 0rem
               padding-bottom: 1.5rem
               font-size: 0.7rem
+              min-width: 0rem
 
               .dropdown-header
                 font-weight: 600
@@ -114,11 +119,11 @@
     b-collapse#collapse(is-nav)
       b-navbar-nav.ml-auto
         b-nav-item-dropdown.for-whom(text="Pra quem é")
-          .dropdon-icon
+          .dropdonw-icon
             g-image(src='~/assets/icons/poligono.svg')
           .dropdown-container
             .row.no-gutters
-              .col-6
+              .col-12.col-sm-6
                 h6.dropdown-header Vertical
                 b-dropdown-item(href="/para-quem/agencias") Agências
                 b-dropdown-item(href="/para-quem/construtoras") Construtoras
@@ -126,13 +131,13 @@
                 b-dropdown-item(href="/para-quem/ensino") Ensino
                 b-dropdown-item(href="/para-quem/hoteis") Hotéis
                 b-dropdown-item(href="/para-quem/ecommerce") SaaS
-              .col-6
+              .col-12.col-sm-6
                 h6.dropdown-header Equipes
                 b-dropdown-item(href="/para-quem/marketing") Marketing
                 b-dropdown-item(href="/para-quem/vendas") Vendas
                 b-dropdown-item(href="/para-quem/gerentes") Gerentes
         b-nav-item-dropdown.what-it-does(text="O que faz")
-          .dropdon-icon
+          .dropdonw-icon
             g-image(src='~/assets/icons/poligono.svg')
           .dropdown-container
             .row.no-gutters
