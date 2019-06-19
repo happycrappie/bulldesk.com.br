@@ -78,7 +78,8 @@
   b-navbar.d-flex.nav-layout(toggleable="lg" :type="type")
     b-navbar-brand
       g-link(href="/")
-        g-image.logo(src="../assets/images/logo.png" alt="Bulldesk")
+        g-image.logo(src="~/assets/images/logo.png" v-if="! logo || logo == 'black'" alt="Bulldesk")
+        g-image.logo(src="~/assets/images/logo@white.png" v-if="logo && logo == 'white'" alt="Bulldesk")
     b-navbar-toggle(target="collapse")
     b-collapse#collapse(is-nav)
       b-navbar-nav.ml-auto
@@ -120,6 +121,7 @@
   export default {
     props: {
       type: String,
+      logo: String
     }
   }
 </script>

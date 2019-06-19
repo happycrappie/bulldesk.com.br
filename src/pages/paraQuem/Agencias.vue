@@ -43,7 +43,7 @@
   Layout
     header.d-flex
       .container
-        Nav(type="dark")
+        Nav(type="dark" logo="white")
 
         .hero.d-flex.align-items-center
           div
