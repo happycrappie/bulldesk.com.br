@@ -43,7 +43,7 @@
       top: 620px
 
   .section-a
-    margin-top: -16rem
+    margin-top: -18rem
 
     .item
       padding: 1.5rem 2rem
@@ -62,6 +62,29 @@
         letter-spacing: 0.24px
         line-height: 25px
         margin-top: 1.5rem
+
+  .section-b
+    background-image: url(~@/assets/images/verticals-bg-b.png)
+    background-size: cover
+    height: 911px
+    margin-top: -14rem
+
+    .container
+      text-align: center
+      padding-top: 29rem
+
+      h3
+        width: auto
+        max-width: 352px
+        margin: auto
+        color: $white-gray
+
+      .subtitle
+        width: auto
+        max-width: 228px
+        margin: auto
+        margin-top: 1rem
+        color: $white-gray
 </style>
 
 <template lang="pug">
@@ -101,6 +124,11 @@
           .item.col-4
             h4 Fuja da burocracia
             p Pagar uma taxa de implementação obrigatória? Não ter privilégios por não ser Diamond? Ser parceiro Gold por 8 meses e depois virar member porque perdeu 1 cliente? Por isso que o Bulldesk tem uma única categoria de parceiro e um programa de parcerias simples. Venha conhecer!
+
+    .section.section-b
+      .container
+        h3 Se ainda faltam motivos faça um teste gratuito e veja na prática
+        .subtitle Insira seu e-mail abaixo e crie sua conta agora mesmo
 </template>
 
 <script>
