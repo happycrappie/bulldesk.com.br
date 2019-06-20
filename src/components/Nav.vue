@@ -126,28 +126,28 @@
             .row.no-gutters
               .col-12.col-sm-6
                 h6.dropdown-header Vertical
-                b-dropdown-item(href="/para-quem/agencias") Agências
-                b-dropdown-item(href="/para-quem/construtoras") Construtoras
-                b-dropdown-item(href="/para-quem/ecommerce") Ecommerce
-                b-dropdown-item(href="/para-quem/ensino") Ensino
-                b-dropdown-item(href="/para-quem/hoteis") Hotéis
-                b-dropdown-item(href="/para-quem/ecommerce") SaaS
+                b-dropdown-item(to="/para-quem/agencias") Agências
+                b-dropdown-item(to="/para-quem/construtoras") Construtoras
+                b-dropdown-item(to="/para-quem/ecommerce") Ecommerce
+                b-dropdown-item(to="/para-quem/ensino") Ensino
+                b-dropdown-item(to="/para-quem/hoteis") Hotéis
+                b-dropdown-item(to="/para-quem/ecommerce") SaaS
               .col-12.col-sm-6
                 h6.dropdown-header Equipes
-                b-dropdown-item(href="/para-quem/marketing") Marketing
-                b-dropdown-item(href="/para-quem/vendas") Vendas
-                b-dropdown-item(href="/para-quem/gerentes") Gerentes
+                b-dropdown-item(to="/para-quem/marketing") Marketing
+                b-dropdown-item(to="/para-quem/vendas") Vendas
+                b-dropdown-item(to="/para-quem/gerentes") Gerentes
         b-nav-item-dropdown.what-it-does(text="O que faz")
           .dropdown-icon
             g-image(src='~/assets/icons/poligono.svg')
           .dropdown-container
             .row.no-gutters
               .col-12
-                b-dropdown-item(href="/o-que-faz/marketing") Marketing
-                b-dropdown-item(href="/o-que-faz/vendas") Vendas
-        b-nav-item(href="/cases") Cases
-        b-nav-item(href="/exemplos") Exemplos
-        b-nav-item(href="/planos") Planos
+                b-dropdown-item(to="/o-que-faz/marketing") Marketing
+                b-dropdown-item(to="/o-que-faz/vendas") Vendas
+        b-nav-item(to="/cases") Cases
+        b-nav-item(to="/exemplos") Exemplos
+        b-nav-item(to="/planos") Planos
         b-nav-item(href="https://app.bulldesk.com.br" target="_blank") Login
         b-nav-item.trial(href="https://app.bulldesk.com.br/cadastro") Teste grátis
           g-image(src='~/assets/icons/play-button@black.svg')
