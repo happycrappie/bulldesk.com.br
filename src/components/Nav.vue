@@ -4,7 +4,7 @@
 
   nav.navbar.nav-layout
     padding: 15px 0
-    font-size: 0.9rem
+    font-size: 0.85rem
 
     .logo
       width: 140px
@@ -31,7 +31,7 @@
       .dropdown-menu
         left: -45%
 
-        .dropdonw-icon
+        .dropdown-icon
           max-width: 20px
           top: -0.9rem
           position: absolute
@@ -57,7 +57,7 @@
             font-weight: 400
 
     .nav-item.for-whom
-      .dropdonw-icon
+      .dropdown-icon
         left: 7.5rem
 
       .dropdown-container
@@ -67,7 +67,7 @@
       .dropdown-menu
         left: -35%
 
-        .dropdonw-icon
+        .dropdown-icon
           left: 5rem
 
         .dropdown-container
@@ -113,14 +113,14 @@
 <template lang="pug">
   b-navbar.d-flex.nav-layout(toggleable="lg2" :type="type")
     b-navbar-brand
-      g-link(href="/")
-        g-image.logo(src="~/assets/images/logo.png" v-if="! logo || logo == 'black'" alt="Bulldesk")
-        g-image.logo(src="~/assets/images/logo@white.png" v-if="logo && logo == 'white'" alt="Bulldesk")
+      g-link(to="/")
+        g-image.logo(src="~/assets/images/logo@white.png" alt="Bulldesk" v-if="logo && logo == 'white'")
+        g-image.logo(src="~/assets/images/logo.png" alt="Bulldesk" v-else)
     b-navbar-toggle(target="collapse")
     b-collapse#collapse(is-nav)
       b-navbar-nav.ml-auto
         b-nav-item-dropdown.for-whom(text="Pra quem é")
-          .dropdonw-icon
+          .dropdown-icon
             g-image(src='~/assets/icons/poligono.svg')
           .dropdown-container
             .row.no-gutters
@@ -138,7 +138,7 @@
                 b-dropdown-item(href="/para-quem/vendas") Vendas
                 b-dropdown-item(href="/para-quem/gerentes") Gerentes
         b-nav-item-dropdown.what-it-does(text="O que faz")
-          .dropdonw-icon
+          .dropdown-icon
             g-image(src='~/assets/icons/poligono.svg')
           .dropdown-container
             .row.no-gutters
