@@ -384,10 +384,6 @@
       return {
         email: ''
       }
-    },
-
-    mounted () {
-      console.log(this.$page)
     }
   }
 </script>
