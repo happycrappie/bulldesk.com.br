@@ -1,6 +1,6 @@
 <style lang="sass" scoped>
   @import 'node_modules/include-media/dist/_include-media.scss'
-  @import '../../assets/styles/_variables.scss'
+  @import '../assets/styles/_variables.scss'
 
   header
     background-image: url(~@/assets/images/verticals-header.png)
@@ -276,37 +276,21 @@
 
         .hero.d-flex.align-items-center
           div
-            h1 Transforme sua agência em uma máquina de resultados
+            h1 {{ this.$page.content.header.h1 }}
               span.dot.green
-            p Conheça o software mais completo de CRM com Automação de Marketing e com o melhor custo benefício para a sua agência. Você duvida?
+            p {{ this.$page.content.header.p }}
 
     .section.section-a
       .container
         .row
-          .item.col-12.col-sm-4
-            h4 Crie campanhas de marketing com alguns cliques
-            p Já enviamos até um carro em direção a marte e você ainda perde horas de trabalho criando campanhas? Com o Bulldesk em alguns cliques suas campanhas de inbound, geração de leads, qualificação e etc, estarão prontas.
-          .item.col-12.col-sm-4
-            h4 Comprove o ROI e o fee da sua agência
-            p Você só continuará clientes se continuar comprovando o ROI frequentemente. Já pensou ter informações como Custo de Aquisição de Cliente (CAC), Custo por Lead (CPL), Origem do Lead, Quantidade de Leads, entre outras métricas importantes em tempo real? No Bulldesk todos os resultados são atrelados ao nosso bigdata analytics e exibidos em tempo real.
-          .item.col-12.col-sm-4
-            h4 Aumente seu lucro sem diminuir os seus custos
-            p Nossos preços foram pensados em você. Por isso que você não irá encontrar no Brasil nenhuma ferramenta com todas as funcionalidades que oferecemos no preço que oferecemos. Garantimos isso, se encontrar, vem falar com a gente.
-        .row
-          .item.col-12.col-sm-4
-            h4 Trabalhe em parceria com o seu cliente
-            p Do que adianta a sua agência gerar diversos leads mas o seu cliente não conseguir gerar nenhuma venda? Assim que você gerar os leads, coloque os vendedores do seu cliente no CRM do Bulldesk para que eles possam dar atendimento aos leads gerados e você possa acompanhar as vendas.
-          .item.col-12.col-sm-4
-            h4 Crie campanhas omnichannel
-            p Mandar email é fácil. Mas quero ver mandar uma campanha que começa com um visitante preenchendo um formulário em uma landing page, depois recebe um email, se abrir o email entra em uma campanha de SMS e termina com o lead recebendo um Whatsapp de um vendedor. É fácil também, mas só no Bulldesk.
-          .item.col-12.col-sm-4
-            h4 Fuja da burocracia
-            p Pagar uma taxa de implementação obrigatória? Não ter privilégios por não ser Diamond? Ser parceiro Gold por 8 meses e depois virar member porque perdeu 1 cliente? Por isso que o Bulldesk tem uma única categoria de parceiro e um programa de parcerias simples. Venha conhecer!
+          .item.col-12.col-sm-4(v-for="item in $page.content.section_a.items")
+            h4 {{ item.h4 }}
+            p {{ item.p }}
 
     .section.section-b
       .container
-        h3 Se ainda faltam motivos faça um teste gratuito e veja na prática
-        .subtitle Insira seu e-mail abaixo e crie sua conta agora mesmo
+        h3 {{ this.$page.content.section_b.h3 }}
+        .subtitle {{ this.$page.content.section_b.subtitle }}
         b-input-group.email-group
           b-form-input.email-input(placeholder='Email' v-model='email')
           b-input-group-append
@@ -317,64 +301,72 @@
       .container
         .row
           .col-12.col-lg2-4.col-left
-            h3 Toda as ferramentas que você precisa em um único lugar
-            .subtitle Porque utilizar diversas ferramentas quando a gente tem tudo a sua agência precisa?
+            h3 {{ this.$page.content.section_c.h3[0] }}
+            .subtitle {{ this.$page.content.section_c.subtitle[0] }}
           .col-12.col-lg2-8.col-right
             ul
-              li
+              li(v-for="item in $page.content.section_c.items")
                 g-image(src='~/assets/icons/check.svg')
-                | Receba os contatos do seu chat dentro do Bulldesk
-              li
-                g-image(src='~/assets/icons/check.svg')
-                | Envie campanhas de WhatsApp
-              li
-                g-image(src='~/assets/icons/check.svg')
-                | Integre com portais como Zap Imóveis, Vivá Real, e outros
-              li
-                g-image(src='~/assets/icons/check.svg')
-                | Crie campanhas de email marketing divulgando seus empreendimentos
-              li
-                g-image(src='~/assets/icons/check.svg')
-                | Acompanhe todo o processo comercial em um único lugar
-              li
-                g-image(src='~/assets/icons/check.svg')
-                | Construa páginas específicas para divulgar determinados empreendimentos
-              li
-                g-image(src='~/assets/icons/check.svg')
-                | Automação de marketing: Automatize os processos que ninguém tem tempo de gerenciar
-              li
-                g-image(src='~/assets/icons/check.svg')
-                | Email marketing: Construa sua marca e seja referência para seus clientes e leads
-              li
-                g-image(src='~/assets/icons/check.svg')
-                | Omnichannel: Crie campanhas que comecem por email, SMS ou WhatApp
+                | {{ item }}
 
             g-image.doted-square-a(src='~/assets/images/doted-square.jpg')
 
-            h3 Porque ser nosso parceiro?
-            .subtitle Nosso programa de parceria é simples, oferecemos uma conta gratuita para a sua agência assim que você coloca um cliente pagante para o Bulldesk e além disso uma comissão recorrente de 20%. Sem burocracia, sem taxa de implementação, sem níveis ou seja lá o que for para complicar o que tem que ser descomplicado.
+            h3 {{ this.$page.content.section_c.h3[1] }}
+            .subtitle {{ this.$page.content.section_c.subtitle[1] }}
 
     .section.section-d
       .container
         .row
           h3
-            | Fique tranquilo,
+            | {{ this.$page.content.section_d.h3 }}
             br
-            | você está em boa companhia
+            | {{ this.$page.content.section_d.br }}
         .row.cases
-          .col.col-12.col-sm-6
-            g-image(src='~/assets/images/cases/buscape-logo.png')
-            p.description O jeito mais rápido e simples que encontramos para criar automações de marketing para nós e nossos clientes. Super recomendo!
-            p.author BEATRIZ ALMEIDA
-          .col.col-12.col-sm-6
-            g-image(src='~/assets/images/cases/buscape-logo.png')
-            p.description Com o Bulldesk foi possível captar dados, enviar e-mails automáticos, e-mail marketing e diversas outras funcionalidades que acontecem em tempo real.
-            p.author ANTÔNIO FRANCISCO
+          .col.col-12.col-sm-6(v-for="item in $page.content.section_d.cases")
+            g-image(:src="item.image")
+            p.description {{ item.description }}
+            p.author {{ item.author }}
 </template>
 
+<page-query>
+  query ($id: String!) {
+    content: paraQuem (id: $id) {
+      title
+      header {
+        h1
+        p
+      }
+      section_a {
+        items {
+          h4
+          p
+        }
+      }
+      section_b {
+        h3
+        subtitle
+      }
+      section_c {
+        h3
+        subtitle
+        items
+      }
+      section_d {
+        h3
+        br
+        cases {
+          image
+          description
+          author
+        }
+      }
+    }
+  }
+</page-query>
+
 <script>
-  import Layout from '../../layouts/Default'
-  import Nav from '../../components/Nav'
+  import Layout from '../layouts/Default'
+  import Nav from '../components/Nav'
 
   export default {
     components: {
@@ -382,14 +374,20 @@
       Nav,
     },
 
-    metaInfo: {
-      title: 'Agências'
+    metaInfo () {
+      return {
+        title: this.$page.content.title,
+      }
     },
 
-    data() {
+    data () {
       return {
         email: ''
       }
+    },
+
+    mounted () {
+      console.log(this.$page)
     }
   }
 </script>
