@@ -23,6 +23,14 @@ module.exports = {
         height: 800
       }
     },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'src/data/para-quem/*.yaml',
+        typeName: 'ParaQuem',
+        route: '/para-quem/:id'
+      }
+    }
   ],
   css: {
     loaderOptions: {

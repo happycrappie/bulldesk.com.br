@@ -11,6 +11,8 @@
     "@gridsome/plugin-critical": "^0.1.2",
     "@gridsome/plugin-google-analytics": "^0.1.0",
     "@gridsome/plugin-sitemap": "^0.2.1",
+    "@gridsome/source-filesystem": "^0.5.0",
+    "@gridsome/transformer-yaml": "^0.2.1",
     "axios": "^0.19.0",
     "bootstrap-vue": "^2.0.0-rc.22",
     "gridsome": "^0.6.0",
