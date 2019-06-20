@@ -1,4 +1,5 @@
 <style lang="sass">
+  @import 'node_modules/include-media/dist/_include-media.scss'
   @import '../assets/styles/_variables.scss'
 
   nav.navbar.nav-layout
@@ -30,7 +31,7 @@
       .dropdown-menu
         left: -45%
 
-        .dropdon-icon
+        .dropdonw-icon
           max-width: 20px
           top: -0.9rem
           position: absolute
@@ -56,7 +57,7 @@
             font-weight: 400
 
     .nav-item.for-whom
-      .dropdon-icon
+      .dropdonw-icon
         left: 7.5rem
 
       .dropdown-container
@@ -66,19 +67,24 @@
       .dropdown-menu
         left: -35%
 
-        .dropdon-icon
+        .dropdonw-icon
           left: 5rem
 
         .dropdown-container
           min-width: 12rem
 
     .navbar-collapse
-      @media only screen and (max-width: map-get($grid-breakpoints, 'ipad'))
+      @include media('screen', '<ipad')
         background: $white
         margin-top: 0.8rem
         box-shadow: 0 1.5rem 4rem rgba(22,28,45,.15)
         padding: 2rem 2.5rem
         border-radius: 5px
+        position: absolute
+        top: 3rem
+        right: 0.2rem
+        min-width: 300px
+        z-index: 999
 
         .nav-link
           color: $gray-light
@@ -98,25 +104,27 @@
               padding: 0rem
               padding-bottom: 1.5rem
               font-size: 0.7rem
+              min-width: 0rem
 
               .dropdown-header
                 font-weight: 600
 </style>
 
 <template lang="pug">
-  b-navbar.d-flex.nav-layout(toggleable="ipad" :type="type")
+  b-navbar.d-flex.nav-layout(toggleable="lg2" :type="type")
     b-navbar-brand
       g-link(href="/")
-        g-image.logo(src="../assets/images/logo.png" alt="Bulldesk")
+        g-image.logo(src="~/assets/images/logo.png" v-if="! logo || logo == 'black'" alt="Bulldesk")
+        g-image.logo(src="~/assets/images/logo@white.png" v-if="logo && logo == 'white'" alt="Bulldesk")
     b-navbar-toggle(target="collapse")
     b-collapse#collapse(is-nav)
       b-navbar-nav.ml-auto
         b-nav-item-dropdown.for-whom(text="Pra quem é")
-          .dropdon-icon
+          .dropdonw-icon
             g-image(src='~/assets/icons/poligono.svg')
           .dropdown-container
             .row.no-gutters
-              .col-6
+              .col-12.col-sm-6
                 h6.dropdown-header Vertical
                 b-dropdown-item(href="/para-quem/agencias") Agências
                 b-dropdown-item(href="/para-quem/construtoras") Construtoras
@@ -124,13 +132,13 @@
                 b-dropdown-item(href="/para-quem/ensino") Ensino
                 b-dropdown-item(href="/para-quem/hoteis") Hotéis
                 b-dropdown-item(href="/para-quem/ecommerce") SaaS
-              .col-6
+              .col-12.col-sm-6
                 h6.dropdown-header Equipes
                 b-dropdown-item(href="/para-quem/marketing") Marketing
                 b-dropdown-item(href="/para-quem/vendas") Vendas
                 b-dropdown-item(href="/para-quem/gerentes") Gerentes
         b-nav-item-dropdown.what-it-does(text="O que faz")
-          .dropdon-icon
+          .dropdonw-icon
             g-image(src='~/assets/icons/poligono.svg')
           .dropdown-container
             .row.no-gutters
@@ -149,6 +157,7 @@
   export default {
     props: {
       type: String,
+      logo: String
     }
   }
 </script>
