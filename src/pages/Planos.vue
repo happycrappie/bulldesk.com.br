@@ -21,15 +21,20 @@
   section.plans
     background-position: center
     background-repeat: no-repeat
-    height: 1286px
+    min-height: 1286px
     background-image: url(~@/assets/images/pricing-purple-bg.png)
     margin-top: -200px
     padding-top: 280px
 
+    .list
+      width: 100%
+      overflow-x: auto
+
     .plan
-      @media only screen and (max-width: 992px)
-        margin-left: 15%
-        margin-right: 15%
+      min-width: 275px
+      // @media only screen and (max-width: 992px)
+      //   margin-left: 15%
+      //   margin-right: 15%
 
       .best-choice
         margin: -40px 30px 0
@@ -110,7 +115,7 @@
     margin: 3rem 0
 
     table.table
-      max-width: 980px
+      width: 980px
       margin: 1rem auto
       font-size: 0.85rem
 
@@ -157,9 +162,9 @@
         span.font-weight-bold De burocrático já basta a concorrência.
 
     section.plans
-      .container
-        .row.no-gutters
-          .plan.col-lg-3(v-for="(edge, index) in $page.plans.edges" :key="edge.node.id")
+      .container-fluid
+        .row.flex-row.flex-nowrap.no-gutters.list
+          .plan.col-3(v-for="(edge, index) in $page.plans.edges" :key="edge.node.id")
             .best-choice(v-if="index === 1") Melhor escolha 👌
             .detail
               .title {{ edge.node.name }}
@@ -169,7 +174,7 @@
               | {{ edge.node.name }} R$ {{ edge.node.price_per_user }}
               b-button Testar agora
 
-          .plan.col-lg-3
+          .plan.col-3
             .detail
               .title Enterprise
               .price Valor sob consulta
@@ -183,18 +188,19 @@
 
     section.compare
       .container
-        table.table.table-striped(v-for="table in plansTable")
-          thead
-            tr
-              th(colspan="5") {{ table.name }}
-          tbody
-            tr(v-for="item in table.items")
-              td {{ item.name }}
-                span.helper.ml-2(v-b-tooltip.hover.bottom="item.description", v-if="item.description") ?
-              td(v-for="exists in item.plans")
-                g-image(src="~/assets/icons/tick.svg", v-if="exists === true")
-                span(v-else-if="exists > 0 || exists.length > 0") {{ exists }}
-                span(v-else) -
+        .table-responsive
+          table.table.table-striped(v-for="table in plansTable")
+            thead
+              tr
+                th(colspan="5") {{ table.name }}
+            tbody
+              tr(v-for="item in table.items")
+                td {{ item.name }}
+                  span.helper.ml-2(v-b-tooltip.hover.bottom="item.description", v-if="item.description") ?
+                td(v-for="exists in item.plans")
+                  g-image(src="~/assets/icons/tick.svg", v-if="exists === true")
+                  span(v-else-if="exists > 0 || exists.length > 0") {{ exists }}
+                  span(v-else) -
 </template>
 
 <page-query>
