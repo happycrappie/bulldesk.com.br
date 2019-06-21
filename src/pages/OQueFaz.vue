@@ -6,7 +6,7 @@
 
   .hero
     margin-bottom: 95px
-    padding: 40px 0 350px
+    padding: 40px 0 21.875rem
     color: #fff
     background: center bottom no-repeat url(~@/assets/images/o-que-faz-bg-hero.jpg) $black
     background-size: auto
