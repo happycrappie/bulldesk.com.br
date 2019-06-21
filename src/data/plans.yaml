@@ -1,17 +1,100 @@
-- name: Atração e Conversão
+- name: Analytics, Atração e Conversão
   items:
-    - name: Criador de formulários
-      plans:
-        - true
-        - false
-        - true
-        - Legal
+    - name: Integração com formulários do site
+      description: Integre os formulários já existentes em seu site.
+      plans: [true, true, true, true]
+    - name: Construtor de Formulários
+      description: Construa formulários diretamente do Bulldesk e integre em seu site ou landing page.
+      plans: [true, true, true, true]
+    - name: Construtor de Landing Pages
+      description: Crie Landing Pages diretamente do Bulldesk.
+      plans: [true, true, true, true]
+    - name: Construtor de Sites
+      description: Crie Landing Pages complexas ou até mesmo seu novo site com o nosso construtor.
+      plans: [false, true, true, true]
+    - name: Domínios customizados
+      description: Utilize quantos domínios quiser para suas landing pages.
+      plans: [1, 3, 10, ilimitado]
+    - name: Espaço para materiais (PDF, DOCs)
+      description: Espaço máximo para materiais importados no Bulldesk.
+      plans: [10MB, 100MB, 500MB, ilimitado]
+    - name: Captura automática da origem do lead
+      description: Saiba exatamente de onde seu Lead veio ao se converter em seu site.
+      plans: [true, true, true, true]
+    - name: Link Builder & Link Tracker
+      description: Crie links UTM e saiba quantas pageviews, conversões e vendas aquele link gerou.
+      plans: [false, true, true, true]
+    - name: Histórico de páginas visitadas pelo lead
+      description: Veja todas as páginas que seu lead visitou em seu site.
+      plans: [3 meses, 1 ano, 2 anos, consulte]
 
-- name: Massa
+- name: Gestão de Leads
   items:
-    - name: Criador de formulários
-      plans:
-        - true
-        - false
-        - true
-        - true
+    - name: Base de leads
+      description: Todos os seus leads em um único lugar.
+      plans: [true, true, true, true]
+    - name: Importação de leads
+      description: Importe seus leads de qualquer lugar.
+      plans: [true, true, true, true]
+    - name: Filtros avançados
+      description: Crie filtros com condições complexas.
+      plans: [true, true, true, true]
+    - name: Segmentação de leads
+      description: Salve filtros como segmentações e utilize em campanhas de marketing e vendas.
+      plans: [true, true, true, true]
+    - name: Campos customizados
+      description: Crie campos customizados para seus leads.
+      plans: [true, true, true, true]
+
+- name: Gestão de Vendas (CRM)
+  items:
+    - name: Histórico do lead
+      description: Veja todas as ações que seu lead fez rapidamente.
+      plans: [true, true, true, true]
+    - name: Painel de atividades e agendamentos
+      description: Registre suas atividades e agente atividades futuras.
+      plans: [true, true, true, true]
+    - name: Alertas de atividades
+      description: Receba notificações das atividades agendadas.
+      plans: [true, true, true, true]
+    - name: Histórico de interações
+      description: Veja todo o histórico de suas interações com o lead.
+      plans: [true, true, true, true]
+    - name: Criar negócio manualmente
+      description: Crie negócios diretamente da tela do lead.
+      plans: [false, true, true, true]
+    - name: Aplicar campanha manualmente
+      description: Aplique campanhas diretamente da tela do lead.
+      plans: [false, true, true, true]
+    - name: Calendário de atividades
+      description: Veja todas as atividades e agendamentos no calendário.
+      plans: [false, true, true, true]
+    - name: Envio de e-mails na tela do lead
+      description: Envie e-mails diretamente da tela do lead.
+      plans: [false, true, true, true]
+    - name: Integração com Gmail
+      description: Integre sua conta do Gmail para enviar e receber e-mails diretamente na tela do lead.
+      plans: [false, true, true, true]
+    - name: Funis de venda configuráveis
+      description: Crie quantos funis de venda quanto forem necessários.
+      plans: [1, 5, 20, ilimitado]
+    - name: Customizar etapas de negociação
+      description: Altere as etapas de negociação de acordo com sua empresa.
+      plans: [true, true, true, true]
+    - name: Customizar motivos de perda
+      description: Mude os motivos de perda de seus negócios de acordo com sua empresa.
+      plans: [true, true, true, true]
+    - name: Envio de Whatsapp
+      description: Envie mensagens de Whatsapp para seus leads.
+      plans: [false, à partir de R$ 200 / mês, à partir de R$ 200 / mês, à partir de R$ 200 / mês]
+
+- name: E-mail Marketing
+  items:
+    - name: Construtor de e-mail Drag & Drop
+      plans: [true, true, true, true]
+    - name: Modelos de e-mails prontos
+      plans: [true, true, true, true]
+    - name: Visão de engajamento de leads
+      plans: [true, true, true, true]
+    - name: Limite de disparos por mês (x base de leads)
+      plans: [2x, 4x, 4x, consulte]
