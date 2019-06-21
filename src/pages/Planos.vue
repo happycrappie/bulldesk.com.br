@@ -4,7 +4,7 @@
   header
     padding-bottom: 1.2rem
 
-  .container
+  .hero.container
     h1
       margin-top: 3rem
       font-weight: 700
@@ -92,6 +92,45 @@
 
           hr
             border-top: 1px solid $gray-soft
+    .help
+      margin: auto
+      text-align: center
+      max-width: 400px
+      margin-top: 3rem
+      color: $white-gray
+
+      h3
+        font-weight: bold
+        margin-bottom: 2rem
+
+      p
+        font-size: 0.9rem
+
+  section.compare
+    margin: 3rem 0
+
+    table.table
+      max-width: 980px
+      margin: 1rem auto
+      font-size: 0.85rem
+
+      th, td
+        border-top: 0
+        color: $gray-light
+
+        &:not(:first-child)
+          text-align: center
+
+      th
+        text-transform: uppercase
+        border-bottom: 1px solid #dee2e6
+
+      td
+        width: 15%
+
+        &:first-child
+          width: 30%
+
 </style>
 
 <template lang="pug">
@@ -100,14 +139,14 @@
       .container
         Nav(type="light")
 
-    .container.text-center
+    .hero.container.text-center
       h1 Simples e prático
         span.dot.green
       p Veja abaixo qual o plano mais se adapta à sua necessidade.
         br
         | Contratação simples, rápida e 100% online.
         br
-        span.font-weight-bold De burocrático já basta a concorrência. 🤪
+        span.font-weight-bold De burocrático já basta a concorrência.
 
     section.plans
       .container
@@ -119,14 +158,37 @@
               .price R$ {{ edge.node.price_per_user }}
               .per-user por usuário
               hr
-              //- | {{ edge.node.name }} R$ {{ edge.node.price_per_user }}
-              //- b-button Testar agora
+              | {{ edge.node.name }} R$ {{ edge.node.price_per_user }}
+              b-button Testar agora
 
           .plan.col-lg-3
             .detail
               .title Enterprise
               .price Valor sob consulta
               hr
+
+        .row
+          .col-lg-12
+            .help
+              h3 Não sabe qual escolher?
+              p Compare logo abaixo os planos e escolha sua melhor opção de contratação. Você vai se surpreender.
+
+    section.compare
+      .container
+        table.table.table-striped(v-for="table in plansTable")
+          thead
+            tr
+              th {{ table.name }}
+              th
+              th
+              th
+              th
+          tbody
+            tr(v-for="item in table.items")
+              td {{ item.name }}
+              td(v-for="exists in item.plans")
+                g-image(src="~/assets/icons/tick.svg", v-if="exists === true")
+                span(v-if="exists.length > 0") {{ exists }}
 </template>
 
 <page-query>
@@ -144,6 +206,7 @@
 </page-query>
 
 <script>
+  import PlansTable from '~/data/plans.yaml'
   import Layout from '../layouts/Default'
   import Nav from '../components/Nav'
 
@@ -156,5 +219,15 @@
     metaInfo: {
       title: 'Planos e Preços'
     },
+
+    data () {
+      return {
+        plansTable: PlansTable
+      }
+    },
+
+    mounted () {
+      console.log(this.plansTable);
+    }
   }
 </script>
