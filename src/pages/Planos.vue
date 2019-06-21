@@ -162,7 +162,7 @@
         span.font-weight-bold De burocrático já basta a concorrência.
 
     section.plans
-      .container-fluid
+      .container
         .row.flex-row.flex-nowrap.no-gutters.list
           .plan.col-3(v-for="(edge, index) in $page.plans.edges" :key="edge.node.id")
             .best-choice(v-if="index === 1") Melhor escolha 👌
