@@ -59,18 +59,7 @@
     methods: {
       send() {
         if (this.email) {
-          let instance = axios.create(
-                  {
-                      withCredentials: true,
-                      headers: {
-                        'Accept': 'application/json',
-                        'Content-Type': 'application/json',
-                        'Access-Control-Allow-Origin': '*',
-                      }
-                  }
-              );
-
-          instance.post(process.env.GRIDSOME_API_URL + '/conversion/' + process.env.GRIDSOME_BULLDESK_TOKEN, {
+          axios.post(process.env.GRIDSOME_API_URL + '/conversion', {
             token: process.env.GRIDSOME_BULLDESK_TOKEN,
             identifier: this.identifier,
             email: this.email
