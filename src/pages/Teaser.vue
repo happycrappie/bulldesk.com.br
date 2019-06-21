@@ -81,8 +81,9 @@
       h2 Esteja preparado para uma nova
         .text-green  experiência
         |  em CRM e automação de Marketing
-      h3 Preencha seu e-mail e seja o primeiro a receber novidades
+      h3(v-if='! converted') Preencha seu e-mail e seja o primeiro a receber novidades
       email-input(placeholder='Insira seu email aqui' identifier='Teaser 2019' v-if='! converted' @convert='convert')
+      h3.message(v-if='converted') >>> Escrever mensagem de retorno aqui <<<
       teaser-countdown(deadline="June 28, 2019")
 </template>
 
