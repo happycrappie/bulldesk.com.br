@@ -5,6 +5,7 @@
     background: $black
 
   .hero
+    margin-bottom: 95px
     padding: 40px 0 350px
     color: #fff
     background: center bottom no-repeat url(~@/assets/images/o-que-faz-bg-hero.jpg) $black
@@ -32,6 +33,37 @@
 
         img
           margin: 0 15px 0 0
+
+  .topics-a
+    h2
+      font-size: 1.625rem
+      font-weight: bold
+      line-height: 1.15
+      color: $gray-dark
+
+    ul
+      margin-left: -25px
+      margin-right: -25px
+      padding: 0
+      list-style: none
+
+      li
+        margin-bottom: 60px
+        padding-left: 25px
+        padding-right: 25px
+
+        h3
+          height: 49px
+          margin-bottom: 15px
+          font-size: 1.125rem
+          font-weight: bold
+          line-height: 1.33
+          color: $gray-dark
+
+        p
+          font-size: 0.75rem
+          line-height: 2.08
+          color: $gray-light
 
 
 </style>
@@ -74,27 +106,28 @@
           div.col-lg-8
             g-image(src='~/assets/images/video-placeholder.jpg')
 
-    section.container
-      div
-        h2 Como o Bulldesk CRM ajuda a sua empresa a vender mais?
+    section.container.topics-a
+      .row
+        .col-lg-4
+          h2 Como o Bulldesk CRM ajuda a sua empresa a vender mais?
 
-      div
-        ul
-          li
-            h3 Organize o seu processo comercial
-            p Todo empresa possuí um processo comercial. Não é simplesmente só vender. Para isso, você pode utilizar o nosso funil de vendas e ter visão geral de tudo o que está sendo negociado na sua empresa.
+        .col-lg-8
+          ul.row.d-flex
+            li.col-lg-6
+              h3 Organize o seu processo comercial
+              p Todo empresa possuí um processo comercial. Não é simplesmente só vender. Para isso, você pode utilizar o nosso funil de vendas e ter visão geral de tudo o que está sendo negociado na sua empresa.
 
-          li
-            h3 Tenha um raio-x da sua área comercial
-            p Acompanhe de perto todo o progresso da sua equipe de vendas. Saiba quantas atividades cada vendedor está fazendo, quanto tempo leva para fechar um negócio ou até mesmo qual é o seu melhor vendedor.
+            li.col-lg-6
+              h3 Tenha um raio-x da sua área comercial
+              p Acompanhe de perto todo o progresso da sua equipe de vendas. Saiba quantas atividades cada vendedor está fazendo, quanto tempo leva para fechar um negócio ou até mesmo qual é o seu melhor vendedor.
 
-          li
-            h3 Todos os seus clientes em um único lugar
-            p Você pode importar a sua lista de contatos ou integrar diretamente com formulários do seu site. O importante é que você pode ter todos os seus clientes em um único lugar, trabalhando de forma personalizada com cada um deles.
+            li.col-lg-6
+              h3 Todos os seus clientes em um único lugar
+              p Você pode importar a sua lista de contatos ou integrar diretamente com formulários do seu site. O importante é que você pode ter todos os seus clientes em um único lugar, trabalhando de forma personalizada com cada um deles.
 
-          li
-            h3 Vá além de informações básicas
-            p Cada interação com um lead é armazenada em uma linha do tempo organizada que inclui chamadas, e-mails, reuniões e anotações. Você não precisará mais procurar em uma caixa de entrada lotada ou uma planilha confusa para descobrir em que ponto ficou uma determinada relação. Automaticamente o Bulldesk consegue para saber quais conteúdos seu lead consumiu e personalizar sua abordagem.
+            li.col-lg-6
+              h3 Vá além de informações básicas
+              p Cada interação com um lead é armazenada em uma linha do tempo organizada que inclui chamadas, e-mails, reuniões e anotações. Você não precisará mais procurar em uma caixa de entrada lotada ou uma planilha confusa para descobrir em que ponto ficou uma determinada relação. Automaticamente o Bulldesk consegue para saber quais conteúdos seu lead consumiu e personalizar sua abordagem.
 
     section.container
       h2 Use o Bulldesk CRM e acelere suas vendas
