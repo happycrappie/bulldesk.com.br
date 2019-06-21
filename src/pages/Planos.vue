@@ -114,6 +114,15 @@
       margin: 1rem auto
       font-size: 0.85rem
 
+      .helper
+        color: $gray-light
+        background: $gray-white
+        text-align: center
+        font-size: 0.7rem
+        font-weight: 700
+        padding: 4px 8px
+        border-radius: 50%
+
       th, td
         border-top: 0
         color: $gray-light
@@ -130,7 +139,6 @@
 
         &:first-child
           width: 30%
-
 </style>
 
 <template lang="pug">
@@ -178,17 +186,14 @@
         table.table.table-striped(v-for="table in plansTable")
           thead
             tr
-              th {{ table.name }}
-              th
-              th
-              th
-              th
+              th(colspan="5") {{ table.name }}
           tbody
             tr(v-for="item in table.items")
               td {{ item.name }}
+                span.helper.ml-2(v-b-tooltip.hover.bottom="item.description", v-if="item.description") ?
               td(v-for="exists in item.plans")
                 g-image(src="~/assets/icons/tick.svg", v-if="exists === true")
-                span(v-if="exists.length > 0") {{ exists }}
+                span(v-else-if="exists > 0 || exists.length > 0") {{ exists }}
 </template>
 
 <page-query>
