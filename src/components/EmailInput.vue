@@ -70,7 +70,7 @@
                   }
               );
 
-          instance.post(process.env.GRIDSOME_API_URL + '/conversion', {
+          instance.post(process.env.GRIDSOME_API_URL + '/conversion/' + process.env.GRIDSOME_BULLDESK_TOKEN, {
             token: process.env.GRIDSOME_BULLDESK_TOKEN,
             identifier: this.identifier,
             email: this.email
