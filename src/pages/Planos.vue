@@ -35,7 +35,7 @@
         max-width: 300px
 
     .plan
-      min-width: 300px
+      min-width: 280px
 
       .best-choice
         margin: -40px 30px 0
