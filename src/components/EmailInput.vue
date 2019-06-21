@@ -59,8 +59,8 @@
     methods: {
       send() {
         if (this.email) {
-          axios.post('https://api.bulldesk.com.br/conversion', {
-            token: '565333c25126f542d7aecfd179bc525b',
+          axios.post(process.env.GRIDSOME_API_URL, {
+            token: process.env.GRIDSOME_BULLDESK_TOKEN,
             identifier: this.identifier,
             email: this.email
           })
