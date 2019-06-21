@@ -194,6 +194,7 @@
               td(v-for="exists in item.plans")
                 g-image(src="~/assets/icons/tick.svg", v-if="exists === true")
                 span(v-else-if="exists > 0 || exists.length > 0") {{ exists }}
+                span(v-else) -
 </template>
 
 <page-query>
