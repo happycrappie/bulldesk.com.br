@@ -65,6 +65,58 @@
           line-height: 2.08
           color: $gray-light
 
+  .topics-b
+    position: relative
+    margin-bottom: 80px
+    padding-top: 15rem
+    padding-bottom: 6.25rem
+    text-align: center
+
+    &:before
+      content: ""
+      position: absolute
+      bottom: 0
+      left: calc(50% - 50vw)
+      z-index: -1
+      width: 100vw
+      height: 1253px
+      background: center bottom no-repeat url(~@/assets/images/o-que-faz-bg-topics-b.png)
+      background-size: cover
+
+    h2
+      margin-bottom: 80px
+      font-size: 1.625rem
+      font-weight: bold
+      line-height: 1.15
+      color: $gray-dark
+
+    ul
+      max-width: 700px
+      margin: 0 auto 90px
+      padding: 0
+      list-style: none
+
+      li
+        margin-bottom: 25px
+        text-align: left
+
+        h3
+          margin-bottom: 15px
+          font-size: 0.75rem
+          line-height: 2.08
+          color: $purple
+
+          img
+            margin-right: 10px
+
+        p
+          padding-left: 27px
+          font-size: 0.75rem
+          line-height: 2.08
+          color: $gray-light
+
+
+
 
 </style>
 
@@ -129,30 +181,30 @@
               h3 Vá além de informações básicas
               p Cada interação com um lead é armazenada em uma linha do tempo organizada que inclui chamadas, e-mails, reuniões e anotações. Você não precisará mais procurar em uma caixa de entrada lotada ou uma planilha confusa para descobrir em que ponto ficou uma determinada relação. Automaticamente o Bulldesk consegue para saber quais conteúdos seu lead consumiu e personalizar sua abordagem.
 
-    section.container
+    section.container.topics-b
       h2 Use o Bulldesk CRM e acelere suas vendas
 
-      ul
-        li
-          h3
+      ul.row.d-flex.justify-content-between
+        li.col-lg-5
+          h3.d-flex.align-items-center
             g-image(src='~/assets/icons/check.svg')
             | Envie sequências personalizadas
           p Crie uma série de e-mails e envie-os para os seus prospects de acordo com o interesse e programação que você estabelecer.
 
-        li
-          h3
+        li.col-lg-5
+          h3.d-flex.align-items-center
             g-image(src='~/assets/icons/check.svg')
             | Monte campanhas de Whatsapp
           p Trabalhe o relacionamento com os seus clientes pelo whatsapp e assim que alguém responder, ele vai diretamente para o celular do seu vendedor.
 
-        li
-          h3
+        li.col-lg-5
+          h3.d-flex.align-items-center
             g-image(src='~/assets/icons/check.svg')
             | Gerencie sua equipe comercial
           p Distribua igualitariamente entre a sua equipe comercial todos os leads que entram no seu site. Dessa forma todos podem atender os novos clientes.
 
-        li
-          h3
+        li.col-lg-5
+          h3.d-flex.align-items-center
             g-image(src='~/assets/icons/check.svg')
             | Marque mais reuniões
           p Com a funcionalidade calendário, você pode ver todos os agendamentos e compromissos que existem com os seus leads.
