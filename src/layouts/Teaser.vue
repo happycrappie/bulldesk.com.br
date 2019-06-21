@@ -4,7 +4,7 @@
   html, body
     height: 100%
 
-  main
+  main.teaser-layout
     height: 100%
     overflow-y: auto
     background-image: url(~@/assets/images/teaser-footer-bg.png), url(~@/assets/images/teaser-bg.png)
@@ -26,6 +26,6 @@
 </style>
 
 <template lang="pug">
-  main
+  main.teaser-layout
     slot
 </template>
