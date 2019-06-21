@@ -3,23 +3,23 @@
 
   .container
     text-align: center
-    padding-top: 10rem
+    padding-top: 6rem
 
     h2
       margin: auto
-      max-width: 600px
+      max-width: 500px
       color: $white-gray
-      font-size: 4rem
+      font-size: 3.5rem
       font-weight: 700
       letter-spacing: -0.94px
       line-height: 60px
 
     h3
       margin: auto
-      margin-top: 4rem
-      max-width: 500px
+      margin-top: 4.5rem
+      max-width: 400px
       color: $white-gray
-      font-size: 2rem
+      font-size: 1.5rem
       font-weight: 400
       letter-spacing: -0.36px
       line-height: 30px
@@ -27,7 +27,7 @@
     .email-group
       margin-left: auto
       margin-right: auto
-      margin-top: 4rem
+      margin-top: 2.5rem
 </style>
 
 <template lang="pug">

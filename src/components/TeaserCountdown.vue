@@ -1,60 +1,63 @@
 <style lang="sass">
-  .vuejs-countdown
-    padding: 0
-    margin: 0
-
-  .vuejs-countdown li
-    display: inline-block
-    margin: 0 8px
-    text-align: center
-    position: relative
-
-  .vuejs-countdown li p
+  .countdown-container
+    .vuejs-countdown
+      padding: 0
       margin: 0
 
-  .vuejs-countdown li:after
-    content: ":"
-    position: absolute
-    top: 0
-    right: -13px
-    font-size: 32px
+    .vuejs-countdown li
+      display: inline-block
+      margin: 0 8px
+      text-align: center
+      position: relative
 
-  .vuejs-countdown li:first-of-type
-    margin-left: 0
+    .vuejs-countdown li p
+        margin: 0
+
+    .vuejs-countdown li:after
+      content: ":"
+      position: absolute
+      top: 0
+      right: -13px
+      font-size: 32px
+
+    .vuejs-countdown li:first-of-type
+      margin-left: 0
 
 
-  .vuejs-countdown li:last-of-type
-    margin-right: 0
+    .vuejs-countdown li:last-of-type
+      margin-right: 0
 
-  .vuejs-countdown li:last-of-type:after
-    content: ""
+    .vuejs-countdown li:last-of-type:after
+      content: ""
 
-  .vuejs-countdown .digit
-    font-size: 32px
-    font-weight: 600
-    line-height: 1.4
-    margin-bottom: 0
+    .vuejs-countdown .digit
+      font-size: 32px
+      font-weight: 600
+      line-height: 1.4
+      margin-bottom: 0
 
-  .vuejs-countdown .text
-    text-transform: uppercase
-    margin-bottom: 0
-    font-size: 10px
+    .vuejs-countdown .text
+      text-transform: uppercase
+      margin-bottom: 0
+      font-size: 10px
 </style>
 
 <template lang="pug">
-  ul.vuejs-countdown
-    li(v-if="days > 0")
-      p.digit {{ days | twoDigits }}
-      p.text {{ days > 1 ? 'days' : 'day' }}
-    li
-      p.digit {{ hours | twoDigits }}
-      p.text {{ hours > 1 ? 'hours' : 'hour' }}
-    li
-      p.digit {{ minutes | twoDigits }}
-      p.text min
-    li
-      p.digit {{ seconds | twoDigits }}
-      p.text Sec
+  .countdown-container
+    .container
+      ul.vuejs-countdown
+        li(v-if="days > 0")
+          p.digit {{ days | twoDigits }}
+          p.text {{ days > 1 ? 'days' : 'day' }}
+        li
+          p.digit {{ hours | twoDigits }}
+          p.text {{ hours > 1 ? 'hours' : 'hour' }}
+        li
+          p.digit {{ minutes | twoDigits }}
+          p.text min
+        li
+          p.digit {{ seconds | twoDigits }}
+          p.text Sec
 </template>
 
 <script>
