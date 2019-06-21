@@ -1,6 +1,7 @@
 <style lang="sass">
   html, body, main
     height: 100%
+    background-image: none
 </style>
 
 <template lang="pug">

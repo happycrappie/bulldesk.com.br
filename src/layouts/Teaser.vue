@@ -1,4 +1,4 @@
-<style lang="sass" scoped>
+<style lang="sass">
   @import '../assets/styles/_variables.scss'
 
   html, body
