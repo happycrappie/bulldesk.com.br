@@ -23,10 +23,11 @@
     background-repeat: no-repeat
     min-height: 1286px
     background-image: url(~@/assets/images/pricing-purple-bg.png)
-    margin-top: -200px
+    margin-top: -250px
     padding-top: 280px
 
     .list
+      display: flex
       width: 100%
       overflow-x: auto
 
@@ -38,7 +39,7 @@
       min-width: 275px
 
       .best-choice
-        margin: -40px 30px 0
+        margin: 0 30px 0
         padding: 10px
         text-align: center
         font-size: 0.8rem
@@ -49,11 +50,12 @@
         color: $white
 
       .detail
+        margin-top: 70px
         text-align: center
         min-height: 400px
         padding: 60px 30px
         box-shadow: 0 10px 20px rgba(69, 39, 123, 0.09)
-        border-radius: 10px 0 0 10px
+        border-radius: 10px
 
         .title
           font-size: 1rem
@@ -79,12 +81,11 @@
           background-color: $white-gray
 
       &:nth-child(2)
-        margin-top: -30px
-
         .detail
+          margin-top: 0
           background-color: $white
           height: 400px + 30px
-          border-radius: 0 10px 10px 0
+          // border-radius: 0 10px 10px 0
 
       &:nth-child(3)
         .detail
@@ -95,7 +96,7 @@
         .detail
           color: $white-gray
           background-color: $gray-dark
-          border-radius: 0 10px 10px 0
+          // border-radius: 0 10px 10px 0
 
           .title
             color: $white-gray
@@ -176,20 +177,21 @@
 
     section.plans
       .container
-        .row.no-gutters.list
-          .plan.col-3(v-for="(plan, index) in plansList")
-            .best-choice(v-if="index === 1") Melhor escolha 👌
-            .detail
-              .title {{ plan.name }}
-              .price R$ {{ plan.price_per_user }}
-              .per-user por usuário
+        .row.no-gutters
+          .list
+            .plan.col-3(v-for="(plan, index) in plansList")
+              .best-choice(v-if="index === 1") Melhor escolha 👌
+              .detail
+                .title {{ plan.name }}
+                .price R$ {{ plan.price_per_user }}
+                .per-user por usuário
 
-              hr
+                hr
 
-              ul.features
-                li(v-for=("feature in plan.features")) {{ feature}}
+                ul.features
+                  li(v-for=("feature in plan.features")) {{ feature}}
 
-              b-button Testar agora
+                b-button Testar agora
 
         .row
           .col-lg-12
