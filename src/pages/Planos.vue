@@ -30,11 +30,12 @@
       width: 100%
       overflow-x: auto
 
+      @media only screen and (max-width: 420px)
+        margin: auto
+        max-width: 300px
+
     .plan
-      min-width: 275px
-      // @media only screen and (max-width: 992px)
-      //   margin-left: 15%
-      //   margin-right: 15%
+      min-width: 300px
 
       .best-choice
         margin: -40px 30px 0
