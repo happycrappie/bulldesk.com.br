@@ -37,11 +37,13 @@
   b-input-group.email-group
     b-form-input.email-input(:placeholder='inputPlaceholder' v-model='email')
     b-input-group-append
-      b-button.email-button
+      b-button.email-button(@click='send()')
         g-image(src='~/assets/icons/play-button@black.svg')
 </template>
 
 <script>
+  import axios from 'axios'
+
   export default {
     props: {
       placeholder: String,
@@ -51,6 +53,20 @@
     computed: {
       inputPlaceholder() {
         return this.placeholder || 'Email'
+      }
+    },
+
+    methods: {
+      send() {
+        if (this.email) {
+          axios.post(process.env.GRIDSOME_API_URL + '/conversion', {
+            token: process.env.GRIDSOME_BULLDESK_TOKEN,
+            identifier: this.identifier,
+            email: this.email
+          })
+          .then(response => console.log(response))
+          .catch(error => console.error(error))
+        }
       }
     },
 

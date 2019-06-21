@@ -82,7 +82,7 @@
         .text-green  experiência
         |  em CRM e automação de Marketing
       h3 Preencha seu e-mail e seja o primeiro a receber novidades
-      email-input(placeholder='Insira seu email aqui' identifier='teaser')
+      email-input(placeholder='Insira seu email aqui' identifier='Teaser 2019')
       teaser-countdown(deadline="June 28, 2019")
 </template>
 
