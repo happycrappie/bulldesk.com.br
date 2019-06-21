@@ -64,8 +64,8 @@
             identifier: this.identifier,
             email: this.email
           })
-          .then(response => console.log(response))
-          .catch(error => console.error(error))
+          .then(response => this.$emit('convert', true))
+          .catch(error => this.$emit('convert', false))
         }
       }
     },
