@@ -50,11 +50,21 @@
       letter-spacing: -0.6px
       line-height: 60px
       margin-bottom: 1rem
-      border: 1px solid $white-gray
+      border: 1.5px solid $white-gray
       border-radius: 30px
       min-width: 85px
       min-height: 85px
       padding: 1rem
+
+      @media only screen and (min-width: map-get($grid-breakpoints, 'sm')) and (max-width: map-get($grid-breakpoints, 'lg2'))
+        font-size: 2.2rem
+        min-height: 75px
+        min-width: 75px
+
+      @media only screen and (max-width: map-get($grid-breakpoints, 'sm'))
+        font-size: 2rem
+        min-height: 75px
+        min-width: 75px
 
     .vuejs-countdown .text
       margin-bottom: 0
@@ -79,7 +89,7 @@
           p.text min
         li
           p.digit {{ seconds | twoDigits }}
-          p.text Seg
+          p.text seg
 </template>
 
 <script>
