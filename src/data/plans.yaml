@@ -21,6 +21,9 @@
     - name: Captura automática da origem do lead
       description: Saiba exatamente de onde seu Lead veio ao se converter em seu site.
       plans: [true, true, true, true]
+    - name: Pageviews/mês
+      description: Máximo de pageviews por mês para captura de origens dos leads.
+      plans: ['1.000', '50.000', '500.000', ilimitado]
     - name: Link Builder & Link Tracker
       description: Crie links UTM e saiba quantas pageviews, conversões e vendas aquele link gerou.
       plans: [false, true, true, true]
@@ -30,9 +33,9 @@
 
 - name: Gestão de Leads
   items:
-    - name: Base de leads
-      description: Todos os seus leads em um único lugar.
-      plans: [true, true, true, true]
+    - name: Leads
+      description: Quantidade máxima de leads no plano.
+      plans: ['1.000', '10.000', '50.000', consulte]
     - name: Importação de leads
       description: Importe seus leads de qualquer lugar.
       plans: [true, true, true, true]
@@ -49,9 +52,9 @@
 - name: Gestão de Vendas (CRM)
   items:
     - name: Histórico do lead
-      description: Veja todas as ações que seu lead fez rapidamente.
+      description: Veja todas as ações do seu lead.
       plans: [true, true, true, true]
-    - name: Painel de atividades e agendamentos
+    - name: Atividades e agendamentos
       description: Registre suas atividades e agente atividades futuras.
       plans: [true, true, true, true]
     - name: Alertas de atividades
@@ -60,12 +63,12 @@
     - name: Histórico de interações
       description: Veja todo o histórico de suas interações com o lead.
       plans: [true, true, true, true]
-    - name: Criar negócio manualmente
-      description: Crie negócios diretamente da tela do lead.
-      plans: [false, true, true, true]
-    - name: Aplicar campanha manualmente
-      description: Aplique campanhas diretamente da tela do lead.
-      plans: [false, true, true, true]
+    # - name: Criar negócio manualmente
+    #   description: Crie negócios diretamente da tela do lead.
+    #   plans: [false, true, true, true]
+    # - name: Aplicar campanha manualmente
+    #   description: Aplique campanhas diretamente da tela do lead.
+    #   plans: [false, true, true, true]
     - name: Calendário de atividades
       description: Veja todas as atividades e agendamentos no calendário.
       plans: [false, true, true, true]
@@ -74,7 +77,7 @@
       plans: [false, true, true, true]
     - name: Integração com Gmail
       description: Integre sua conta do Gmail para enviar e receber e-mails diretamente na tela do lead.
-      plans: [false, true, true, true]
+      plans: [false, false, true, true]
     - name: Funis de venda configuráveis
       description: Crie quantos funis de venda quanto forem necessários.
       plans: [1, 5, 20, ilimitado]
@@ -83,7 +86,7 @@
       plans: [true, true, true, true]
     - name: Customizar motivos de perda
       description: Mude os motivos de perda de seus negócios de acordo com sua empresa.
-      plans: [true, true, true, true]
+      plans: [false, true, true, true]
     - name: Envio de Whatsapp
       description: Envie mensagens de Whatsapp para seus leads.
       plans: [false, à partir de R$ 200 / mês, à partir de R$ 200 / mês, à partir de R$ 200 / mês]
@@ -95,6 +98,22 @@
     - name: Modelos de e-mails prontos
       plans: [true, true, true, true]
     - name: Visão de engajamento de leads
-      plans: [true, true, true, true]
-    - name: Limite de disparos por mês (x base de leads)
+      plans: [false, true, true, true]
+    - name: Limite de disparos (x base de leads por mês)
       plans: [2x, 4x, 4x, consulte]
+
+- name: Automação de Marketing
+  items:
+    - name: Campanhas de Automação
+      description: Número máximo de campanhas de automação que podem ser criadas.
+      plans: [2, 10, 30, ilimitado]
+    - name: Ações por campanha
+      description: Número máximo de ações que poodem ser adicionadas às campanhas.
+      plans: [3, 10, 30, ilimitado]
+    - name: Decisões por campanha
+      description: Número máximo de decisões que podem ser adicionadas às campanhas.
+      plans: [false, 2, 8, ilimitado]
+    - name: Lead Scoring
+      plans: [false, true, true, true]
+    - name: Envios de SMS
+      plans: ['à partir de R$ 60 por 1.000 envios', 'à partir de R$ 60 por 1.000 envios', 'à partir de R$ 60 por 1.000 envios', 'à partir de R$ 60 por 1.000 envios']
