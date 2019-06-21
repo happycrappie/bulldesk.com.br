@@ -1,5 +1,18 @@
 <style lang="sass">
+  @import '../assets/styles/_variables.scss'
+
   .countdown-container
+    text-align: center
+    color: $white-gray
+
+    h4
+      font-size: 1rem
+      font-weight: 400
+      letter-spacing: 4.2px
+      line-height: 25px
+      text-transform: uppercase
+      margin-bottom: 1rem
+
     .vuejs-countdown
       padding: 0
       margin: 0
@@ -9,6 +22,7 @@
       margin: 0 8px
       text-align: center
       position: relative
+      padding: 1rem
 
     .vuejs-countdown li p
         margin: 0
@@ -16,9 +30,9 @@
     .vuejs-countdown li:after
       content: ":"
       position: absolute
-      top: 0
+      top: 40px
       right: -13px
-      font-size: 32px
+      font-size: 2rem
 
     .vuejs-countdown li:first-of-type
       margin-left: 0
@@ -31,33 +45,41 @@
       content: ""
 
     .vuejs-countdown .digit
-      font-size: 32px
-      font-weight: 600
-      line-height: 1.4
-      margin-bottom: 0
+      font-size: 2.5rem
+      font-weight: 700
+      letter-spacing: -0.6px
+      line-height: 60px
+      margin-bottom: 1rem
+      border: 1px solid $white-gray
+      border-radius: 30px
+      min-width: 85px
+      min-height: 85px
+      padding: 1rem
 
     .vuejs-countdown .text
-      text-transform: uppercase
       margin-bottom: 0
-      font-size: 10px
+      font-size: 1rem
+      font-weight: 700
+      letter-spacing: -0.21px
 </style>
 
 <template lang="pug">
   .countdown-container
     .container
+      h4 FALTAM APENAS
       ul.vuejs-countdown
         li(v-if="days > 0")
           p.digit {{ days | twoDigits }}
-          p.text {{ days > 1 ? 'days' : 'day' }}
+          p.text {{ days > 1 ? 'dias' : 'dia' }}
         li
           p.digit {{ hours | twoDigits }}
-          p.text {{ hours > 1 ? 'hours' : 'hour' }}
+          p.text {{ hours > 1 ? 'horas' : 'hora' }}
         li
           p.digit {{ minutes | twoDigits }}
           p.text min
         li
           p.digit {{ seconds | twoDigits }}
-          p.text Sec
+          p.text Seg
 </template>
 
 <script>

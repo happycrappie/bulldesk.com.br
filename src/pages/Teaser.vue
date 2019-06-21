@@ -28,6 +28,9 @@
       margin-left: auto
       margin-right: auto
       margin-top: 2.5rem
+
+    .countdown-container
+      margin-top: 14rem
 </style>
 
 <template lang="pug">
@@ -36,20 +39,21 @@
       h2 Esteja preparado para uma nova
         .text-green  experiência
         |  em CRM e automação de Marketing
-
       h3 Preencha seu e-mail e seja o primeiro a receber novidades
-
       email-input(placeholder='Insira seu email aqui' identifier='teaser')
+      teaser-countdown(deadline="June 28, 2019")
 </template>
 
 <script>
   import Layout from '../layouts/Teaser'
   import EmailInput from '../components/EmailInput'
+  import TeaserCountdown from '../components/TeaserCountdown'
 
   export default {
     components: {
       Layout,
       EmailInput,
+      TeaserCountdown,
     },
 
     metaInfo: {

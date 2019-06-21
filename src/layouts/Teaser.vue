@@ -12,15 +12,4 @@
 <template lang="pug">
   main
     slot
-    TeaserCountdown(deadline="August 22, 2022")
 </template>
-
-<script>
-  import TeaserCountdown from '../components/TeaserCountdown'
-
-  export default {
-    components: {
-      TeaserCountdown
-    }
-  }
-</script>
