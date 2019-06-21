@@ -3,6 +3,9 @@
 
   html, body
     height: 100%
+
+  main
+    height: 100%
     overflow-y: auto
     background-image: url(~@/assets/images/teaser-footer-bg.png), url(~@/assets/images/teaser-bg.png)
     background-size: 110% 130%, 100% 100%
@@ -20,9 +23,6 @@
 
     @media only screen and (max-width: map-get($grid-breakpoints, 'sm'))
       background-position: -2rem 10rem, 0rem 0rem
-
-  main
-    height: auto
 </style>
 
 <template lang="pug">

@@ -1,3 +1,5 @@
+import Layout from '~/layouts/Default.vue'
+
 import BootstrapVue from 'bootstrap-vue'
 import './assets/styles/main.sass'
 
