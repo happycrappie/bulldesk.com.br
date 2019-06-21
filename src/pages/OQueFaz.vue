@@ -18,6 +18,12 @@
       font-weight: 700
       line-height: 1
 
+      @media only screen and (max-width: 700px)
+        font-size: 3.5rem
+
+      @media only screen and (max-width: 400px)
+        font-size: 3.1rem
+
     h2
       margin: 0 0 40px
       font-size: 1.125rem
@@ -27,12 +33,18 @@
       padding: 0
       list-style: none
 
+      @media only screen and (max-width: 990px)
+        margin-bottom: 40px
+
       li
         margin: 0 0 15px
         font-size: 0.75rem
 
         img
           margin: 0 15px 0 0
+
+    img
+      max-width: 100%
 
   .topics-a
     h2
@@ -41,16 +53,23 @@
       line-height: 1.15
       color: $gray-dark
 
+      @media only screen and (max-width: 990px)
+        margin-bottom: 40px
+
     ul
-      margin-left: -25px
-      margin-right: -25px
       padding: 0
       list-style: none
 
+      @media only screen and (min-width: 992px)
+        margin-left: -25px
+        margin-right: -25px
+
       li
         margin-bottom: 60px
-        padding-left: 25px
-        padding-right: 25px
+
+        @media only screen and (min-width: 992px)
+          padding-left: 25px
+          padding-right: 25px
 
         h3
           height: 49px
@@ -71,6 +90,9 @@
     padding-top: 15rem
     padding-bottom: 6.25rem
     text-align: center
+
+    @media only screen and (max-width: 990px)
+        padding-top: 100px
 
     &:before
       content: ""
@@ -209,7 +231,7 @@
             | Marque mais reuniões
           p Com a funcionalidade calendário, você pode ver todos os agendamentos e compromissos que existem com os seus leads.
 
-      a.btn-default.d-none.d-lg-inline
+      a.btn-default.d-lg-inline
         | Quero fazer um teste gratuito
         g-image(src='~/assets/icons/play-button@black.svg')
 
