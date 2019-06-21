@@ -65,6 +65,15 @@
         .per-user
           font-size: 0.8rem
 
+        .features
+          color: $gray-light
+          font-size: 0.85rem
+          text-align: left
+          padding-inline-start: 30px
+
+          li
+            padding: 3px 0
+
       &:first-child
         .detail
           background-color: $white-gray
@@ -98,6 +107,9 @@
 
           hr
             border-top: 1px solid $gray-soft
+
+          .features
+            color: $white-gray
     .help
       margin: auto
       text-align: center
@@ -164,22 +176,20 @@
 
     section.plans
       .container
-        .row.flex-row.flex-nowrap.no-gutters.list
-          .plan.col-3(v-for="(edge, index) in $page.plans.edges" :key="edge.node.id")
+        .row.no-gutters.list
+          .plan.col-3(v-for="(plan, index) in plansList")
             .best-choice(v-if="index === 1") Melhor escolha 👌
             .detail
-              .title {{ edge.node.name }}
-              .price R$ {{ edge.node.price_per_user }}
+              .title {{ plan.name }}
+              .price R$ {{ plan.price_per_user }}
               .per-user por usuário
-              hr
-              | {{ edge.node.name }} R$ {{ edge.node.price_per_user }}
-              b-button Testar agora
 
-          .plan.col-3
-            .detail
-              .title Enterprise
-              .price Valor sob consulta
               hr
+
+              ul.features
+                li(v-for=("feature in plan.features")) {{ feature}}
+
+              b-button Testar agora
 
         .row
           .col-lg-12
@@ -204,22 +214,8 @@
                   span(v-else) -
 </template>
 
-<page-query>
-  query Plans {
-    plans: allMonthlyPlans(sortBy: "price_per_user", order: ASC, limit: 3) {
-      edges {
-        node {
-          id
-          name
-          price_per_user
-        }
-      }
-    }
-  }
-</page-query>
-
 <script>
-  import PlansTable from '~/data/plans.yaml'
+  import Plans from '~/data/plans.yaml'
   import Layout from '../layouts/Default'
   import Nav from '../components/Nav'
 
@@ -235,7 +231,8 @@
 
     data () {
       return {
-        plansTable: PlansTable
+        plansList: Plans.list,
+        plansTable: Plans.table,
       }
     },
 
