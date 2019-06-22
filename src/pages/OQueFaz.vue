@@ -43,9 +43,6 @@
         img
           margin: 0 15px 0 0
 
-    img
-      max-width: 100%
-
   .topics-a
     h2
       font-size: 1.625rem
@@ -136,10 +133,6 @@
           font-size: 0.75rem
           line-height: 2.08
           color: $gray-light
-
-
-
-
 </style>
 
 <template lang="pug">
@@ -178,7 +171,7 @@
                 | Veja seus relatórios
 
           div.col-lg-8
-            g-image(src='~/assets/images/video-placeholder.jpg')
+            VideoLauncher(videoID="q7kIWRT_zPs" image="/assets/static/src/assets/images/video-placeholder.jpg")
 
     section.container.topics-a
       .row
@@ -242,11 +235,13 @@
 <script>
   import Layout from '../layouts/Default'
   import Nav from '../components/Nav'
+  import VideoLauncher from '../components/VideoLauncher'
 
   export default {
     components: {
       Layout,
       Nav,
+      VideoLauncher,
     },
 
     metaInfo: {
