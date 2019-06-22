@@ -1,166 +1,203 @@
-- name: Analytics, Atração e Conversão
-  items:
-    - name: Leads
-      description: Quantidade máxima de leads no plano.
-      plans: ['1.000', '10.000', '50.000', consulte]
-    - name: Importação de leads
-      description: Importe seus leads de qualquer lugar.
-      plans: [true, true, true, true]
-    # - name: Filtros avançados
-    #   description: Crie filtros com condições complexas.
-    #   plans: [true, true, true, true]
-    - name: Segmentação de leads
-      description: Salve filtros avançados como segmentações e utilize em campanhas de marketing e vendas.
-      plans: [true, true, true, true]
-    - name: Campos customizados
-      description: Crie campos customizados para seus leads.
-      plans: [true, true, true, true]
-    - name: Integração com formulários do site
-      description: Integre os formulários já existentes em seu site.
-      plans: [true, true, true, true]
-    - name: Construtor de Formulários
-      description: Construa formulários diretamente do Bulldesk e integre em seu site ou landing page.
-      plans: [true, true, true, true]
-    - name: Captura automática da origem do lead
-      description: Saiba exatamente de onde seu Lead veio ao converter em seu site.
-      plans: [true, true, true, true]
-    - name: Construtor de Landing Pages
-      description: Crie Landing Pages diretamente do Bulldesk.
-      plans: [true, true, true, true]
-    - name: Construtor de Sites
-      description: Crie Landing Pages complexas ou até mesmo seu novo site com o nosso construtor.
-      plans: [false, true, true, true]
-    - name: Link Builder & Link Tracker
-      description: Crie links UTM e saiba quantas pageviews, conversões e vendas aquele link gerou.
-      plans: [false, true, true, true]
-    - name: Espaço para materiais (PDF, DOCs)
-      description: Espaço máximo para materiais importados no Bulldesk.
-      plans: [10MB, 100MB, 500MB, ilimitado]
-    - name: Pageviews/mês
-      description: Máximo de pageviews por mês para captura de origens dos leads.
-      plans: ['1.000', '50.000', '500.000', ilimitado]
-    - name: Domínios customizados
-      description: Utilize quantos domínios quiser para suas landing pages.
-      plans: [1, 3, 10, ilimitado]
-    - name: Histórico de páginas visitadas pelo lead
-      description: Veja todas as páginas que seu lead visitou em seu site.
-      plans: [3 meses, 6 meses, 1 ano, 2 anos]
+list:
+  - name: Start
+    price_per_user: 59
+    features:
+      - 1.000 leads
+      - CRM e Base de Leads
+      - Funil de Vendas
+      - Automação de marketing e vendas básica
 
-- name: Vendas
-  items:
-    - name: Funis de venda configuráveis
-      description: Crie quantos funis de venda quanto forem necessários.
-      plans: [1, 5, 20, ilimitado]
-    - name: Customizar etapas de negociação
-      description: Altere as etapas de negociação de acordo com sua empresa.
-      plans: [true, true, true, true]
-    # - name: Histórico do lead
-    #   description: Veja todas as ações do seu lead.
-    #   plans: [true, true, true, true]
-    - name: Atividades e agendamentos
-      description: Registre suas atividades e agente atividades futuras e veja tudo o que aconteceu com seu lead.
-      plans: [true, true, true, true]
-    # - name: Alertas de atividades
-    #   description: Receba notificações das atividades agendadas.
-    #   plans: [true, true, true, true]
-    # - name: Histórico de interações
-    #   description: Veja todo o histórico de suas interações com o lead.
-    #   plans: [true, true, true, true]
-    # - name: Criar negócio manualmente
-    #   description: Crie negócios diretamente da tela do lead.
-    #   plans: [true, true, true, true]
-    # - name: Aplicar campanha manualmente
-    #   description: Aplique campanhas diretamente da tela do lead.
-    #   plans: [true, true, true, true]
-    - name: Calendário de atividades
-      description: Veja todas as atividades e agendamentos no calendário.
-      plans: [true, true, true, true]
-    - name: Envio de e-mails no CRM
-      description: Envie e-mails diretamente da tela do lead.
-      plans: [true, true, true, true]
-    - name: Configurações de visibilidade
-      description: Configure se os leads/negócios aparecem para todos ou apenas para seus donos.
-      plans: [false, true, true, true]
-    - name: Customizar motivos de perda
-      description: Mude os motivos de perda de seus negócios de acordo com sua empresa.
-      plans: [false, true, true, true]
-    - name: Progresso e Relatórios de Vendas
-      description: Tenha relatórios completo do andamento de seus negócios.
-      plans: [false, true, true, true]
-    - name: Integração com Gmail
-      description: Integre sua conta do Gmail para enviar e receber e-mails diretamente na tela do lead.
-      plans: [false, false, true, true]
+  - name: Standard
+    price_per_user: 59
+    features:
+      - 10.000 leads
+      - CRM e Base de Leads
+      - Funil de Vendas
+      - Automação de marketing e vendas avançada
 
-- name: Marketing
-  items:
-    - name: Modelos de e-mails prontos
-      description: Escolha um de vários templates para utilizar em suas campanhas.
-      plans: [true, true, true, true]
-    - name: Construtor de e-mail Drag & Drop
-      description: Número máximo de campanhas de automação que podem ser criadas.
-      plans: [true, true, true, true]
-    # - name: Visão de engajamento de leads
-    #   plans: [false, true, true, true]
-    - name: Disparos de e-mail marketing
-      description: Limite em relação ao total de leads por mês.
-      plans: [2x base, 4x base, 4x base, consulte]
-    - name: Campanhas de Automação
-      description: Número máximo de campanhas de automação que podem ser criadas.
-      plans: [2, 10, 30, ilimitado]
-    - name: Ações por campanha
-      description: Número máximo de ações que podem ser adicionadas às campanhas.
-      plans: [3, 10, 30, ilimitado]
-    - name: Decisões por campanha
-      description: Número máximo de decisões que podem ser adicionadas às campanhas.
-      plans: [false, 2, 8, ilimitado]
-    - name: Lead Scoring
-      description: Adicione ou remova pontos em seus leads e crie campanhas com base nessas pontuações.
-      plans: [false, true, true, true]
-    - name: Relatórios
-      description: Tenha relatórios completo entre marketing & vendas.
-      plans: [false, true, true, true]
-    - name: Envios de SMS
-      description: Envie mensagens de SMS para seus leads nas campanhas.
-      plans: ['à partir de R$ 60 por 1.000 envios', 'à partir de R$ 60 por 1.000 envios', 'à partir de R$ 60 por 1.000 envios', consulte]
-    - name: Envios de Whatsapp
-      description: Envie mensagens de Whatsapp para seus leads nas campanhas.
-      plans: [false, à partir de R$ 200 / mês, à partir de R$ 200 / mês, consulte]
+  - name: Premium
+    price_per_user: 159
+    features:
+      - 50.000 leads
+      - CRM e Base de Leads
+      - Funil de Vendas
+      - Automação de marketing e vendas avançada
 
-- name: Integrações
-  items:
-    - name: Facebook Ads nas Landing Pages
-      description: Veja todas as visitas e conversões de suas landing pages vindas do Facebook Ads.
-      plans: [false, true, true, true]
-    - name: Google Analytics nas Landing Pages
-      description: Veja todas as visitas e conversões de suas landing pages no Google Analytics.
-      plans: [false, true, true, true]
-    - name: Olark
-      description: Envie chats do Olark para o Bulldesk.
-      plans: [false, false, true, true]
-    - name: Exact Sales
-      description: Receba e envie leads do Exact Sales.
-      plans: [false, false, true, true]
-    - name: Zapier
-      description: Integre diversas aplicações com o Bulldesk utilizando o Zapier.
-      plans: [false, false, true, true]
-    - name: Central Telefônica
-      description: Faça ligações diretamente da tela do lead.
-      plans: [false, false, false, consulte]
+  - name: Enterprise
+    price_per_user: 159
+    features:
+      - +10 usuários
+      - +500k pageviews
+      - 99.99% uptime SLA
+      - 2FA
 
-- name: Suporte
-  items:
-    - name: Central de Ajuda
-      description: Consulte nossos conteúdos de ajuda e treinamentos gratuitos.
-      plans: [true, true, true, true]
-    - name: Suporte por e-mail
-      description: Tem alguma dúvida? Basta perguntar.
-      plans: [true, true, true, true]
-    - name: Chat
-      description: Chat online no horário comercial.
-      plans: [false, true, true, true]
-    - name: Treinamento
-      description: Treinamento inicial explicando todo o Bulldesk.
-      plans: [à partir de R$ 399, à partir de R$ 399, à partir de R$ 399, true]
-    - name: Consultoria
-      description: Consultoria especializada. Entendemos sobre seu negócio, definimos um processo de marketing/vendas e implementamos no Bulldesk.
-      plans: [à partir de R$ 1999, à partir de R$ 1999, à partir de R$ 1999, consulte]
+table:
+  - name: Analytics, Atração e Conversão
+    items:
+      - name: Leads
+        description: Quantidade máxima de leads no plano.
+        plans: ['1.000', '10.000', '50.000', consulte]
+      - name: Importação de leads
+        description: Importe seus leads de qualquer lugar.
+        plans: [true, true, true, true]
+      # - name: Filtros avançados
+      #   description: Crie filtros com condições complexas.
+      #   plans: [true, true, true, true]
+      - name: Segmentação de leads
+        description: Salve filtros avançados como segmentações e utilize em campanhas de marketing e vendas.
+        plans: [true, true, true, true]
+      - name: Campos customizados
+        description: Crie campos customizados para seus leads.
+        plans: [true, true, true, true]
+      - name: Integração com formulários do site
+        description: Integre os formulários já existentes em seu site.
+        plans: [true, true, true, true]
+      - name: Construtor de Formulários
+        description: Construa formulários diretamente do Bulldesk e integre em seu site ou landing page.
+        plans: [true, true, true, true]
+      - name: Captura automática da origem do lead
+        description: Saiba exatamente de onde seu Lead veio ao converter em seu site.
+        plans: [true, true, true, true]
+      - name: Construtor de Landing Pages
+        description: Crie Landing Pages diretamente do Bulldesk.
+        plans: [true, true, true, true]
+      - name: Construtor de Sites
+        description: Crie Landing Pages complexas ou até mesmo seu novo site com o nosso construtor.
+        plans: [false, true, true, true]
+      - name: Link Builder & Link Tracker
+        description: Crie links UTM e saiba quantas pageviews, conversões e vendas aquele link gerou.
+        plans: [false, true, true, true]
+      - name: Espaço para materiais (PDF, DOCs)
+        description: Espaço máximo para materiais importados no Bulldesk.
+        plans: [10MB, 100MB, 500MB, ilimitado]
+      - name: Pageviews/mês
+        description: Máximo de pageviews por mês para captura de origens dos leads.
+        plans: ['1.000', '50.000', '500.000', ilimitado]
+      - name: Domínios customizados
+        description: Utilize quantos domínios quiser para suas landing pages.
+        plans: [1, 3, 10, ilimitado]
+      - name: Histórico de páginas visitadas pelo lead
+        description: Veja todas as páginas que seu lead visitou em seu site.
+        plans: [3 meses, 6 meses, 1 ano, 2 anos]
+
+  - name: Vendas
+    items:
+      - name: Funis de venda configuráveis
+        description: Crie quantos funis de venda quanto forem necessários.
+        plans: [1, 5, 20, ilimitado]
+      - name: Customizar etapas de negociação
+        description: Altere as etapas de negociação de acordo com sua empresa.
+        plans: [true, true, true, true]
+      # - name: Histórico do lead
+      #   description: Veja todas as ações do seu lead.
+      #   plans: [true, true, true, true]
+      - name: Atividades e agendamentos
+        description: Registre suas atividades e agente atividades futuras e veja tudo o que aconteceu com seu lead.
+        plans: [true, true, true, true]
+      # - name: Alertas de atividades
+      #   description: Receba notificações das atividades agendadas.
+      #   plans: [true, true, true, true]
+      # - name: Histórico de interações
+      #   description: Veja todo o histórico de suas interações com o lead.
+      #   plans: [true, true, true, true]
+      # - name: Criar negócio manualmente
+      #   description: Crie negócios diretamente da tela do lead.
+      #   plans: [true, true, true, true]
+      # - name: Aplicar campanha manualmente
+      #   description: Aplique campanhas diretamente da tela do lead.
+      #   plans: [true, true, true, true]
+      - name: Calendário de atividades
+        description: Veja todas as atividades e agendamentos no calendário.
+        plans: [true, true, true, true]
+      - name: Envio de e-mails no CRM
+        description: Envie e-mails diretamente da tela do lead.
+        plans: [true, true, true, true]
+      - name: Configurações de visibilidade
+        description: Configure se os leads/negócios aparecem para todos ou apenas para seus donos.
+        plans: [false, true, true, true]
+      - name: Customizar motivos de perda
+        description: Mude os motivos de perda de seus negócios de acordo com sua empresa.
+        plans: [false, true, true, true]
+      - name: Progresso e Relatórios de Vendas
+        description: Tenha relatórios completo do andamento de seus negócios.
+        plans: [false, true, true, true]
+      - name: Integração com Gmail
+        description: Integre sua conta do Gmail para enviar e receber e-mails diretamente na tela do lead.
+        plans: [false, false, true, true]
+      - name: Níveis de acesso personalizados
+        description: Limite o que cada usuário do seu time pode visualizar.
+        plans: [false, false, false, true]
+
+  - name: Marketing
+    items:
+      - name: Modelos de e-mails prontos
+        description: Escolha um de vários templates para utilizar em suas campanhas.
+        plans: [true, true, true, true]
+      - name: Construtor de e-mail Drag & Drop
+        description: Número máximo de campanhas de automação que podem ser criadas.
+        plans: [true, true, true, true]
+      # - name: Visão de engajamento de leads
+      #   plans: [false, true, true, true]
+      - name: Disparos de e-mail marketing
+        description: Limite em relação ao total de leads por mês.
+        plans: [2x base, 4x base, 4x base, consulte]
+      - name: Campanhas de Automação
+        description: Número máximo de campanhas de automação que podem ser criadas.
+        plans: [2, 10, 30, ilimitado]
+      - name: Ações por campanha
+        description: Número máximo de ações que podem ser adicionadas às campanhas.
+        plans: [3, 10, 30, ilimitado]
+      - name: Decisões por campanha
+        description: Número máximo de decisões que podem ser adicionadas às campanhas.
+        plans: [false, 2, 8, ilimitado]
+      - name: Lead Scoring
+        description: Adicione ou remova pontos em seus leads e crie campanhas com base nessas pontuações.
+        plans: [false, true, true, true]
+      - name: Relatórios
+        description: Tenha relatórios completo entre marketing & vendas.
+        plans: [false, true, true, true]
+      - name: Envios de SMS
+        description: Envie mensagens de SMS para seus leads nas campanhas.
+        plans: ['à partir de R$ 60 por 1.000 envios', 'à partir de R$ 60 por 1.000 envios', 'à partir de R$ 60 por 1.000 envios', consulte]
+      - name: Envios de Whatsapp
+        description: Envie mensagens de Whatsapp para seus leads nas campanhas.
+        plans: [false, à partir de R$ 200 / mês, à partir de R$ 200 / mês, consulte]
+
+  - name: Integrações
+    items:
+      - name: Facebook Ads nas Landing Pages
+        description: Veja todas as visitas e conversões de suas landing pages vindas do Facebook Ads.
+        plans: [false, true, true, true]
+      - name: Google Analytics nas Landing Pages
+        description: Veja todas as visitas e conversões de suas landing pages no Google Analytics.
+        plans: [false, true, true, true]
+      - name: Olark
+        description: Envie chats do Olark para o Bulldesk.
+        plans: [false, false, true, true]
+      - name: Exact Sales
+        description: Receba e envie leads do Exact Sales.
+        plans: [false, false, true, true]
+      - name: Zapier
+        description: Integre diversas aplicações com o Bulldesk utilizando o Zapier.
+        plans: [false, false, true, true]
+      - name: Central Telefônica
+        description: Faça ligações diretamente da tela do lead.
+        plans: [false, false, false, consulte]
+
+  - name: Suporte
+    items:
+      - name: Central de Ajuda
+        description: Consulte nossos conteúdos de ajuda e treinamentos gratuitos.
+        plans: [true, true, true, true]
+      - name: Suporte por e-mail
+        description: Tem alguma dúvida? Basta perguntar.
+        plans: [true, true, true, true]
+      - name: Chat
+        description: Chat online no horário comercial.
+        plans: [false, true, true, true]
+      - name: Treinamento
+        description: Treinamento inicial explicando todo o Bulldesk.
+        plans: [à partir de R$ 399, à partir de R$ 399, à partir de R$ 399, true]
+      - name: Consultoria
+        description: Consultoria especializada. Entendemos sobre seu negócio, definimos um processo de marketing/vendas e implementamos no Bulldesk.
+        plans: [à partir de R$ 1999, à partir de R$ 1999, à partir de R$ 1999, consulte]

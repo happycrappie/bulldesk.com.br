@@ -21,18 +21,25 @@
   section.plans
     background-position: center
     background-repeat: no-repeat
-    height: 1286px
+    min-height: 1286px
     background-image: url(~@/assets/images/pricing-purple-bg.png)
-    margin-top: -200px
+    margin-top: -250px
     padding-top: 280px
 
+    .list
+      display: flex
+      width: 100%
+      overflow-x: auto
+
+      @media only screen and (max-width: 420px)
+        margin: auto
+        max-width: 300px
+
     .plan
-      @media only screen and (max-width: 992px)
-        margin-left: 15%
-        margin-right: 15%
+      min-width: 275px
 
       .best-choice
-        margin: -40px 30px 0
+        margin: 0 30px 0
         padding: 10px
         text-align: center
         font-size: 0.8rem
@@ -43,11 +50,12 @@
         color: $white
 
       .detail
+        margin-top: 70px
         text-align: center
         min-height: 400px
         padding: 60px 30px
         box-shadow: 0 10px 20px rgba(69, 39, 123, 0.09)
-        border-radius: 10px 0 0 10px
+        border-radius: 10px
 
         .title
           font-size: 1rem
@@ -59,17 +67,25 @@
         .per-user
           font-size: 0.8rem
 
+        .features
+          color: $gray-light
+          font-size: 0.85rem
+          text-align: left
+          padding-inline-start: 30px
+
+          li
+            padding: 3px 0
+
       &:first-child
         .detail
           background-color: $white-gray
 
       &:nth-child(2)
-        margin-top: -30px
-
         .detail
+          margin-top: 0
           background-color: $white
           height: 400px + 30px
-          border-radius: 0 10px 10px 0
+          // border-radius: 0 10px 10px 0
 
       &:nth-child(3)
         .detail
@@ -80,7 +96,7 @@
         .detail
           color: $white-gray
           background-color: $gray-dark
-          border-radius: 0 10px 10px 0
+          // border-radius: 0 10px 10px 0
 
           .title
             color: $white-gray
@@ -92,6 +108,9 @@
 
           hr
             border-top: 1px solid $gray-soft
+
+          .features
+            color: $white-gray
     .help
       margin: auto
       text-align: center
@@ -110,7 +129,7 @@
     margin: 3rem 0
 
     table.table
-      max-width: 980px
+      width: 980px
       margin: 1rem auto
       font-size: 0.85rem
 
@@ -159,21 +178,20 @@
     section.plans
       .container
         .row.no-gutters
-          .plan.col-lg-3(v-for="(edge, index) in $page.plans.edges" :key="edge.node.id")
-            .best-choice(v-if="index === 1") Melhor escolha 👌
-            .detail
-              .title {{ edge.node.name }}
-              .price R$ {{ edge.node.price_per_user }}
-              .per-user por usuário
-              hr
-              | {{ edge.node.name }} R$ {{ edge.node.price_per_user }}
-              b-button Testar agora
+          .list
+            .plan.col-3(v-for="(plan, index) in plansList")
+              .best-choice(v-if="index === 1") Melhor escolha 👌
+              .detail
+                .title {{ plan.name }}
+                .price R$ {{ plan.price_per_user }}
+                .per-user por usuário
 
-          .plan.col-lg-3
-            .detail
-              .title Enterprise
-              .price Valor sob consulta
-              hr
+                hr
+
+                ul.features
+                  li(v-for=("feature in plan.features")) {{ feature}}
+
+                b-button Testar agora
 
         .row
           .col-lg-12
@@ -183,36 +201,23 @@
 
     section.compare
       .container
-        table.table.table-striped(v-for="table in plansTable")
-          thead
-            tr
-              th(colspan="5") {{ table.name }}
-          tbody
-            tr(v-for="item in table.items")
-              td {{ item.name }}
-                span.helper.ml-2(v-b-tooltip.hover.bottom="item.description", v-if="item.description") ?
-              td(v-for="exists in item.plans")
-                g-image(src="~/assets/icons/tick.svg", v-if="exists === true")
-                span(v-else-if="exists > 0 || exists.length > 0") {{ exists }}
-                span(v-else) -
+        .table-responsive
+          table.table.table-striped(v-for="table in plansTable")
+            thead
+              tr
+                th(colspan="5") {{ table.name }}
+            tbody
+              tr(v-for="item in table.items")
+                td {{ item.name }}
+                  span.helper.ml-2(v-b-tooltip.hover.bottom="item.description", v-if="item.description") ?
+                td(v-for="exists in item.plans")
+                  g-image(src="~/assets/icons/tick.svg", v-if="exists === true")
+                  span(v-else-if="exists > 0 || exists.length > 0") {{ exists }}
+                  span(v-else) -
 </template>
 
-<page-query>
-  query Plans {
-    plans: allMonthlyPlans(sortBy: "price_per_user", order: ASC, limit: 3) {
-      edges {
-        node {
-          id
-          name
-          price_per_user
-        }
-      }
-    }
-  }
-</page-query>
-
 <script>
-  import PlansTable from '~/data/plans.yaml'
+  import Plans from '~/data/plans.yaml'
   import Layout from '../layouts/Default'
   import Nav from '../components/Nav'
 
@@ -228,7 +233,8 @@
 
     data () {
       return {
-        plansTable: PlansTable
+        plansList: Plans.list,
+        plansTable: Plans.table,
       }
     },
 
