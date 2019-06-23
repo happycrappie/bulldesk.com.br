@@ -135,6 +135,7 @@
 
       .helper
         color: $gray-light
+        cursor: default
         background: $gray-white
         text-align: center
         font-size: 0.7rem
