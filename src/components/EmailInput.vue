@@ -59,8 +59,8 @@
     methods: {
       send() {
         if (this.email) {
-          axios.post(process.env.GRIDSOME_API_URL + '/conversion', {
-            token: process.env.GRIDSOME_BULLDESK_TOKEN,
+          axios.post(process.env.BULLDESK_API_URL + '/conversion', {
+            token: process.env.BULLDESK_TOKEN,
             identifier: this.identifier,
             email: this.email
           })
