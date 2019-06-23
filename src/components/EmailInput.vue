@@ -35,10 +35,10 @@
 
 <template lang="pug">
   b-input-group.email-group
-    b-form-input.email-input(:placeholder='inputPlaceholder' v-model='email')
+    b-form-input.email-input(:placeholder="inputPlaceholder" v-model="email")
     b-input-group-append
-      b-button.email-button(@click='send()')
-        g-image(src='~/assets/icons/play-button@black.svg')
+      b-button.email-button(@click="send()")
+        g-image(src="~/assets/icons/play-button@black.svg")
 </template>
 
 <script>
@@ -52,7 +52,7 @@
 
     computed: {
       inputPlaceholder() {
-        return this.placeholder || 'Email'
+        return this.placeholder || 'E-mail'
       }
     },
 
