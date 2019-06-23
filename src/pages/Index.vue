@@ -99,15 +99,15 @@
         b-navbar-nav.ml-auto
           //- b-nav-item(href="https://ajuda.bulldesk.com.br" target="_blank") Central de Ajuda
           b-nav-item(href="https://app.bulldesk.com.br" target="_blank") Login
-            g-image(src='~/assets/icons/play-button@black.svg')
+            g-image(src="~/assets/icons/play-button@black.svg")
 
     .container.teaser
       h2 Esteja preparado para uma nova
         .text-green  experiência
         |  em CRM e automação de Marketing
-      h3(v-if='! converted') Preencha seu e-mail e seja o primeiro a receber novidades
-      email-input(placeholder='Insira seu email aqui' identifier='Teaser 2019' v-if='! converted' @convert='convert')
-      h3.message(v-if='converted') Obrigado! Em breve teremos novidades.
+      h3(v-if="! converted") Preencha seu e-mail e seja o primeiro a receber novidades
+      email-input(placeholder="Insira seu email aqui" identifier="Teaser 2019" v-if="! converted" @convert="convert")
+      h3.message(v-if="converted") Obrigado! Em breve teremos novidades.
       //- teaser-countdown(deadline="June 28, 2019")
 </template>
 
