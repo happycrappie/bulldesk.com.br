@@ -56,10 +56,10 @@
 
     h3
       margin: auto
-      margin-top: 4.5rem
+      margin-top: 3rem
       max-width: 400px
       color: $white-gray
-      font-size: 1.5rem
+      font-size: 1.15rem
       font-weight: 400
       letter-spacing: -0.36px
       line-height: 30px
@@ -108,7 +108,7 @@
       h3(v-if="! converted") Preencha seu e-mail e seja o primeiro a receber novidades
       email-input(placeholder="Insira seu email aqui" identifier="Teaser 2019" v-if="! converted" @convert="convert")
       h3.message(v-if="converted") Obrigado! Em breve teremos novidades.
-      //- teaser-countdown(deadline="June 28, 2019")
+      teaser-countdown(deadline="June 28, 2019")
 </template>
 
 <script>
