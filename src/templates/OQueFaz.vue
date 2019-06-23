@@ -143,32 +143,17 @@
 
     section.hero
       .container
-        h1 Esqueça as planilhas e organize o seu processo comercial de uma vez por todas
+        h1 {{ this.$page.content.header.h1 }}
           span.dot.green
 
         div.row.justify-content-between.align-items-center
           div.col-lg-3
-            h2 Conheça o Bulldesk, um software que vai mudar a forma na qual você vende. Com o Bulldesk você pode:
+            h2 {{ this.$page.content.header.h2 }}
 
             ul
-              li.d-flex.align-items-center
+              li.d-flex.align-items-centerli(v-for="item in $page.content.header.items")
                 g-image(src='~/assets/icons/check.svg')
-                | Importe seus contatos
-              li.d-flex.align-items-center
-                g-image(src='~/assets/icons/check.svg')
-                | Envie emails
-              li.d-flex.align-items-center
-                g-image(src='~/assets/icons/check.svg')
-                | Crie campanhas de whatsapp
-              li.d-flex.align-items-center
-                g-image(src='~/assets/icons/check.svg')
-                | Priorize os atendimento
-              li.d-flex.align-items-center
-                g-image(src='~/assets/icons/check.svg')
-                | Controle o seu funil de vendas
-              li.d-flex.align-items-center
-                g-image(src='~/assets/icons/check.svg')
-                | Veja seus relatórios
+                | {{ item }}
 
           div.col-lg-8
             VideoLauncher(videoID="q7kIWRT_zPs" image="/assets/static/src/assets/images/video-placeholder.jpg")
@@ -176,61 +161,58 @@
     section.container.topics-a
       .row
         .col-lg-4
-          h2 Como o Bulldesk CRM ajuda a sua empresa a vender mais?
+          h2 {{ this.$page.content.topics_a.h2 }}
 
         .col-lg-8
           ul.row.d-flex
-            li.col-lg-6
-              h3 Organize o seu processo comercial
-              p Todo empresa possuí um processo comercial. Não é simplesmente só vender. Para isso, você pode utilizar o nosso funil de vendas e ter visão geral de tudo o que está sendo negociado na sua empresa.
-
-            li.col-lg-6
-              h3 Tenha um raio-x da sua área comercial
-              p Acompanhe de perto todo o progresso da sua equipe de vendas. Saiba quantas atividades cada vendedor está fazendo, quanto tempo leva para fechar um negócio ou até mesmo qual é o seu melhor vendedor.
-
-            li.col-lg-6
-              h3 Todos os seus clientes em um único lugar
-              p Você pode importar a sua lista de contatos ou integrar diretamente com formulários do seu site. O importante é que você pode ter todos os seus clientes em um único lugar, trabalhando de forma personalizada com cada um deles.
-
-            li.col-lg-6
-              h3 Vá além de informações básicas
-              p Cada interação com um lead é armazenada em uma linha do tempo organizada que inclui chamadas, e-mails, reuniões e anotações. Você não precisará mais procurar em uma caixa de entrada lotada ou uma planilha confusa para descobrir em que ponto ficou uma determinada relação. Automaticamente o Bulldesk consegue para saber quais conteúdos seu lead consumiu e personalizar sua abordagem.
+            li.col-lg-6(v-for="item in $page.content.topics_a.items")
+              h3 {{ item.h3 }}
+              p {{ item.p }}
 
     section.container.topics-b
-      h2 Use o Bulldesk CRM e acelere suas vendas
+      h2 {{ this.$page.content.topics_b.h2 }}
 
       ul.row.d-flex.justify-content-between
-        li.col-lg-5
+        li.col-lg-5(v-for="item in $page.content.topics_b.items")
           h3.d-flex.align-items-center
             g-image(src='~/assets/icons/check.svg')
-            | Envie sequências personalizadas
-          p Crie uma série de e-mails e envie-os para os seus prospects de acordo com o interesse e programação que você estabelecer.
-
-        li.col-lg-5
-          h3.d-flex.align-items-center
-            g-image(src='~/assets/icons/check.svg')
-            | Monte campanhas de Whatsapp
-          p Trabalhe o relacionamento com os seus clientes pelo whatsapp e assim que alguém responder, ele vai diretamente para o celular do seu vendedor.
-
-        li.col-lg-5
-          h3.d-flex.align-items-center
-            g-image(src='~/assets/icons/check.svg')
-            | Gerencie sua equipe comercial
-          p Distribua igualitariamente entre a sua equipe comercial todos os leads que entram no seu site. Dessa forma todos podem atender os novos clientes.
-
-        li.col-lg-5
-          h3.d-flex.align-items-center
-            g-image(src='~/assets/icons/check.svg')
-            | Marque mais reuniões
-          p Com a funcionalidade calendário, você pode ver todos os agendamentos e compromissos que existem com os seus leads.
+            | {{ item.h3 }}
+          p {{ item.p }}
 
       a.btn-default.d-lg-inline
         | Quero fazer um teste gratuito
         g-image(src='~/assets/icons/play-button@black.svg')
 
-
-
 </template>
+
+<page-query>
+  query ($id: String!) {
+    content: oQueFaz (id: $id) {
+      title
+      header {
+        h1
+        h2
+        items
+        videoID
+        videoThumb
+      }
+      topics_a {
+        h2
+        items {
+          h3
+          p
+        }
+      }
+      topics_b {
+        h2
+        items {
+          h3
+          p
+        }
+      }
+    }
+  }
+</page-query>
 
 <script>
   import Layout from '../layouts/Default'
@@ -244,8 +226,15 @@
       VideoLauncher,
     },
 
-    metaInfo: {
-      title: 'O que faz'
+    metaInfo () {
+      return {
+        title: this.$page.content.title,
+      }
+    },
+
+    data () {
+      return {
+      }
     }
   }
 </script>

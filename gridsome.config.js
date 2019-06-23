@@ -30,6 +30,14 @@ module.exports = {
         typeName: 'ParaQuem',
         route: '/para-quem/:id'
       }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'src/data/o-que-faz/*.yaml',
+        typeName: 'OQueFaz',
+        route: '/o-que-faz/:id'
+      }
     }
   ],
   css: {
