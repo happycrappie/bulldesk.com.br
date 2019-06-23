@@ -291,11 +291,7 @@
       .container
         h3 {{ this.$page.content.section_b.h3 }}
         .subtitle {{ this.$page.content.section_b.subtitle }}
-        b-input-group.email-group
-          b-form-input.email-input(placeholder='Email' v-model='email')
-          b-input-group-append
-            b-button.email-button
-              g-image(src='~/assets/icons/play-button@black.svg')
+        email-input(:identifier='$page.content.id')
 
     .section.section-c
       .container
@@ -331,6 +327,7 @@
 <page-query>
   query ($id: String!) {
     content: paraQuem (id: $id) {
+      id
       title
       header {
         h1
@@ -367,11 +364,13 @@
 <script>
   import Layout from '../layouts/Default'
   import Nav from '../components/Nav'
+  import EmailInput from '../components/EmailInput'
 
   export default {
     components: {
       Layout,
       Nav,
+      EmailInput,
     },
 
     metaInfo () {

@@ -135,6 +135,7 @@
 
       .helper
         color: $gray-light
+        cursor: default
         background: $gray-white
         text-align: center
         font-size: 0.7rem
@@ -177,21 +178,20 @@
 
     section.plans
       .container
-        .row.no-gutters
-          .list
-            .plan.col-3(v-for="(plan, index) in plansList")
-              .best-choice(v-if="index === 1") Melhor escolha 👌
-              .detail
-                .title {{ plan.name }}
-                .price R$ {{ plan.price_per_user }}
-                .per-user por usuário
+        .row.no-gutters.list
+          .plan.col-3(v-for="(plan, index) in plansList")
+            .best-choice(v-if="index === 1") Melhor escolha 👌
+            .detail
+              .title {{ plan.name }}
+              .price R$ {{ plan.price_per_user }}
+              .per-user por usuário
 
-                hr
+              hr
 
-                ul.features
-                  li(v-for=("feature in plan.features")) {{ feature}}
+              ul.features
+                li(v-for=("feature in plan.features")) {{ feature}}
 
-                b-button Testar agora
+              b-button Testar agora
 
         .row
           .col-lg-12
