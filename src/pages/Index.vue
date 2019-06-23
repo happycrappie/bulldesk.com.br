@@ -20,20 +20,20 @@
 
   .container.teaser
     text-align: center
-    padding-top: 3rem
+    padding-top: 2rem
     padding-bottom: 2rem
 
     @media only screen and (min-height: 700px) and (max-height: 1200px)
-      padding-top: 6rem
+      padding-top: 5rem
 
     @media only screen and (min-height: 1201px) and (max-height: 1300px)
-      padding-top: 8rem
+      padding-top: 7rem
 
     @media only screen and (min-height: 1301px) and (max-height: 1400px)
-      padding-top: 10rem
+      padding-top: 9rem
 
     @media only screen and (min-height: 1401px)
-      padding-top: 14rem
+      padding-top: 13rem
 
     h2
       margin: auto
