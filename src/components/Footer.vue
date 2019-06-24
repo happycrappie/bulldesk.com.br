@@ -22,7 +22,14 @@
         width: 100%
         display: flex
 
+      @media only screen and (max-width: 440px)
+        display: block
+        padding-bottom: 0rem
+
       ul
+        @media only screen and (max-width: 440px)
+          padding: 1rem 0rem
+
         li
           display: inline
           padding-right: 2rem
