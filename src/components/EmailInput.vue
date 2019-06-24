@@ -38,9 +38,9 @@
 <template lang="pug">
   form(@submit.prevent="submit()")
     b-input-group.email-group
-      b-form-input.email-input(:placeholder="inputPlaceholder" v-model="email")
+      b-form-input.email-input(:placeholder="inputPlaceholder" v-model="email" :disabled="converted")
       b-input-group-append
-        b-button.email-button(type="submit")
+        b-button.email-button(type="submit" v-if="! converted")
           g-image(src="~/assets/icons/play-button@black.svg")
 </template>
 
@@ -50,7 +50,8 @@
   export default {
     props: {
       placeholder: String,
-      identifier: String
+      identifier: String,
+      emit: Boolean,
     },
 
     computed: {
@@ -67,7 +68,19 @@
             identifier: this.identifier,
             email: this.email
           })
-          .then(response => this.$emit('convert', true))
+          .then(response => {
+            if (this.emit) {
+              this.$emit('convert', true)
+
+              return
+            }
+
+            this.converted = true
+
+            this.email = 'Email cadastrado'
+
+            window.open(process.env.GRIDSOME_BULLDESK_APP_URL + '/cadastro', '_blank')
+          })
           .catch(error => this.$emit('convert', false))
         }
       }
@@ -75,7 +88,8 @@
 
     data() {
       return {
-        email: ''
+        email: '',
+        converted: false
       }
     }
   }
