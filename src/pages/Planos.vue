@@ -68,6 +68,7 @@
           font-size: 0.8rem
 
         .features
+          margin: 1.5rem 0
           color: $gray-light
           font-size: 0.85rem
           text-align: left
@@ -78,22 +79,25 @@
 
       &:first-child
         .detail
+          height: 381px
           background-color: $white-gray
 
       &:nth-child(2)
         .detail
+          height: 515px
           margin-top: 0
           background-color: $white
-          height: 400px + 30px
           // border-radius: 0 10px 10px 0
 
       &:nth-child(3)
         .detail
+          height: 581px
           background-color: $white-gray
           box-shadow: 0 20px 30px rgba(69, 39, 123, 0.18)
 
       &:last-child
         .detail
+          height: 525px
           color: $white-gray
           background-color: $gray-dark
           // border-radius: 0 10px 10px 0
