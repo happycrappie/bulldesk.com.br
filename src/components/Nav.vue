@@ -131,7 +131,7 @@
                 b-dropdown-item(to="/para-quem/ecommerce") Ecommerce
                 b-dropdown-item(to="/para-quem/ensino") Ensino
                 b-dropdown-item(to="/para-quem/hoteis") Hotéis
-                b-dropdown-item(to="/para-quem/ecommerce") SaaS
+                b-dropdown-item(to="/para-quem/saas") SaaS
               .col-12.col-sm-6
                 h6.dropdown-header Equipes
                 b-dropdown-item(to="/para-quem/marketing") Marketing
