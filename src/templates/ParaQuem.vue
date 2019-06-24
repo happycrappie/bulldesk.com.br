@@ -308,7 +308,7 @@
       .container
         h3 {{ this.$page.content.section_b.h3 }}
         .subtitle {{ this.$page.content.section_b.subtitle }}
-        email-input(:identifier='$page.content.id')
+        email-input(:identifier="$page.content.id")
 
     .section.section-c
       .container
@@ -319,10 +319,10 @@
           .col-12.col-lg2-8.col-right
             ul
               li(v-for="item in $page.content.section_c.items")
-                g-image(src='~/assets/icons/check.svg' alt='')
+                g-image(src="~/assets/icons/check.svg" alt="")
                 | {{ item }}
 
-            g-image.doted-square-a(src='~/assets/images/doted-square.jpg' alt='')
+            g-image.doted-square-a(src="~/assets/images/doted-square.jpg" alt="")
 
             h3 {{ this.$page.content.section_c.h3[1] }}
             .subtitle {{ this.$page.content.section_c.subtitle[1] }}
@@ -336,7 +336,7 @@
             | {{ this.$page.content.section_d.br }}
         .row.cases
           .col.col-12.col-sm-6(v-for="item in $page.content.section_d.cases")
-            g-image(:src="item.image" alt='Imagem')
+            g-image(:src="item.image" alt="Imagem")
             p.description {{ item.description }}
             p.author {{ item.author }}
 </template>
