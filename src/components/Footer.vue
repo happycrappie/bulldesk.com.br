@@ -32,11 +32,10 @@
 
       .logo
         width: auto
-        max-width: 129px
+        max-width: 136px
         margin-bottom: 5px
 
         @media only screen and (max-width: 990px)
-          max-width: 100px
           max-height: 40px
           margin-top: 1.1rem
 
