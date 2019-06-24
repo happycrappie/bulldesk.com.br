@@ -19,7 +19,7 @@
 </template>
 
 <script>
-  import Layout from '../layouts/Default'
+  import Layout from '../layouts/Base'
   import Nav from '../components/Nav'
 
   export default {
