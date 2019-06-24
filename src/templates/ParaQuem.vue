@@ -100,9 +100,24 @@
     height: 911px
     margin-top: -10rem
 
+    @include media('screen', '<=ipad')
+      background-position: -40rem 0rem
+
+    @include media('screen', '>ipad', '<=laptop')
+      background-position: -20rem 0rem
+
+    @include media('screen', '>laptop', '<=desktop-md')
+      background-position: -15rem 0rem
+
+    @include media('screen', '>desktop-md', '<=desktop-lg')
+      background-position: -10rem 0rem
+
     .container
       text-align: center
       padding-top: 29rem
+
+      @media only screen and (max-width: 600px)
+        padding-top: 25rem
 
       h3
         width: auto
@@ -132,7 +147,8 @@
       background-position: 0rem 300px
 
     @media only screen and (max-width: map-get($grid-breakpoints, 'xl'))
-      background-image: none
+      background-size: 38%
+      background-position: 0rem 400px
 
     @include media('screen', '>laptop', '<=desktop-md')
       background-position: 8rem 300px
@@ -145,6 +161,7 @@
 
     @media only screen and (max-width: map-get($grid-breakpoints, 'lg2'))
       text-align: center
+      background-image: none
 
     .col-left
       .subtitle
@@ -302,10 +319,10 @@
           .col-12.col-lg2-8.col-right
             ul
               li(v-for="item in $page.content.section_c.items")
-                g-image(src='~/assets/icons/check.svg')
+                g-image(src='~/assets/icons/check.svg' alt='')
                 | {{ item }}
 
-            g-image.doted-square-a(src='~/assets/images/doted-square.jpg')
+            g-image.doted-square-a(src='~/assets/images/doted-square.jpg' alt='')
 
             h3 {{ this.$page.content.section_c.h3[1] }}
             .subtitle {{ this.$page.content.section_c.subtitle[1] }}
@@ -319,7 +336,7 @@
             | {{ this.$page.content.section_d.br }}
         .row.cases
           .col.col-12.col-sm-6(v-for="item in $page.content.section_d.cases")
-            g-image(:src="item.image")
+            g-image(:src="item.image" alt='Imagem')
             p.description {{ item.description }}
             p.author {{ item.author }}
 </template>
