@@ -7,7 +7,7 @@
   main.teaser-layout
     height: 100%
     overflow-y: auto
-    background-image: url(~@/assets/images/teaser-footer-bg.png), url(~@/assets/images/teaser-bg.png)
+    background-image: url(~@/assets/images/teaser-footer-bg@2500.png), url(~@/assets/images/teaser-bg.png)
     background-size: 110% 130%, 100% 100%
     background-position: -8rem 10rem, 0rem 0rem
     background-repeat: no-repeat

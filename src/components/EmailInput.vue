@@ -1,12 +1,14 @@
 <style lang="sass">
   @import '../assets/styles/_variables.scss'
 
+  form
+    margin: auto
+    max-width: 381px
+
   .email-group
     text-align: left
     margin-top: 2.1rem
     padding-right: 0.5rem
-    width: auto
-    max-width: 381px
 
     @media only screen and (max-width: 400px)
       max-width: 320px
@@ -34,11 +36,12 @@
 </style>
 
 <template lang="pug">
-  b-input-group.email-group
-    b-form-input.email-input(:placeholder='inputPlaceholder' v-model='email')
-    b-input-group-append
-      b-button.email-button(@click='send()')
-        g-image(src='~/assets/icons/play-button@black.svg')
+  form(@submit.prevent="submit()")
+    b-input-group.email-group
+      b-form-input.email-input(:placeholder="inputPlaceholder" v-model="email")
+      b-input-group-append
+        b-button.email-button(type="submit")
+          g-image(src="~/assets/icons/play-button@black.svg")
 </template>
 
 <script>
@@ -52,14 +55,14 @@
 
     computed: {
       inputPlaceholder() {
-        return this.placeholder || 'Email'
+        return this.placeholder || 'E-mail'
       }
     },
 
     methods: {
-      send() {
+      submit() {
         if (this.email) {
-          axios.post(process.env.GRIDSOME_API_URL + '/conversion', {
+          axios.post(process.env.GRIDSOME_BULLDESK_API_URL + '/conversion', {
             token: process.env.GRIDSOME_BULLDESK_TOKEN,
             identifier: this.identifier,
             email: this.email
