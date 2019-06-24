@@ -38,6 +38,8 @@
 <template lang="pug">
   form(@submit.prevent="submit()")
     b-input-group.email-group
+      input(type="hidden", name="bulldesk-domain", value="")
+      input(type="hidden", name="bulldesk-client", value="")
       b-form-input.email-input(:placeholder="inputPlaceholder" v-model="email")
       b-input-group-append
         b-button.email-button(type="submit")
@@ -61,15 +63,26 @@
 
     methods: {
       submit() {
-        if (this.email) {
-          axios.post(process.env.GRIDSOME_BULLDESK_API_URL + '/conversion', {
-            token: process.env.GRIDSOME_BULLDESK_TOKEN,
-            identifier: this.identifier,
-            email: this.email
-          })
+        if (! this.email) {
+          return;
+        }
+
+        let data = {
+          token: process.env.GRIDSOME_BULLDESK_TOKEN,
+          identifier: this.identifier,
+          email: this.email
+        };
+
+        try {
+          data.bulldesk_client = document.getElementsByName('bulldesk-client')[0].value;
+          data.bulldesk_domain = document.getElementsByName('bulldesk-domain')[0].value;
+        } catch (e) {
+          //
+        }
+
+        axios.post(process.env.GRIDSOME_BULLDESK_API_URL + '/conversion', data)
           .then(response => this.$emit('convert', true))
           .catch(error => this.$emit('convert', false))
-        }
       }
     },
 
