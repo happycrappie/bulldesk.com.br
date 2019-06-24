@@ -769,8 +769,8 @@
               | Nenhum cartão de crédito é necessário.
               br
               | Configuração simples e rápida
-          g-image(src='~/assets/images/doted-square.jpg' class='doted-square d-none d-xl-block')
-          g-image(src='~/assets/images/doted-square.jpg' class='doted-square d-none d-xl-block')
+          g-image(src='~/assets/images/doted-square.jpg' class='doted-square d-none d-xl-block' alt='')
+          g-image(src='~/assets/images/doted-square.jpg' class='doted-square d-none d-xl-block' alt='')
 
     .section.section-a
       .container
@@ -796,21 +796,21 @@
                   .step
                     .step-title 10 Dias antes
                     .step-icon
-                      g-image(src='~/assets/icons/envelope@black.svg')
+                      g-image(src='~/assets/icons/envelope@black.svg' alt='Envelope')
                     .subtitle.step-subtitle Email:
                       strong  "seu aniversário está chegando"
                 li
                   .step
                     .step-title 1 Dia antes
                     .step-icon
-                      g-image(src='~/assets/icons/envelope@black.svg')
+                      g-image(src='~/assets/icons/envelope@black.svg' alt='Envelope')
                     .subtitle.step-subtitle Email:
                       strong  "é amanhã"
                 li
                   .step
                     .step-title No dia do aniversário
                     .step-icon
-                      g-image(src='~/assets/icons/envelope@white.svg')
+                      g-image(src='~/assets/icons/envelope@white.svg' alt='Envelope')
                     .subtitle.step-subtitle Email:
                       strong  “mensagem de aniversário + cupom desconto”
 
@@ -826,23 +826,23 @@
             .container.items
               .row.no-gutters
                 .col-6.col-xl-4.item
-                  g-image(src='~/assets/icons/check.svg')
+                  g-image(src='~/assets/icons/check.svg' alt='Check')
                   | CRM de vendas
                 .col-6.col-xl-4.item
-                  g-image(src='~/assets/icons/check.svg')
+                  g-image(src='~/assets/icons/check.svg' alt='Check')
                   | Automações prontas
               .row.no-gutters
                 .col-6.col-xl-4.item
-                  g-image(src='~/assets/icons/check.svg')
+                  g-image(src='~/assets/icons/check.svg' alt='Check')
                   | Campanhas
                 .col-6.col-xl-4.item
-                  g-image(src='~/assets/icons/check.svg')
+                  g-image(src='~/assets/icons/check.svg' alt='Check')
                   | Relatórios ao vivo
 
             .know-more
               a.btn-default
                 | Conheça mais
-                g-image(src='~/assets/icons/play-button@white.svg')
+                g-image(src='~/assets/icons/play-button@white.svg' alt='')
 
           .col-lg-6.right-col
             .header
@@ -866,7 +866,7 @@
                 | Atenciosamente,
                 br
                 | - Bulldesk
-                g-image(src='~/assets/images/editor-footer.png')
+                g-image(src='~/assets/images/editor-footer.png' alt='')
 
     .section.section-c
       .container
@@ -883,17 +883,17 @@
               table
                 tr
                   td
-                    g-image(src='~/assets/icons/content.svg')
+                    g-image(src='~/assets/icons/content.svg' alt='Conteudo')
                   td
                     | Organizar o seu processo comercial
                 tr
                   td
-                    g-image(src='~/assets/icons/income.svg')
+                    g-image(src='~/assets/icons/income.svg' alt='Renda')
                   td
                     | Automatizar marketing e vendas
               a.btn-default
                 | Teste grátis
-                g-image(src='~/assets/icons/play-button@white.svg')
+                g-image(src='~/assets/icons/play-button@white.svg' alt='')
 
     .section.section-d
       .container
@@ -911,10 +911,10 @@
                   .container
                     .row
                       .col-12.col-md-6.image
-                        g-image(src='~/assets/images/cases/buscape.png')
+                        g-image(src='~/assets/images/cases/buscape.png' alt='Imagem')
                       .col-12.col-md-6.content
                         .logo
-                          g-image(src='~/assets/images/cases/buscape-logo.png')
+                          g-image(src='~/assets/images/cases/buscape-logo.png' alt='Buscape')
                         .description Com o Bulldesk foi possível captar dados, enviar e-mails automáticos, e-mail que acontecem em tempo real.
                         .author ANTÔNIO FRANCISCO
                 swiper-slide
@@ -922,24 +922,24 @@
                     .row
                       .col-12.col-md-6.content.d-none.d-md-block
                         .logo
-                          g-image(src='~/assets/images/cases/buscape-logo.png')
+                          g-image(src='~/assets/images/cases/buscape-logo.png' alt='Buscape')
                         .description Com o Bulldesk foi possível captar dados, enviar e-mails automáticos, e-mail que acontecem em tempo real.
                         .author ANTÔNIO FRANCISCO
                       .col-12.col-md-6.image
-                        g-image(src='~/assets/images/cases/buscape.png')
+                        g-image(src='~/assets/images/cases/buscape.png' alt='Imagem')
                       .col-12.col-md-6.content.d-block.d-md-none
                         .logo
-                          g-image(src='~/assets/images/cases/buscape-logo.png')
+                          g-image(src='~/assets/images/cases/buscape-logo.png' alt='Buscape')
                         .description Com o Bulldesk foi possível captar dados, enviar e-mails automáticos, e-mail que acontecem em tempo real.
                         .author ANTÔNIO FRANCISCO
                 swiper-slide
                   .container
                     .row
                       .col-12.col-md-6.image
-                        g-image(src='~/assets/images/cases/buscape.png')
+                        g-image(src='~/assets/images/cases/buscape.png' alt='Imagem')
                       .col-12.col-md-6.content
                         .logo
-                          g-image(src='~/assets/images/cases/buscape-logo.png')
+                          g-image(src='~/assets/images/cases/buscape-logo.png' alt='Buscape')
                         .description Com o Bulldesk foi possível captar dados, enviar e-mails automáticos, e-mail que acontecem em tempo real.
                         .author ANTÔNIO FRANCISCO
                 .swiper-button-prev(slot='button-prev')
@@ -951,12 +951,12 @@
             .col-12.col-md-3
               p Veja alguns outros clientes que também utilizam Bulldesk
             .col-12.col-md-9
-              g-image(src='~/assets/images/cases/other-cases.png')
+              g-image(src='~/assets/images/cases/other-cases.png' alt='Cases')
           .row.button-row
             .col-12
               .btn-default
                 | Veja mais histórias de sucesso
-                g-image(src='~/assets/icons/play-button@white.svg')
+                g-image(src='~/assets/icons/play-button@white.svg' alt='')
 
     .section.section-e
       .container
@@ -968,13 +968,13 @@
               strong  Você vai se surpreender.
             a.btn-default.d-none.d-lg-inline
               | Teste grátis
-              g-image(src='~/assets/icons/play-button@black.svg')
+              g-image(src='~/assets/icons/play-button@black.svg' alt='')
           .col-12.col-lg-9
             .video-container
-              g-image(src='~/assets/images/home-video.png')
+              g-image(src='~/assets/images/home-video.png' alt='Video')
             a.btn-default.d-inline.d-lg-none
               | Teste grátis
-              g-image(src='~/assets/icons/play-button@black.svg')
+              g-image(src='~/assets/icons/play-button@black.svg' alt='')
 </template>
 
 <script>

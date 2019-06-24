@@ -22,7 +22,14 @@
         width: 100%
         display: flex
 
+      @media only screen and (max-width: 440px)
+        display: block
+        padding-bottom: 0rem
+
       ul
+        @media only screen and (max-width: 440px)
+          padding: 1rem 0rem
+
         li
           display: inline
           padding-right: 2rem
@@ -32,16 +39,16 @@
 
       .logo
         width: auto
-        max-width: 129px
+        max-width: 136px
         margin-bottom: 5px
 
         @media only screen and (max-width: 990px)
-          max-width: 100px
-          max-height: 40px
           margin-top: 1.1rem
 
         @media only screen and (max-width: 1400px)
           margin-right: 3.8rem
+          max-height: 40px
+          margin-top: 10px
 
       .button-container
         margin-top: 30px
