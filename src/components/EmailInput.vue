@@ -62,27 +62,40 @@
 
     methods: {
       submit() {
-        if (this.email) {
-          axios.post(process.env.GRIDSOME_BULLDESK_API_URL + '/conversion', {
-            token: process.env.GRIDSOME_BULLDESK_TOKEN,
-            identifier: this.identifier,
-            email: this.email
-          })
-          .then(response => {
+        if (! this.email) {
+          return;
+        }
+
+        let data = {
+          token: process.env.GRIDSOME_BULLDESK_TOKEN,
+          identifier: this.identifier,
+          email: this.email
+        };
+
+        try {
+          data.bulldesk_client = window.BulldeskSettings.client;
+          data.bulldesk_domain = window.BulldeskSettings.domain;
+        } catch (e) {
+          //
+        }
+
+        axios.post(process.env.GRIDSOME_BULLDESK_API_URL + '/conversion', data)
+          .then((response) => {
             if (this.emit) {
               this.$emit('convert', true)
 
               return
             }
 
-            this.converted = true
+            this.converted = true;
 
-            this.email = 'Email cadastrado'
+            this.email = 'Email cadastrado';
 
             window.open(process.env.GRIDSOME_BULLDESK_APP_URL + '/cadastro', '_blank')
           })
-          .catch(error => this.$emit('convert', false))
-        }
+          .catch((error) => {
+            console.log(error);
+          });
       }
     },
 
