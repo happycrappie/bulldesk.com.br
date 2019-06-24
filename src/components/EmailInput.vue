@@ -38,8 +38,6 @@
 <template lang="pug">
   form(@submit.prevent="submit()")
     b-input-group.email-group
-      input(type="hidden", name="bulldesk-domain", value="")
-      input(type="hidden", name="bulldesk-client", value="")
       b-form-input.email-input(:placeholder="inputPlaceholder" v-model="email")
       b-input-group-append
         b-button.email-button(type="submit")
@@ -74,8 +72,8 @@
         };
 
         try {
-          data.bulldesk_client = document.getElementsByName('bulldesk-client')[0].value;
-          data.bulldesk_domain = document.getElementsByName('bulldesk-domain')[0].value;
+          data.bulldesk_client = window.BulldeskSettings.client;
+          data.bulldesk_domain = window.BulldeskSettings.domain;
         } catch (e) {
           //
         }
