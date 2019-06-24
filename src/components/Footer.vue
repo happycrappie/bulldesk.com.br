@@ -36,11 +36,12 @@
         margin-bottom: 5px
 
         @media only screen and (max-width: 990px)
-          max-height: 40px
           margin-top: 1.1rem
 
         @media only screen and (max-width: 1400px)
           margin-right: 3.8rem
+          max-height: 40px
+          margin-top: 10px
 
       .button-container
         margin-top: 30px
