@@ -1,0 +1,51 @@
+---
+id: hoteis
+title: Hotéis
+header:
+  h1: Seja um hotel campeão em reservas. Não perca mais nenhum cliente
+  p: Conheça o software mais completo de CRM com Automação de Marketing que vai revolucionar a maneira com que você interage com seus hóspedes.
+section-a:
+  items:
+  - h4: Não perca nenhuma reserva!
+    p: Aproveite as funcionalidades de CRM do Bulldesk e acompanhe o hóspede desde o contato inicial até a hospedagem. Nenhum cliente ficará sem atendimento, já que estará desde o primeiro contato em seu pipeline de vendas. E pode ficar tranquilo, o Bulldesk conta com uma interface intuitiva para te ajudar do início ao fim das reservas!
+  - h4: Acelere seu processo comercial
+    p: Com todos os clientes num só lugar, você organiza e agiliza seu processo comercial. Dessa forma, o processo entre o contato inicial até a hospedagem se torna muito mais rápido e eficaz. Não perca mais nenhuma reserva com a agilidade que o Bulldesk te proporciona.
+  - h4: Garanta a satisfação dos hóspedes
+    p: A agilidade, mais do que nunca, é um fator importante para a satisfação do cliente. Portanto, aproveite os recursos do Bulldesk para proporcionar rapidez no atendimento. Além disso, com nossa plataforma você pode nutrir o seu relacionamento com o hóspede com facilidade, através de e-mails marketing ou formulários estratégicos.
+  - h4: Facilite e automatize processos de marketing digital
+    p: Manter a presença no digital nunca foi tão fácil! Com o Bulldesk, você cria e-mails marketing, formulários e landing pages de forma rápida e intuitiva. Assim, sua estratégia de marketing digital fica muito mais completa. Além disso, o cliente que interagir com seu conteúdo já pode ser direcionado automaticamente para as funcionalidades de CRM do Bulldesk.
+  - h4: Crie campanhas de marketing em alguns cliques
+    p: Com o Bulldesk, suas campanhas de inbound, geração de leads ou qualificação ficam prontas com apenas alguns cliques. Tenha a estratégia de marketing traçada e a execute com o Bulldesk.
+  - h4: Amplie seu lucro sem aumentar os custos.
+    p: Nossos preços foram pensados em você. Confira os valores e comprove! Não existe outra plataforma no Brasil com todas as funcionalidades que oferecemos pelo valor que temos. É o melhor custo benefício que você pode encontrar.
+section-b:
+  h3: E aí, já está pronto para lotar seu hotel sem perder nenhuma reserva?
+  subtitle: Insira seu e-mail abaixo e crie sua conta agora mesmo
+section-c:
+  h3:
+    - Todas as ferramentas que você precisa para ser um hotel líder em reservas em um único lugar.
+    - Porque o seu hotel precisa do Bulldesk?
+  subtitle:
+    - Porque utilizar diversas ferramentas quando a gente tem tudo que seu hotel precisa para ser encontrado por seus hóspedes e fechar reservas?
+    - Não perca nenhuma reserva. Acompanhe seus hóspedes desde o contato inicial até a hospedagem. Crie estratégias de marketing eficazes com poucos cliques.
+  items:
+    - "CRM: O hóspede num só lugar, desde o contato inicial até a hospedagem. Quer melhor?"
+    - "Segmentação: Agrupe os seus clientes baseado em qualquer critério que você quiser."
+    - "Qualificação de lead: Utilize o lead scoring para encontrar os melhores hóspedes."
+    - "Monitoramento do site: Veja o que os visitantes fazem em seu site e crie campanhas e ofertas baseadas no comportamento."
+    - "Automação de marketing: Automatize os processos que ninguém tem tempo de gerenciar."
+    - "Relatórios em tempo real: Mensure os seus resultados e veja o que funciona melhor para os hóspedes do seu hotel."
+    - "Email marketing: Construa sua marca e seja referência para seus clientes e leads."
+    - "Omnichannel: Crie campanhas que comecem por email, passem por SMS e terminam no whatsapp."
+    - "Whatsapp: Precisa dizer mais? O único com campanhas de WhatsApp integradas."
+section-d:
+  h3: Fique tranquilo
+  br: você está em boa companhia
+  cases:
+    - image: "../../assets/images/cases/buscape-logo.png"
+      description: Eu notei, principalmente depois que a gente usou o Bulldesk, que a gente tem um rápido retorno. Os clientes elogiam muito o nosso atendimento na parte de reservas. O Hotel teve um crescimento de 175% desde que começamos a usar a plataforma.
+      author: Marina Elisa Müller
+    - image: "../../assets/images/cases/buscape-logo.png"
+      description: Depois de algum tempo usando o Bulldesk já deu para notar a diferença. Estávamos conseguindo atrair muito mais leads. As nossas reservas subiram em X % em XX meses.
+      author: Sem Nome
+
