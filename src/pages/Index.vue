@@ -1051,11 +1051,11 @@
       EmailInput,
       swiper: () =>
         import ('vue-awesome-swiper')
-        .then(m => m.swiper)
+        .then(m => window ? m.swiper : null)
         .catch(),
       swiperSlide: () =>
         import ('vue-awesome-swiper')
-        .then(m => m.swiperSlide)
+        .then(m => window ? m.swiperSlide : null)
         .catch(),
     },
 

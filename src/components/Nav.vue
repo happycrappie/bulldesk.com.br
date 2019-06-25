@@ -4,7 +4,7 @@
 
   nav.navbar.nav-layout
     padding: 15px 0
-    font-size: 0.85rem
+    font-size: 0.75rem
 
     .logo
       width: 140px
@@ -12,7 +12,7 @@
     .nav-item.trial
       .nav-link
         font-weight: 600
-        font-size: 0.8rem
+        font-size: 0.75rem
         text-align: center
         padding: 9px 25px
         background: $green
@@ -112,49 +112,54 @@
 
 <template lang="pug">
   b-navbar.d-flex.nav-layout(toggleable="lg2" :type="type")
-    b-navbar-brand
-      g-link(to="/")
-        g-image.logo(src="~/assets/images/logo@white.png" alt="Bulldesk" v-if="logo && logo == 'white'")
-        g-image.logo(src="~/assets/images/logo.png" alt="Bulldesk" v-else)
+    b-navbar-brand(href="/")
+      img.logo(src="../assets/images/logo@white.png" alt="Bulldesk" v-if="logo && logo == 'white'")
+      img.logo(src="../assets/images/logo.png" alt="Bulldesk" v-else)
     b-navbar-toggle(target="collapse")
     b-collapse#collapse(is-nav)
       b-navbar-nav.ml-auto
         b-nav-item-dropdown.for-whom(text="Pra quem é")
           .dropdown-icon
-            g-image(src='~/assets/icons/poligono.svg')
+            img(src='../assets/icons/poligono.svg')
           .dropdown-container
             .row.no-gutters
               .col-12.col-sm-6
                 h6.dropdown-header Vertical
-                b-dropdown-item(to="/para-quem/agencias") Agências
-                b-dropdown-item(to="/para-quem/construtoras") Construtoras
-                b-dropdown-item(to="/para-quem/ecommerce") Ecommerce
-                b-dropdown-item(to="/para-quem/ensino") Ensino
-                b-dropdown-item(to="/para-quem/hoteis") Hotéis
-                b-dropdown-item(to="/para-quem/saas") SaaS
+                b-dropdown-item(href="/para-quem/agencias") Agências
+                b-dropdown-item(href="/para-quem/construtoras") Construtoras
+                b-dropdown-item(href="/para-quem/ecommerce") Ecommerce
+                b-dropdown-item(href="/para-quem/ensino") Ensino
+                b-dropdown-item(href="/para-quem/hoteis") Hotéis
+                b-dropdown-item(href="/para-quem/saas") SaaS
               .col-12.col-sm-6
                 h6.dropdown-header Equipes
-                b-dropdown-item(to="/para-quem/marketing") Marketing
-                b-dropdown-item(to="/para-quem/vendas") Vendas
-                b-dropdown-item(to="/para-quem/gerentes") Gerentes
+                b-dropdown-item(href="/para-quem/marketing") Marketing
+                b-dropdown-item(href="/para-quem/vendas") Vendas
+                b-dropdown-item(href="/para-quem/gerentes") Gerentes
         b-nav-item-dropdown.what-it-does(text="O que faz")
           .dropdown-icon
-            g-image(src='~/assets/icons/poligono.svg')
+            img(src='../assets/icons/poligono.svg')
           .dropdown-container
             .row.no-gutters
               .col-12
-                b-dropdown-item(to="/o-que-faz/marketing") Marketing
-                b-dropdown-item(to="/o-que-faz/vendas") Vendas
-        b-nav-item(to="/cases") Cases
-        b-nav-item(to="/exemplos") Exemplos
-        b-nav-item(to="/planos") Planos
+                b-dropdown-item(href="/o-que-faz/marketing") Marketing
+                b-dropdown-item(href="/o-que-faz/vendas") Vendas
+        b-nav-item(href="/cases") Cases
+        b-nav-item(href="/exemplos") Exemplos
+        b-nav-item(href="/planos") Planos
         b-nav-item(href="https://app.bulldesk.com.br" target="_blank") Login
         b-nav-item.trial(href="https://app.bulldesk.com.br/cadastro") Teste grátis
-          g-image(src='~/assets/icons/play-button@black.svg')
+          img(src="../assets/icons/play-button@black.svg")
 </template>
 
 <script>
+  import { BNavbar, BNavbarBrand, BNavbarToggle, BCollapse, BNavbarNav, BInputGroup, BFormInput, BInputGroupAppend, BButton, BNavItemDropdown, BDropdownItem, BNavItem } from 'bootstrap-vue';
+
   export default {
+    components: {
+      BNavbar, BNavbarBrand, BNavbarToggle, BCollapse, BNavbarNav, BInputGroup, BFormInput, BInputGroupAppend, BButton, BNavItemDropdown, BDropdownItem, BNavItem
+    },
+
     props: {
       type: String,
       logo: String

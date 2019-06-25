@@ -38,14 +38,16 @@
 <template lang="pug">
   form(@submit.prevent="submit()")
     b-input-group.email-group
-      b-form-input.email-input(:placeholder="inputPlaceholder" v-model="email" :disabled="converted")
+      b-form-input.email-input(type="email", :placeholder="inputPlaceholder", v-model="email", required)
       b-input-group-append
-        b-button.email-button(type="submit" v-if="! converted")
-          g-image(src="~/assets/icons/play-button@black.svg")
+        b-button.email-button(type="submit", :disabled="busy")
+          g-image(src="~/assets/icons/play-button@black.svg", v-if="!busy")
+          b-spinner.ml-1(small, v-else)
 </template>
 
 <script>
-  import axios from 'axios'
+  import axios from 'axios';
+  import { BInputGroup, BFormInput, BInputGroupAppend, BButton } from 'bootstrap-vue';
 
   export default {
     props: {
@@ -54,9 +56,20 @@
       emit: Boolean,
     },
 
+    components: {
+      BInputGroup, BFormInput, BInputGroupAppend, BButton
+    },
+
     computed: {
       inputPlaceholder() {
         return this.placeholder || 'E-mail'
+      }
+    },
+
+    data() {
+      return {
+        email: '',
+        busy: false,
       }
     },
 
@@ -66,6 +79,8 @@
           return;
         }
 
+        this.busy = true;
+
         let data = {
           token: process.env.GRIDSOME_BULLDESK_TOKEN,
           identifier: this.identifier,
@@ -73,36 +88,25 @@
         };
 
         try {
-          data.bulldesk_client = window.BulldeskSettings.client;
-          data.bulldesk_domain = window.BulldeskSettings.domain;
+          data.client = window.BulldeskSettings.client;
+          data.domain = window.BulldeskSettings.domain;
         } catch (e) {
           //
         }
 
         axios.post(process.env.GRIDSOME_BULLDESK_API_URL + '/conversion', data)
           .then((response) => {
-            if (this.emit) {
-              this.$emit('convert', true)
+            this.busy = false;
 
-              return
+            if (this.emit) {
+              return this.$emit('convert', true);
             }
 
-            this.converted = true;
-
-            this.email = 'Email cadastrado';
-
-            window.open(process.env.GRIDSOME_BULLDESK_APP_URL + '/cadastro', '_blank')
+            window.location.href = process.env.GRIDSOME_BULLDESK_APP_URL + '/cadastro?email=' + this.email;
           })
           .catch((error) => {
             console.log(error);
           });
-      }
-    },
-
-    data() {
-      return {
-        email: '',
-        converted: false
       }
     }
   }
