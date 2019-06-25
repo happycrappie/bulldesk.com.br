@@ -631,9 +631,11 @@
 
     @media only screen and (max-width: 1000px)
       background-position: -54rem -2rem
+      margin-top: 0rem
 
     @media only screen and (max-width: 800px)
       background-position: -60rem -2rem
+      margin-top: -2rem
 
     @media only screen and (max-width: 600px)
       background-position: -68rem -2rem
