@@ -202,6 +202,11 @@
         border-top: 0
         color: $gray-light
 
+        &:first-child
+          position: sticky
+          left: 0
+          z-index: 9999
+
         &:not(:first-child)
           text-align: center
 
@@ -214,6 +219,18 @@
 
         &:first-child
           width: 30%
+          // background-color: #fff
+
+      @media only screen and (max-width: 420px)
+        td
+          &:first-child
+            width: 15%
+
+  section.faq
+    background-position: center
+    background-repeat: no-repeat
+    min-height: 1286px
+    background-image: url(~@/assets/images/plans-faq-bg.jpg)
 </style>
 
 <template lang="pug">
@@ -277,36 +294,36 @@
 
     section.compare
       .container
-        //- .table-responsive
-        //-   table.table
-        //-     tbody
-        //-       tr
-        //-         td
-        //-         td
-        //-           b-button(variant="gray") Start
-        //-             img(src="../assets/icons/play-button@black.svg", alt="")
-        //-         td
-        //-           b-button(variant="green") Standard
-        //-             img(src="../assets/icons/play-button@black.svg", alt="")
-        //-         td
-        //-           b-button(variant="gray") Premium
-        //-             img(src="../assets/icons/play-button@black.svg", alt="")
-        //-         td
-        //-           b-button(variant="pink") Enterprise
-        //-             img(src="../assets/icons/play-button@white.svg", alt="")
+        .table-responsive
+          table.table
+            tbody
+              tr
+                td
+                td
+                  b-button(variant="gray") Start
+                    img(src="../assets/icons/play-button@black.svg", alt="")
+                td
+                  b-button(variant="green") Standard
+                    img(src="../assets/icons/play-button@black.svg", alt="")
+                td
+                  b-button(variant="gray") Premium
+                    img(src="../assets/icons/play-button@black.svg", alt="")
+                td
+                  b-button(variant="pink") Enterprise
+                    img(src="../assets/icons/play-button@white.svg", alt="")
 
-        //-   table.table.table-striped(v-for="table in plansTable")
-        //-     thead
-        //-       tr
-        //-         th(colspan="5") {{ table.name }}
-        //-     tbody
-        //-       tr(v-for="item in table.items")
-        //-         td {{ item.name }}
-        //-           span.helper.ml-2(v-b-tooltip.hover.bottom="item.description", v-if="item.description") ?
-        //-         td(v-for="exists in item.plans")
-        //-           img(src="../assets/icons/tick.svg", alt="", v-if="exists === true")
-        //-           span(v-else-if="exists > 0 || exists.length > 0") {{ exists }}
-        //-           span(v-else) -
+          table.table.table-striped(v-for="table in plansTable")
+            thead
+              tr
+                th(colspan="5") {{ table.name }}
+            tbody
+              tr(v-for="item in table.items")
+                td {{ item.name }}
+                  span.helper.ml-2(v-b-tooltip.hover.bottom="item.description", v-if="item.description") ?
+                td(v-for="exists in item.plans")
+                  img(src="../assets/icons/tick.svg", alt="", v-if="exists === true")
+                  span(v-else-if="exists > 0 || exists.length > 0") {{ exists }}
+                  span(v-else) -
 
     section.faq
 </template>
