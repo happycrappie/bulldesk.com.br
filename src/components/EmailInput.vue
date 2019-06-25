@@ -61,15 +61,26 @@
 
     methods: {
       submit() {
-        if (this.email) {
-          axios.post(process.env.GRIDSOME_BULLDESK_API_URL + '/conversion', {
-            token: process.env.GRIDSOME_BULLDESK_TOKEN,
-            identifier: this.identifier,
-            email: this.email
-          })
+        if (! this.email) {
+          return;
+        }
+
+        let data = {
+          token: process.env.GRIDSOME_BULLDESK_TOKEN,
+          identifier: this.identifier,
+          email: this.email
+        };
+
+        try {
+          data.bulldesk_client = window.BulldeskSettings.client;
+          data.bulldesk_domain = window.BulldeskSettings.domain;
+        } catch (e) {
+          //
+        }
+
+        axios.post(process.env.GRIDSOME_BULLDESK_API_URL + '/conversion', data)
           .then(response => this.$emit('convert', true))
           .catch(error => this.$emit('convert', false))
-        }
       }
     },
 
