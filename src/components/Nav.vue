@@ -112,10 +112,9 @@
 
 <template lang="pug">
   b-navbar.d-flex.nav-layout(toggleable="lg2" :type="type")
-    b-navbar-brand
-      g-link(href="/")
-        img.logo(src="../assets/images/logo@white.png" alt="Bulldesk" v-if="logo && logo == 'white'")
-        img.logo(src="../assets/images/logo.png" alt="Bulldesk" v-else)
+    b-navbar-brand(href="/")
+      img.logo(src="../assets/images/logo@white.png" alt="Bulldesk" v-if="logo && logo == 'white'")
+      img.logo(src="../assets/images/logo.png" alt="Bulldesk" v-else)
     b-navbar-toggle(target="collapse")
     b-collapse#collapse(is-nav)
       b-navbar-nav.ml-auto
