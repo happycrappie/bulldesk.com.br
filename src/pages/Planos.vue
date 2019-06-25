@@ -170,7 +170,7 @@
       margin: auto
       text-align: center
       max-width: 400px
-      margin-top: 3rem
+      margin-top: 3.25rem
       color: $white-gray
 
       h3
@@ -273,6 +273,8 @@
               h3 Não sabe qual escolher?
               p Compare logo abaixo os planos e escolha sua melhor opção de contratação. Você vai se surpreender.
 
+              img.mt-5(src="../assets/icons/down-purple.svg")
+
     section.compare
       .container
         .table-responsive
@@ -346,8 +348,6 @@
 
     methods: {
       submitForm () {
-        console.log(this.form);
-
         if (! this.form.name.length || ! this.form.name.length) {
           return;
         }
