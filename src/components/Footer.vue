@@ -99,108 +99,108 @@
     .container
       .row
         .bulldesk
-          img(src='~/assets/images/logo.png' class='logo')
+          img(src='../assets/images/logo.png' class='logo')
           ul
             li
-              a(href='')
-                img(src='~/assets/icons/instagram.svg')
+              a(href="#")
+                img(src='../assets/icons/instagram.svg')
             li
-              a(href='')
-                img(src='~/assets/icons/facebook.svg')
+              a(href="#")
+                img(src='../assets/icons/facebook.svg')
             li
-              a(href='')
-                img(src='~/assets/icons/youtube.svg')
+              a(href="#")
+                img(src='../assets/icons/youtube.svg')
             li
-              a(href='')
-                img(src='~/assets/icons/twitter.svg')
+              a(href="#")
+                img(src='../assets/icons/twitter.svg')
             li
-              a(href='')
-                img(src='~/assets/icons/linkedin.svg')
+              a(href="#")
+                img(src='../assets/icons/linkedin.svg')
           .button-container
             a.btn-default
               | Teste grátis
-              img(src='~/assets/icons/play-button@black.svg')
+              img(src='../assets/icons/play-button@black.svg')
         .column.column-a
           h5 Informações
           ul
             li
-              a(href='') Histórias de Sucesso
+              a(href="#") Histórias de Sucesso
             li
-              a(href='') Blog
+              a(href="#") Blog
             li
-              a(href='') Suporte
+              a(href="#") Suporte
             li
-              a(href='') Treinamentos
+              a(href="#") Treinamentos
             li
-              a(href='') Cursos
+              a(href="#") Cursos
             li
-              a(href='') Guias
+              a(href="#") Guias
             li
-              a(href='') Ebooks
+              a(href="#") Ebooks
             li
-              a(href='') Webinars
+              a(href="#") Webinars
             li
-              a(href='') Templates
+              a(href="#") Templates
         .column.column-b
           h5 Funcionalidades
           ul
             li
-              a(href='') Dashboard
+              a(href="#") Dashboard
             li
-              a(href='') Atração e Conversão
+              a(href="#") Atração e Conversão
             li
-              a(href='') Gestão de Leads
+              a(href="#") Gestão de Leads
             li
-              a(href='') Gestão de Vendas
+              a(href="#") Gestão de Vendas
             li
-              a(href='') E-mail Marketing
+              a(href="#") E-mail Marketing
             li
-              a(href='') SMS
+              a(href="#") SMS
             li
-              a(href='') Whatsapp
+              a(href="#") Whatsapp
             li
-              a(href='') Automação de Marketing
+              a(href="#") Automação de Marketing
             li
-              a(href='') Análises
+              a(href="#") Análises
             li
-              a(href='') Usuários e Grupos
+              a(href="#") Usuários e Grupos
         .column.column-c
           h5 Pra quem é o Bulldesk
           ul
             li
               strong Vertical
             li
-              a(href='') Agências
+              a(href="#") Agências
             li
-              a(href='') Construtoras
+              a(href="#") Construtoras
             li
-              a(href='') Ecommerce
+              a(href="#") Ecommerce
             li
-              a(href='') Ensino
+              a(href="#") Ensino
             li
-              a(href='') Hotéis
+              a(href="#") Hotéis
             li
-              a(href='') SaaS
+              a(href="#") SaaS
           ul
             li
               strong Equipes
             li
-              a(href='') Marketing
+              a(href="#") Marketing
             li
-              a(href='') Vendas
+              a(href="#") Vendas
             li
-              a(href='') Gerentes
+              a(href="#") Gerentes
         .column.column-d
           h5 Sobre nós
           ul
             li
-              a(href='') Quem somos
+              a(href="#") Quem somos
             li
-              a(href='') Vagas
+              a(href="#") Vagas
             li
-              a(href='') Encontre um parcero
+              a(href="#") Encontre um parcero
             li
-              a(href='') Seja um parceiro
+              a(href="#") Seja um parceiro
             li
-              a(href='') Contato
+              a(href="#") Contato
 </template>
