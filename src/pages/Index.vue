@@ -112,12 +112,12 @@
     background-image: url(~@/assets/images/home-bg-a.png)
     background-position: -40rem
 
+    @media only screen and (min-width: 800px) and (max-width: 1800px)
+      background-position: -35rem
+
     @media only screen and (max-width: 990px)
       background-image: url(~@/assets/images/home-bg-a.png), url(~@/assets/images/home-bg-a.png)
       background-position: -40rem 0rem, -40rem 15rem
-
-    @media only screen and (min-width: 800px) and (max-width: 1800px)
-      background-position: -35rem
 
     @media only screen and (min-width: 1801px) and (max-width: 1990px)
       background-position: -30rem
@@ -142,9 +142,6 @@
       font-size: 1rem
 
       @media only screen and (max-width: 670px)
-        padding-top: 35rem
-
-      @media only screen and (min-width: 671px) and (max-width: 1000px)
         padding-top: 36rem
 
       .subtitle
