@@ -28,7 +28,7 @@
 
       ul
         @media only screen and (max-width: 440px)
-          padding: 1rem 0rem
+          padding: 1rem 0remel
 
         li
           display: inline
@@ -99,27 +99,27 @@
     .container
       .row
         .bulldesk
-          g-image(src='~/assets/images/logo.png' class='logo')
+          img(src='~/assets/images/logo.png' class='logo')
           ul
             li
               a(href='')
-                g-image(src='~/assets/icons/instagram.svg')
+                img(src='~/assets/icons/instagram.svg')
             li
               a(href='')
-                g-image(src='~/assets/icons/facebook.svg')
+                img(src='~/assets/icons/facebook.svg')
             li
               a(href='')
-                g-image(src='~/assets/icons/youtube.svg')
+                img(src='~/assets/icons/youtube.svg')
             li
               a(href='')
-                g-image(src='~/assets/icons/twitter.svg')
+                img(src='~/assets/icons/twitter.svg')
             li
               a(href='')
-                g-image(src='~/assets/icons/linkedin.svg')
+                img(src='~/assets/icons/linkedin.svg')
           .button-container
             a.btn-default
               | Teste grátis
-              g-image(src='~/assets/icons/play-button@black.svg')
+              img(src='~/assets/icons/play-button@black.svg')
         .column.column-a
           h5 Informações
           ul
