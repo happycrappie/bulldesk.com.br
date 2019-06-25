@@ -2,11 +2,22 @@
   @import '../assets/styles/_variables.scss'
 
   header
-    background-size: 70%
-    background-position: 100% 0
+    background-position: 80px 0
     background-repeat: no-repeat
     height: 100%
-    min-height: 600px
+    min-height: 800px
+
+    @media only screen and (min-width: 580px)
+      background-position: 150px 0
+
+    @media only screen and (min-width: 1100px)
+      background-position: 200px 0
+
+    @media only screen and (min-width: 1440px)
+      background-position: 400px 0
+
+    @media only screen and (min-width: 1840px)
+      background-position: 600px 0
 
     @media only screen and (max-width: 980px)
       background-image: url(~@/assets/images/header@700.png)
@@ -19,6 +30,10 @@
 
     @media only screen and (min-width: 2001px)
       background-image: url(~@/assets/images/header@2200.png)
+      background-position: 700px 0
+
+    @media only screen and (min-width: 2401px)
+      background-position: 800px 0
 
     .hero
       height: 100%
