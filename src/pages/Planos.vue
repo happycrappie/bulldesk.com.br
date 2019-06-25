@@ -292,9 +292,10 @@
 
 <script>
   import Plans from '~/data/plans.yaml'
-  import Layout from '../layouts/Default'
   import Nav from '../components/Nav'
+  import Layout from '../layouts/Default'
   import { BButton, BInputGroup, BFormInput, BSpinner } from 'bootstrap-vue';
+  import axios from 'axios'
 
   export default {
     components: {
@@ -328,6 +329,8 @@
 
     methods: {
       submitForm () {
+        console.log(this.form);
+
         if (! this.form.name.length || ! this.form.name.length) {
           return;
         }
@@ -342,8 +345,8 @@
         };
 
         try {
-          data.bulldesk_client = window.BulldeskSettings.client;
-          data.bulldesk_domain = window.BulldeskSettings.domain;
+          data.client = window.BulldeskSettings.client;
+          data.domain = window.BulldeskSettings.domain;
         } catch (e) {
           //
         }
