@@ -818,223 +818,225 @@
 
 <template lang="pug">
   Layout
-    header.d-flex
-      .container
-        Nav(type="dark")
+    div
+      header.d-flex
+        .container
+          Nav(type="dark")
 
-        .hero.d-flex.align-items-center
-          div
-            h1.title Inteligência comercial de forma simples
-              span.dot.green
-            p.subtitle Ferramenta de controle vendas, gerenciamento de contatos e automação de relacionamento.
-            email-input(placeholder='Insira seu email aqui' identifier='home')
-            p.email-paragraph
-              | Experimente de graça.
-              br
-              | Nenhum cartão de crédito é necessário.
-              br
-              | Configuração simples e rápida
-          g-image(src='~/assets/images/doted-square.jpg' class='doted-square d-none d-xl-block' alt='')
-          g-image(src='~/assets/images/doted-square.jpg' class='doted-square d-none d-xl-block' alt='')
+          .hero.d-flex.align-items-center
+            div
+              h1.title Inteligência comercial de forma simples
+                span.dot.green
+              p.subtitle Ferramenta de controle vendas, gerenciamento de contatos e automação de relacionamento.
+              email-input(placeholder='Insira seu email aqui' identifier='home')
+              p.email-paragraph
+                | Experimente de graça.
+                br
+                | Nenhum cartão de crédito é necessário.
+                br
+                | Configuração simples e rápida
+            g-image(src='~/assets/images/doted-square.jpg' class='doted-square d-none d-xl-block' alt='')
+            g-image(src='~/assets/images/doted-square.jpg' class='doted-square d-none d-xl-block' alt='')
 
-    .section.section-a
-      .container
-        .row
-          .col-lg-4
-            h3 Direcione campanhas multicanais para cada momento da jornada do cliente
-            p.subtitle Veja como organizar essas e outras campanhas em réguas de relacionamento
-          .col-lg-8.steps-col
-              b-nav(pills)
-                b-nav-item(active) Aniversário
-                b-nav-item Reaquecimento
-                b-nav-item Inbound Marketing
-                b-nav-item Whatsapp
-                b-nav-item Check-in Hotel
-              ul.steps
-                li
-                  .step
-                    .step-title &nbsp;
-                    .step-icon
-                      g-image(src='~/assets/icons/person.svg')
-                    .subtitle.step-subtitle Bruno vai fazer aniversário
-                li
-                  .step
-                    .step-title 10 Dias antes
-                    .step-icon
-                      g-image(src='~/assets/icons/envelope@black.svg' alt='Envelope')
-                    .subtitle.step-subtitle Email:
-                      strong  "seu aniversário está chegando"
-                li
-                  .step
-                    .step-title 1 Dia antes
-                    .step-icon
-                      g-image(src='~/assets/icons/envelope@black.svg' alt='Envelope')
-                    .subtitle.step-subtitle Email:
-                      strong  "é amanhã"
-                li
-                  .step
-                    .step-title No dia do aniversário
-                    .step-icon
-                      g-image(src='~/assets/icons/envelope@white.svg' alt='Envelope')
-                    .subtitle.step-subtitle Email:
-                      strong  “mensagem de aniversário + cupom desconto”
+      .section.section-a
+        .container
+          .row
+            .col-lg-4
+              h3 Direcione campanhas multicanais para cada momento da jornada do cliente
+              p.subtitle Veja como organizar essas e outras campanhas em réguas de relacionamento
+            .col-lg-8.steps-col
+                b-nav(pills)
+                  b-nav-item(active) Aniversário
+                  b-nav-item Reaquecimento
+                  b-nav-item Inbound Marketing
+                  b-nav-item Whatsapp
+                  b-nav-item Check-in Hotel
+                ul.steps
+                  li
+                    .step
+                      .step-title &nbsp;
+                      .step-icon
+                        g-image(src='~/assets/icons/person.svg')
+                      .subtitle.step-subtitle Bruno vai fazer aniversário
+                  li
+                    .step
+                      .step-title 10 Dias antes
+                      .step-icon
+                        g-image(src='~/assets/icons/envelope@black.svg' alt='Envelope')
+                      .subtitle.step-subtitle Email:
+                        strong  "seu aniversário está chegando"
+                  li
+                    .step
+                      .step-title 1 Dia antes
+                      .step-icon
+                        g-image(src='~/assets/icons/envelope@black.svg' alt='Envelope')
+                      .subtitle.step-subtitle Email:
+                        strong  "é amanhã"
+                  li
+                    .step
+                      .step-title No dia do aniversário
+                      .step-icon
+                        g-image(src='~/assets/icons/envelope@white.svg' alt='Envelope')
+                      .subtitle.step-subtitle Email:
+                        strong  “mensagem de aniversário + cupom desconto”
 
-    .section.section-b
-      .container
-        .row
-          .col-lg-6
-            h3 Uma ferramenta completa
-              br
-              span.text-pink para criar |
-            .subtitle De maneira simples e intuitiva, criamos um software com tudo que você precisa quando o assunto é marketing e vendas. Conheça o Bulldesk e comece a gerar mais resultados através da inteligência comercial.
+      .section.section-b
+        .container
+          .row
+            .col-lg-6
+              h3 Uma ferramenta completa
+                br
+                span.text-pink para criar |
+              .subtitle De maneira simples e intuitiva, criamos um software com tudo que você precisa quando o assunto é marketing e vendas. Conheça o Bulldesk e comece a gerar mais resultados através da inteligência comercial.
 
-            .container.items
-              .row.no-gutters
-                .col-6.col-xl-4.item
-                  g-image(src='~/assets/icons/check.svg' alt='Check')
-                  | CRM de vendas
-                .col-6.col-xl-4.item
-                  g-image(src='~/assets/icons/check.svg' alt='Check')
-                  | Automações prontas
-              .row.no-gutters
-                .col-6.col-xl-4.item
-                  g-image(src='~/assets/icons/check.svg' alt='Check')
-                  | Campanhas
-                .col-6.col-xl-4.item
-                  g-image(src='~/assets/icons/check.svg' alt='Check')
-                  | Relatórios ao vivo
+              .container.items
+                .row.no-gutters
+                  .col-6.col-xl-4.item
+                    g-image(src='~/assets/icons/check.svg' alt='Check')
+                    | CRM de vendas
+                  .col-6.col-xl-4.item
+                    g-image(src='~/assets/icons/check.svg' alt='Check')
+                    | Automações prontas
+                .row.no-gutters
+                  .col-6.col-xl-4.item
+                    g-image(src='~/assets/icons/check.svg' alt='Check')
+                    | Campanhas
+                  .col-6.col-xl-4.item
+                    g-image(src='~/assets/icons/check.svg' alt='Check')
+                    | Relatórios ao vivo
 
-            .know-more
-              a.btn-default
-                | Conheça mais
-                g-image(src='~/assets/icons/play-button@white.svg' alt='')
+              .know-more
+                a.btn-default
+                  | Conheça mais
+                  g-image(src='~/assets/icons/play-button@white.svg' alt='')
 
-          .col-lg-6.right-col
-            .header
-              | Segmento:
-              strong.text-pink  Novos leads
-              span.contacts.d-none.d-sm-block 180 contatos
-            .content
-                | Olá,
-                span.text-pink.name Fulano de tal
-                br
-                br
-                br
-                | Seja bem-vindo ao seu editor de mensagem e e-mail personalizado.
-                br
-                br
-                br
-                | A partir de agora você pode selecionar todos seus  contatos e disparar um determinado conteúdo para seus clusters selecionados.
-                br
-                br
-                br
-                | Atenciosamente,
-                br
-                | - Bulldesk
-                g-image(src='~/assets/images/editor-footer.png' alt='')
+            .col-lg-6.right-col
+              .header
+                | Segmento:
+                strong.text-pink  Novos leads
+                span.contacts.d-none.d-sm-block 180 contatos
+              .content
+                  | Olá,
+                  span.text-pink.name Fulano de tal
+                  br
+                  br
+                  br
+                  | Seja bem-vindo ao seu editor de mensagem e e-mail personalizado.
+                  br
+                  br
+                  br
+                  | A partir de agora você pode selecionar todos seus  contatos e disparar um determinado conteúdo para seus clusters selecionados.
+                  br
+                  br
+                  br
+                  | Atenciosamente,
+                  br
+                  | - Bulldesk
+                  g-image(src='~/assets/images/editor-footer.png' alt='')
 
-    .section.section-c
-      .container
-        .row
-          .col-lg-9.col-left
-              .title
-                h3 Você vai conhecer o verdadeiro software de automação
-                .image-a
-                .image-b
-                .image-c
-          .col-lg-3.col-right
-              h4 O que você pode fazer com o Bulldesk?
-              .subtitle São diversas funcionalidades que oferecemos dentro da ferramenta. Entre elas, podemos destacar as seguintes:
-              table
-                tr
-                  td
-                    g-image(src='~/assets/icons/content.svg' alt='Conteudo')
-                  td
-                    | Organizar o seu processo comercial
-                tr
-                  td
-                    g-image(src='~/assets/icons/income.svg' alt='Renda')
-                  td
-                    | Automatizar marketing e vendas
-              a.btn-default
-                | Teste grátis
-                g-image(src='~/assets/icons/play-button@white.svg' alt='')
+      .section.section-c
+        .container
+          .row
+            .col-lg-9.col-left
+                .title
+                  h3 Você vai conhecer o verdadeiro software de automação
+                  .image-a
+                  .image-b
+                  .image-c
+            .col-lg-3.col-right
+                h4 O que você pode fazer com o Bulldesk?
+                .subtitle São diversas funcionalidades que oferecemos dentro da ferramenta. Entre elas, podemos destacar as seguintes:
+                table
+                  tbody
+                    tr
+                      td
+                        g-image(src='~/assets/icons/content.svg' alt='Conteudo')
+                      td
+                        | Organizar o seu processo comercial
+                    tr
+                      td
+                        g-image(src='~/assets/icons/income.svg' alt='Renda')
+                      td
+                        | Automatizar marketing e vendas
+                a.btn-default
+                  | Teste grátis
+                  g-image(src='~/assets/icons/play-button@white.svg' alt='')
 
-    .section.section-d
-      .container
-        .row
-          .col-12
-            h3
-              | Fique tranquilo,
-              br
-              | você está em boa companhia
-        .row
-          .col-12.swiper
-            ClientOnly
-              swiper(ref='swiper' :options='swiperOptions')
-                swiper-slide
-                  .container
-                    .row
-                      .col-12.col-md-6.image
-                        g-image(src='~/assets/images/cases/buscape.png' alt='Imagem')
-                      .col-12.col-md-6.content
-                        .logo
-                          g-image(src='~/assets/images/cases/buscape-logo.png' alt='Buscape')
-                        .description Com o Bulldesk foi possível captar dados, enviar e-mails automáticos, e-mail que acontecem em tempo real.
-                        .author ANTÔNIO FRANCISCO
-                swiper-slide
-                  .container
-                    .row
-                      .col-12.col-md-6.image
-                        g-image(src='~/assets/images/cases/buscape.png' alt='Imagem')
-                      .col-12.col-md-6.content
-                        .logo
-                          g-image(src='~/assets/images/cases/buscape-logo.png' alt='Buscape')
-                        .description Com o Bulldesk foi possível captar dados, enviar e-mails automáticos, e-mail que acontecem em tempo real.
-                        .author ANTÔNIO FRANCISCO
-                swiper-slide
-                  .container
-                    .row
-                      .col-12.col-md-6.image
-                        g-image(src='~/assets/images/cases/buscape.png' alt='Imagem')
-                      .col-12.col-md-6.content
-                        .logo
-                          g-image(src='~/assets/images/cases/buscape-logo.png' alt='Buscape')
-                        .description Com o Bulldesk foi possível captar dados, enviar e-mails automáticos, e-mail que acontecem em tempo real.
-                        .author ANTÔNIO FRANCISCO
-                .swiper-button-prev(slot='button-prev')
-                  .button
-                .swiper-button-next(slot='button-next')
-                  .button
-        .footer
-          .row.image-row
-            .col-12.col-md-3
-              p Veja alguns outros clientes que também utilizam Bulldesk
-            .col-12.col-md-9
-              g-image(src='~/assets/images/cases/other-cases.png' alt='Cases')
-          .row.button-row
+      .section.section-d
+        .container
+          .row
             .col-12
-              .btn-default
-                | Veja mais histórias de sucesso
-                g-image(src='~/assets/icons/play-button@white.svg' alt='')
+              h3
+                | Fique tranquilo,
+                br
+                | você está em boa companhia
+          .row
+            .col-12.swiper
+              ClientOnly
+                swiper(ref='swiper' :options='swiperOptions')
+                  swiper-slide
+                    .container
+                      .row
+                        .col-12.col-md-6.image
+                          g-image(src='~/assets/images/cases/buscape.png' alt='Imagem')
+                        .col-12.col-md-6.content
+                          .logo
+                            g-image(src='~/assets/images/cases/buscape-logo.png' alt='Buscape')
+                          .description Com o Bulldesk foi possível captar dados, enviar e-mails automáticos, e-mail que acontecem em tempo real.
+                          .author ANTÔNIO FRANCISCO
+                  swiper-slide
+                    .container
+                      .row
+                        .col-12.col-md-6.image
+                          g-image(src='~/assets/images/cases/buscape.png' alt='Imagem')
+                        .col-12.col-md-6.content
+                          .logo
+                            g-image(src='~/assets/images/cases/buscape-logo.png' alt='Buscape')
+                          .description Com o Bulldesk foi possível captar dados, enviar e-mails automáticos, e-mail que acontecem em tempo real.
+                          .author ANTÔNIO FRANCISCO
+                  swiper-slide
+                    .container
+                      .row
+                        .col-12.col-md-6.image
+                          g-image(src='~/assets/images/cases/buscape.png' alt='Imagem')
+                        .col-12.col-md-6.content
+                          .logo
+                            g-image(src='~/assets/images/cases/buscape-logo.png' alt='Buscape')
+                          .description Com o Bulldesk foi possível captar dados, enviar e-mails automáticos, e-mail que acontecem em tempo real.
+                          .author ANTÔNIO FRANCISCO
+                  .swiper-button-prev(slot='button-prev')
+                    .button
+                  .swiper-button-next(slot='button-next')
+                    .button
+          .footer
+            .row.image-row
+              .col-12.col-md-3
+                p Veja alguns outros clientes que também utilizam Bulldesk
+              .col-12.col-md-9
+                g-image(src='~/assets/images/cases/other-cases.png' alt='Cases')
+            .row.button-row
+              .col-12
+                .btn-default
+                  | Veja mais histórias de sucesso
+                  g-image(src='~/assets/icons/play-button@white.svg' alt='')
 
-    .section.section-e
-      .container
-        .row
-          .col-12.col-lg-3
-            h3 Ainda está com dúvidas?
-            .subtitle
-              | Veja como funciona o Bulldesk e suas principais funções em um vídeo direto ao ponto.
-              strong  Você vai se surpreender.
-            a.btn-default.d-none.d-lg-inline
-              | Teste grátis
-              g-image(src='~/assets/icons/play-button@black.svg' alt='')
-          .col-12.col-lg-9
-            .video-container
-              g-image(src='~/assets/images/home-video.png' alt='Video')
-            a.btn-default.d-inline.d-lg-none
-              | Teste grátis
-              g-image(src='~/assets/icons/play-button@black.svg' alt='')
+      .section.section-e
+        .container
+          .row
+            .col-12.col-lg-3
+              h3 Ainda está com dúvidas?
+              .subtitle
+                | Veja como funciona o Bulldesk e suas principais funções em um vídeo direto ao ponto.
+                strong  Você vai se surpreender.
+              a.btn-default.d-none.d-lg-inline
+                | Teste grátis
+                g-image(src='~/assets/icons/play-button@black.svg' alt='')
+            .col-12.col-lg-9
+              .video-container
+                g-image(src='~/assets/images/home-video.png' alt='Video')
+              a.btn-default.d-inline.d-lg-none
+                | Teste grátis
+                g-image(src='~/assets/icons/play-button@black.svg' alt='')
 </template>
 
 <script>
