@@ -32,6 +32,29 @@ span.dot
 .text-purple
   color: $purple
 
+// Page headers
+.hero
+  h1.title
+    line-height: 55px
+    font-size: 3.9375rem
+    font-weight: 700
+    letter-spacing: -0.15px
+    color: $gray-dark
+
+    @media only screen and (max-width: 400px)
+      font-size: 2.6rem
+      line-height: 45px
+
+    @media only screen and (min-width: 401px) and (max-width: 990px)
+      font-size: 3rem
+      line-height: 50px
+
+  p.subtitle
+    font-size: 1rem
+    font-weight: 400
+    letter-spacing: 0.2px
+    line-height: 25px
+
 // Default site section
 .section
   h3

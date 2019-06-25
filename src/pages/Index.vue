@@ -39,12 +39,7 @@
       height: 100%
       max-width: 480px
 
-      h1
-        color: $gray-dark
-        line-height: 1
-        font-size: 3.9375rem
-        font-weight: 700
-        letter-spacing: -0.15px
+      h1.title
         max-width: 300px
 
         @media only screen and (max-width: 400px)
@@ -56,12 +51,9 @@
         span
           color: $pink
 
-      p
+      p.subtitle
         margin-top: 1.5rem
-        font-size: 1rem
-        font-weight: 100
         max-width: 420px
-        letter-spacing: 0.2px
 
       form
         margin-left: 0px
@@ -832,9 +824,9 @@
 
         .hero.d-flex.align-items-center
           div
-            h1 Inteligência comercial de forma simples
+            h1.title Inteligência comercial de forma simples
               span.dot.green
-            p Ferramenta de controle vendas, gerenciamento de contatos e automação de relacionamento.
+            p.subtitle Ferramenta de controle vendas, gerenciamento de contatos e automação de relacionamento.
             email-input(placeholder='Insira seu email aqui' identifier='home')
             p.email-paragraph
               | Experimente de graça.
