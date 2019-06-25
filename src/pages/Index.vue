@@ -487,7 +487,7 @@
       padding-top: 57rem
 
       @media only screen and (max-width: 990px)
-        padding-top: 35rem
+        padding-top: 38rem
 
       .col-left
 
@@ -540,7 +540,7 @@
 
           @media only screen and (min-width: 401px) and (max-width: 690px)
             width: 100%
-            height: 420px
+            height: 350px
             margin-left: -20px
 
           @media only screen and (min-width: 691px) and (max-width: 990px)
