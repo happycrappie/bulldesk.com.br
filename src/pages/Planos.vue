@@ -273,7 +273,6 @@
               h3 Não sabe qual escolher?
               p Compare logo abaixo os planos e escolha sua melhor opção de contratação. Você vai se surpreender.
 
-              img.mt-5(src="../assets/icons/down-purple.svg")
               img.mt-5(src="../assets/icons/down-purple.svg", alt="")
 
     section.compare
