@@ -154,7 +154,13 @@
 </template>
 
 <script>
+  import { BNavbar, BNavbarBrand, BNavbarToggle, BCollapse, BNavbarNav, BInputGroup, BFormINput, BInputGroupAppend, BButton, BNavItemDropdown, BDropdownItem, BNavItem } from 'bootstrap-vue';
+
   export default {
+    components: {
+      BNavbar, BNavbarBrand, BNavbarToggle, BCollapse, BNavbarNav, BInputGroup, BFormINput, BInputGroupAppend, BButton, BNavItemDropdown, BDropdownItem, BNavItem
+    },
+
     props: {
       type: String,
       logo: String

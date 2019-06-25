@@ -46,13 +46,18 @@
 </template>
 
 <script>
-  import axios from 'axios'
+  import axios from 'axios';
+  import { BInputGroup, BFormInput, BInputGroupAppend, BButton } from 'bootstrap-vue';
 
   export default {
     props: {
       placeholder: String,
       identifier: String,
       emit: Boolean,
+    },
+
+    components: {
+      BInputGroup, BFormInput, BInputGroupAppend, BButton
     },
 
     computed: {
