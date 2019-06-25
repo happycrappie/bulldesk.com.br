@@ -485,6 +485,7 @@
 
     @media only screen and (min-width: 2501px)
       background-position: -10rem
+
     .container
       padding-top: 57rem
 
@@ -595,26 +596,53 @@
             width: 12px
 
   .section-d
-    margin-top: 8rem
+    margin-top: 6rem
     background-repeat: no-repeat
-    background-size: 100% 1022px
     background-image: url(~@/assets/images/home-bg-d.png)
-    background-position: 0px 1rem
+    background-size: 2560px auto
+    background-position: 0rem 0rem
     height: 1128px
     z-index: 9
     position: relative
 
-    @media only screen and (max-width: 440px)
-      margin-top: -4rem
-      height: 1378px
-      background-size: 160% 1222px
-      background-position: -125px 135px
+    @media only screen and (max-width: 2400px)
+      background-position: -10rem
 
-    @media only screen and (min-width: 441px) and (max-width: 990px)
-      margin-top: -4rem
-      height: 1328px
-      background-size: 160% 1222px
-      background-position: -150px 110px
+    @media only screen and (max-width: 2300px)
+      background-position: -12rem
+
+    @media only screen and (max-width: 2200px)
+      background-position: -18rem
+
+    @media only screen and (max-width: 2000px)
+      background-position: -22rem
+
+    @media only screen and (max-width: 1800px)
+      background-position: -26rem
+
+    @media only screen and (max-width: 1600px)
+      background-position: -32rem
+
+    @media only screen and (max-width: 1400px)
+      background-position: -40rem -2rem
+
+    @media only screen and (max-width: 1200px)
+      background-position: -46rem -2rem
+
+    @media only screen and (max-width: 1200px)
+      background-position: -52rem -2rem
+
+    @media only screen and (max-width: 1000px)
+      background-position: -54rem -2rem
+
+    @media only screen and (max-width: 800px)
+      background-position: -60rem -2rem
+
+    @media only screen and (max-width: 600px)
+      background-position: -68rem -2rem
+
+    @media only screen and (max-width: 400px)
+      background-position: -74rem -6rem
 
     .container
       h3
@@ -935,14 +963,9 @@
                 swiper-slide
                   .container
                     .row
-                      .col-12.col-md-6.content.d-none.d-md-block
-                        .logo
-                          g-image(src='~/assets/images/cases/buscape-logo.png' alt='Buscape')
-                        .description Com o Bulldesk foi possível captar dados, enviar e-mails automáticos, e-mail que acontecem em tempo real.
-                        .author ANTÔNIO FRANCISCO
                       .col-12.col-md-6.image
                         g-image(src='~/assets/images/cases/buscape.png' alt='Imagem')
-                      .col-12.col-md-6.content.d-block.d-md-none
+                      .col-12.col-md-6.content
                         .logo
                           g-image(src='~/assets/images/cases/buscape-logo.png' alt='Buscape')
                         .description Com o Bulldesk foi possível captar dados, enviar e-mails automáticos, e-mail que acontecem em tempo real.
