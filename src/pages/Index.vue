@@ -216,7 +216,7 @@
           width: 25%
 
           .step
-            padding: 0 10px
+            padding: 0 5px
             z-index: 999
 
             .step-title
@@ -250,15 +250,15 @@
 
               @media only screen and (max-width: 440px)
                 border: 1px solid $gray-light
-                height: 42px
-                width: 42px
-                line-height: 42px
+                height: 36px
+                width: 36px
+                line-height: 36px
 
               @media only screen and (min-width: 441px) and (max-width: 990px)
                 border: 1px solid $gray-light
-                height: 62px
-                width: 62px
-                line-height: 62px
+                height: 54px
+                width: 54px
+                line-height: 54px
 
               @media only screen and (min-width: 991px) and (max-width: 1300px)
                 height: 82px
@@ -283,6 +283,12 @@
                 height: 5px
                 width: 110%
                 z-index: 0
+
+                @media only screen and (max-width: 990px)
+                  width: 250%
+
+                @media only screen and (max-width: 440px)
+                  width: 200%
 
             .step-subtitle
               height: 36px
