@@ -337,7 +337,7 @@
         let data = {
           token: process.env.GRIDSOME_BULLDESK_TOKEN,
           identifier: 'Contato Enterprise',
-          name: this.form.name
+          name: this.form.name,
           email: this.form.email
         };
 
