@@ -276,6 +276,22 @@
     section.compare
       .container
         .table-responsive
+          table.table
+            tr
+              td
+              td
+                b-button(variant="gray") Start
+                  img(src="../assets/icons/play-button@black.svg")
+              td
+                b-button(variant="green") Standard
+                  img(src="../assets/icons/play-button@black.svg")
+              td
+                b-button(variant="gray") Premium
+                  img(src="../assets/icons/play-button@black.svg")
+              td
+                b-button(variant="pink") Enterprise
+                  img(src="../assets/icons/play-button@white.svg")
+
           table.table.table-striped(v-for="table in plansTable")
             thead
               tr
