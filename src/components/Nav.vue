@@ -162,7 +162,10 @@
 
     props: {
       type: String,
-      logo: String
+      logo: {
+        type: String,
+        default: 'black'
+      }
     }
   }
 </script>
