@@ -81,27 +81,47 @@
           li
             padding: 3px 0
 
+        .contact
+          color: $white-gray
+
+          h4
+            font-size: 1.0625rem
+            text-align: center
+            margin-bottom: 0.85rem
+
+        form
+          input
+            margin: 0 auto 0.625rem
+            border-radius: 30px
+            font-size: 0.625rem
+            padding: 16px 25px
+            background-color: #49405B
+            color: $gray-soft
+            border: none
+            height: auto
+            max-width: 185.86px
+
       &:first-child
         .detail
-          height: 381px
+          min-height: 381px
           background-color: $white-gray
 
       &:nth-child(2)
         .detail
-          height: 515px
+          min-height: 515px
           margin-top: 0
           background-color: $white
           // border-radius: 0 10px 10px 0
 
       &:nth-child(3)
         .detail
-          height: 581px
+          min-height: 581px
           background-color: $white-gray
           box-shadow: 0 20px 30px rgba(69, 39, 123, 0.18)
 
       &:last-child
         .detail
-          height: 525px
+          min-height: 525px
           color: $white-gray
           background-color: $gray-dark
           // border-radius: 0 10px 10px 0
@@ -201,9 +221,21 @@
               hr
 
               ul.features
-                li(v-for=("feature in plan.features")) {{ feature}}
+                li(v-for="feature in plan.features") {{ feature}}
 
-              b-button(variant="default") Testar agora
+              b-button(href="https://app.bulldesk.com.br/cadastro", variant="green", v-if="index < 3") Testar agora
+                g-image(src="~/assets/icons/play-button@black.svg")
+
+              .contact(v-else)
+                h4 Solicite uma demonstração
+
+                form(@submit.prevent="submitForm()")
+                  b-form-input(placeholder="Nome", v-model="form.name", required)
+                  b-form-input(type="email", placeholder="E-mail", v-model="form.email", required)
+                  b-button(type="submit", variant="pink", :disabled="form.busy")
+                    | Solicitar Contato
+                    g-image(src="~/assets/icons/play-button@white.svg", v-if="! form.busy")
+                    b-spinner.ml-1(small, v-else)
 
         .row
           .col-lg-12
@@ -232,13 +264,16 @@
   import Plans from '~/data/plans.yaml'
   import Layout from '../layouts/Default'
   import Nav from '../components/Nav'
-  import { BButton } from 'bootstrap-vue';
+  import { BButton, BInputGroup, BFormInput, BSpinner } from 'bootstrap-vue';
 
   export default {
     components: {
       Layout,
       Nav,
       BButton,
+      BInputGroup,
+      BFormInput,
+      BSpinner
     },
 
     metaInfo: {
@@ -249,11 +284,29 @@
       return {
         plansList: Plans.list,
         plansTable: Plans.table,
+        form: {
+          name: '',
+          email: '',
+          busy: false,
+        }
       }
     },
 
     mounted () {
       console.log(this.plansTable);
+    },
+
+    methods: {
+      submitForm () {
+        console.log(this.form.name);
+        console.log(this.form.email);
+
+        if (! this.form.name.length || ! this.form.name.length) {
+          return;
+        }
+
+        this.form.busy = true;
+      }
     }
   }
 </script>

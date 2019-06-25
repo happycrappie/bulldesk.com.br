@@ -35,8 +35,8 @@ list:
       - +10 usuários
       - +50.000 leads
       - +500.000 pageviews
-      - 99.99% uptime SLA
-      - 2FA
+      # - 99.99% uptime SLA
+      # - 2FA
       - Atendimento Preferencial
 
 table:
