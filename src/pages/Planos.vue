@@ -50,6 +50,7 @@
         color: $white
 
       .detail
+        color: $gray-dark
         margin-top: 70px
         text-align: center
         min-height: 400px
@@ -58,8 +59,11 @@
         border-radius: 10px
 
         .title
-          font-size: 1rem
-          color: $gray-dark
+          font-size: 0.75rem
+
+          span
+            font-size: 1.125rem
+            color: $purple
 
         .price
           font-size: 2.25rem
@@ -70,7 +74,7 @@
         .features
           margin: 1.5rem 0
           color: $gray-light
-          font-size: 0.85rem
+          font-size: 0.75rem
           text-align: left
           padding-inline-start: 30px
 
@@ -104,6 +108,9 @@
 
           .title
             color: $white-gray
+
+            span
+              color: $pink
 
           .price
             margin-top: 10px
@@ -186,7 +193,8 @@
           .plan.col-3(v-for="(plan, index) in plansList")
             .best-choice(v-if="index === 1") Melhor escolha 👌
             .detail
-              .title {{ plan.name }}
+              .title Plano
+                span  {{ plan.name }}
               .price R$ {{ plan.price_per_user }}
               .per-user por usuário
 
