@@ -203,7 +203,7 @@
               ul.features
                 li(v-for=("feature in plan.features")) {{ feature}}
 
-              b-button Testar agora
+              b-button(variant="default") Testar agora
 
         .row
           .col-lg-12
