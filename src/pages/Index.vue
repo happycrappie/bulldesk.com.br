@@ -638,7 +638,8 @@
       margin-top: -2rem
 
     @media only screen and (max-width: 600px)
-      background-position: -68rem -2rem
+      background-position: -68rem -4rem
+      margin-top: -4rem
 
     @media only screen and (max-width: 400px)
       background-position: -74rem -6rem
@@ -781,12 +782,20 @@
     @media only screen and (max-width: 600px)
       background-position: -92rem
 
+    @media only screen and (max-width: map-get($grid-breakpoints, 'md'))
+      background-size: 2560px 100%
+      margin-top: -18rem
+      height: 1023px
+
     .container
       padding-top: 45rem
 
       @media only screen and (max-width: 990px)
         padding-top: 35rem
         text-align: center
+
+      @media only screen and (max-width: map-get($grid-breakpoints, 'md'))
+        padding-top: 12rem
 
       h3
         margin-top: 8rem
