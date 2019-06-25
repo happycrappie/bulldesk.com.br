@@ -47,7 +47,7 @@ module.exports = {
     }
   },
   chainWebpack (config) {
-    config.mode('development');
+    // config.mode('development');
 
     config.module
       .rule('pug')
