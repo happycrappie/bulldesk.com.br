@@ -741,25 +741,49 @@
 
   .section-e
     background-repeat: no-repeat
-    background-size: 120% 100%
+    background-size: 2560px auto
     background-image: url(~@/assets/images/home-bg-e.png)
-    background-position: 30% 0px
+    background-position: 0rem 0rem
     height: 1623px
     margin-top: -50rem
     z-index: 1
     position: relative
 
-    @media only screen and (max-width: 440px)
-      background-size: 180% 100%
+    @media only screen and (max-width: 2300px)
+      background-position: -14rem
 
-    @media only screen and (max-width: 990px)
-      margin-top: -50rem
+    @media only screen and (max-width: 2200px)
+      background-position: -22rem
+
+    @media only screen and (max-width: 2000px)
+      background-position: -28rem
+
+    @media only screen and (max-width: 1800px)
+      background-position: -38rem
+
+    @media only screen and (max-width: 1600px)
+      background-position: -48rem
+
+    @media only screen and (max-width: 1400px)
+      background-position: -60rem
+
+    @media only screen and (max-width: 1200px)
+      background-position: -66rem
+
+    @media only screen and (max-width: 1000px)
+      background-position: -72rem
+
+    @media only screen and (max-width: 800px)
+      background-position: -82rem
+
+    @media only screen and (max-width: 600px)
+      background-position: -92rem
 
     .container
       padding-top: 45rem
 
       @media only screen and (max-width: 990px)
-        padding-top: 42rem
+        padding-top: 35rem
         text-align: center
 
       h3
