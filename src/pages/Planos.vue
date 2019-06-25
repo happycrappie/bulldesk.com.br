@@ -36,6 +36,7 @@
   section.plans
     background-position: center
     background-repeat: no-repeat
+    transition: 1.5s all cubic-bezier(0.39, 0.575, 0.565, 1)
     min-height: 1286px
     background-image: url(~@/assets/images/pricing-purple-bg.png)
     margin-top: -250px
@@ -316,7 +317,7 @@
           busy: false,
         },
         scroll: {
-          left: true,
+          left: false,
           right: true
         }
       }
@@ -339,7 +340,17 @@
       },
 
       scrollTo (px) {
-        this.$refs.scrollable.scrollLeft += px;
+        const el = this.$refs.scrollable;
+
+        el.setAttribute(
+          'style',
+          'opacity: 1; transform: translate3d(0, -10px, 0)'
+        )
+
+        el.scrollLeft += px;
+
+        this.scroll.left = el.scrollLeft > 0;
+        this.scroll.right = (el.offsetWidth + el.scrollLeft) < el.scrollWidth;
       }
     }
   }
