@@ -114,14 +114,14 @@
   b-navbar.d-flex.nav-layout(toggleable="lg2" :type="type")
     b-navbar-brand
       g-link(to="/")
-        g-image.logo(src="~/assets/images/logo@white.png" alt="Bulldesk" v-if="logo && logo == 'white'")
-        g-image.logo(src="~/assets/images/logo.png" alt="Bulldesk" v-else)
+        img.logo(src="../assets/images/logo@white.png" alt="Bulldesk" v-if="logo && logo == 'white'")
+        img.logo(src="../assets/images/logo.png" alt="Bulldesk" v-else)
     b-navbar-toggle(target="collapse")
     b-collapse#collapse(is-nav)
       b-navbar-nav.ml-auto
         b-nav-item-dropdown.for-whom(text="Pra quem é")
           .dropdown-icon
-            g-image(src='~/assets/icons/poligono.svg')
+            g-image(src='../assets/icons/poligono.svg')
           .dropdown-container
             .row.no-gutters
               .col-12.col-sm-6
@@ -150,7 +150,7 @@
         b-nav-item(to="/planos") Planos
         b-nav-item(href="https://app.bulldesk.com.br" target="_blank") Login
         b-nav-item.trial(href="https://app.bulldesk.com.br/cadastro") Teste grátis
-          g-image(src='~/assets/icons/play-button@black.svg')
+          img(src="../assets/icons/play-button@black.svg")
 </template>
 
 <script>
