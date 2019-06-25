@@ -1,6 +1,6 @@
 list:
   - name: Start
-    price_per_user: 59
+    price_per_user: R$ 59
     features:
       - 1.000 leads
       - CRM
@@ -8,7 +8,7 @@ list:
       - Automação básica
 
   - name: Standard
-    price_per_user: 89
+    price_per_user: R$ 89
     features:
       - 10.000 leads
       - CRM
@@ -18,7 +18,7 @@ list:
       - E-mail Marketing
 
   - name: Premium
-    price_per_user: 159
+    price_per_user: R$ 159
     features:
       - 50.000 leads
       - CRM
@@ -30,7 +30,7 @@ list:
       - Integração Gmail
 
   - name: Enterprise
-    price_per_user: 159
+    price_per_user: Valor sob consulta
     features:
       - +10 usuários
       - +50.000 leads

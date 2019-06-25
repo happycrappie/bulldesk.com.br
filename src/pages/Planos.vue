@@ -245,8 +245,8 @@
             .detail
               .title Plano
                 span  {{ plan.name }}
-              .price R$ {{ plan.price_per_user }}
-              .per-user por usuário
+              .price {{ plan.price_per_user }}
+              .per-user(v-if="index < 3") por usuário
 
               hr
 
