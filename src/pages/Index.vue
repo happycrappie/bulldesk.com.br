@@ -42,30 +42,36 @@
       h1
         color: $gray-dark
         line-height: 1
-        font-size: 4.5rem
+        font-size: 3.9375rem
         font-weight: 700
+        letter-spacing: -0.15px
+        max-width: 300px
 
         @media only screen and (max-width: 400px)
-          font-size: 3.1rem
+          font-size: 2.6rem
 
         @media only screen and (min-width: 401px) and (max-width: 700px)
-          font-size: 3.5rem
+          font-size: 3rem
 
         span
           color: $pink
 
       p
-        margin-top: 1rem
-        font-size: 1.1rem
+        margin-top: 1.5rem
+        font-size: 1rem
         font-weight: 100
         max-width: 420px
+        letter-spacing: 0.2px
+
+      form
+        margin-left: 0px
 
       .email-paragraph
         width: auto
         max-width: 265px
         height: 53px
         color: $gray-light
-        font-size: 0.7rem
+        font-size: 0.625rem
         font-weight: 400
         letter-spacing: 0.2px
         line-height: 20px
@@ -139,7 +145,6 @@
 
     .container
       padding-top: 38rem
-      font-size: 1rem
 
       @media only screen and (max-width: 670px)
         padding-top: 36rem
@@ -175,24 +180,23 @@
           .nav-link
             color: $gray-soft
             font-weight: 700
-            font-size: 0.6rem
+            font-size: 0.625rem
             letter-spacing: 0.2px
             line-height: 25px
             text-transform: uppercase
 
             @media only screen and (max-width: 400px)
-              font-size: 0.3rem
+              font-size: 0.325rem
               line-height: 15px
               padding: 0.3rem 0.3rem
 
             @media only screen and (min-width: 401px) and (max-width: 600px)
-              font-size: 0.4rem
+              font-size: 0.425rem
               line-height: 15px
               padding: 0.3rem 0.5rem
 
             @media only screen and (min-width: 1300px)
               white-space: nowrap
-              font-size: 0.7rem
 
           .active
             background-color: $purple
@@ -218,25 +222,22 @@
           .step
             padding: 0 5px
             z-index: 999
+            letter-spacing: 0.2px
 
             .step-title
               height: 20px
               color: $pink
-              font-size: 0.8rem
+              font-size: 0.625rem
               font-weight: 700
-              letter-spacing: 0.2px
               line-height: 20px
               text-transform: uppercase
               margin-bottom: 30px
 
               @media only screen and (max-width: 440px)
-                font-size: 0.5rem
+                font-size: 0.375rem
 
               @media only screen and (min-width: 441px) and (max-width: 990px)
-                font-size: 0.6rem
-
-              @media only screen and (min-width: 991px) and (max-width: 1300px)
-                font-size: 0.7rem
+                font-size: 0.475rem
 
             .step-icon
               background-color: $white
@@ -295,17 +296,7 @@
               max-width: 162px
               margin: auto
               margin-top: 20px
-
-              @media only screen and (max-width: 440px)
-                font-size: 0.5rem
-                line-height: 15px
-
-              @media only screen and (min-width: 441px) and (max-width: 990px)
-                font-size: 0.6rem
-                line-height: 20px
-
-              @media only screen and (min-width: 991px) and (max-width: 1300px)
-                font-size: 0.7rem
+              font-size: 0.75rem
 
           &:last-child
             .step
@@ -370,13 +361,13 @@
         color: $purple
         height: 25px
         padding: 20px 0px
-        font-size: 0.8rem
+        font-size: 0.75rem
         font-weight: 400
-        letter-spacing: 0.24px
+        letter-spacing: 0.2px
         line-height: 25px
 
         @media only screen and (max-width: 440px)
-          font-size: 0.7rem
+          font-size: 0.65rem
           padding: 30px 0px
 
         img
@@ -395,17 +386,17 @@
 
     .right-col
       height: 500px
+      letter-spacing: 0.2px
 
       @media only screen and (max-width: 990px)
-          margin-top: 80px
+        margin-top: 80px
 
       .header
         width: 336px
         height: 61px
         border-radius: 10px
-        font-size: 0.8rem
+        font-size: 0.75rem
         font-weight: 500
-        letter-spacing: 0.24px
         line-height: 61px
         background-color: $white-gray
         padding: 0 20px
@@ -417,7 +408,7 @@
           text-align: center
 
         @media only screen and (max-width: 990px)
-          font-size: 0.7rem
+          font-size: 0.65rem
 
         .contacts
           float: right
@@ -431,17 +422,17 @@
         background-color: $white
         margin: 2rem auto
         padding: 30px
-        font-size: 0.8rem
+        font-size: 0.75rem
         color: $gray-light
         box-shadow: 0 10px 20px rgba(165, 131, 224, 0.18)
 
         @media only screen and (max-width: 480px)
           width: 300px
           max-height: 340px
-          font-size: 0.7rem
+          font-size: 0.65rem
 
         @media only screen and (min-width: 481px) and (max-width: 990px)
-          font-size: 0.7rem
+          font-size: 0.65rem
 
         .name
           background-color: $white-gray
@@ -565,16 +556,16 @@
           text-align: center
 
         h4
-          font-size: 1rem
+          font-size: 0.875rem
           font-weight: 700
-          letter-spacing: -0.21px
+          letter-spacing: -0.15px
           line-height: 30px
 
         .subtitle
           width: auto
-          font-size: 0.7rem
+          font-size: 0.75rem
           font-weight: 400
-          letter-spacing: 0.24px
+          letter-spacing: 0.2px
           line-height: 25px
           color: $white-gray
 
@@ -589,9 +580,9 @@
           tr
             td
               padding: 8px 16px 8px 0px
-              font-size: 0.7rem
+              font-size: 0.75rem
               font-weight: 400
-              letter-spacing: 0.24px
+              letter-spacing: 0.2px
               line-height: 25px
 
         .btn-default
@@ -697,7 +688,8 @@
 
           .description
             color: $gray-dark
-            font-size: 0.8rem
+            font-size: 0.75rem
+            letter-spacing: 0.2px
             text-align: center
             margin-top: 2rem
             margin-left: auto
@@ -706,7 +698,7 @@
 
           .author
             color: $gray-light
-            font-size: 0.7rem
+            font-size: 0.625rem
             font-weight: 700
             letter-spacing: 0.2px
             line-height: 20px
@@ -721,16 +713,16 @@
         .image-row
           p
             color: $gray-dark
-            font-size: 0.8rem
+            font-size: 0.75rem
             font-weight: 400
-            letter-spacing: 0.24px
+            letter-spacing: 0.2px
             line-height: 20px
 
             @media only screen and (max-width: 640px)
               text-align: center
 
             @media only screen and (max-width: 990px)
-              font-size: 0.7rem
+              font-size: 0.65rem
               line-height: 15px
 
           img
