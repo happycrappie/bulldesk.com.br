@@ -47,10 +47,12 @@ module.exports = {
     }
   },
   chainWebpack: config => {
+    config.mode('development');
+
     config.module
       .rule('pug')
       .test(/\.pug$/)
       .use('pug-plain-loader')
-      .loader('pug-plain-loader')
+      .loader('pug-plain-loader');
   }
 }
