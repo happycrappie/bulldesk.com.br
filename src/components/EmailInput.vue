@@ -38,7 +38,7 @@
 <template lang="pug">
   form(@submit.prevent="submit()")
     b-input-group.email-group
-      b-form-input.email-input(:placeholder="inputPlaceholder", v-model="email")
+      b-form-input.email-input(type="email", :placeholder="inputPlaceholder", v-model="email", required)
       b-input-group-append
         b-button.email-button(type="submit", :disabled="busy")
           g-image(src="~/assets/icons/play-button@black.svg", v-if="!busy")
