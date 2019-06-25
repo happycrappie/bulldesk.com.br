@@ -126,6 +126,9 @@
 
       // Standard
       &:nth-child(2)
+        @media only screen and (max-width: 420px)
+          margin-top: 70px
+
         .detail
           // min-height: 515px
           margin-top: 0
@@ -236,7 +239,7 @@
           | 👉
 
       .container
-        .row.no-gutters.flex-nowrap.list(ref="scrollable")
+        .row.no-gutters.list(ref="scrollable")
           .plan.col-3(v-for="(plan, index) in plansList")
             .best-choice(v-if="index === 1") Melhor escolha 👌
             .detail
@@ -318,25 +321,43 @@
         },
         scroll: {
           left: false,
-          right: true
+          right: false
         }
       }
     },
 
-    mounted () {
-      console.log(this.plansTable);
-    },
-
     methods: {
       submitForm () {
-        console.log(this.form.name);
-        console.log(this.form.email);
-
         if (! this.form.name.length || ! this.form.name.length) {
           return;
         }
 
         this.form.busy = true;
+
+        let data = {
+          token: process.env.GRIDSOME_BULLDESK_TOKEN,
+          identifier: 'Contato Enterprise',
+          name: this.form.name
+          email: this.form.email
+        };
+
+        try {
+          data.bulldesk_client = window.BulldeskSettings.client;
+          data.bulldesk_domain = window.BulldeskSettings.domain;
+        } catch (e) {
+          //
+        }
+
+        axios.post(process.env.GRIDSOME_BULLDESK_API_URL + '/conversion', data)
+          .then((response) => {
+            this.form.busy = false;
+
+            this.form.name = '';
+            this.form.email = '';
+          })
+          .catch((error) => {
+            console.log(error);
+          });
       },
 
       scrollTo (px) {
