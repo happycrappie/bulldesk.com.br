@@ -6,7 +6,7 @@
 
   .hero.container
     h1
-      margin-top: 3rem
+      3rem
       font-weight: 700
       color: $gray-dark
       line-height: 1
@@ -126,8 +126,8 @@
 
       // Standard
       &:nth-child(2)
-        @media only screen and (max-width: 420px)
-          margin-top: 70px
+        // @media only screen and (max-width: 420px)
+        //   margin-top: 70px
 
         .detail
           // min-height: 515px
@@ -239,7 +239,7 @@
           | 👉
 
       .container
-        .row.no-gutters.list(ref="scrollable")
+        .row.no-gutters.flex-nowrap.list(ref="scrollable")
           .plan.col-3(v-for="(plan, index) in plansList")
             .best-choice(v-if="index === 1") Melhor escolha 👌
             .detail
@@ -321,7 +321,7 @@
         },
         scroll: {
           left: false,
-          right: false
+          right: true
         }
       }
     },
