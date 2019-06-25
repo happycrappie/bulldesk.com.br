@@ -254,7 +254,7 @@
                 li(v-for="feature in plan.features") {{ feature}}
 
               b-button(href="https://app.bulldesk.com.br/cadastro", :variant="index === best ? 'green' : 'default'", v-if="index < 3") Testar agora
-                img(src="../assets/icons/play-button@black.svg")
+                img(src="../assets/icons/play-button@black.svg", alt="")
 
               .contact(v-else)
                 h4 Solicite uma demonstração
@@ -264,7 +264,7 @@
                   b-form-input(type="email", placeholder="E-mail", v-model="form.email", required)
                   b-button(type="submit", variant="pink", :disabled="form.busy")
                     | Solicitar Contato
-                    img(src="../assets/icons/play-button@white.svg", v-if="! form.busy")
+                    img(src="../assets/icons/play-button@white.svg", alt="" v-if="! form.busy")
                     b-spinner.ml-1(small, v-else)
 
         .row
@@ -274,6 +274,7 @@
               p Compare logo abaixo os planos e escolha sua melhor opção de contratação. Você vai se surpreender.
 
               img.mt-5(src="../assets/icons/down-purple.svg")
+              img.mt-5(src="../assets/icons/down-purple.svg", alt="")
 
     section.compare
       .container
@@ -304,7 +305,7 @@
                 td {{ item.name }}
                   span.helper.ml-2(v-b-tooltip.hover.bottom="item.description", v-if="item.description") ?
                 td(v-for="exists in item.plans")
-                  img(src="../assets/icons/tick.svg", v-if="exists === true")
+                  img(src="../assets/icons/tick.svg", alt="", v-if="exists === true")
                   span(v-else-if="exists > 0 || exists.length > 0") {{ exists }}
                   span(v-else) -
 </template>
