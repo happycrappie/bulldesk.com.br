@@ -54,7 +54,7 @@
         margin-top: 70px
         text-align: center
         min-height: 400px
-        padding: 60px 30px
+        padding: 60px 30px 40px
         box-shadow: 0 10px 20px rgba(69, 39, 123, 0.09)
         border-radius: 10px
 
@@ -101,27 +101,31 @@
             height: auto
             max-width: 185.86px
 
+      // Start
       &:first-child
         .detail
-          min-height: 381px
+          // min-height: 381px
           background-color: $white-gray
 
+      // Standard
       &:nth-child(2)
         .detail
-          min-height: 515px
+          // min-height: 515px
           margin-top: 0
           background-color: $white
           // border-radius: 0 10px 10px 0
 
+      // Premium
       &:nth-child(3)
         .detail
-          min-height: 581px
+          // min-height: 581px
           background-color: $white-gray
           box-shadow: 0 20px 30px rgba(69, 39, 123, 0.18)
 
+      // Enterprise
       &:last-child
         .detail
-          min-height: 525px
+          // min-height: 525px
           color: $white-gray
           background-color: $gray-dark
           // border-radius: 0 10px 10px 0
@@ -138,7 +142,7 @@
             line-height: 1
 
           hr
-            border-top: 1px solid $gray-soft
+            border-top: 1px solid #4E4560
 
           .features
             color: $white-gray
