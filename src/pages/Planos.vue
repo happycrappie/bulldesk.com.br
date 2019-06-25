@@ -224,11 +224,13 @@
   import Plans from '~/data/plans.yaml'
   import Layout from '../layouts/Default'
   import Nav from '../components/Nav'
+  import { BButton } from 'bootstrap-vue';
 
   export default {
     components: {
       Layout,
       Nav,
+      BButton,
     },
 
     metaInfo: {
