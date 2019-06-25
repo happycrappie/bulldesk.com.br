@@ -4,7 +4,7 @@
 
   nav.navbar.nav-layout
     padding: 15px 0
-    font-size: 0.85rem
+    font-size: 0.75rem
 
     .logo
       width: 140px
