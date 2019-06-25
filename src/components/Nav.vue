@@ -12,7 +12,7 @@
     .nav-item.trial
       .nav-link
         font-weight: 600
-        font-size: 0.8rem
+        font-size: 0.75rem
         text-align: center
         padding: 9px 25px
         background: $green
