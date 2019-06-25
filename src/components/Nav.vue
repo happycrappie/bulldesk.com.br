@@ -121,7 +121,7 @@
       b-navbar-nav.ml-auto
         b-nav-item-dropdown.for-whom(text="Pra quem é")
           .dropdown-icon
-            g-image(src='../assets/icons/poligono.svg')
+            img(src='../assets/icons/poligono.svg')
           .dropdown-container
             .row.no-gutters
               .col-12.col-sm-6
@@ -139,7 +139,7 @@
                 b-dropdown-item(to="/para-quem/gerentes") Gerentes
         b-nav-item-dropdown.what-it-does(text="O que faz")
           .dropdown-icon
-            g-image(src='~/assets/icons/poligono.svg')
+            img(src='../assets/icons/poligono.svg')
           .dropdown-container
             .row.no-gutters
               .col-12
