@@ -29,30 +29,11 @@
       padding-top: 3rem
       max-width: 550px
 
-      h1
-        color: $gray-dark
-        line-height: 1
-        font-size: 4rem
-        font-weight: 700
+      h1.title
         color: $white-gray
-        letter-spacing: -0.94px
-        line-height: 55px
 
-        @include media('screen', '<=phone')
-          font-size: 3rem
-
-        @include media('screen', '>phone', '<=ipad')
-          font-size: 3.2rem
-
-        @include media('screen', '>ipad', '<=laptop')
-          font-size: 3.5rem
-
-      p
+      p.subtitle
         color: $white-gray
-        font-size: 1.2rem
-        font-weight: 400
-        letter-spacing: -0.24px
-        line-height: 25px
         width: auto
         max-width: 325px
         margin-top: 2rem
@@ -62,7 +43,7 @@
           margin-top: 1rem
 
         @include media('screen', '>phone', '<=laptop')
-          font-size: 1rem
+          font-size: 0.9rem
           margin-top: 1rem
 
     .icon
@@ -78,19 +59,18 @@
 
     .item
       padding: 1.5rem 2rem
+      letter-spacing: 0.2px
 
       h4
         color: $gray-dark
-        font-size: 1.2rem
+        font-size: 1.125rem
         font-weight: 700
-        letter-spacing: -0.27px
         line-height: 24px
 
       p
         color: $gray-light
-        font-size: 0.8rem
+        font-size: 0.75rem
         font-weight: 400
-        letter-spacing: 0.24px
         line-height: 25px
         margin-top: 1.5rem
 
@@ -184,9 +164,9 @@
 
         li
           color: $gray-dark
-          font-size: 0.8rem
+          font-size: 0.75rem
           font-weight: 400
-          letter-spacing: 0.24px
+          letter-spacing: 0.2px
           line-height: 30px
           padding-bottom: 0.5rem
 
@@ -264,9 +244,9 @@
 
         p
           color: $gray-white
-          font-size: 0.8rem
+          font-size: 0.75rem
           font-weight: 400
-          letter-spacing: 0.24px
+          letter-spacing: 0.2px
           line-height: 25px
           margin-top: 2rem
 
@@ -275,7 +255,7 @@
 
         .author
           color: $gray-light
-          font-size: 0.7rem
+          font-size: 0.625rem
           font-weight: 700
           letter-spacing: 0.2px
           line-height: 20px
@@ -293,9 +273,9 @@
 
         .hero.d-flex.align-items-center
           div
-            h1 {{ this.$page.content.header.h1 }}
+            h1.title {{ this.$page.content.header.h1 }}
               span.dot.green
-            p {{ this.$page.content.header.p }}
+            p.subtitle {{ this.$page.content.header.p }}
 
     .section.section-a
       .container
