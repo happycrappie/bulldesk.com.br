@@ -72,8 +72,8 @@
         };
 
         try {
-          data.bulldesk_client = window.BulldeskSettings.client;
-          data.bulldesk_domain = window.BulldeskSettings.domain;
+          data.client = window.BulldeskSettings.client;
+          data.domain = window.BulldeskSettings.domain;
         } catch (e) {
           //
         }
