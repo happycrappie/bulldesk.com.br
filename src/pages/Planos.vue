@@ -36,7 +36,6 @@
   section.plans
     background-position: center
     background-repeat: no-repeat
-    transition: 1.5s all cubic-bezier(0.39, 0.575, 0.565, 1)
     min-height: 1286px
     background-image: url(~@/assets/images/pricing-purple-bg.png)
     margin-top: -250px
@@ -53,6 +52,7 @@
         padding: 0 25px
 
     .plan
+      transition: 1.5s all cubic-bezier(0.39, 0.575, 0.565, 1)
       min-width: 275px
 
       .best-choice
@@ -241,7 +241,7 @@
       .container
         .row.no-gutters.flex-nowrap.list(ref="scrollable")
           .plan.col-3(v-for="(plan, index) in plansList")
-            .best-choice(v-if="index === 1") Melhor escolha 👌
+            .best-choice(v-if="index === best") Melhor escolha 👌
             .detail
               .title Plano
                 span  {{ plan.name }}
@@ -253,7 +253,7 @@
               ul.features
                 li(v-for="feature in plan.features") {{ feature}}
 
-              b-button(href="https://app.bulldesk.com.br/cadastro", variant="green", v-if="index < 3") Testar agora
+              b-button(href="https://app.bulldesk.com.br/cadastro", :variant="index === best ? 'green' : 'default'", v-if="index < 3") Testar agora
                 img(src="../assets/icons/play-button@black.svg")
 
               .contact(v-else)
@@ -331,6 +331,7 @@
       return {
         plansList: Plans.list,
         plansTable: Plans.table,
+        best: 1,
         form: {
           name: '',
           email: '',
