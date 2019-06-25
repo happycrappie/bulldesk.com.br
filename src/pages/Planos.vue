@@ -18,6 +18,21 @@
       font-size: 0.8rem
       line-height: 2
 
+  .scrollable-control
+    .left, .right
+      top: 600px
+      cursor: pointer
+      position: absolute
+      font-size: 2.5rem
+      padding: 10px
+      z-index: 9999
+
+    .left
+      left: 0
+
+    .right
+      right: 0
+
   section.plans
     background-position: center
     background-repeat: no-repeat
@@ -34,6 +49,7 @@
       @media only screen and (max-width: 420px)
         margin: auto
         max-width: 300px
+        padding: 0 25px
 
     .plan
       min-width: 275px
@@ -212,8 +228,14 @@
         span.font-weight-bold De burocrático já basta a concorrência.
 
     section.plans
+      .scrollable-control.d-xl-none
+        a.left(href="#", @click.prevent="scrollTo(-280)" v-if="scroll.left")
+          | 👈
+        a.right(href="#", @click.prevent="scrollTo(280)" v-if="scroll.right")
+          | 👉
+
       .container
-        .row.no-gutters.list
+        .row.no-gutters.flex-nowrap.list(ref="scrollable")
           .plan.col-3(v-for="(plan, index) in plansList")
             .best-choice(v-if="index === 1") Melhor escolha 👌
             .detail
@@ -292,6 +314,10 @@
           name: '',
           email: '',
           busy: false,
+        },
+        scroll: {
+          left: true,
+          right: true
         }
       }
     },
@@ -310,6 +336,10 @@
         }
 
         this.form.busy = true;
+      },
+
+      scrollTo (px) {
+        this.$refs.scrollable.scrollLeft += px;
       }
     }
   }
