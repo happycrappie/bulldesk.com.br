@@ -82,16 +82,12 @@
         axios.post(process.env.GRIDSOME_BULLDESK_API_URL + '/conversion', data)
           .then((response) => {
             if (this.emit) {
-              this.$emit('convert', true)
-
-              return
+              return this.$emit('convert', true);
             }
 
             this.converted = true;
 
-            this.email = 'Email cadastrado';
-
-            window.open(process.env.GRIDSOME_BULLDESK_APP_URL + '/cadastro', '_blank')
+            window.location.href = process.env.GRIDSOME_BULLDESK_APP_URL + '/cadastro?email=' + this.email;
           })
           .catch((error) => {
             console.log(error);
