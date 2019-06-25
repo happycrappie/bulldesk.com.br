@@ -112,7 +112,7 @@
 
 <template lang="pug">
   b-navbar.d-flex.nav-layout(toggleable="lg2" :type="type")
-    b-navbar-brand(href="https://develop.bulldesk.com.br")
+    b-navbar-brand(href="/")
       img.logo(src="../assets/images/logo@white.png" alt="Bulldesk" v-if="logo && logo == 'white'")
       img.logo(src="../assets/images/logo.png" alt="Bulldesk" v-else)
     b-navbar-toggle(target="collapse")
@@ -146,7 +146,7 @@
                 b-dropdown-item(href="/o-que-faz/vendas") Vendas
         b-nav-item(href="/cases") Cases
         b-nav-item(href="/exemplos") Exemplos
-        b-nav-item(href="https://develop.bulldesk.com.br/planos") Planos
+        b-nav-item(href="/planos") Planos
         b-nav-item(href="https://app.bulldesk.com.br" target="_blank") Login
         b-nav-item.trial(href="https://app.bulldesk.com.br/cadastro") Teste grátis
           img(src="../assets/icons/play-button@black.svg")
