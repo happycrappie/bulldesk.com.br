@@ -2,11 +2,22 @@
   @import '../assets/styles/_variables.scss'
 
   header
-    background-size: 70%
-    background-position: 100% 0
+    background-position: 80px 0
     background-repeat: no-repeat
     height: 100%
-    min-height: 600px
+    min-height: 800px
+
+    @media only screen and (min-width: 580px)
+      background-position: 150px 0
+
+    @media only screen and (min-width: 1100px)
+      background-position: 200px 0
+
+    @media only screen and (min-width: 1440px)
+      background-position: 400px 0
+
+    @media only screen and (min-width: 1840px)
+      background-position: 600px 0
 
     @media only screen and (max-width: 980px)
       background-image: url(~@/assets/images/header@700.png)
@@ -19,38 +30,40 @@
 
     @media only screen and (min-width: 2001px)
       background-image: url(~@/assets/images/header@2200.png)
+      background-position: 700px 0
+
+    @media only screen and (min-width: 2401px)
+      background-position: 800px 0
 
     .hero
       height: 100%
       max-width: 480px
 
-      h1
-        color: $gray-dark
-        line-height: 1
-        font-size: 4.5rem
-        font-weight: 700
+      h1.title
+        max-width: 300px
 
         @media only screen and (max-width: 400px)
-          font-size: 3.1rem
+          font-size: 2.6rem
 
         @media only screen and (min-width: 401px) and (max-width: 700px)
-          font-size: 3.5rem
+          font-size: 3rem
 
         span
           color: $pink
 
-      p
-        margin-top: 1rem
-        font-size: 1.1rem
-        font-weight: 100
+      p.subtitle
+        margin-top: 1.5rem
         max-width: 420px
+
+      form
+        margin-left: 0px
 
       .email-paragraph
         width: auto
         max-width: 265px
         height: 53px
         color: $gray-light
-        font-size: 0.7rem
+        font-size: 0.625rem
         font-weight: 400
         letter-spacing: 0.2px
         line-height: 20px
@@ -97,12 +110,12 @@
     background-image: url(~@/assets/images/home-bg-a.png)
     background-position: -40rem
 
+    @media only screen and (min-width: 800px) and (max-width: 1800px)
+      background-position: -35rem
+
     @media only screen and (max-width: 990px)
       background-image: url(~@/assets/images/home-bg-a.png), url(~@/assets/images/home-bg-a.png)
       background-position: -40rem 0rem, -40rem 15rem
-
-    @media only screen and (min-width: 800px) and (max-width: 1800px)
-      background-position: -35rem
 
     @media only screen and (min-width: 1801px) and (max-width: 1990px)
       background-position: -30rem
@@ -124,12 +137,8 @@
 
     .container
       padding-top: 38rem
-      font-size: 1rem
 
       @media only screen and (max-width: 670px)
-        padding-top: 35rem
-
-      @media only screen and (min-width: 671px) and (max-width: 1000px)
         padding-top: 36rem
 
       .subtitle
@@ -163,24 +172,23 @@
           .nav-link
             color: $gray-soft
             font-weight: 700
-            font-size: 0.6rem
+            font-size: 0.625rem
             letter-spacing: 0.2px
             line-height: 25px
             text-transform: uppercase
 
             @media only screen and (max-width: 400px)
-              font-size: 0.3rem
+              font-size: 0.325rem
               line-height: 15px
               padding: 0.3rem 0.3rem
 
             @media only screen and (min-width: 401px) and (max-width: 600px)
-              font-size: 0.4rem
+              font-size: 0.425rem
               line-height: 15px
               padding: 0.3rem 0.5rem
 
             @media only screen and (min-width: 1300px)
               white-space: nowrap
-              font-size: 0.7rem
 
           .active
             background-color: $purple
@@ -204,27 +212,24 @@
           width: 25%
 
           .step
-            padding: 0 10px
+            padding: 0 5px
             z-index: 999
+            letter-spacing: 0.2px
 
             .step-title
               height: 20px
               color: $pink
-              font-size: 0.8rem
+              font-size: 0.625rem
               font-weight: 700
-              letter-spacing: 0.2px
               line-height: 20px
               text-transform: uppercase
               margin-bottom: 30px
 
               @media only screen and (max-width: 440px)
-                font-size: 0.5rem
+                font-size: 0.375rem
 
               @media only screen and (min-width: 441px) and (max-width: 990px)
-                font-size: 0.6rem
-
-              @media only screen and (min-width: 991px) and (max-width: 1300px)
-                font-size: 0.7rem
+                font-size: 0.475rem
 
             .step-icon
               background-color: $white
@@ -238,15 +243,15 @@
 
               @media only screen and (max-width: 440px)
                 border: 1px solid $gray-light
-                height: 42px
-                width: 42px
-                line-height: 42px
+                height: 36px
+                width: 36px
+                line-height: 36px
 
               @media only screen and (min-width: 441px) and (max-width: 990px)
                 border: 1px solid $gray-light
-                height: 62px
-                width: 62px
-                line-height: 62px
+                height: 54px
+                width: 54px
+                line-height: 54px
 
               @media only screen and (min-width: 991px) and (max-width: 1300px)
                 height: 82px
@@ -272,22 +277,18 @@
                 width: 110%
                 z-index: 0
 
+                @media only screen and (max-width: 990px)
+                  width: 250%
+
+                @media only screen and (max-width: 440px)
+                  width: 200%
+
             .step-subtitle
               height: 36px
               max-width: 162px
               margin: auto
               margin-top: 20px
-
-              @media only screen and (max-width: 440px)
-                font-size: 0.5rem
-                line-height: 15px
-
-              @media only screen and (min-width: 441px) and (max-width: 990px)
-                font-size: 0.6rem
-                line-height: 20px
-
-              @media only screen and (min-width: 991px) and (max-width: 1300px)
-                font-size: 0.7rem
+              font-size: 0.75rem
 
           &:last-child
             .step
@@ -352,13 +353,13 @@
         color: $purple
         height: 25px
         padding: 20px 0px
-        font-size: 0.8rem
+        font-size: 0.75rem
         font-weight: 400
-        letter-spacing: 0.24px
+        letter-spacing: 0.2px
         line-height: 25px
 
         @media only screen and (max-width: 440px)
-          font-size: 0.7rem
+          font-size: 0.65rem
           padding: 30px 0px
 
         img
@@ -377,17 +378,17 @@
 
     .right-col
       height: 500px
+      letter-spacing: 0.2px
 
       @media only screen and (max-width: 990px)
-          margin-top: 80px
+        margin-top: 80px
 
       .header
         width: 336px
         height: 61px
         border-radius: 10px
-        font-size: 0.8rem
+        font-size: 0.75rem
         font-weight: 500
-        letter-spacing: 0.24px
         line-height: 61px
         background-color: $white-gray
         padding: 0 20px
@@ -399,7 +400,7 @@
           text-align: center
 
         @media only screen and (max-width: 990px)
-          font-size: 0.7rem
+          font-size: 0.65rem
 
         .contacts
           float: right
@@ -413,17 +414,17 @@
         background-color: $white
         margin: 2rem auto
         padding: 30px
-        font-size: 0.8rem
+        font-size: 0.75rem
         color: $gray-light
         box-shadow: 0 10px 20px rgba(165, 131, 224, 0.18)
 
         @media only screen and (max-width: 480px)
           width: 300px
           max-height: 340px
-          font-size: 0.7rem
+          font-size: 0.65rem
 
         @media only screen and (min-width: 481px) and (max-width: 990px)
-          font-size: 0.7rem
+          font-size: 0.65rem
 
         .name
           background-color: $white-gray
@@ -470,11 +471,12 @@
 
     @media only screen and (min-width: 2501px)
       background-position: -10rem
+
     .container
       padding-top: 57rem
 
       @media only screen and (max-width: 990px)
-        padding-top: 35rem
+        padding-top: 38rem
 
       .col-left
 
@@ -527,7 +529,7 @@
 
           @media only screen and (min-width: 401px) and (max-width: 690px)
             width: 100%
-            height: 420px
+            height: 350px
             margin-left: -20px
 
           @media only screen and (min-width: 691px) and (max-width: 990px)
@@ -546,16 +548,16 @@
           text-align: center
 
         h4
-          font-size: 1rem
+          font-size: 0.875rem
           font-weight: 700
-          letter-spacing: -0.21px
+          letter-spacing: -0.15px
           line-height: 30px
 
         .subtitle
           width: auto
-          font-size: 0.7rem
+          font-size: 0.75rem
           font-weight: 400
-          letter-spacing: 0.24px
+          letter-spacing: 0.2px
           line-height: 25px
           color: $white-gray
 
@@ -570,9 +572,9 @@
           tr
             td
               padding: 8px 16px 8px 0px
-              font-size: 0.7rem
+              font-size: 0.75rem
               font-weight: 400
-              letter-spacing: 0.24px
+              letter-spacing: 0.2px
               line-height: 25px
 
         .btn-default
@@ -580,26 +582,56 @@
             width: 12px
 
   .section-d
-    margin-top: 8rem
+    margin-top: 6rem
     background-repeat: no-repeat
-    background-size: 100% 1022px
     background-image: url(~@/assets/images/home-bg-d.png)
-    background-position: 0px 1rem
+    background-size: 2560px auto
+    background-position: 0rem 0rem
     height: 1128px
     z-index: 9
     position: relative
 
-    @media only screen and (max-width: 440px)
-      margin-top: -4rem
-      height: 1378px
-      background-size: 160% 1222px
-      background-position: -125px 135px
+    @media only screen and (max-width: 2400px)
+      background-position: -10rem
 
-    @media only screen and (min-width: 441px) and (max-width: 990px)
+    @media only screen and (max-width: 2300px)
+      background-position: -12rem
+
+    @media only screen and (max-width: 2200px)
+      background-position: -18rem
+
+    @media only screen and (max-width: 2000px)
+      background-position: -22rem
+
+    @media only screen and (max-width: 1800px)
+      background-position: -26rem
+
+    @media only screen and (max-width: 1600px)
+      background-position: -32rem
+
+    @media only screen and (max-width: 1400px)
+      background-position: -40rem -2rem
+
+    @media only screen and (max-width: 1200px)
+      background-position: -46rem -2rem
+
+    @media only screen and (max-width: 1200px)
+      background-position: -52rem -2rem
+
+    @media only screen and (max-width: 1000px)
+      background-position: -54rem -2rem
+      margin-top: 0rem
+
+    @media only screen and (max-width: 800px)
+      background-position: -60rem -2rem
+      margin-top: -2rem
+
+    @media only screen and (max-width: 600px)
+      background-position: -68rem -4rem
       margin-top: -4rem
-      height: 1328px
-      background-size: 160% 1222px
-      background-position: -150px 110px
+
+    @media only screen and (max-width: 400px)
+      background-position: -74rem -6rem
 
     .container
       h3
@@ -648,7 +680,8 @@
 
           .description
             color: $gray-dark
-            font-size: 0.8rem
+            font-size: 0.75rem
+            letter-spacing: 0.2px
             text-align: center
             margin-top: 2rem
             margin-left: auto
@@ -657,7 +690,7 @@
 
           .author
             color: $gray-light
-            font-size: 0.7rem
+            font-size: 0.625rem
             font-weight: 700
             letter-spacing: 0.2px
             line-height: 20px
@@ -672,16 +705,16 @@
         .image-row
           p
             color: $gray-dark
-            font-size: 0.8rem
+            font-size: 0.75rem
             font-weight: 400
-            letter-spacing: 0.24px
+            letter-spacing: 0.2px
             line-height: 20px
 
             @media only screen and (max-width: 640px)
               text-align: center
 
             @media only screen and (max-width: 990px)
-              font-size: 0.7rem
+              font-size: 0.65rem
               line-height: 15px
 
           img
@@ -701,26 +734,58 @@
 
   .section-e
     background-repeat: no-repeat
-    background-size: 120% 100%
+    background-size: 2560px auto
     background-image: url(~@/assets/images/home-bg-e.png)
-    background-position: 30% 0px
+    background-position: 0rem 0rem
     height: 1623px
     margin-top: -50rem
     z-index: 1
     position: relative
 
-    @media only screen and (max-width: 440px)
-      background-size: 180% 100%
+    @media only screen and (max-width: 2300px)
+      background-position: -14rem
 
-    @media only screen and (max-width: 990px)
-      margin-top: -50rem
+    @media only screen and (max-width: 2200px)
+      background-position: -22rem
+
+    @media only screen and (max-width: 2000px)
+      background-position: -28rem
+
+    @media only screen and (max-width: 1800px)
+      background-position: -38rem
+
+    @media only screen and (max-width: 1600px)
+      background-position: -48rem
+
+    @media only screen and (max-width: 1400px)
+      background-position: -60rem
+
+    @media only screen and (max-width: 1200px)
+      background-position: -66rem
+
+    @media only screen and (max-width: 1000px)
+      background-position: -72rem
+
+    @media only screen and (max-width: 800px)
+      background-position: -82rem
+
+    @media only screen and (max-width: 600px)
+      background-position: -92rem
+
+    @media only screen and (max-width: map-get($grid-breakpoints, 'md'))
+      background-size: 2560px 100%
+      margin-top: -18rem
+      height: 1023px
 
     .container
       padding-top: 45rem
 
       @media only screen and (max-width: 990px)
-        padding-top: 42rem
+        padding-top: 35rem
         text-align: center
+
+      @media only screen and (max-width: map-get($grid-breakpoints, 'md'))
+        padding-top: 12rem
 
       h3
         margin-top: 8rem
@@ -759,9 +824,9 @@
 
         .hero.d-flex.align-items-center
           div
-            h1 Inteligência comercial de forma simples
+            h1.title Inteligência comercial de forma simples
               span.dot.green
-            p Ferramenta de controle vendas, gerenciamento de contatos e automação de relacionamento.
+            p.subtitle Ferramenta de controle vendas, gerenciamento de contatos e automação de relacionamento.
             email-input(placeholder='Insira seu email aqui' identifier='home')
             p.email-paragraph
               | Experimente de graça.
@@ -920,14 +985,9 @@
                 swiper-slide
                   .container
                     .row
-                      .col-12.col-md-6.content.d-none.d-md-block
-                        .logo
-                          g-image(src='~/assets/images/cases/buscape-logo.png' alt='Buscape')
-                        .description Com o Bulldesk foi possível captar dados, enviar e-mails automáticos, e-mail que acontecem em tempo real.
-                        .author ANTÔNIO FRANCISCO
                       .col-12.col-md-6.image
                         g-image(src='~/assets/images/cases/buscape.png' alt='Imagem')
-                      .col-12.col-md-6.content.d-block.d-md-none
+                      .col-12.col-md-6.content
                         .logo
                           g-image(src='~/assets/images/cases/buscape-logo.png' alt='Buscape')
                         .description Com o Bulldesk foi possível captar dados, enviar e-mails automáticos, e-mail que acontecem em tempo real.
