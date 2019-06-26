@@ -30,6 +30,8 @@
     .nav-item
       .dropdown-menu
         left: -45%
+        position: absolute
+        z-index: 2
 
         .dropdown-icon
           max-width: 20px
@@ -37,7 +39,8 @@
           position: absolute
           z-index: 1
 
-          g-image
+          img
+            position: relative
             width: 100%
 
         .dropdown-container
@@ -46,7 +49,6 @@
           line-height: 25px
           font-size: 0.75rem
           position: relative
-          z-index: 2
 
           h6
             color: $gray-dark
