@@ -393,7 +393,7 @@
         background-color: $white-gray
         padding: 0 20px
         margin: auto
-        box-shadow: 0 10px 20px rgba(165, 131, 224, 0.18)
+        box-shadow: 0 10px 20px rgba(101, 68, 159, 0.2)
 
         @media only screen and (max-width: 480px)
           width: 236px
@@ -416,7 +416,7 @@
         padding: 30px
         font-size: 0.75rem
         color: $gray-light
-        box-shadow: 0 10px 20px rgba(165, 131, 224, 0.18)
+        box-shadow: 0 10px 20px rgba(101, 68, 159, 0.2)
 
         @media only screen and (max-width: 480px)
           width: 300px
