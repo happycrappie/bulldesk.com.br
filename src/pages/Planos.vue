@@ -251,12 +251,28 @@
     background-repeat: no-repeat
     min-height: 1467px
     background-image: url(~@/assets/images/plans-faq-bg.jpg)
-    padding: 500px 0
-    color: $white
+    padding-top: 500px
+    color: #F4F2F7
 
     h3
       text-align: center
+      font-weight: bold
       font-size: 1.625rem
+
+    h4
+      font-size: 1rem
+      line-height: 25px
+      font-weight: bold
+
+    h5
+      font-size: 0.75rem
+      font-weight: bold
+
+    p
+      margin-top: 1rem
+      font-size: 0.75rem
+      line-height: 25px
+      color: #C9C1D5
 
 </style>
 
@@ -377,9 +393,50 @@
 
       section.faq
         .container
-          h3 Ainda está com dúvidas?
-            br
-            | Veja abaixo as mais frequentes:
+          .row.mb-5
+            .col-md-12
+              h3 Ainda está com dúvidas?
+                br
+                | Veja abaixo as mais frequentes:
+
+          .row.mb-5.mt-5
+            .col-md-4
+              h5 Existe algum tempo mínimo de contrato?
+              p Não, o Bulldesk não tem nenhuma taxa de implementação ou fidelidade. Você contrata online, caso não queira mais usar é só cancelar. Prezamos pela satisfação dos nossos clientes.
+
+            .col-md-4
+              h5 Não tenho tempo para implementar, o que eu faço?
+              p Entramos em contato para agendar com você duas reuniões de implementação, para parametrizar as configurações iniciais de CRM e Automação de Marketing. Além de mostrar as melhores práticas de uso do sistema.
+
+            .col-md-4
+              h5 Minhas informações estão seguras?
+              p Sim. Utilizamos as mesmas tecnologias de plataformas como Spotify, Amazon e AirBnb utilizam. Seus dados não são compartilhados com terceiros e todas as informações são criptografaras.
+
+          .row.mb-5
+            .col-md-4
+              h5 Existe algum tempo mínimo de contrato?
+              p Não, o Bulldesk não tem nenhuma taxa de implementação ou fidelidade. Você contrata online, caso não queira mais usar é só cancelar. Prezamos pela satisfação dos nossos clientes.
+
+            .col-md-4
+              h5 Não tenho tempo para implementar, o que eu faço?
+              p Entramos em contato para agendar com você duas reuniões de implementação, para parametrizar as configurações iniciais de CRM e Automação de Marketing. Além de mostrar as melhores práticas de uso do sistema.
+
+            .col-md-4
+              h5 Minhas informações estão seguras?
+              p Sim. Utilizamos as mesmas tecnologias de plataformas como Spotify, Amazon e AirBnb utilizam. Seus dados não são compartilhados com terceiros e todas as informações são criptografaras.
+
+          .row
+            .col-md-12.text-center
+              h4 Não perca mais tempo procurando um software
+                br
+                | de CRM e outro de Automação de Marketing.
+                br
+                | Com o Bulldesk você só precisa do Bulldesk.
+
+              b-button.mt-4(href="https://app.bulldesk.com.br/cadastro", variant="green") Testar agora
+                g-image(src="../assets/icons/play-button@black.svg", alt="")
+
+
 </template>
 
 <script>
