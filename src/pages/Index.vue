@@ -629,7 +629,7 @@
               line-height: 25px
 
   .section-d
-    margin-top: 4rem
+    margin-top: 2rem
     background-repeat: no-repeat
     background-image: url(~@/assets/images/home-bg-d.png)
     background-size: 2560px auto
@@ -667,15 +667,15 @@
 
     @media only screen and (max-width: 1000px)
       background-position: -54rem -2rem
-      margin-top: 0rem
+      margin-top: -2rem
 
     @media only screen and (max-width: 800px)
       background-position: -60rem -2rem
-      margin-top: -2rem
+      margin-top: -4rem
 
     @media only screen and (max-width: 600px)
       background-position: -68rem -4rem
-      margin-top: -4rem
+      margin-top: -6rem
 
     @media only screen and (max-width: 400px)
       background-position: -74rem -6rem
