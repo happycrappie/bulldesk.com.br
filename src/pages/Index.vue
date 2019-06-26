@@ -334,6 +334,10 @@
     @media only screen and (min-width: 2201px)
       margin-top: 14rem
 
+    h3
+      span
+        font-weight: normal
+
     .subtitle
       width: auto
       max-width: 286px
