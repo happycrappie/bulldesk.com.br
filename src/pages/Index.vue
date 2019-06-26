@@ -187,9 +187,6 @@
               line-height: 15px
               padding: 0.3rem 0.5rem
 
-            @media only screen and (min-width: 1300px)
-              white-space: nowrap
-
           .active
             background-color: $purple
             color: $white-gray
@@ -393,7 +390,7 @@
         background-color: $white-gray
         padding: 0 20px
         margin: auto
-        box-shadow: 0 10px 20px rgba(165, 131, 224, 0.18)
+        box-shadow: 0 10px 20px rgba(101, 68, 159, 0.2)
 
         @media only screen and (max-width: 480px)
           width: 236px
@@ -416,7 +413,7 @@
         padding: 30px
         font-size: 0.75rem
         color: $gray-light
-        box-shadow: 0 10px 20px rgba(165, 131, 224, 0.18)
+        box-shadow: 0 10px 20px rgba(101, 68, 159, 0.2)
 
         @media only screen and (max-width: 480px)
           width: 300px
@@ -576,10 +573,6 @@
               font-weight: 400
               letter-spacing: 0.2px
               line-height: 25px
-
-        .btn-default
-          img
-            width: 12px
 
   .section-d
     margin-top: 6rem
@@ -906,9 +899,9 @@
                     | Relatórios ao vivo
 
               .know-more
-                a.btn-default
+                b-button(href="https://app.bulldesk.com.br/cadastro", variant="purple")
                   | Conheça mais
-                  g-image(src='~/assets/icons/play-button@white.svg' alt='')
+                  g-image(src="../assets/icons/play-button@white.svg", alt="")
 
             .col-lg-6.right-col
               .header
@@ -958,9 +951,9 @@
                         g-image(src='~/assets/icons/income.svg' alt='Renda')
                       td
                         | Automatizar marketing e vendas
-                a.btn-default
+                b-button(href="https://app.bulldesk.com.br/cadastro", variant="green")
                   | Teste grátis
-                  g-image(src='~/assets/icons/play-button@white.svg' alt='')
+                  g-image(src="../assets/icons/play-button@black.svg", alt="")
 
       .section.section-d
         .container
@@ -1016,9 +1009,9 @@
                 g-image(src='~/assets/images/cases/other-cases.png' alt='Cases')
             .row.button-row
               .col-12
-                .btn-default
+                b-button(href="/cases", variant="purple")
                   | Veja mais histórias de sucesso
-                  g-image(src='~/assets/icons/play-button@white.svg' alt='')
+                  g-image(src="../assets/icons/play-button@white.svg", alt="")
 
       .section.section-e
         .container
@@ -1028,21 +1021,22 @@
               .subtitle
                 | Veja como funciona o Bulldesk e suas principais funções em um vídeo direto ao ponto.
                 strong  Você vai se surpreender.
-              a.btn-default.d-none.d-lg-inline
+              b-button.d-none.d-lg-inline(href="https://app.bulldesk.com.br/cadastro", variant="green")
                 | Teste grátis
-                g-image(src='~/assets/icons/play-button@black.svg' alt='')
+                g-image(src="../assets/icons/play-button@black.svg", alt="")
             .col-12.col-lg-9
               .video-container
                 g-image(src='~/assets/images/home-video.png' alt='Video')
-              a.btn-default.d-inline.d-lg-none
+              b-button.d-inline.d-lg-none(href="https://app.bulldesk.com.br/cadastro", variant="green")
                 | Teste grátis
-                g-image(src='~/assets/icons/play-button@black.svg' alt='')
+                g-image(src="../assets/icons/play-button@black.svg", alt="")
 </template>
 
 <script>
   import Layout from '../layouts/Default'
   import Nav from '../components/Nav'
   import EmailInput from '../components/EmailInput'
+  import { BNav, BNavItem, BButton, } from 'bootstrap-vue'
 
   import 'swiper/dist/css/swiper.css'
 
@@ -1051,6 +1045,9 @@
       Layout,
       Nav,
       EmailInput,
+      BNav,
+      BNavItem,
+      BButton,
       swiper: () =>
         import ('vue-awesome-swiper')
         .then(m => window ? m.swiper : null)
