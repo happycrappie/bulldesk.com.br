@@ -1039,7 +1039,7 @@
   import Layout from '../layouts/Default'
   import Nav from '../components/Nav'
   import EmailInput from '../components/EmailInput'
-  import { BButton } from 'bootstrap-vue'
+  import { BNav, BNavItem, BButton, } from 'bootstrap-vue'
 
   import 'swiper/dist/css/swiper.css'
 
@@ -1048,6 +1048,8 @@
       Layout,
       Nav,
       EmailInput,
+      BNav,
+      BNavItem,
       BButton,
       swiper: () =>
         import ('vue-awesome-swiper')
