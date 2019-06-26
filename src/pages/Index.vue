@@ -3,37 +3,60 @@
 
   header
     background-position: 80px 0
+    background-position: 100px 0
     background-repeat: no-repeat
+    background-size: auto 100%
     height: 100%
     min-height: 800px
 
-    @media only screen and (min-width: 580px)
-      background-position: 150px 0
+    @media only screen and (min-width: 440px)
+      background-position: 150px
 
-    @media only screen and (min-width: 1100px)
+    @media only screen and (min-width: 640px)
+      background-position: 200px
+
+    @media only screen and (min-width: 840px)
+      background-position: 250px
+
+    @media only screen and (min-width: 1026px)
       background-position: 200px 0
 
-    @media only screen and (min-width: 1440px)
+    @media only screen and (min-width: 1140px)
+      background-position: 250px 0
+
+    @media only screen and (min-width: 1240px)
+      background-position: 300px 0
+
+    @media only screen and (min-width: 1340px)
       background-position: 400px 0
 
-    @media only screen and (min-width: 1840px)
-      background-position: 600px 0
+    @media only screen and (min-width: 1440px)
+      background-position: 450px 0
 
-    @media only screen and (max-width: 980px)
-      background-image: url(~@/assets/images/header@700.png)
+    @media only screen and (min-width: 1640px)
+      background-position: 550px 0
+
+    @media only screen and (min-width: 1840px)
+      background-position: 650px 0
+
+    @media only screen and (max-width: 1025px)
+      background-image: url(~@/assets/images/header@700.jpg)
 
     @media only screen and (max-width: 1440px)
-      background-image: url(~@/assets/images/header@1000.png)
+      background-image: url(~@/assets/images/header@1000.jpg)
 
     @media only screen and (max-width: 2000px)
-      background-image: url(~@/assets/images/header@1600.png)
+      background-image: url(~@/assets/images/header@1600.jpg)
 
     @media only screen and (min-width: 2001px)
-      background-image: url(~@/assets/images/header@2200.png)
-      background-position: 700px 0
+      background-image: url(~@/assets/images/header@2200.jpg)
+      background-position: 750px 0
+
+    @media only screen and (min-width: 2200px)
+      background-position: 850px 0
 
     @media only screen and (min-width: 2401px)
-      background-position: 800px 0
+      background-position: 950px 0
 
     .hero
       height: 100%
