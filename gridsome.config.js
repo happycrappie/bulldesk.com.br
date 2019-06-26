@@ -47,12 +47,17 @@ module.exports = {
     }
   },
   chainWebpack (config) {
-    // config.mode('development');
-
     config.module
       .rule('pug')
       .test(/\.pug$/)
       .use('pug-plain-loader')
       .loader('pug-plain-loader');
+
+    const svgRule = config.module.rule('svg')
+
+    svgRule.uses.clear()
+    svgRule
+      .use('vue-svg-loader')
+      .loader('vue-svg-loader')
   }
 }

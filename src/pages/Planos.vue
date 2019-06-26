@@ -390,7 +390,7 @@
                   td {{ item.name }}
                     span.helper.ml-2(v-b-tooltip.hover.bottom="item.description", v-if="item.description") ?
                   td(v-for="exists in item.plans")
-                    g-image(src="../assets/icons/tick.svg", alt="", v-if="exists === true")
+                    tick-svg(v-if="exists === true")
                     span(v-else-if="exists > 0 || exists.length > 0") {{ exists }}
                     span(v-else) -
 
@@ -463,6 +463,7 @@
   import Plans from '~/data/plans.yaml'
   import Nav from '../components/Nav'
   import Layout from '../layouts/Default'
+  import TickSvg from '../assets/icons/tick.svg'
   import { BButton, BInputGroup, BFormInput, BSpinner } from 'bootstrap-vue';
   import axios from 'axios'
 
@@ -473,7 +474,8 @@
       BButton,
       BInputGroup,
       BFormInput,
-      BSpinner
+      BSpinner,
+      TickSvg
     },
 
     metaInfo: {
