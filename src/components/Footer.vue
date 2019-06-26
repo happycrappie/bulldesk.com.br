@@ -56,11 +56,21 @@
         @media only screen and (max-width: 1400px)
           display: none
 
-        .btn-default
+        a
+          font-weight: 600
+          font-size: 0.6875rem
+          text-align: center
           padding: 9px 25px
+          background: $green
+          color: $black
+          border-radius: 30px
 
           img
-            width: 12px
+            max-width: 12px
+            margin: 0 0 2px 5px
+
+          &:hover
+            color: $gray-dark
 
     .column
       padding: 0px 2rem
@@ -117,9 +127,9 @@
               a(href="#")
                 img(src='../assets/icons/linkedin.svg')
           .button-container
-            a.btn-default
+            b-button(href="https://app.bulldesk.com.br/cadastro", variant="green")
               | Teste grátis
-              img(src='../assets/icons/play-button@black.svg')
+              g-image(src="../assets/icons/play-button@black.svg", alt="")
         .column.column-a
           h5 Informações
           ul
@@ -204,3 +214,13 @@
             li
               a(href="#") Contato
 </template>
+
+<script>
+  import { BButton, } from 'bootstrap-vue'
+
+  export default {
+    components: {
+      BButton
+    }
+  }
+</script>
