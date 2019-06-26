@@ -63,7 +63,9 @@
         padding: 10px
         text-align: center
         font-size: 0.8rem
-        background-color: $orange
+        background: rgb(255,127,0)
+        background: linear-gradient(90deg, rgba(255,127,0,1) 0%, rgba(243,19,87,1) 43%)
+        // background-color: $orange
         border-top-left-radius: 160px
         border-top-right-radius: 160px
         height: 40px
@@ -91,7 +93,9 @@
         .per-user
           font-size: 0.8rem
 
-        .features
+        ul.features
+          list-style: none
+          list-style-type: none
           margin: 1.5rem 0
           color: $gray-light
           font-size: 0.75rem
@@ -100,6 +104,15 @@
 
           li
             padding: 3px 0
+
+            &:before
+              content: ' '
+              position: absolute
+              background: url(~@/assets/icons/bullet@purple.svg) no-repeat
+              width: 50px
+              height: 18px
+              margin-left: -25px
+              margin-top: 2px
 
         .contact
           color: $white-gray
@@ -169,6 +182,10 @@
 
           .features
             color: $white-gray
+
+            li:before
+              background: url(~@/assets/icons/bullet@pink.svg) no-repeat
+
     .help
       margin: auto
       text-align: center
