@@ -545,6 +545,7 @@
 
           @media only screen and (max-width: 990px)
             background-image: none
+            width: 0px
 
         .image-c
           width: 145%
