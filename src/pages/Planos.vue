@@ -227,8 +227,6 @@
 
         &:first-child
           width: 30%
-          // background-color: #fff
-          //
 
       @media only screen and (max-width: 480px)
         td:first-child
