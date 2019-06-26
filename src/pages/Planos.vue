@@ -202,6 +202,11 @@
         border-top: 0
         color: $gray-light
 
+        &:first-child
+          position: sticky
+          left: 0
+          z-index: 9999
+
         &:not(:first-child)
           text-align: center
 
@@ -214,101 +219,114 @@
 
         &:first-child
           width: 30%
+          // background-color: #fff
+
+      @media only screen and (max-width: 420px)
+        td
+          &:first-child
+            width: 15%
+
+  section.faq
+    background-position: center
+    background-repeat: no-repeat
+    min-height: 1286px
+    background-image: url(~@/assets/images/plans-faq-bg.jpg)
 </style>
 
 <template lang="pug">
   Layout
-    header.d-flex
-      .container
-        Nav(type="light")
+    div
+      header.d-flex
+        .container
+          Nav(type="light")
 
-    .hero.container.text-center
-      h1 Simples e prático
-        span.dot.green
-      p Veja abaixo qual o plano mais se adapta à sua necessidade.
-        br
-        | Contratação simples, rápida e 100% online.
-        br
-        span.font-weight-bold De burocrático já basta a concorrência.
+      .hero.container.text-center
+        h1 Simples e prático
+          span.dot.green
+        p Veja abaixo qual o plano mais se adapta à sua necessidade.
+          br
+          | Contratação simples, rápida e 100% online.
+          br
+          span.font-weight-bold De burocrático já basta a concorrência.
 
-    section.plans
-      .scrollable-control.d-xl-none
-        a.left(href="#", @click.prevent="scrollTo(-280)" v-if="scroll.left")
-          | 👈
-        a.right(href="#", @click.prevent="scrollTo(280)" v-if="scroll.right")
-          | 👉
+      section.plans
+        .scrollable-control.d-xl-none
+          a.left(href="#", @click.prevent="scrollTo(-280)" v-if="scroll.left")
+            | 👈
+          a.right(href="#", @click.prevent="scrollTo(280)" v-if="scroll.right")
+            | 👉
 
-      .container
-        .row.no-gutters.flex-nowrap.list(ref="scrollable")
-          .plan.col-3(v-for="(plan, index) in plansList")
-            .best-choice(v-if="index === best") Melhor escolha 👌
-            .detail
-              .title Plano
-                span  {{ plan.name }}
-              .price {{ plan.price_per_user }}
-              .per-user(v-if="index < 3") por usuário
+        .container
+          .row.no-gutters.flex-nowrap.list(ref="scrollable")
+            .plan.col-3(v-for="(plan, index) in plansList")
+              .best-choice(v-if="index === best") Melhor escolha 👌
+              .detail
+                .title Plano
+                  span  {{ plan.name }}
+                .price {{ plan.price_per_user }}
+                .per-user(v-if="index < 3") por usuário
 
-              hr
+                hr
 
-              ul.features
-                li(v-for="feature in plan.features") {{ feature}}
+                ul.features
+                  li(v-for="feature in plan.features") {{ feature}}
 
-              b-button(href="https://app.bulldesk.com.br/cadastro", :variant="index === best ? 'green' : 'default'", v-if="index < 3") Testar agora
-                img(src="../assets/icons/play-button@black.svg", alt="")
+                b-button(href="https://app.bulldesk.com.br/cadastro", :variant="index === best ? 'green' : 'default'", v-if="index < 3") Testar agora
+                  g-image(src="../assets/icons/play-button@black.svg", alt="")
 
-              .contact(v-else)
-                h4 Solicite uma demonstração
+                .contact(v-else)
+                  h4 Solicite uma demonstração
 
-                form(@submit.prevent="submitForm()")
-                  b-form-input(placeholder="Nome", v-model="form.name", required)
-                  b-form-input(type="email", placeholder="E-mail", v-model="form.email", required)
-                  b-button(type="submit", variant="pink", :disabled="form.busy")
-                    | Solicitar Contato
-                    img(src="../assets/icons/play-button@white.svg", alt="" v-if="! form.busy")
-                    b-spinner.ml-1(small, v-else)
+                  form(@submit.prevent="submitForm()")
+                    b-form-input(placeholder="Nome", v-model="form.name", required)
+                    b-form-input(type="email", placeholder="E-mail", v-model="form.email", required)
+                    b-button(type="submit", variant="pink", :disabled="form.busy")
+                      | Solicitar Contato
+                      g-image(src="../assets/icons/play-button@white.svg", alt="" v-if="! form.busy")
+                      b-spinner.ml-1(small, v-else)
 
-        .row
-          .col-lg-12
-            .help
-              h3 Não sabe qual escolher?
-              p Compare logo abaixo os planos e escolha sua melhor opção de contratação. Você vai se surpreender.
+          .row
+            .col-lg-12
+              .help
+                h3 Não sabe qual escolher?
+                p Compare logo abaixo os planos e escolha sua melhor opção de contratação. Você vai se surpreender.
 
-              img.mt-5(src="../assets/icons/down-purple.svg", alt="")
+                g-image.mt-5(src="../assets/icons/down-purple.svg", alt="")
 
-    section.compare
-      .container
-        //- .table-responsive
-        //-   table.table
-        //-     tbody
-        //-       tr
-        //-         td
-        //-         td
-        //-           b-button(variant="gray") Start
-        //-             img(src="../assets/icons/play-button@black.svg", alt="")
-        //-         td
-        //-           b-button(variant="green") Standard
-        //-             img(src="../assets/icons/play-button@black.svg", alt="")
-        //-         td
-        //-           b-button(variant="gray") Premium
-        //-             img(src="../assets/icons/play-button@black.svg", alt="")
-        //-         td
-        //-           b-button(variant="pink") Enterprise
-        //-             img(src="../assets/icons/play-button@white.svg", alt="")
+      section.compare
+        .container
+          .table-responsive
+            table.table
+              tbody
+                tr
+                  td
+                  td
+                    b-button(variant="gray") Start
+                      g-image(src="../assets/icons/play-button@black.svg", alt="")
+                  td
+                    b-button(variant="green") Standard
+                      g-image(src="../assets/icons/play-button@black.svg", alt="")
+                  td
+                    b-button(variant="gray") Premium
+                      g-image(src="../assets/icons/play-button@black.svg", alt="")
+                  td
+                    b-button(variant="pink") Enterprise
+                      g-image(src="../assets/icons/play-button@white.svg", alt="")
 
-        //-   table.table.table-striped(v-for="table in plansTable")
-        //-     thead
-        //-       tr
-        //-         th(colspan="5") {{ table.name }}
-        //-     tbody
-        //-       tr(v-for="item in table.items")
-        //-         td {{ item.name }}
-        //-           span.helper.ml-2(v-b-tooltip.hover.bottom="item.description", v-if="item.description") ?
-        //-         td(v-for="exists in item.plans")
-        //-           img(src="../assets/icons/tick.svg", alt="", v-if="exists === true")
-        //-           span(v-else-if="exists > 0 || exists.length > 0") {{ exists }}
-        //-           span(v-else) -
+            table.table.table-striped(v-for="table in plansTable")
+              thead
+                tr
+                  th(colspan="5") {{ table.name }}
+              tbody
+                tr(v-for="item in table.items")
+                  td {{ item.name }}
+                    span.helper.ml-2(v-b-tooltip.hover.bottom="item.description", v-if="item.description") ?
+                  td(v-for="exists in item.plans")
+                    g-image(src="../assets/icons/tick.svg", alt="", v-if="exists === true")
+                    span(v-else-if="exists > 0 || exists.length > 0") {{ exists }}
+                    span(v-else) -
 
-    section.faq
+      section.faq
 </template>
 
 <script>
