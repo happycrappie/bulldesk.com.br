@@ -247,11 +247,11 @@
   section.faq
     z-index: 9
     position: relative
-    background-position: center
+    background-position: top center
     background-repeat: no-repeat
-    min-height: 1467px
+    min-height: 1622px
     background-image: url(~@/assets/images/plans-faq-bg.jpg)
-    padding-top: 550px
+    padding-top: 620px
     color: #F4F2F7
 
     h3
