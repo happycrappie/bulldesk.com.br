@@ -183,7 +183,7 @@
   section.compare
     z-index: 10
     position: relative
-    margin: 3rem 0 -15rem
+    margin: 3rem 0 -240px
 
     table.table
       width: 980px
@@ -251,6 +251,13 @@
     background-repeat: no-repeat
     min-height: 1467px
     background-image: url(~@/assets/images/plans-faq-bg.jpg)
+    padding: 500px 0
+    color: $white
+
+    h3
+      text-align: center
+      font-size: 1.625rem
+
 </style>
 
 <template lang="pug">
@@ -369,6 +376,10 @@
                         g-image(src="../assets/icons/play-button@white.svg", alt="")
 
       section.faq
+        .container
+          h3 Ainda está com dúvidas?
+            br
+            | Veja abaixo as mais frequentes:
 </template>
 
 <script>
