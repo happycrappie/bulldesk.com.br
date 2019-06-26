@@ -58,6 +58,31 @@
     @media only screen and (min-width: 2401px)
       background-position: 950px 0
 
+    .doted-square-a
+      position: absolute
+      top: 190px
+
+      @media only screen and (max-width: 1500px)
+        display: none !important
+
+      @media only screen and (min-width: 1500px) and (max-width: 1600px)
+        left: 5rem
+
+      @media only screen and (min-width: 1601px) and (max-width: 1800px)
+        left: 8rem
+
+      @media only screen and (min-width: 1801px) and (max-width: 2000px)
+        left: 13rem
+
+      @media only screen and (min-width: 2001px) and (max-width: 2200px)
+        left: 18rem
+
+      @media only screen and (min-width: 2201px) and (max-width: 2400px)
+        left: 23rem
+
+      @media only screen and (min-width: 2401px)
+        left: 30rem
+
     .hero
       height: 100%
       max-width: 480px
@@ -92,13 +117,17 @@
         line-height: 20px
         margin: 1.4rem 0rem 0rem 1.9rem
 
-      .doted-square
+      .doted-square-b
         position: absolute
+        top: 554px
 
-        @media only screen and (max-height: 820px)
+        @media only screen and (max-width: 820px)
           display: none !important
 
-        @media only screen and (min-width: 1300px) and (max-width: 1400px)
+        @media only screen and (min-width: 820px) and (max-width: 1300px)
+          left: 40rem
+
+        @media only screen and (min-width: 1301px) and (max-width: 1400px)
           left: 44rem
 
         @media only screen and (min-width: 1401px) and (max-width: 1600px)
@@ -118,12 +147,6 @@
 
         @media only screen and (min-width: 2401px)
           left: 80rem
-
-        &:nth-child(1n)
-          top: 724px
-
-        &:nth-child(2)
-          top: 754px
 
   .section-a
     height: 1156px
@@ -438,6 +461,16 @@
         @media only screen and (max-width: 990px)
           font-size: 0.65rem
 
+        &:after
+          content: ''
+          display: block
+          position: absolute
+          background-image: url(~@/assets/images/doted-line.png)
+          width: 5px
+          min-height: 27px
+          left: 50%
+          top: 62px
+
         .contacts
           float: right
           color: $gray-soft
@@ -519,6 +552,17 @@
 
     @media only screen and (min-width: 2501px)
       background-position: -14rem
+
+    .doted-square
+      position: absolute
+      left: 62%
+      top: 3100px
+
+      @media only screen and (max-width: 1025px)
+        display: none
+
+      @media only screen and (max-width: 1600px)
+        left: 70%
 
     .container
       padding-top: 57rem
@@ -867,6 +911,7 @@
   Layout
     div
       header.d-flex
+        g-image(src="~/assets/images/doted-square@3x2.png" class="doted-square-a" alt="")
         .container
           Nav(type="dark")
 
@@ -875,15 +920,14 @@
               h1.title Inteligência comercial de forma simples
                 span.dot.green
               p.subtitle Ferramenta de controle vendas, gerenciamento de contatos e automação de relacionamento.
-              email-input(placeholder='Insira seu email aqui' identifier='home')
+              email-input(placeholder="Insira seu email aqui" identifier="home")
               p.email-paragraph
                 | Experimente de graça.
                 br
                 | Nenhum cartão de crédito é necessário.
                 br
                 | Configuração simples e rápida
-            g-image(src='~/assets/images/doted-square.jpg' class='doted-square d-none d-xl-block' alt='')
-            g-image(src='~/assets/images/doted-square.jpg' class='doted-square d-none d-xl-block' alt='')
+            g-image(src="~/assets/images/doted-square@3x4.png" class="doted-square-b" alt="")
 
       .section.section-a
         .container
@@ -982,6 +1026,7 @@
                   g-image(src='~/assets/images/editor-footer.png' alt='')
 
       .section.section-c
+        g-image(src="~/assets/images/doted-square@3x4.png" class="doted-square" alt="")
         .container
           .row
             .col-lg-9.col-left
