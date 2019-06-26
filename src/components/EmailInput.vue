@@ -16,7 +16,7 @@
     .email-input
       box-shadow: 0 10px 20px rgba(165, 131, 224, 0.18)
       background-color: $white
-      border-radius: 30px !important
+      border-radius: 50px !important
       padding-left: 30px
       font-size: 0.9rem
       height: 68px
