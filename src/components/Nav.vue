@@ -4,7 +4,7 @@
 
   nav.navbar.nav-layout
     padding: 15px 0
-    font-size: 0.875rem
+    font-size: 0.75rem
 
     .logo
       width: 140px
@@ -47,7 +47,7 @@
           padding: 1.2rem 2.5rem
           letter-spacing: 0.22px
           line-height: 25px
-          font-size: 0.75rem
+          font-size: 0.6875rem
           position: relative
 
           h6
@@ -76,7 +76,7 @@
           min-width: 12rem
 
     .navbar-collapse
-      @include media('screen', '<ipad')
+      @include media('screen', '<=ipad')
         background: $white
         margin-top: 0.8rem
         box-shadow: 0 1.5rem 4rem rgba(22,28,45,.15)
