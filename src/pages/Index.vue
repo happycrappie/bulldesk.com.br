@@ -577,10 +577,6 @@
               letter-spacing: 0.2px
               line-height: 25px
 
-        .btn-default
-          img
-            width: 12px
-
   .section-d
     margin-top: 6rem
     background-repeat: no-repeat
@@ -906,9 +902,9 @@
                     | Relatórios ao vivo
 
               .know-more
-                a.btn-default
+                b-button(href="https://app.bulldesk.com.br/cadastro", variant="purple")
                   | Conheça mais
-                  g-image(src='~/assets/icons/play-button@white.svg' alt='')
+                  g-image(src="../assets/icons/play-button@white.svg", alt="")
 
             .col-lg-6.right-col
               .header
@@ -958,9 +954,9 @@
                         g-image(src='~/assets/icons/income.svg' alt='Renda')
                       td
                         | Automatizar marketing e vendas
-                a.btn-default
+                b-button(href="https://app.bulldesk.com.br/cadastro", variant="green")
                   | Teste grátis
-                  g-image(src='~/assets/icons/play-button@white.svg' alt='')
+                  g-image(src="../assets/icons/play-button@black.svg", alt="")
 
       .section.section-d
         .container
@@ -1016,9 +1012,9 @@
                 g-image(src='~/assets/images/cases/other-cases.png' alt='Cases')
             .row.button-row
               .col-12
-                .btn-default
+                b-button(href="/cases", variant="purple")
                   | Veja mais histórias de sucesso
-                  g-image(src='~/assets/icons/play-button@white.svg' alt='')
+                  g-image(src="../assets/icons/play-button@white.svg", alt="")
 
       .section.section-e
         .container
@@ -1028,21 +1024,22 @@
               .subtitle
                 | Veja como funciona o Bulldesk e suas principais funções em um vídeo direto ao ponto.
                 strong  Você vai se surpreender.
-              a.btn-default.d-none.d-lg-inline
+              b-button.d-none.d-lg-inline(href="https://app.bulldesk.com.br/cadastro", variant="green")
                 | Teste grátis
-                g-image(src='~/assets/icons/play-button@black.svg' alt='')
+                g-image(src="../assets/icons/play-button@black.svg", alt="")
             .col-12.col-lg-9
               .video-container
                 g-image(src='~/assets/images/home-video.png' alt='Video')
-              a.btn-default.d-inline.d-lg-none
+              b-button.d-inline.d-lg-none(href="https://app.bulldesk.com.br/cadastro", variant="green")
                 | Teste grátis
-                g-image(src='~/assets/icons/play-button@black.svg' alt='')
+                g-image(src="../assets/icons/play-button@black.svg", alt="")
 </template>
 
 <script>
   import Layout from '../layouts/Default'
   import Nav from '../components/Nav'
   import EmailInput from '../components/EmailInput'
+  import { BButton } from 'bootstrap-vue'
 
   import 'swiper/dist/css/swiper.css'
 
@@ -1051,6 +1048,7 @@
       Layout,
       Nav,
       EmailInput,
+      BButton,
       swiper: () =>
         import ('vue-awesome-swiper')
         .then(m => window ? m.swiper : null)
