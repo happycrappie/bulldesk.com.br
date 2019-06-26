@@ -1,6 +1,9 @@
 <style lang="sass" scoped>
   @import '../assets/styles/_variables.scss'
 
+  .cursor-default
+    cursor: default
+
   header
     padding-bottom: 1.2rem
 
@@ -344,16 +347,16 @@
                 tr
                   td.bg-white
                   td
-                    b-button(variant="gray") Start
+                    b-button.cursor-default(variant="gray") Start
                       g-image(src="../assets/icons/play-button@black.svg", alt="")
                   td
-                    b-button(variant="green") Standard
+                    b-button.cursor-default(variant="green") Standard
                       g-image(src="../assets/icons/play-button@black.svg", alt="")
                   td
-                    b-button(variant="gray") Premium
+                    b-button.cursor-default(variant="gray") Premium
                       g-image(src="../assets/icons/play-button@black.svg", alt="")
                   td
-                    b-button(variant="pink") Enterprise
+                    b-button.cursor-default(variant="pink") Enterprise
                       g-image(src="../assets/icons/play-button@white.svg", alt="")
 
             table.table.table-striped(v-for="table in plansTable")
