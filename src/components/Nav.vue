@@ -4,7 +4,7 @@
 
   nav.navbar.nav-layout
     padding: 15px 0
-    font-size: 0.75rem
+    font-size: 0.875rem
 
     .logo
       width: 140px
@@ -12,15 +12,15 @@
     .nav-item.trial
       .nav-link
         font-weight: 600
-        font-size: 0.75rem
+        font-size: 0.6875rem
         text-align: center
         padding: 9px 25px
         background: $green
         color: $black
         border-radius: 30px
 
-        g-image
-          width: 12px
+        img
+          max-width: 12px
           margin: 0 0 2px 5px
 
         &:hover
@@ -44,7 +44,7 @@
           padding: 1.2rem 2.5rem
           letter-spacing: 0.22px
           line-height: 25px
-          font-size: 0.8rem
+          font-size: 0.75rem
           position: relative
           z-index: 2
 
