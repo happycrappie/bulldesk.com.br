@@ -310,6 +310,14 @@
               margin-top: 20px
               font-size: 0.75rem
 
+              @media only screen and (max-width: 440px)
+                font-size: 0.55rem
+                line-height: 15px
+
+              @media only screen and (min-width: 441px) and (max-width: 990px)
+                font-size: 0.6rem
+                line-height: 20px
+
           &:last-child
             .step
               .step-icon
