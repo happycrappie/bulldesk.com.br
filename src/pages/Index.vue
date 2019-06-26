@@ -318,6 +318,7 @@
 
                 &:after
                   background-image: none
+                  width: 0px
 
   .section-b
     margin-top: 8rem
