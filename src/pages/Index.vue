@@ -3,37 +3,60 @@
 
   header
     background-position: 80px 0
+    background-position: 100px 0
     background-repeat: no-repeat
+    background-size: auto 100%
     height: 100%
     min-height: 800px
 
-    @media only screen and (min-width: 580px)
-      background-position: 150px 0
+    @media only screen and (min-width: 440px)
+      background-position: 150px
 
-    @media only screen and (min-width: 1100px)
+    @media only screen and (min-width: 640px)
+      background-position: 200px
+
+    @media only screen and (min-width: 840px)
+      background-position: 250px
+
+    @media only screen and (min-width: 1026px)
       background-position: 200px 0
 
-    @media only screen and (min-width: 1440px)
+    @media only screen and (min-width: 1140px)
+      background-position: 250px 0
+
+    @media only screen and (min-width: 1240px)
+      background-position: 300px 0
+
+    @media only screen and (min-width: 1340px)
       background-position: 400px 0
 
-    @media only screen and (min-width: 1840px)
-      background-position: 600px 0
+    @media only screen and (min-width: 1440px)
+      background-position: 450px 0
 
-    @media only screen and (max-width: 980px)
-      background-image: url(~@/assets/images/header@700.png)
+    @media only screen and (min-width: 1640px)
+      background-position: 550px 0
+
+    @media only screen and (min-width: 1840px)
+      background-position: 650px 0
+
+    @media only screen and (max-width: 1025px)
+      background-image: url(~@/assets/images/header@700.jpg)
 
     @media only screen and (max-width: 1440px)
-      background-image: url(~@/assets/images/header@1000.png)
+      background-image: url(~@/assets/images/header@1000.jpg)
 
     @media only screen and (max-width: 2000px)
-      background-image: url(~@/assets/images/header@1600.png)
+      background-image: url(~@/assets/images/header@1600.jpg)
 
     @media only screen and (min-width: 2001px)
-      background-image: url(~@/assets/images/header@2200.png)
-      background-position: 700px 0
+      background-image: url(~@/assets/images/header@2200.jpg)
+      background-position: 750px 0
+
+    @media only screen and (min-width: 2200px)
+      background-position: 850px 0
 
     @media only screen and (min-width: 2401px)
-      background-position: 800px 0
+      background-position: 950px 0
 
     .hero
       height: 100%
@@ -287,6 +310,14 @@
               margin-top: 20px
               font-size: 0.75rem
 
+              @media only screen and (max-width: 440px)
+                font-size: 0.55rem
+                line-height: 15px
+
+              @media only screen and (min-width: 441px) and (max-width: 990px)
+                font-size: 0.6rem
+                line-height: 20px
+
           &:last-child
             .step
               .step-icon
@@ -295,9 +326,10 @@
 
                 &:after
                   background-image: none
+                  width: 0px
 
   .section-b
-    margin-top: 8rem
+    margin-top: 6rem
     background-image: url(~@/assets/images/elipse@opaque.png), url(~@/assets/images/home-bg-b.png)
     background-size: 160px 160px, 400px 400px
     background-position: 52% 320px, 60% 20px
@@ -325,14 +357,21 @@
       background-size: 160px 160px, 500px 400px
       background-position: 52% 320px, 55% 20px
 
-    @media only screen and (min-width: 1600px) and (max-width: 1900px)
-      margin-top: 10rem
+    @media only screen and (min-width: 1025px) and (max-width: 1600px)
+      margin-top: 2rem
+
+    @media only screen and (min-width: 1601px) and (max-width: 1900px)
+      margin-top: 4rem
 
     @media only screen and (min-width: 1901px) and (max-width: 2200px)
-      margin-top: 12rem
+      margin-top: 6rem
 
     @media only screen and (min-width: 2201px)
-      margin-top: 14rem
+      margin-top: 8rem
+
+    h3
+      span
+        font-weight: normal
 
     .subtitle
       width: auto
@@ -437,7 +476,7 @@
 
   .section-c
     height: 1800px
-    margin-top: -32rem
+    margin-top: -42rem
     background-repeat: no-repeat
     background-size: cover
     background-image: url(~@/assets/images/home-bg-c.png)
@@ -451,7 +490,19 @@
       margin-top: -28rem
       background-position: -58rem
 
-    @media only screen and (min-width: 1800px) and (max-width: 2000px)
+    @media only screen and (min-width: 990px) and (max-width: 1200px)
+      background-position: -54rem
+
+    @media only screen and (min-width: 1201px) and (max-width: 1400px)
+      background-position: -50rem
+
+    @media only screen and (min-width: 1401px) and (max-width: 1600px)
+      background-position: -46rem
+
+    @media only screen and (min-width: 1601px) and (max-width: 1800px)
+      background-position: -42rem
+
+    @media only screen and (min-width: 1801px) and (max-width: 2000px)
       background-position: -38rem
 
     @media only screen and (min-width: 2001px) and (max-width: 2200px)
@@ -467,7 +518,7 @@
       background-position: -18rem
 
     @media only screen and (min-width: 2501px)
-      background-position: -10rem
+      background-position: -14rem
 
     .container
       padding-top: 57rem
@@ -475,8 +526,10 @@
       @media only screen and (max-width: 990px)
         padding-top: 38rem
 
-      .col-left
+      @media only screen and (max-width: 440px)
+        padding-top: 34rem
 
+      .col-left
         .title
           width: auto
           max-width: 480px
@@ -509,6 +562,7 @@
 
           @media only screen and (max-width: 990px)
             background-image: none
+            width: 0px
 
         .image-c
           width: 145%
@@ -521,7 +575,7 @@
 
           @media only screen and (max-width: 400px)
             width: 90%
-            height: 300px
+            height: 280px
             margin-left: 20px
 
           @media only screen and (min-width: 401px) and (max-width: 690px)
@@ -575,7 +629,7 @@
               line-height: 25px
 
   .section-d
-    margin-top: 6rem
+    margin-top: 2rem
     background-repeat: no-repeat
     background-image: url(~@/assets/images/home-bg-d.png)
     background-size: 2560px auto
@@ -613,15 +667,15 @@
 
     @media only screen and (max-width: 1000px)
       background-position: -54rem -2rem
-      margin-top: 0rem
+      margin-top: -2rem
 
     @media only screen and (max-width: 800px)
       background-position: -60rem -2rem
-      margin-top: -2rem
+      margin-top: -4rem
 
     @media only screen and (max-width: 600px)
       background-position: -68rem -4rem
-      margin-top: -4rem
+      margin-top: -6rem
 
     @media only screen and (max-width: 400px)
       background-position: -74rem -6rem
@@ -729,7 +783,7 @@
     background-repeat: no-repeat
     background-size: 2560px auto
     background-image: url(~@/assets/images/home-bg-e.png)
-    background-position: 0rem 0rem
+    background-position: 0rem -4rem
     height: 1623px
     margin-top: -50rem
     z-index: 1
