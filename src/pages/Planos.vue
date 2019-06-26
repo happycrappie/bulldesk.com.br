@@ -251,7 +251,7 @@
     background-repeat: no-repeat
     min-height: 1467px
     background-image: url(~@/assets/images/plans-faq-bg.jpg)
-    padding-top: 500px
+    padding-top: 550px
     color: #F4F2F7
 
     h3
@@ -399,7 +399,7 @@
                 br
                 | Veja abaixo as mais frequentes:
 
-          .row.mb-5.mt-5
+          .row.mb-5.pt-3
             .col-md-4
               h5 Existe algum tempo mínimo de contrato?
               p Não, o Bulldesk não tem nenhuma taxa de implementação ou fidelidade. Você contrata online, caso não queira mais usar é só cancelar. Prezamos pela satisfação dos nossos clientes.
@@ -425,7 +425,7 @@
               h5 Minhas informações estão seguras?
               p Sim. Utilizamos as mesmas tecnologias de plataformas como Spotify, Amazon e AirBnb utilizam. Seus dados não são compartilhados com terceiros e todas as informações são criptografaras.
 
-          .row
+          .row.pt-3
             .col-md-12.text-center
               h4 Não perca mais tempo procurando um software
                 br
