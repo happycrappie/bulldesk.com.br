@@ -12,15 +12,15 @@
     .nav-item.trial
       .nav-link
         font-weight: 600
-        font-size: 0.75rem
+        font-size: 0.6875rem
         text-align: center
         padding: 9px 25px
         background: $green
         color: $black
         border-radius: 30px
 
-        g-image
-          width: 12px
+        img
+          max-width: 12px
           margin: 0 0 2px 5px
 
         &:hover
@@ -30,6 +30,8 @@
     .nav-item
       .dropdown-menu
         left: -45%
+        position: absolute
+        z-index: 2
 
         .dropdown-icon
           max-width: 20px
@@ -37,16 +39,16 @@
           position: absolute
           z-index: 1
 
-          g-image
+          img
+            position: relative
             width: 100%
 
         .dropdown-container
           padding: 1.2rem 2.5rem
           letter-spacing: 0.22px
           line-height: 25px
-          font-size: 0.8rem
+          font-size: 0.6875rem
           position: relative
-          z-index: 2
 
           h6
             color: $gray-dark
@@ -74,7 +76,7 @@
           min-width: 12rem
 
     .navbar-collapse
-      @include media('screen', '<ipad')
+      @include media('screen', '<=ipad')
         background: $white
         margin-top: 0.8rem
         box-shadow: 0 1.5rem 4rem rgba(22,28,45,.15)

@@ -16,10 +16,14 @@
     .email-input
       box-shadow: 0 10px 20px rgba(165, 131, 224, 0.18)
       background-color: $white
-      border-radius: 30px !important
+      border-radius: 50px !important
       padding-left: 30px
       font-size: 0.9rem
       height: 68px
+      border: 1px solid $white-gray
+
+      &:focus
+        border: 1px solid $green
 
     .email-button
       width: 56px
@@ -30,9 +34,11 @@
       margin-top: 0.4rem
       z-index: 998
       background-color: $green
+      padding: 16px
 
       img
         margin-left: 0.3rem
+        max-width: 18px
 </style>
 
 <template lang="pug">
@@ -40,8 +46,8 @@
     b-input-group.email-group
       b-form-input.email-input(type="email", :placeholder="inputPlaceholder", v-model="email", required)
       b-input-group-append
-        b-button.email-button(type="submit", :disabled="busy")
-          g-image(src="~/assets/icons/play-button@black.svg", v-if="!busy")
+        b-button.email-button(type="submit", :disabled="busy" variant="green")
+          g-image(src="~/assets/icons/play-button@black.svg", v-if="! busy")
           b-spinner.ml-1(small, v-else)
 </template>
 
