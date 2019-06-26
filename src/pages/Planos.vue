@@ -231,11 +231,14 @@
           width: 30%
 
         .price
+          color: $black
           font-size: 1rem
+          line-height: 25px
 
         .focus
-          font-size: 0.8rem
-          line-height: 1.8
+          color: $black
+          font-size: 0.75rem
+          line-height: 25px
 
       @media only screen and (max-width: 480px)
         td:first-child
