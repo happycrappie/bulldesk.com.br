@@ -187,9 +187,6 @@
               line-height: 15px
               padding: 0.3rem 0.5rem
 
-            @media only screen and (min-width: 1300px)
-              white-space: nowrap
-
           .active
             background-color: $purple
             color: $white-gray
