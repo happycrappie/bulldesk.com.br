@@ -329,7 +329,7 @@
                   width: 0px
 
   .section-b
-    margin-top: 8rem
+    margin-top: 6rem
     background-image: url(~@/assets/images/elipse@opaque.png), url(~@/assets/images/home-bg-b.png)
     background-size: 160px 160px, 400px 400px
     background-position: 52% 320px, 60% 20px
@@ -357,14 +357,17 @@
       background-size: 160px 160px, 500px 400px
       background-position: 52% 320px, 55% 20px
 
-    @media only screen and (min-width: 1600px) and (max-width: 1900px)
-      margin-top: 10rem
+    @media only screen and (min-width: 1025px) and (max-width: 1600px)
+      margin-top: 2rem
+
+    @media only screen and (min-width: 1601px) and (max-width: 1900px)
+      margin-top: 4rem
 
     @media only screen and (min-width: 1901px) and (max-width: 2200px)
-      margin-top: 12rem
+      margin-top: 6rem
 
     @media only screen and (min-width: 2201px)
-      margin-top: 14rem
+      margin-top: 8rem
 
     h3
       span
@@ -473,7 +476,7 @@
 
   .section-c
     height: 1800px
-    margin-top: -32rem
+    margin-top: -42rem
     background-repeat: no-repeat
     background-size: cover
     background-image: url(~@/assets/images/home-bg-c.png)
@@ -487,7 +490,19 @@
       margin-top: -28rem
       background-position: -58rem
 
-    @media only screen and (min-width: 1800px) and (max-width: 2000px)
+    @media only screen and (min-width: 990px) and (max-width: 1200px)
+      background-position: -54rem
+
+    @media only screen and (min-width: 1201px) and (max-width: 1400px)
+      background-position: -50rem
+
+    @media only screen and (min-width: 1401px) and (max-width: 1600px)
+      background-position: -46rem
+
+    @media only screen and (min-width: 1601px) and (max-width: 1800px)
+      background-position: -42rem
+
+    @media only screen and (min-width: 1801px) and (max-width: 2000px)
       background-position: -38rem
 
     @media only screen and (min-width: 2001px) and (max-width: 2200px)
@@ -503,7 +518,7 @@
       background-position: -18rem
 
     @media only screen and (min-width: 2501px)
-      background-position: -10rem
+      background-position: -14rem
 
     .container
       padding-top: 57rem
@@ -511,8 +526,10 @@
       @media only screen and (max-width: 990px)
         padding-top: 38rem
 
-      .col-left
+      @media only screen and (max-width: 440px)
+        padding-top: 34rem
 
+      .col-left
         .title
           width: auto
           max-width: 480px
@@ -558,7 +575,7 @@
 
           @media only screen and (max-width: 400px)
             width: 90%
-            height: 300px
+            height: 280px
             margin-left: 20px
 
           @media only screen and (min-width: 401px) and (max-width: 690px)
@@ -612,7 +629,7 @@
               line-height: 25px
 
   .section-d
-    margin-top: 6rem
+    margin-top: 4rem
     background-repeat: no-repeat
     background-image: url(~@/assets/images/home-bg-d.png)
     background-size: 2560px auto
@@ -766,7 +783,7 @@
     background-repeat: no-repeat
     background-size: 2560px auto
     background-image: url(~@/assets/images/home-bg-e.png)
-    background-position: 0rem 0rem
+    background-position: 0rem -4rem
     height: 1623px
     margin-top: -50rem
     z-index: 1
