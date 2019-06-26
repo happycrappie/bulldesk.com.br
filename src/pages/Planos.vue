@@ -198,6 +198,15 @@
         padding: 4px 8px
         border-radius: 50%
 
+      tr
+        &:nth-child(even)
+          td:first-child
+            background-color: $white
+
+        &:nth-child(odd)
+          td:first-child
+            background-color: $white-gray
+
       th, td
         border-top: 0
         color: $gray-light
@@ -205,7 +214,6 @@
         &:first-child
           position: sticky
           left: 0
-          z-index: 9999
 
         &:not(:first-child)
           text-align: center
@@ -220,11 +228,11 @@
         &:first-child
           width: 30%
           // background-color: #fff
+          //
 
-      @media only screen and (max-width: 420px)
-        td
-          &:first-child
-            width: 15%
+      @media only screen and (max-width: 480px)
+        td:first-child
+          width: 15%
 
   section.faq
     background-position: center
@@ -299,7 +307,7 @@
             table.table
               tbody
                 tr
-                  td
+                  td.bg-white
                   td
                     b-button(variant="gray") Start
                       g-image(src="../assets/icons/play-button@black.svg", alt="")
@@ -316,7 +324,12 @@
             table.table.table-striped(v-for="table in plansTable")
               thead
                 tr
-                  th(colspan="5") {{ table.name }}
+                  th {{ table.name }}
+                  th
+                  th
+                  th
+                  th
+
               tbody
                 tr(v-for="item in table.items")
                   td {{ item.name }}
