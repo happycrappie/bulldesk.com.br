@@ -112,19 +112,19 @@
           img(src='../assets/images/logo.png' class='logo')
           ul
             li
-              a(href="#")
+              a(href="https://www.instagram.com/bulldeskcrm")
                 img(src='../assets/icons/instagram.svg')
             li
-              a(href="#")
+              a(href="https://facebook.com/bulldeskcrm")
                 img(src='../assets/icons/facebook.svg')
             li
-              a(href="#")
+              a(href="https://www.youtube.com/channel/UCF2cpwuAJZk2KXJB6NetWIg?view_as=subscriber")
                 img(src='../assets/icons/youtube.svg')
             li
-              a(href="#")
+              a(href="https://twitter.com/bulldeskcrm")
                 img(src='../assets/icons/twitter.svg')
             li
-              a(href="#")
+              a(href="https://www.linkedin.com/company/bulldesk/")
                 img(src='../assets/icons/linkedin.svg')
           .button-container
             b-button(href="https://app.bulldesk.com.br/cadastro", variant="green")
@@ -134,13 +134,13 @@
           h5 Informações
           ul
             li
-              a(href="#") Histórias de Sucesso
+              a(href="/cases") Histórias de Sucesso
             li
-              a(href="#") Blog
+              a(href="https://blog.bulldesk.com.br") Blog
             li
-              a(href="#") Suporte
+              a(href="http://ajuda.bulldesk.com.br") Suporte
             li
-              a(href="#") Treinamentos
+              a(href="http://ajuda.bulldesk.com.br") Treinamentos
             li
               a(href="#") Cursos
             li
@@ -150,56 +150,56 @@
             li
               a(href="#") Webinars
             li
-              a(href="#") Templates
+              a(href="/exemplos") Templates
         .column.column-b
           h5 Funcionalidades
           ul
             li
-              a(href="#") Dashboard
+              a(href="https://ajuda.bulldesk.com.br/pt-br/article/automacao-de-marketing-atgu5x") Automação de Marketing
             li
-              a(href="#") Atração e Conversão
+              a(href="https://ajuda.bulldesk.com.br/pt-br/article/funil-de-vendas-i5pkx2") Funíl de Vendas
             li
-              a(href="#") Gestão de Leads
+              a(href="https://ajuda.bulldesk.com.br/pt-br/article/whatsapp-marketing-ahg33x") WhatsApp
             li
-              a(href="#") Gestão de Vendas
+              a(href="https://ajuda.bulldesk.com.br/pt-br/article/sms-marketing-17744va") SMS
             li
-              a(href="#") E-mail Marketing
+              a(href="https://ajuda.bulldesk.com.br/pt-br/article/e-mail-marketing-1b9qixw") E-mail Marketing
             li
-              a(href="#") SMS
+              a(href="https://ajuda.bulldesk.com.br/pt-br/article/landing-page-mgvttx") Landing Pages
             li
-              a(href="#") Whatsapp
+              a(href="https://ajuda.bulldesk.com.br/pt-br/article/dashboard-i2l34m") Dashboard
             li
-              a(href="#") Automação de Marketing
+              a(href="https://ajuda.bulldesk.com.br/pt-br/article/calendario-ar2ef4") Calendário
             li
-              a(href="#") Análises
+              a(href="https://ajuda.bulldesk.com.br/pt-br/article/link-tracker-1n0why9") Link Tracker / Progresso
             li
-              a(href="#") Usuários e Grupos
+              a(href="https://ajuda.bulldesk.com.br/pt-br/article/relatorios-p0moay") Relatórios
+            li
+              a(href="https://ajuda.bulldesk.com.br/pt-br/article/controle-de-usuario-cv20c9") Usuários e Grupos
         .column.column-c
           h5 Pra quem é o Bulldesk
           ul
             li
               strong Vertical
             li
-              a(href="#") Agências
+              a(href="/para-quem/agencias") Agências
             li
-              a(href="#") Construtoras
+              a(href="/para-quem/construtoras") Construtoras
             li
-              a(href="#") Ecommerce
+              a(href="/para-quem/ecommerce") Ecommerce
             li
-              a(href="#") Ensino
+              a(href="/para-quem/ensino") Ensino
             li
-              a(href="#") Hotéis
+              a(href="/para-quem/hoteis") Hotéis
             li
-              a(href="#") SaaS
+              a(href="/para-quem/saas") SaaS
           ul
             li
               strong Equipes
             li
-              a(href="#") Marketing
+              a(href="/o-que-faz/marketing") Marketing
             li
-              a(href="#") Vendas
-            li
-              a(href="#") Gerentes
+              a(href="/o-que-faz/vendas") Vendas
         .column.column-d
           h5 Sobre nós
           ul
@@ -216,7 +216,7 @@
 </template>
 
 <script>
-  import { BButton, } from 'bootstrap-vue'
+  import { BButton } from 'bootstrap-vue'
 
   export default {
     components: {
