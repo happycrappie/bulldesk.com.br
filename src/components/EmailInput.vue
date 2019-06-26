@@ -20,7 +20,7 @@
       padding-left: 30px
       font-size: 0.9rem
       height: 68px
-      border: none
+      border: 1px solid $white-gray
 
       &:focus
         border: 1px solid $green
