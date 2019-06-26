@@ -228,6 +228,13 @@
         &:first-child
           width: 30%
 
+        .price
+          font-size: 1rem
+
+        .focus
+          font-size: 0.8rem
+          line-height: 1.8
+
       @media only screen and (max-width: 480px)
         td:first-child
           width: 15%
@@ -235,7 +242,7 @@
   section.faq
     background-position: center
     background-repeat: no-repeat
-    min-height: 1286px
+    min-height: 1467px
     background-image: url(~@/assets/images/plans-faq-bg.jpg)
 </style>
 
@@ -284,7 +291,7 @@
                   h4 Solicite uma demonstração
 
                   form(@submit.prevent="submitForm()")
-                    b-form-input(placeholder="Nome", v-model="form.name", required)
+                    b-form-input(placeholder="Nome", v-model="form.name", required, ref="nameInput")
                     b-form-input(type="email", placeholder="E-mail", v-model="form.email", required)
                     b-button(type="submit", variant="pink", :disabled="form.busy")
                       | Solicitar Contato
@@ -336,6 +343,23 @@
                     g-image(src="../assets/icons/tick.svg", alt="", v-if="exists === true")
                     span(v-else-if="exists > 0 || exists.length > 0") {{ exists }}
                     span(v-else) -
+
+            table.table
+              tbody
+                tr
+                  td.bg-white
+                  td(v-for="(plan, index) in plansList")
+                    div(v-if="index < 3")
+                      span.price {{ plan.price_per_user }}
+
+                      b-button.mt-3(href="https://app.bulldesk.com.br/cadastro", :variant="index === best ? 'green' : 'default'") Testar agora
+                        g-image(src="../assets/icons/play-button@black.svg", alt="")
+
+                    div(v-else)
+                      span.focus Consulte preços
+
+                      b-button.mt-3(@click.prevent="focus()", variant="pink") Solicitar
+                        g-image(src="../assets/icons/play-button@black.svg", alt="")
 
       section.faq
 </template>
@@ -424,6 +448,10 @@
 
         this.scroll.left = el.scrollLeft > 0;
         this.scroll.right = (el.offsetWidth + el.scrollLeft) < el.scrollWidth;
+      },
+
+      focus () {
+        this.$refs.nameInput[0].focus();
       }
     }
   }
