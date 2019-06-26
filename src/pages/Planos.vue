@@ -181,7 +181,9 @@
         font-size: 0.9rem
 
   section.compare
-    margin: 3rem 0
+    z-index: 10
+    position: relative
+    margin: 3rem 0 -15rem
 
     table.table
       width: 980px
@@ -240,6 +242,8 @@
           width: 15%
 
   section.faq
+    z-index: 9
+    position: relative
     background-position: center
     background-repeat: no-repeat
     min-height: 1467px
@@ -359,7 +363,7 @@
                       span.focus Consulte preços
 
                       b-button.mt-3(@click.prevent="focus()", variant="pink") Solicitar
-                        g-image(src="../assets/icons/play-button@black.svg", alt="")
+                        g-image(src="../assets/icons/play-button@white.svg", alt="")
 
       section.faq
 </template>
