@@ -66,7 +66,7 @@
       padding: 0px 2rem
 
       h5
-        font-size: 1rem
+        font-size: 0.875rem
         color: $gray-dark
         font-weight: 700
         letter-spacing: 0.28px
@@ -79,7 +79,7 @@
         li
           display: list-item
           color: $gray-light
-          font-size: 0.7rem
+          font-size: 0.6875rem
           font-weight: 400
           letter-spacing: 0.22px
           line-height: 25px
