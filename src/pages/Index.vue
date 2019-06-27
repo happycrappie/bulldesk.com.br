@@ -571,9 +571,9 @@
     margin-top: 2rem
     background-repeat: no-repeat
     background-image: url(~@/assets/images/home-bg-d.png)
-    background-size: 2560px auto
+    background-size: 2560px 1178px
     background-position: 0rem 0rem
-    height: 1128px
+    height: 1178px
     z-index: 9
     position: relative
 
@@ -686,7 +686,10 @@
             margin-bottom: 2rem
 
       .footer
-        margin-top: 6rem
+        margin-top: 2rem
+
+        @media only screen and (max-width: 800px)
+          margin-top: -0rem
 
         .image-row
           p
@@ -695,6 +698,7 @@
             font-weight: 400
             letter-spacing: 0.2px
             line-height: 20px
+            padding-top: 1.5rem
 
             @media only screen and (max-width: 640px)
               text-align: center
@@ -939,36 +943,67 @@
             .col-12.swiper
               ClientOnly
                 swiper(ref='swiper' :options='swiperOptions')
+                  // Buscapé
                   swiper-slide
                     .container
                       .row
                         .col-12.col-md-6.image
-                          g-image(src='~/assets/images/cases/buscape.png' alt='Imagem')
+                          g-image(src="~/assets/images/cases/buscape.png" alt="Imagem")
                         .col-12.col-md-6.content
                           .logo
-                            g-image(src='~/assets/images/cases/buscape-logo.png' alt='Buscape')
-                          .description Com o Bulldesk foi possível captar dados, enviar e-mails automáticos, e-mail que acontecem em tempo real.
-                          .author ANTÔNIO FRANCISCO
+                            g-image(src="~/assets/images/cases/buscape-logo.png" alt="Buscape")
+                          .description Com o Bulldesk foi possível captar os dados de leads, automatizar o envio de e-mails e dessa forma maximizar a performance da equipe de marketing e vendas. Além disso, a equipe Bulldesk mostrou-se comprometida o tempo todo. O atendimento antes, durante e depois da execução da ação de marketing foi extraordinário.
+                          .author Antônio Francisco
+
+                  // Passepag
                   swiper-slide
                     .container
                       .row
                         .col-12.col-md-6.image
-                          g-image(src='~/assets/images/cases/buscape.png' alt='Imagem')
+                          g-image(src="~/assets/images/cases/passepag.png" alt="Imagem")
                         .col-12.col-md-6.content
                           .logo
-                            g-image(src='~/assets/images/cases/buscape-logo.png' alt='Buscape')
-                          .description Com o Bulldesk foi possível captar dados, enviar e-mails automáticos, e-mail que acontecem em tempo real.
-                          .author ANTÔNIO FRANCISCO
+                            g-image(src="~/assets/images/cases/passepag-logo.png" alt="Passepag")
+                          .description Com os relatórios do Bulldesk nós conseguimos ter uma visão geral dos nossos negócios e das nossas equipes. Dessa forma nós otimizamos os processos e aumentamos a produtividade das equipes de vendas e marketing. Além disso, ao automatizar as campanhas, já focadas nas plataformas que produziam melhores resultados segundo o relatório, nós reduzimos o nosso ciclo de vendas.
+                          .author Hugo Ponchio
+
+                  // Zion
                   swiper-slide
                     .container
                       .row
                         .col-12.col-md-6.image
-                          g-image(src='~/assets/images/cases/buscape.png' alt='Imagem')
+                          g-image(src="~/assets/images/cases/hotel-zion.png" alt="Imagem")
                         .col-12.col-md-6.content
                           .logo
-                            g-image(src='~/assets/images/cases/buscape-logo.png' alt='Buscape')
-                          .description Com o Bulldesk foi possível captar dados, enviar e-mails automáticos, e-mail que acontecem em tempo real.
-                          .author ANTÔNIO FRANCISCO
+                            g-image(src="~/assets/images/cases/hotel-zion-logo.png" alt='Hotel Zion')
+                          .description Junto com o Bulldesk, a gente criou um setor comercial. Criamos o site novo, mais apelativo para vendas, com formulários e landing pages. O Bulldesk nos auxiliou a organizar a captação e nutrição de leads. Isso melhorou o nosso tempo de resposta e a nossa interação com os leads. Aumentando a nossa taxa de conversão de leads em clientes.
+                          .author Marina Müller
+
+                  // Casa Beta
+                  swiper-slide
+                    .container
+                      .row
+                        .col-12.col-md-6.image
+                          g-image(src="~/assets/images/cases/casabeta.png" alt="Imagem")
+                        .col-12.col-md-6.content
+                          .logo
+                            g-image(src="~/assets/images/cases/casabeta-logo.png" alt='Casa Beta')
+                          .description Quando pensamos em começar esse negócio já sabíamos que precisávamos de uma ferramenta de CRM e automação de marketing, e essa ferramenta era o Bulldesk. O Bulldesk nos auxiliou na criação do nosso site, na captação de leads e na determinação na origem de cada um deles. Dessa forma nós conseguimos observar que nossas campanhas mais bem sucedidas eram as do instagram e fazer boas decisões de investimento. Foram mais de 210 campanhas de automação de marketing criadas dentro do Bulldesk.
+                          .author Maria Fernanda
+
+                  // W Koerich
+                  swiper-slide
+                    .container
+                      .row
+                        .col-12.col-md-6.image
+                          g-image(src="~/assets/images/cases/wkoerich.png" alt="Imagem")
+                        .col-12.col-md-6.content
+                          .logo
+                            g-image(src="~/assets/images/cases/wkoerich-logo.png" alt='W Koerich')
+                          .description Com o Bulldesk nós conseguimos alinhar os objetivos e metas das nossas equipes de marketing e vendas. Isso fez com que o desempenho das equipes aumentasse. Além disso, o Bulldesk é uma ferramenta que pode ser completamente adaptada ao seu tipo de negócio. Fica a critério do administrador o nível de acesso que será dado aos outros usuários. Isso permite que as funções sejam bem delimitadas e cada equipe tenha acesso apenas ao necessário para sua função.
+                          .author Victor Koerich
+
+                  // Swiper Buttons
                   .swiper-button-prev(slot='button-prev')
                     .button
                   .swiper-button-next(slot='button-next')
