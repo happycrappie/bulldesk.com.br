@@ -110,7 +110,7 @@
       color: $gray-dark
 
     ul
-      max-width: 700px
+      max-width: 850px
       margin: 0 auto 90px
       padding: 0
       list-style: none
