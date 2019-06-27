@@ -1046,7 +1046,6 @@
   import Layout from '../layouts/Default'
   import Nav from '../components/Nav'
   import EmailInput from '../components/EmailInput'
-  import ScrollReveal from 'scrollreveal'
   import { BNav, BNavItem, BButton, } from 'bootstrap-vue'
 
   import 'swiper/dist/css/swiper.css'
@@ -1069,8 +1068,10 @@
         .catch(),
     },
 
-    mounted() {
-      ScrollReveal({ reset: true }).reveal('.scroll-reveal')
+    mounted () {
+      if (typeof window !== 'undefined') {
+        window.ScrollReveal({ reset: true }).reveal('.scroll-reveal');
+      }
     },
 
     metaInfo: {
