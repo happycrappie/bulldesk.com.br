@@ -1,29 +1,19 @@
 ---
-id: ecommerce
-title: Ecommerce
+id: mareketing
+title: Marketing
 header:
-  h1: Seja o e-commerce que não para de crescer
-  p: Aproveite o software mais completo de CRM com Automação de Marketing para revolucionar a maneira com que você interage com os clientes de seu e-commerce.
+  h1: Uma caixa de ferramentas com tudo o que você precisa.
+  p: Quando o assunto é landing pages, email marketing, geração de leads ou marketing digital, com toda certeza você precisa o do Bulldesk.
 section-a:
   items:
-  - h4: Não perca nenhuma venda!
-    p: Acompanhe o lead desde os cliques iniciais até o pós venda com as funcionalidades CRM do Bulldesk. Nenhum cliente fica sem atendimento, já que estará desde o primeiro contato em seu pipeline de vendas.
-  - h4: Traga os clientes de carrinho cheio de volta!
-    p: Sabe aqueles clientes que enchem o carrinho e desaparecem? Então, eles são a oportunidade perfeita para receber lembretes e voltarem para finalizar a compra. Não perca o timing, programe um e-mail marketing matador para esta situação e aumente suas vendas!
-  - h4: Automatize processos de marketing digital.
-    p: Manter a presença no digital nunca foi tão fácil! Com o Bulldesk, você cria e-mails marketing, formulários e landing pages de forma rápida e intuitiva. Além disso, o cliente que interagir com seu conteúdo já pode ser direcionado automaticamente para as funcionalidades de CRM do Bulldesk. Assim, sua estratégia de marketing digital fica muito mais completa.
-  - h4: Lembre os clientes antigos que você existe
-    p: Pode ser que na vida real mandar aquele “Oi, sumido!” não seja tão efetivo quanto quando ele é direcionado à clientes antigos. Manter o relacionamento com quem já comprou de você é essencial e traz um bom retorno financeiro. Por isso, já deixe agendado um e-mail marketing para não deixar a interação entre vocês morrer.
-  - h4: Crie campanhas de marketing segmentadas em alguns cliques
-    p: "Com o Bulldesk, suas campanhas de inbound, geração de leads ou qualificação ficam prontas com apenas alguns cliques. Você pode segmentar os envios e os conteúdos a partir do comportamento de compra do cliente: basta ter a estratégia de marketing traçada e para executá-la com o Bulldesk."
-  - h4: Acelere as vendas do e-commerce
-    p: Com todos os clientes num só lugar, você organiza e agiliza seu processo comercial. Dessa forma, o processo entre a primeira visita até a concretização da compra se torna muito mais rápido e eficaz. Não perca mais nenhuma oportunidade com a agilidade que o Bulldesk te proporciona.
-  - h4: Garanta a satisfação dos clientes
-    p: A presença e a agilidade, mais do que nunca, são fatores importantes para garantir a satisfação do cliente. Aproveite os recursos de CRM e automação de marketing do Bulldesk para proporcionar rapidez no atendimento, monitorar pedidos e estar sempre presente na caixa de entrada do cliente.
-  - h4: Crie campanhas de marketing segmentadas em alguns cliques
-    p: Mandar e-mail é fácil. Quero ver uma campanha que começa com o cliente preenchendo um formulário em uma landing page, depois recebendo um email; se abrir o e-mail, entra em uma campanha de SMS e termina com o lead recebendo um Whatsapp de um vendedor da loja. É fácil também, mas só no Bulldesk.
-  - h4: Amplie seu lucro sem aumentar os custos
-    p: Nossos preços foram pensados em você. Confira os valores e comprove! Não existe outra plataforma no Brasil com todas as funcionalidades que oferecemos pelo valor que temos. É o melhor custo benefício que você pode encontrar.
+  - h4: Crie suas landing pages com alguns cliques
+    p: Você pode criar sua landing page rapidamente com apenas alguns cliques. Fornecemos diversas opções de temas e tudo o que você precisa fazer é preencher com conteúdo.
+  - h4: Campanhas de email marketing
+    p: Crie, envie e monitore campanhas de e-mail marketing que irão ajudar você criar relacionamentos duradouros com todos os seus clientes.
+  - h4: Automatize o seu marketing
+    p: Nem sempre quem entra em contato com você está pronto para comprar. Com a Automação de Marketing, o Bulldesk encaminha seus leads pela jornada de compra até o momento em que estão prontos para uma abordagem comercial.
+  - h4: Relatórios avançados
+    p: Analise todo o desempenho da sua equipe e dos seus esforços em marketing através de um dashboard interativo. Basta selecionar o período que você deseja analisar as informações e, em questões de segundos as informações estarão expostas na sua tela.
 section-b:
   h3: E aí, que tal bater recorde em vendas?
   subtitle: Insira seu e-mail abaixo e crie sua conta agora mesmo
