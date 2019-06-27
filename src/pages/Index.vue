@@ -686,10 +686,13 @@
             margin-bottom: 2rem
 
       .footer
-        margin-top: 2rem
+        margin-top: 4rem
 
         @media only screen and (max-width: 800px)
-          margin-top: -0rem
+          margin-top: 0rem
+
+        @media only screen and (max-width: 320px)
+          margin-top: -2rem
 
         .image-row
           p
@@ -764,7 +767,7 @@
 
     @media only screen and (max-width: map-get($grid-breakpoints, 'md'))
       background-size: 2560px 100%
-      margin-top: -18rem
+      margin-top: -14rem
       height: 1023px
 
     .container
