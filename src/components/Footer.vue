@@ -42,13 +42,10 @@
         max-width: 136px
         margin-bottom: 5px
 
-        @media only screen and (max-width: 990px)
-          margin-top: 1.1rem
-
         @media only screen and (max-width: 1400px)
           margin-right: 3.8rem
-          max-height: 40px
-          margin-top: 10px
+          max-height: 30px
+          margin-top: 15px
 
       .button-container
         margin-top: 30px
@@ -102,6 +99,10 @@
         width: 50%
         float: left
         margin-top: 8px
+
+      ul:last-child
+        li
+          padding-left: 15px
 </style>
 
 <template lang="pug">
@@ -112,19 +113,19 @@
           img(src='../assets/images/logo.png' class='logo')
           ul
             li
-              a(href="https://www.instagram.com/bulldeskcrm")
+              a(href="https://www.instagram.com/bulldeskcrm" target="_blank")
                 g-image(src='../assets/icons/instagram.svg')
             li
-              a(href="https://facebook.com/bulldeskcrm")
+              a(href="https://facebook.com/bulldeskcrm" target="_blank")
                 g-image(src='../assets/icons/facebook.svg')
             li
-              a(href="https://www.youtube.com/channel/UCF2cpwuAJZk2KXJB6NetWIg?view_as=subscriber")
+              a(href="https://www.youtube.com/channel/UCF2cpwuAJZk2KXJB6NetWIg?view_as=subscriber" target="_blank")
                 g-image(src='../assets/icons/youtube.svg')
             li
-              a(href="https://twitter.com/bulldeskcrm")
+              a(href="https://twitter.com/bulldeskcrm" target="_blank")
                 g-image(src='../assets/icons/twitter.svg')
             li
-              a(href="https://www.linkedin.com/company/bulldesk/")
+              a(href="https://www.linkedin.com/company/bulldesk/" target="_blank")
                 g-image(src='../assets/icons/linkedin.svg')
           .button-container
             b-button(href="https://app.bulldesk.com.br/cadastro", variant="green")
@@ -136,46 +137,46 @@
             li
               a(href="/cases") Histórias de Sucesso
             li
-              a(href="https://blog.bulldesk.com.br") Blog
+              a(href="http://ajuda.bulldesk.com.br" target="_blank") Central de Ajuda
             li
-              a(href="http://ajuda.bulldesk.com.br") Suporte
+              a(href="http://ajuda.bulldesk.com.br" target="_blank") Treinamentos
             li
-              a(href="http://ajuda.bulldesk.com.br") Treinamentos
-            li
-              a(href="#") Cursos
-            li
-              a(href="#") Guias
-            li
-              a(href="#") Ebooks
-            li
-              a(href="#") Webinars
+              a(href="https://blog.bulldesk.com.br" target="_blank") Blog
+            //- li
+            //-   a(href="#") Cursos
+            //- li
+            //-   a(href="#") Guias
+            //- li
+            //-   a(href="#") Ebooks
+            //- li
+            //-   a(href="#") Webinars
             li
               a(href="/exemplos") Templates
         .column.column-b
           h5 Funcionalidades
           ul
             li
-              a(href="https://ajuda.bulldesk.com.br/pt-br/article/automacao-de-marketing-atgu5x") Automação de Marketing
+              a(href="https://ajuda.bulldesk.com.br/pt-br/article/automacao-de-marketing-atgu5x" target="_blank") Automação de Marketing
             li
-              a(href="https://ajuda.bulldesk.com.br/pt-br/article/funil-de-vendas-i5pkx2") Funíl de Vendas
+              a(href="https://ajuda.bulldesk.com.br/pt-br/article/funil-de-vendas-i5pkx2" target="_blank") Funíl de Vendas
             li
-              a(href="https://ajuda.bulldesk.com.br/pt-br/article/whatsapp-marketing-ahg33x") WhatsApp
+              a(href="https://ajuda.bulldesk.com.br/pt-br/article/whatsapp-marketing-ahg33x" target="_blank") WhatsApp
             li
-              a(href="https://ajuda.bulldesk.com.br/pt-br/article/sms-marketing-17744va") SMS
+              a(href="https://ajuda.bulldesk.com.br/pt-br/article/sms-marketing-17744va" target="_blank") SMS
             li
-              a(href="https://ajuda.bulldesk.com.br/pt-br/article/e-mail-marketing-1b9qixw") E-mail Marketing
+              a(href="https://ajuda.bulldesk.com.br/pt-br/article/e-mail-marketing-1b9qixw" target="_blank") E-mail Marketing
             li
-              a(href="https://ajuda.bulldesk.com.br/pt-br/article/landing-page-mgvttx") Landing Pages
+              a(href="https://ajuda.bulldesk.com.br/pt-br/article/landing-page-mgvttx" target="_blank") Landing Pages
             li
-              a(href="https://ajuda.bulldesk.com.br/pt-br/article/dashboard-i2l34m") Dashboard
+              a(href="https://ajuda.bulldesk.com.br/pt-br/article/dashboard-i2l34m" target="_blank") Dashboard
             li
-              a(href="https://ajuda.bulldesk.com.br/pt-br/article/calendario-ar2ef4") Calendário
+              a(href="https://ajuda.bulldesk.com.br/pt-br/article/calendario-ar2ef4" target="_blank") Calendário
             li
-              a(href="https://ajuda.bulldesk.com.br/pt-br/article/link-tracker-1n0why9") Link Tracker / Progresso
+              a(href="https://ajuda.bulldesk.com.br/pt-br/article/link-tracker-1n0why9" target="_blank") Link Tracker / Progresso
             li
-              a(href="https://ajuda.bulldesk.com.br/pt-br/article/relatorios-p0moay") Relatórios
+              a(href="https://ajuda.bulldesk.com.br/pt-br/article/relatorios-p0moay" target="_blank") Relatórios
             li
-              a(href="https://ajuda.bulldesk.com.br/pt-br/article/controle-de-usuario-cv20c9") Usuários e Grupos
+              a(href="https://ajuda.bulldesk.com.br/pt-br/article/controle-de-usuario-cv20c9" target="_blank") Usuários e Grupos
         .column.column-c
           h5 Pra quem é o Bulldesk
           ul
@@ -205,14 +206,18 @@
           ul
             li
               a(href="#") Quem somos
-            li
-              a(href="#") Vagas
-            li
-              a(href="#") Encontre um parcero
-            li
-              a(href="#") Seja um parceiro
+            //- li
+            //-   a(href="#") Vagas
+            //- li
+            //-   a(href="#") Encontre um parcero
+            //- li
+            //-   a(href="#") Seja um parceiro
             li
               a(href="#") Contato
+            li
+              a(href="https://docs.bulldesk.com.br/privacidade" target="_blank") Política de Privacidade
+            li
+              a(href="https://docs.bulldesk.com.br/termos-de-uso" target="_blank") Termos de Uso
 </template>
 
 <script>
