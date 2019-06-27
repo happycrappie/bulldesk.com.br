@@ -65,7 +65,7 @@
           color: $black
           border-radius: 30px
 
-          img
+          g-image
             max-width: 12px
             margin: 0 0 2px 5px
 
@@ -109,23 +109,23 @@
     .container
       .row
         .bulldesk
-          img(src='../assets/images/logo.png' class='logo')
+          g-image(src='../assets/images/logo.png' class='logo')
           ul
             li
               a(href="https://www.instagram.com/bulldeskcrm")
-                img(src='../assets/icons/instagram.svg')
+                g-image(src='../assets/icons/instagram.svg')
             li
               a(href="https://facebook.com/bulldeskcrm")
-                img(src='../assets/icons/facebook.svg')
+                g-image(src='../assets/icons/facebook.svg')
             li
               a(href="https://www.youtube.com/channel/UCF2cpwuAJZk2KXJB6NetWIg?view_as=subscriber")
-                img(src='../assets/icons/youtube.svg')
+                g-image(src='../assets/icons/youtube.svg')
             li
               a(href="https://twitter.com/bulldeskcrm")
-                img(src='../assets/icons/twitter.svg')
+                g-image(src='../assets/icons/twitter.svg')
             li
               a(href="https://www.linkedin.com/company/bulldesk/")
-                img(src='../assets/icons/linkedin.svg')
+                g-image(src='../assets/icons/linkedin.svg')
           .button-container
             b-button(href="https://app.bulldesk.com.br/cadastro", variant="green")
               | Teste grátis
@@ -220,7 +220,7 @@
 
   export default {
     components: {
-      BButton
+      BButton,
     }
   }
 </script>
