@@ -116,19 +116,19 @@
           g-image(src='../assets/images/logo.png' class='logo')
           ul
             li
-              a(href="https://www.instagram.com/bulldeskcrm")
+              a(href="https://www.instagram.com/bulldeskcrm" target="_blank")
                 g-image(src='../assets/icons/instagram.svg')
             li
-              a(href="https://facebook.com/bulldeskcrm")
+              a(href="https://facebook.com/bulldeskcrm" target="_blank")
                 g-image(src='../assets/icons/facebook.svg')
             li
-              a(href="https://www.youtube.com/channel/UCF2cpwuAJZk2KXJB6NetWIg?view_as=subscriber")
+              a(href="https://www.youtube.com/channel/UCF2cpwuAJZk2KXJB6NetWIg?view_as=subscriber" target="_blank")
                 g-image(src='../assets/icons/youtube.svg')
             li
-              a(href="https://twitter.com/bulldeskcrm")
+              a(href="https://twitter.com/bulldeskcrm" target="_blank")
                 g-image(src='../assets/icons/twitter.svg')
             li
-              a(href="https://www.linkedin.com/company/bulldesk/")
+              a(href="https://www.linkedin.com/company/bulldesk/" target="_blank")
                 g-image(src='../assets/icons/linkedin.svg')
           .button-container
             b-button(href="https://app.bulldesk.com.br/cadastro", variant="green")
@@ -145,14 +145,14 @@
               a(href="http://ajuda.bulldesk.com.br" target="_blank") Treinamentos
             li
               a(href="https://blog.bulldesk.com.br" target="_blank") Blog
-            li
-              a(href="#") Cursos
-            li
-              a(href="#") Guias
-            li
-              a(href="#") Ebooks
-            li
-              a(href="#") Webinars
+            //- li
+            //-   a(href="#") Cursos
+            //- li
+            //-   a(href="#") Guias
+            //- li
+            //-   a(href="#") Ebooks
+            //- li
+            //-   a(href="#") Webinars
             li
               a(href="/exemplos") Templates
         .column.column-b
@@ -209,12 +209,12 @@
           ul
             li
               a(href="#") Quem somos
-            li
-              a(href="#") Vagas
-            li
-              a(href="#") Encontre um parcero
-            li
-              a(href="#") Seja um parceiro
+            //- li
+            //-   a(href="#") Vagas
+            //- li
+            //-   a(href="#") Encontre um parcero
+            //- li
+            //-   a(href="#") Seja um parceiro
             li
               a(href="#") Contato
             li
