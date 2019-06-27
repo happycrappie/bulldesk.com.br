@@ -30,14 +30,11 @@
     .nav-item
       .dropdown-menu
         left: -45%
-        position: absolute
-        z-index: 2
 
         .dropdown-icon
           max-width: 20px
           top: -0.9rem
           position: absolute
-          z-index: 1
 
           img
             position: relative
@@ -60,7 +57,7 @@
 
     .nav-item.for-whom
       .dropdown-icon
-        left: 7.5rem
+        left: 6rem
 
       .dropdown-container
         min-width: 28rem
