@@ -4,7 +4,7 @@
 
   header
     position: relative
-    z-index: 2
+    z-index: 3
 
   .hero
     position: relative
