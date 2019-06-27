@@ -150,7 +150,7 @@
           .col-lg-4.col-md-6
             div
               a(href='/exemplo/aniversario').d-flex.justify-content-center.align-items-center
-                g-image(src='~/assets/images/exemplos-icon-confetti.svg')
+                g-image(src='~/assets/icons/exemplos-icon-confetti.svg')
             h2
               a(href='/exemplo/aniversario') Campanha de Aniversário
             p
@@ -159,7 +159,7 @@
           .col-lg-4.col-md-6
             div
               a(href='/exemplo/vendas').d-flex.justify-content-center.align-items-center
-                g-image(src='~/assets/images/exemplos-icon-commerce.svg')
+                g-image(src='~/assets/icons/exemplos-icon-commerce.svg')
             h2
               a(href='/exemplo/vendas') Campanha de Vendas
             p
@@ -168,7 +168,7 @@
           .col-lg-4.col-md-6
             div
               a(href='/exemplo/inbound-marketing').d-flex.justify-content-center.align-items-center
-                g-image(src='~/assets/images/exemplos-icon-advertising.svg')
+                g-image(src='~/assets/icons/exemplos-icon-advertising.svg')
             h2
               a(href='/exemplo/inbound-marketing') Campanha Inbound Marketing
             p
@@ -177,7 +177,7 @@
           .col-lg-4.col-md-6
             div
               a(href='/exemplo/onboarding').d-flex.justify-content-center.align-items-center
-                g-image(src='~/assets/images/exemplos-icon-fist.svg')
+                g-image(src='~/assets/icons/exemplos-icon-fist.svg')
             h2
               a(href='/exemplo/onboarding') Campanha de Onboarding
             p
@@ -186,7 +186,7 @@
           .col-lg-4.col-md-6
             div
               a(href='/exemplo/newsletter').d-flex.justify-content-center.align-items-center
-                g-image(src='~/assets/images/exemplos-icon-document.svg')
+                g-image(src='~/assets/icons/exemplos-icon-document.svg')
             h2
               a(href='/exemplo/newsletter') Campanha Newsletter
             p
@@ -195,7 +195,7 @@
           .col-lg-4.col-md-6
             div
               a(href='/exemplo/pagina-visitada').d-flex.justify-content-center.align-items-center
-                g-image(src='~/assets/images/exemplos-icon-visitor.svg')
+                g-image(src='~/assets/icons/exemplos-icon-visitor.svg')
             h2
               a(href='/exemplo/pagina-visitada') Campanha Visitantes Planos e Preços
             p
@@ -204,7 +204,7 @@
           .col-lg-4.col-md-6
             div
               a(href='/exemplo/pesquisa').d-flex.justify-content-center.align-items-center
-                g-image(src='~/assets/images/exemplos-icon-file.svg')
+                g-image(src='~/assets/icons/exemplos-icon-file.svg')
             h2
               a(href='/exemplo/pesquisa') Campanha Pesquisa de Satisfação
             p
@@ -213,7 +213,7 @@
           .col-lg-4.col-md-6
             div
               a(href='/exemplo/distribuir-leads').d-flex.justify-content-center.align-items-center
-                g-image(src='~/assets/images/exemplos-icon-win.svg')
+                g-image(src='~/assets/icons/exemplos-icon-win.svg')
             h2
               a(href='/exemplo/distribuir-leads') Campanha Distribuição de Leads
             p
@@ -222,7 +222,7 @@
           .col-lg-4.col-md-6
             div
               a(href='/exemplo/notificar').d-flex.justify-content-center.align-items-center
-                g-image(src='~/assets/images/exemplos-icon-notification.svg')
+                g-image(src='~/assets/icons/exemplos-icon-notification.svg')
             h2
               a(href='/exemplo/notificar') Campanha de Notificação de E-mail
             p
@@ -231,7 +231,7 @@
           .col-lg-4.col-md-6
             div
               a(href='/exemplo/nutricao').d-flex.justify-content-center.align-items-center
-                g-image(src='~/assets/images/exemplos-icon-resume.svg')
+                g-image(src='~/assets/icons/exemplos-icon-resume.svg')
             h2
               a(href='/exemplo/nutricao') Campanha de Nutrição de Leads
             p

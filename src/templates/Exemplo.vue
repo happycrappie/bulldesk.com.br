@@ -160,7 +160,7 @@
         .row.justify-content-center
           .col-12.col-lg-5
             a(href='#' target='_blank')
-              g-image(src='~/assets/images/exemplo-icon-printer.svg')
+              g-image(src='~/assets/icons/exemplo-icon-printer.svg')
               strong Imprima esse fluxo e guarde com você.
               | Ele vai te ajudar nas suas configurações de campanha.
 
