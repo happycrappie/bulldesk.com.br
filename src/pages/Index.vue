@@ -841,7 +841,7 @@
                 b-nav(pills)
                   b-nav-item(:class="{ active: example == 0 }" @click="example = 0") Aniversário
                   b-nav-item(:class="{ active: example == 1 }" @click="example = 1") Reaquecimento
-                  b-nav-item(:class="{ active: example == 2 }" @click="example = 2") Inbound Marketing
+                  b-nav-item(:class="{ active: example == 2 }" @click="example = 2") Inbound
                   b-nav-item(:class="{ active: example == 3 }" @click="example = 3") Whatsapp
                   b-nav-item(:class="{ active: example == 4 }" @click="example = 4") Check-in Hotel
                 .examples
