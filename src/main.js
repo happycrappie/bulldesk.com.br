@@ -2,9 +2,11 @@ import Layout from '~/layouts/Default.vue'
 
 import './assets/styles/main.sass'
 
-import { TooltipPlugin } from 'bootstrap-vue'
+import { TooltipPlugin, ModalPlugin, ButtonPlugin } from 'bootstrap-vue'
 
 export default function (Vue, { router, head, isClient }) {
+  Vue.use(ModalPlugin);
+  Vue.use(ButtonPlugin);
   Vue.use(TooltipPlugin);
 
   head.htmlAttrs = { lang: 'pt-br' }

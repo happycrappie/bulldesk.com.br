@@ -244,7 +244,7 @@
 
         .row.justify-content-center
           h4.col-md-4 Insira seu e-mail abaixo e crie sua conta agora mesmo
-        email-input(:identifier="exemplos")
+        email-input(identifier="exemplos")
 
 </template>
 
