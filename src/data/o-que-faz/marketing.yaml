@@ -1,0 +1,39 @@
+---
+id: marketing
+title: Marketing
+header:
+  h1: A ferramenta tudo em um (de verdade) que você estava procurando
+  h2: Tudo o que você precisa para criar campanhas de marketing que irão gerar pessoas interessadas no seu negócio.
+  # items:
+  #   - Importe seus contatos
+  #   - Envie emails
+  #   - Crie campanhas de whatsapp
+  #   - Priorize os atendimento
+  #   - Controle o seu funil de vendas
+  #   - Veja seus relatórios
+  videoID: q7kIWRT_zPs
+  videoThumb: ../../assets/images/video-placeholder.jpg
+
+topics-a:
+  h2: Como o Bulldesk CRM ajuda a sua empresa a vender mais?
+  items:
+    - h3: Organize o seu processo comercial
+      p: Todo empresa possuí um processo comercial. Não é simplesmente só vender. Para isso, você pode utilizar o nosso funil de vendas e ter visão geral de tudo o que está sendo negociado na sua empresa.
+    - h3: Tenha um raio-x da sua área comercial
+      p: Acompanhe de perto todo o progresso da sua equipe de vendas. Saiba quantas atividades cada vendedor está fazendo, quanto tempo leva para fechar um negócio ou até mesmo qual é o seu melhor vendedor.
+    - h3: Todos os seus clientes em um único lugar
+      p: Você pode importar a sua lista de contatos ou integrar diretamente com formulários do seu site. O importante é que você pode ter todos os seus clientes em um único lugar, trabalhando de forma personalizada com cada um deles.
+    - h3: Vá além de informações básicas
+      p: Cada interação com um lead é armazenada em uma linha do tempo organizada que inclui chamadas, e-mails, reuniões e anotações. Você não precisará mais procurar em uma caixa de entrada lotada ou uma planilha confusa para descobrir em que ponto ficou uma determinada relação. Automaticamente o Bulldesk consegue para saber quais conteúdos seu lead consumiu e personalizar sua abordagem.
+
+topics-b:
+  h2: Use o Bulldesk CRM e acelere suas vendas
+  items:
+    - h3: Envie sequências personalizadas
+      p: Crie uma série de e-mails e envie-os para os seus prospects de acordo com o interesse e programação que você estabelecer.
+    - h3: Monte campanhas de Whatsapp
+      p: Trabalhe o relacionamento com os seus clientes pelo whatsapp e assim que alguém responder, ele vai diretamente para o celular do seu vendedor.
+    - h3: Gerencie sua equipe comercial
+      p: Distribua igualitariamente entre a sua equipe comercial todos os leads que entram no seu site. Dessa forma todos podem atender os novos clientes.
+    - h3: Marque mais reuniões
+      p: Com a funcionalidade calendário, você pode ver todos os agendamentos e compromissos que existem com os seus leads.
