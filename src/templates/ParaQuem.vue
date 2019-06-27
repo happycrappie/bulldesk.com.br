@@ -279,20 +279,21 @@
 
     .section.section-a
       .container
-        .row
+        .row.scroll-reveal
           .item.col-12.col-sm-4(v-for="item in $page.content.section_a.items")
             h4 {{ item.h4 }}
             p {{ item.p }}
 
     .section.section-b
       .container
-        h3 {{ this.$page.content.section_b.h3 }}
-        .subtitle {{ this.$page.content.section_b.subtitle }}
-        email-input(:identifier="$page.content.id")
+        .scroll-reveal
+          h3 {{ this.$page.content.section_b.h3 }}
+          .subtitle {{ this.$page.content.section_b.subtitle }}
+          email-input(:identifier="$page.content.id")
 
     .section.section-c
       .container
-        .row
+        .row.scroll-reveal
           .col-12.col-lg2-4.col-left
             h3 {{ this.$page.content.section_c.h3[0] }}
             .subtitle {{ this.$page.content.section_c.subtitle[0] }}
@@ -309,12 +310,12 @@
 
     .section.section-d
       .container
-        .row
+        .row.scroll-reveal
           h3
             | {{ this.$page.content.section_d.h3 }}
             br
             | {{ this.$page.content.section_d.br }}
-        .row.cases
+        .row.cases.scroll-reveal
           .col.col-12.col-sm-6(v-for="item in $page.content.section_d.cases")
             g-image(:src="item.image" alt="Imagem")
             p.description {{ item.description }}
@@ -362,12 +363,17 @@
   import Layout from '../layouts/Default'
   import Nav from '../components/Nav'
   import EmailInput from '../components/EmailInput'
+  import ScrollReveal from 'scrollreveal'
 
   export default {
     components: {
       Layout,
       Nav,
       EmailInput,
+    },
+
+    mounted() {
+      ScrollReveal({ reset: true }).reveal('.scroll-reveal')
     },
 
     metaInfo () {

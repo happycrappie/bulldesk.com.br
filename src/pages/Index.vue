@@ -817,7 +817,7 @@
         .container
           Nav(type="dark")
 
-          .hero.d-flex.align-items-center
+          .hero.d-flex.align-items-center.scroll-reveal
             div
               h1.title Inteligência comercial de forma simples
                 span.dot.green
@@ -833,7 +833,7 @@
 
       .section.section-a
         .container
-          .row
+          .row.scroll-reveal
             .col-lg-4
               h3 Direcione campanhas multicanais para cada momento da jornada do cliente
               p.subtitle Veja como organizar essas e outras campanhas em réguas de relacionamento
@@ -853,7 +853,7 @@
 
       .section.section-b
         .container
-          .row
+          .row.scroll-reveal
             .col-lg-6
               h3 Uma ferramenta completa
                 br
@@ -908,7 +908,7 @@
       .section.section-c
         g-image(src="~/assets/images/doted-square@3x4.png" class="doted-square" alt="")
         .container
-          .row
+          .row.scroll-reveal
             .col-lg-9.col-left
                 .title
                   h3 Você vai conhecer o verdadeiro software de automação
@@ -936,13 +936,13 @@
 
       .section.section-d
         .container
-          .row
+          .row.scroll-reveal
             .col-12
               h3
                 | Fique tranquilo,
                 br
                 | você está em boa companhia
-          .row
+          .row.scroll-reveal
             .col-12.swiper
               ClientOnly
                 swiper(ref='swiper' :options='swiperOptions')
@@ -1025,7 +1025,7 @@
 
       .section.section-e
         .container
-          .row
+          .row.scroll-reveal
             .col-12.col-lg-3
               h3 Ainda está com dúvidas?
               .subtitle
@@ -1046,6 +1046,7 @@
   import Layout from '../layouts/Default'
   import Nav from '../components/Nav'
   import EmailInput from '../components/EmailInput'
+  import ScrollReveal from 'scrollreveal'
   import { BNav, BNavItem, BButton, } from 'bootstrap-vue'
 
   import 'swiper/dist/css/swiper.css'
@@ -1066,6 +1067,10 @@
         import ('vue-awesome-swiper')
         .then(m => window ? m.swiperSlide : null)
         .catch(),
+    },
+
+    mounted() {
+      ScrollReveal({ reset: true }).reveal('.scroll-reveal')
     },
 
     metaInfo: {
