@@ -1,0 +1,51 @@
+---
+id: ensino
+title: Ensino
+header:
+  h1: É hora de bater o recorde de matrículas! Seus novos alunos estão esperando
+  p: Revolucione a maneira com que você interage com os estudantes da sua instituição de ensino. Conheça o software mais completo de CRM com Automação de Marketing e comprove!
+section-a:
+  items:
+  - h4: Amplie a captação de alunos
+    p: "Com as funcionalidades de CRM do Bulldesk, você acompanha seu potencial aluno ao longo de toda jornada: do contato inicial até a matrícula. Assim, fica fácil acompanhá-lo em cada etapa até convencê-lo de que sua IE é a melhor opção. E pode ficar tranquilo, o Bulldesk conta com uma interface intuitiva para te ajudar na missão de atrair estudantes!"
+  - h4: Não perca nenhuma matrícula!
+    p: Com todos seus potenciais alunos em um só lugar, você organiza e agiliza seu processo comercial. Dessa forma, o processo entre o contato inicial até a matrícula torna-se muito mais rápido e eficaz. Não deixe ninguém sem resposta e não perca mais nenhum estudante com a agilidade que o Bulldesk proporciona.
+  - h4: Garanta a satisfação dos alunos
+    p: Presença digital, agilidade e bom atendimento, mais do que nunca, são fatores importantes para a satisfação dos estudantes. Aproveite os recursos do Bulldesk para nutrir o relacionamento com seus novos e antigos estudantes. Com nossa plataforma, e-mails marketing e formulários estratégicos são criados com poucos cliques!
+  - h4: Facilite e automatize processos de marketing digital
+    p: Garantir a presença da sua IE no digital nunca foi tão fácil. Com o Bulldesk, você cria e-mails marketing, formulários e landing pages de forma rápida e intuitiva. Assim, sua estratégia de marketing digital fica muito mais completa. Além disso, o potencial aluno que interagir com seu conteúdo já é direcionado automaticamente para as funcionalidades de CRM do Bulldesk.
+  - h4: Crie campanhas de marketing em alguns cliques
+    p: Como demonstrar que sua instituição de ensino é a melhor escolha para o potencial estudante? Com o Bulldesk, suas campanhas de inbound, geração de leads ou qualificação ficam prontas com apenas alguns cliques. Tenha a estratégia de marketing traçada e a execute com o Bulldesk.
+  - h4: Aumente as matrículas sem aumentar os custos
+    p: Para mostrar que sua IE é especialista em ensino, aposte em uma landing page voltada para conversão de potenciais alunos, inclua formulários e aumente suas matrículas efetivadas!
+section-b:
+  h3: E aí, que tal bater recorde em matrículas?
+  subtitle: Insira seu e-mail abaixo e crie sua conta agora mesmo
+section-c:
+  h3:
+    - Todas as ferramentas que você precisa para ser uma instituição de ensino líder em matrículas.
+    - Porque ser parceiro Bulldesk?
+  subtitle:
+    - Porque utilizar diversas ferramentas quando a gente tem tudo que sua IE precisa para alcançar potenciais alunos e torná-los matriculados?
+    - Todos os futuros estudantes da sua IE estão online. Conecte-se com eles e garanta que se tornem matriculados ao criar estratégias de marketing eficazes.
+  items:
+    - "CRM: O seu potencial aluno num só lugar, desde o contato inicial até a matrícula. Quer melhor?"
+    - "Segmentação: Agrupe os seus potenciais alunos baseado em qualquer critério que você quiser."
+    - "Qualificação de lead: Utilize o lead scoring para encontrar os futuro alunos com mais potencial."
+    - "Monitoramento do site: Veja o que os visitantes fazem em seu site e crie campanhas e ofertas baseadas no comportamento."
+    - "Automação de marketing: Automatize os processos que ninguém tem tempo de gerenciar."
+    - "Relatórios em tempo real: Mensure os seus resultados e veja o que funciona melhor para os futuros estudantes."
+    - "Email marketing: Construa sua marca e seja referência para os estudantes."
+    - "Omnichannel: Crie campanhas que comecem por email, passem por SMS e terminam no Whatsapp."
+    - "Whatsapp: Precisa dizer mais? O único com campanhas de WhatsApp integradas."
+section-d:
+  h3: Fique tranquilo
+  br: você está em boa companhia
+  cases:
+    - image: "../../assets/images/cases/buscape-logo.png"
+      description: O Bulldesk nos ajudou a construir uma presença online através de diversas campanhas automatizadas. Com o Bulldesk nós simplificamos os processos e potencializamos os resultados e assim conseguimos XX novos alunos em XX meses.
+      author: Sem Nome
+    - image: "../../assets/images/cases/buscape-logo.png"
+      description: O Bulldesk permitiu que a construção de um relacionamento interativo com nossos leads. A partir de landing pages com conteúdos relevantes e cadeias de e-mail marketing nós conseguimos nutrir essa relação.
+      author: Sem Nome
+

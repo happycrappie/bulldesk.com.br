@@ -1,0 +1,52 @@
+---
+id: construtoras
+title: Construtoras
+header:
+  h1: Transforme sua Construtora em uma máquina de resultados
+  p: Conheça o software mais completo de CRM com Automação de Marketing e com o
+    melhor custo benefício para a sua agência. Você duvida?
+section-a:
+  items:
+  - h4: Seus corretores podem enviar campanhas de Whatsapp
+    p: Com o Bulldesk é possível enviar campanhas de whatsapp para toda a sua carteira de clientes. Quando e como desejar.
+  - h4: Saiba o que os corretores estão fazendo
+    p: Com uma visão geral do funil de vendas, é possível saber quem está sendo atendido e porque está sendo atendido. Desta forma você consegue visualizar se algum possível cliente não está sendo atendido como deveria por um determinado corretor.
+  - h4: Crie páginas para os lançamentos em um clique
+    p: Com o construtor de páginas do Bulldesk, todo empreendimento ou imóvel que você precisar divulgar, basta selecionar algum dos nossos modelos,  alterar o conteúdo e você terá uma página repleta de informações.
+  - h4: Gestão do relacionamento com o cliente durante todo o andamento da obra
+    p: Com o Bulldesk é possível automatizar o envio de informações sobre o andamento de determinada obra para o comprador. Dessa forma além de um cliente satisfeito, pode ter certeza que a sua taxa de recomendações irá aumentar.
+  - h4: Gestão leads e roleta de atendimento
+    p: No Bulldesk é possível criar a roleta de atendimento dos seus corretores por canal de atendimento, distribuindo igualitariamente as oportunidades entre todos os corretores.
+  - h4: Gestão de marketing e investimentos
+    p: Com relatórios e ferramentas de BI do Bulldesk, é possível acompanhar qual mídia e canal de atendimento está gerando mais leads, permitindo a equipe de marketing fazer a gestão de todos os investimentos em mídias mais eficazes, consequentemente aumentando a conversão de venda.
+section-b:
+  h3: Fale com um dos nossos consultores e entenda melhor como podemos ajudar a sua construtora a acelerar suas vendas
+  subtitle: Insira seu e-mail abaixo e crie sua conta agora mesmo
+section-c:
+  h3:
+    - Toda as ferramentas que você precisa em um único lugar
+    - Porque somos ideal para construtoras?
+  subtitle:
+    - Porque utilizar diversas ferramentas quando a gente tem tudo que a sua construtora precisa?
+    - Um dos nossos primeiros clientes foi a maior construtora de Florianópolis. Sabemos todas as necessidades e desafios de uma construtora quando o assunto é vendas, por isso desenvolvemos um produto que resolve todas essas dores relacionadas a venda de imóveis.
+  items:
+    - Receba os contatos do seu chat dentro do Bulldesk
+    - Envie campanhas de WhatsApp
+    - Integre com portais como Zap Imóveis, Vivá Real, e outros
+    - Crie campanhas de email marketing divulgando seus empreendimentos
+    - Acompanhe todo o processo comercial em um único lugar
+    - Construa páginas específicas para divulgar determinados empreendimentos
+    - "Automação de marketing: Automatize os processos que ninguém tem tempo de gerenciar"
+    - "Email marketing: Construa sua marca e seja referência para seus clientes e leads"
+    - "Omnichannel: Crie campanhas que comecem por email, SMS ou WhatApp"
+section-d:
+  h3: Fique tranquilo
+  br: você está em boa companhia
+  cases:
+    - image: "../../assets/images/cases/buscape-logo.png"
+      description: O Bulldesk é ótimo na hora de qualificar leads. Dessa forma a gente não perde tempo entrando em contato com centenas de leads sem saber se eles estão prontos para investir num imóvel.
+      author: BEATRIZ ALMEIDA
+    - image: "../../assets/images/cases/buscape-logo.png"
+      description: Através do Bulldesk conseguimos atrair XX novos negócios e nossa taxa de conversão subiu para XX %.
+      author: ANTÔNIO FRANCISCO
+

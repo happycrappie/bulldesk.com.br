@@ -29,30 +29,11 @@
       padding-top: 3rem
       max-width: 550px
 
-      h1
-        color: $gray-dark
-        line-height: 1
-        font-size: 4rem
-        font-weight: 700
+      h1.title
         color: $white-gray
-        letter-spacing: -0.94px
-        line-height: 55px
 
-        @include media('screen', '<=phone')
-          font-size: 3rem
-
-        @include media('screen', '>phone', '<=ipad')
-          font-size: 3.2rem
-
-        @include media('screen', '>ipad', '<=laptop')
-          font-size: 3.5rem
-
-      p
+      p.subtitle
         color: $white-gray
-        font-size: 1.2rem
-        font-weight: 400
-        letter-spacing: -0.24px
-        line-height: 25px
         width: auto
         max-width: 325px
         margin-top: 2rem
@@ -62,7 +43,7 @@
           margin-top: 1rem
 
         @include media('screen', '>phone', '<=laptop')
-          font-size: 1rem
+          font-size: 0.9rem
           margin-top: 1rem
 
     .icon
@@ -78,19 +59,18 @@
 
     .item
       padding: 1.5rem 2rem
+      letter-spacing: 0.2px
 
       h4
         color: $gray-dark
-        font-size: 1.2rem
+        font-size: 1.125rem
         font-weight: 700
-        letter-spacing: -0.27px
         line-height: 24px
 
       p
         color: $gray-light
-        font-size: 0.8rem
+        font-size: 0.75rem
         font-weight: 400
-        letter-spacing: 0.24px
         line-height: 25px
         margin-top: 1.5rem
 
@@ -100,9 +80,24 @@
     height: 911px
     margin-top: -10rem
 
+    @include media('screen', '<=ipad')
+      background-position: -40rem 0rem
+
+    @include media('screen', '>ipad', '<=laptop')
+      background-position: -20rem 0rem
+
+    @include media('screen', '>laptop', '<=desktop-md')
+      background-position: -15rem 0rem
+
+    @include media('screen', '>desktop-md', '<=desktop-lg')
+      background-position: -10rem 0rem
+
     .container
       text-align: center
       padding-top: 29rem
+
+      @media only screen and (max-width: 600px)
+        padding-top: 25rem
 
       h3
         width: auto
@@ -132,7 +127,8 @@
       background-position: 0rem 300px
 
     @media only screen and (max-width: map-get($grid-breakpoints, 'xl'))
-      background-image: none
+      background-size: 38%
+      background-position: 0rem 400px
 
     @include media('screen', '>laptop', '<=desktop-md')
       background-position: 8rem 300px
@@ -145,6 +141,7 @@
 
     @media only screen and (max-width: map-get($grid-breakpoints, 'lg2'))
       text-align: center
+      background-image: none
 
     .col-left
       .subtitle
@@ -167,9 +164,9 @@
 
         li
           color: $gray-dark
-          font-size: 0.8rem
+          font-size: 0.75rem
           font-weight: 400
-          letter-spacing: 0.24px
+          letter-spacing: 0.2px
           line-height: 30px
           padding-bottom: 0.5rem
 
@@ -247,9 +244,9 @@
 
         p
           color: $gray-white
-          font-size: 0.8rem
+          font-size: 0.75rem
           font-weight: 400
-          letter-spacing: 0.24px
+          letter-spacing: 0.2px
           line-height: 25px
           margin-top: 2rem
 
@@ -258,7 +255,7 @@
 
         .author
           color: $gray-light
-          font-size: 0.7rem
+          font-size: 0.625rem
           font-weight: 700
           letter-spacing: 0.2px
           line-height: 20px
@@ -276,9 +273,9 @@
 
         .hero.d-flex.align-items-center
           div
-            h1 {{ this.$page.content.header.h1 }}
+            h1.title {{ this.$page.content.header.h1 }}
               span.dot.green
-            p {{ this.$page.content.header.p }}
+            p.subtitle {{ this.$page.content.header.p }}
 
     .section.section-a
       .container
@@ -291,7 +288,7 @@
       .container
         h3 {{ this.$page.content.section_b.h3 }}
         .subtitle {{ this.$page.content.section_b.subtitle }}
-        email-input(:identifier='$page.content.id')
+        email-input(:identifier="$page.content.id")
 
     .section.section-c
       .container
@@ -302,10 +299,10 @@
           .col-12.col-lg2-8.col-right
             ul
               li(v-for="item in $page.content.section_c.items")
-                g-image(src='~/assets/icons/check.svg')
+                g-image(src="~/assets/icons/check.svg" alt="")
                 | {{ item }}
 
-            g-image.doted-square-a(src='~/assets/images/doted-square.jpg')
+            g-image.doted-square-a(src="~/assets/images/doted-square.jpg" alt="")
 
             h3 {{ this.$page.content.section_c.h3[1] }}
             .subtitle {{ this.$page.content.section_c.subtitle[1] }}
@@ -319,7 +316,7 @@
             | {{ this.$page.content.section_d.br }}
         .row.cases
           .col.col-12.col-sm-6(v-for="item in $page.content.section_d.cases")
-            g-image(:src="item.image")
+            g-image(:src="item.image" alt="Imagem")
             p.description {{ item.description }}
             p.author {{ item.author }}
 </template>
