@@ -4,7 +4,7 @@
 
   header
     position: relative
-    z-index: 2
+    z-index: 3
 
   .hero
     position: relative
@@ -141,15 +141,9 @@
       .container
         .row
           .col-lg-7
-            a Exemplos
-            h1 Campanha de aniversário
-            p Sabe aquela coisa chata de ter que ficar pegando a sua lista de contatos dos aniversariantes do mês, e subir na sua ferramenta de envio de email marketing e enviar um conteúdo com algo do tipo:  “Parabéns aniversariantes de Julho!”? Aquela mesma mensagem de sempre, bem genérica, sabe né?
-              br
-              br
-              | Então, com o Bulldesk você não precisa mais ter esse trabalhão todo! Através da data de nascimento dos seus leads, você pode ativar uma campanha que irá acontecer automaticamente sempre que a data do aniversariante estiver chegando.
-              br
-              br
-              | E o que você ganha com isso? Uma gigantesca economia de tempo e a possibilidade de conseguir enviar um conteúdo totalmente personalizado para os seus leads, destacando-se da concorrência.
+            a(href="/exemplos") Exemplos
+            h1 {{ this.$page.content.header.h1 }}
+            p(v-for="p in this.$page.content.header.p") {{ p }}
 
           .col-lg-5.d-md-none.d-lg-block
             g-image(src='~/assets/images/exemplo-bg-hero.png')
@@ -158,15 +152,15 @@
       .container
         .row
           .col-12
-            h2 Quer ver como é simples?
-            p Dá um confere na imagem abaixo:
+            h2 {{ this.$page.content.section_a.h2 }}
+            p {{ this.$page.content.section_a.p }}
 
-            g-image(src='~/assets/images/exemplo-campanha.png')
+            g-image(:src="$page.content.section_a.image")
 
         .row.justify-content-center
           .col-12.col-lg-5
             a(href='#' target='_blank')
-              g-image(src='~/assets/images/exemplo-icon-printer.svg')
+              g-image(src='~/assets/icons/exemplo-icon-printer.svg')
               strong Imprima esse fluxo e guarde com você.
               | Ele vai te ajudar nas suas configurações de campanha.
 
@@ -177,9 +171,26 @@
 
         .row.justify-content-center
           h4.col-md-4 Insira seu e-mail abaixo e crie sua conta agora mesmo
-        email-input(:identifier="exemplos")
+        email-input(:identifier="'exemplo' + this.$page.content.id")
 
 </template>
+
+<page-query>
+  query ($id: String!) {
+    content: exemplo (id: $id) {
+      title
+      header {
+        h1
+        p
+      }
+      section_a {
+        h2
+        p
+        image
+      }
+    }
+  }
+</page-query>
 
 <script>
   import Layout from '../layouts/Default'
@@ -193,8 +204,10 @@
       EmailInput,
     },
 
-    metaInfo: {
-      title: 'Exemplos',
+    metaInfo () {
+      return {
+        title: 'Exemplo ' + this.$page.content.title,
+      }
     },
 
     data () {

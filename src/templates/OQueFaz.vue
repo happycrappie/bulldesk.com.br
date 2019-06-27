@@ -14,7 +14,7 @@
     h1
       max-width: 750px
       margin: 0 0 80px
-      font-size: 4rem
+      font-size: 3.9375rem
       font-weight: 700
       line-height: 1
 
@@ -156,7 +156,7 @@
                 | {{ item }}
 
           div.col-lg-8
-            VideoLauncher(videoID="q7kIWRT_zPs" image="/assets/static/src/assets/images/video-placeholder.jpg")
+            VideoLauncher(:videoID="$page.content.header.videoID" :image="$page.content.header.videoThumb")
 
     section.container.topics-a
       .row
@@ -179,7 +179,7 @@
             | {{ item.h3 }}
           p {{ item.p }}
 
-      a.btn-default.d-lg-inline
+      b-button.d-lg-inline(href="https://app.bulldesk.com.br/cadastro", variant="green")
         | Quero fazer um teste gratuito
         g-image(src='~/assets/icons/play-button@black.svg')
 

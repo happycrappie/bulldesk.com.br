@@ -4,7 +4,7 @@
 
   header
     position: relative
-    z-index: 2
+    z-index: 3
 
   .hero
     position: relative
@@ -149,93 +149,93 @@
         .row
           .col-lg-4.col-md-6
             div
-              a(href='/exemplos-aniversario').d-flex.justify-content-center.align-items-center
-                g-image(src='~/assets/images/exemplos-icon-confetti.svg')
+              a(href='/exemplo/aniversario').d-flex.justify-content-center.align-items-center
+                g-image(src='~/assets/icons/exemplos-icon-confetti.svg')
             h2
-              a(href='/exemplos-aniversario') Campanha de Aniversário
+              a(href='/exemplo/aniversario') Campanha de Aniversário
             p
-              a(href='/exemplos-aniversario') Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s
+              a(href='/exemplo/aniversario') Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s
 
           .col-lg-4.col-md-6
             div
-              a(href='#').d-flex.justify-content-center.align-items-center
-                g-image(src='~/assets/images/exemplos-icon-commerce.svg')
+              a(href='/exemplo/vendas').d-flex.justify-content-center.align-items-center
+                g-image(src='~/assets/icons/exemplos-icon-commerce.svg')
             h2
-              a(href='#') Campanha de Vendas
+              a(href='/exemplo/vendas') Campanha de Vendas
             p
-              a(href='#') Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s
+              a(href='/exemplo/vendas') Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s
 
           .col-lg-4.col-md-6
             div
-              a(href='#').d-flex.justify-content-center.align-items-center
-                g-image(src='~/assets/images/exemplos-icon-advertising.svg')
+              a(href='/exemplo/inbound-marketing').d-flex.justify-content-center.align-items-center
+                g-image(src='~/assets/icons/exemplos-icon-advertising.svg')
             h2
-              a(href='#') Campanha Inbound Marketing
+              a(href='/exemplo/inbound-marketing') Campanha Inbound Marketing
             p
-              a(href='#') Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s
+              a(href='/exemplo/inbound-marketing') Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s
 
           .col-lg-4.col-md-6
             div
-              a(href='#').d-flex.justify-content-center.align-items-center
-                g-image(src='~/assets/images/exemplos-icon-fist.svg')
+              a(href='/exemplo/onboarding').d-flex.justify-content-center.align-items-center
+                g-image(src='~/assets/icons/exemplos-icon-fist.svg')
             h2
-              a(href='#') Campanha de Onboarding
+              a(href='/exemplo/onboarding') Campanha de Onboarding
             p
-              a(href='#') Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s
+              a(href='/exemplo/onboarding') Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s
 
           .col-lg-4.col-md-6
             div
-              a(href='#').d-flex.justify-content-center.align-items-center
-                g-image(src='~/assets/images/exemplos-icon-document.svg')
+              a(href='/exemplo/newsletter').d-flex.justify-content-center.align-items-center
+                g-image(src='~/assets/icons/exemplos-icon-document.svg')
             h2
-              a(href='#') Campanha Newsletter
+              a(href='/exemplo/newsletter') Campanha Newsletter
             p
-              a(href='#') Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s
+              a(href='/exemplo/newsletter') Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s
 
           .col-lg-4.col-md-6
             div
-              a(href='#').d-flex.justify-content-center.align-items-center
-                g-image(src='~/assets/images/exemplos-icon-visitor.svg')
+              a(href='/exemplo/pagina-visitada').d-flex.justify-content-center.align-items-center
+                g-image(src='~/assets/icons/exemplos-icon-visitor.svg')
             h2
-              a(href='#') Campanha Visitantes Planos e Preços
+              a(href='/exemplo/pagina-visitada') Campanha Visitantes Planos e Preços
             p
-              a(href='#') Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s
+              a(href='/exemplo/pagina-visitada') Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s
 
           .col-lg-4.col-md-6
             div
-              a(href='#').d-flex.justify-content-center.align-items-center
-                g-image(src='~/assets/images/exemplos-icon-file.svg')
+              a(href='/exemplo/pesquisa').d-flex.justify-content-center.align-items-center
+                g-image(src='~/assets/icons/exemplos-icon-file.svg')
             h2
-              a(href='#') Campanha Pesquisa de Satisfação
+              a(href='/exemplo/pesquisa') Campanha Pesquisa de Satisfação
             p
-              a(href='#') Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s
+              a(href='/exemplo/pesquisa') Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s
 
           .col-lg-4.col-md-6
             div
-              a(href='#').d-flex.justify-content-center.align-items-center
-                g-image(src='~/assets/images/exemplos-icon-win.svg')
+              a(href='/exemplo/distribuir-leads').d-flex.justify-content-center.align-items-center
+                g-image(src='~/assets/icons/exemplos-icon-win.svg')
             h2
-              a(href='#') Campanha Distribuição de Leads
+              a(href='/exemplo/distribuir-leads') Campanha Distribuição de Leads
             p
-              a(href='#') Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s
+              a(href='/exemplo/distribuir-leads') Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s
 
           .col-lg-4.col-md-6
             div
-              a(href='#').d-flex.justify-content-center.align-items-center
-                g-image(src='~/assets/images/exemplos-icon-notification.svg')
+              a(href='/exemplo/notificar').d-flex.justify-content-center.align-items-center
+                g-image(src='~/assets/icons/exemplos-icon-notification.svg')
             h2
-              a(href='#') Campanha de Notificação de E-mail
+              a(href='/exemplo/notificar') Campanha de Notificação de E-mail
             p
-              a(href='#') Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s
+              a(href='/exemplo/notificar') Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s
 
           .col-lg-4.col-md-6
             div
-              a(href='#').d-flex.justify-content-center.align-items-center
-                g-image(src='~/assets/images/exemplos-icon-resume.svg')
+              a(href='/exemplo/nutricao').d-flex.justify-content-center.align-items-center
+                g-image(src='~/assets/icons/exemplos-icon-resume.svg')
             h2
-              a(href='#') Campanha de Nutrição de Leads
+              a(href='/exemplo/nutricao') Campanha de Nutrição de Leads
             p
-              a(href='#') Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s
+              a(href='/exemplo/nutricao') Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s
 
     section.section-email
       .container.text-center
@@ -244,7 +244,7 @@
 
         .row.justify-content-center
           h4.col-md-4 Insira seu e-mail abaixo e crie sua conta agora mesmo
-        email-input(:identifier="exemplos")
+        email-input(identifier="exemplos")
 
 </template>
 

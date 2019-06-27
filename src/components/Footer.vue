@@ -110,7 +110,7 @@
     .container
       .row
         .bulldesk
-          g-image(src='../assets/images/logo.png' class='logo')
+          img(src='../assets/images/logo.png' class='logo')
           ul
             li
               a(href="https://www.instagram.com/bulldeskcrm" target="_blank")

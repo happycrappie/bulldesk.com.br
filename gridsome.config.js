@@ -38,14 +38,16 @@ module.exports = {
         typeName: 'OQueFaz',
         route: '/o-que-faz/:id'
       }
-    }
-  ],
-  css: {
-    loaderOptions: {
-      scss: {
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'src/data/exemplo/*.yaml',
+        typeName: 'Exemplo',
+        route: '/exemplo/:id'
       }
     }
-  },
+  ],
   chainWebpack (config) {
     config.module
       .rule('pug')
