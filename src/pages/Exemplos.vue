@@ -203,7 +203,7 @@
 
           .col-lg-4.col-md-6
             div
-              a(href='#').d-flex.justify-content-center.align-items-center
+              a(href='/exemplo/pesquisa').d-flex.justify-content-center.align-items-center
                 g-image(src='~/assets/images/exemplos-icon-file.svg')
             h2
               a(href='/exemplo/pesquisa') Campanha Pesquisa de Satisfação
@@ -221,7 +221,7 @@
 
           .col-lg-4.col-md-6
             div
-              a(href='#').d-flex.justify-content-center.align-items-center
+              a(href='/exemplo/notificar').d-flex.justify-content-center.align-items-center
                 g-image(src='~/assets/images/exemplos-icon-notification.svg')
             h2
               a(href='/exemplo/notificar') Campanha de Notificação de E-mail

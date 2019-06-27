@@ -12,7 +12,7 @@ header:
     - Controle o seu funil de vendas
     - Veja seus relatórios
   videoID: q7kIWRT_zPs
-  videoThumb: ../../assets/images/video-placeholder.jpg
+  videoThumb: '../../assets/images/video-placeholder.jpg'
 
 topics-a:
   h2: Como o Bulldesk CRM ajuda a sua empresa a vender mais?
