@@ -77,9 +77,9 @@
       >img
         display: block
         max-width: 100%
-        margin: 80px 0 45px
+        margin: 80px auto 45px
         background: $white-gray
-        image-rendering: crisp-edges
+        // image-rendering: crisp-edges
         box-shadow: 0px 0px 0px 10px $white-gray
 
     a

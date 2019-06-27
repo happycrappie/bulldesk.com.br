@@ -147,95 +147,15 @@
     section.section-a
       .container
         .row
-          .col-lg-4.col-md-6
+          .col-lg-4.col-md-6(v-for="(edge, index) in $page.examples.edges")
             div
-              a(href='/exemplo/aniversario').d-flex.justify-content-center.align-items-center
-                g-image(src='~/assets/icons/exemplos-icon-confetti.svg')
+              a(:href="'/exemplo/' + edge.node.id").d-flex.justify-content-center.align-items-center
+                g-image(:src="edge.node.icon")
             h2
-              a(href='/exemplo/aniversario') Campanha de Aniversário
+              a(:href="'/exemplo/' + edge.node.id") {{ edge.node.title }}
             p
-              a(href='/exemplo/aniversario') Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s
+              a(:href="'/exemplo/' + edge.node.id") {{ edge.node.description }}
 
-          .col-lg-4.col-md-6
-            div
-              a(href='/exemplo/vendas').d-flex.justify-content-center.align-items-center
-                g-image(src='~/assets/icons/exemplos-icon-commerce.svg')
-            h2
-              a(href='/exemplo/vendas') Campanha de Vendas
-            p
-              a(href='/exemplo/vendas') Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s
-
-          .col-lg-4.col-md-6
-            div
-              a(href='/exemplo/inbound-marketing').d-flex.justify-content-center.align-items-center
-                g-image(src='~/assets/icons/exemplos-icon-advertising.svg')
-            h2
-              a(href='/exemplo/inbound-marketing') Campanha Inbound Marketing
-            p
-              a(href='/exemplo/inbound-marketing') Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s
-
-          .col-lg-4.col-md-6
-            div
-              a(href='/exemplo/onboarding').d-flex.justify-content-center.align-items-center
-                g-image(src='~/assets/icons/exemplos-icon-fist.svg')
-            h2
-              a(href='/exemplo/onboarding') Campanha de Onboarding
-            p
-              a(href='/exemplo/onboarding') Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s
-
-          .col-lg-4.col-md-6
-            div
-              a(href='/exemplo/newsletter').d-flex.justify-content-center.align-items-center
-                g-image(src='~/assets/icons/exemplos-icon-document.svg')
-            h2
-              a(href='/exemplo/newsletter') Campanha Newsletter
-            p
-              a(href='/exemplo/newsletter') Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s
-
-          .col-lg-4.col-md-6
-            div
-              a(href='/exemplo/pagina-visitada').d-flex.justify-content-center.align-items-center
-                g-image(src='~/assets/icons/exemplos-icon-visitor.svg')
-            h2
-              a(href='/exemplo/pagina-visitada') Campanha Visitantes Planos e Preços
-            p
-              a(href='/exemplo/pagina-visitada') Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s
-
-          .col-lg-4.col-md-6
-            div
-              a(href='/exemplo/pesquisa').d-flex.justify-content-center.align-items-center
-                g-image(src='~/assets/icons/exemplos-icon-file.svg')
-            h2
-              a(href='/exemplo/pesquisa') Campanha Pesquisa de Satisfação
-            p
-              a(href='/exemplo/pesquisa') Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s
-
-          .col-lg-4.col-md-6
-            div
-              a(href='/exemplo/distribuir-leads').d-flex.justify-content-center.align-items-center
-                g-image(src='~/assets/icons/exemplos-icon-win.svg')
-            h2
-              a(href='/exemplo/distribuir-leads') Campanha Distribuição de Leads
-            p
-              a(href='/exemplo/distribuir-leads') Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s
-
-          .col-lg-4.col-md-6
-            div
-              a(href='/exemplo/notificar').d-flex.justify-content-center.align-items-center
-                g-image(src='~/assets/icons/exemplos-icon-notification.svg')
-            h2
-              a(href='/exemplo/notificar') Campanha de Notificação de E-mail
-            p
-              a(href='/exemplo/notificar') Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s
-
-          .col-lg-4.col-md-6
-            div
-              a(href='/exemplo/nutricao').d-flex.justify-content-center.align-items-center
-                g-image(src='~/assets/icons/exemplos-icon-resume.svg')
-            h2
-              a(href='/exemplo/nutricao') Campanha de Nutrição de Leads
-            p
-              a(href='/exemplo/nutricao') Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s
 
     section.section-email
       .container.text-center
@@ -247,6 +167,31 @@
         email-input(identifier="exemplos")
 
 </template>
+
+<page-query>
+  query Examples {
+    examples: allExemplo (sortBy: "order", order: ASC) {
+      edges {
+        node {
+          id
+          title
+          order
+          icon
+          description
+          header {
+            h1
+            p
+          }
+          section_a {
+            h2
+            p
+            image
+          }
+        }
+      }
+    }
+  }
+</page-query>
 
 <script>
   import Layout from '../layouts/Default'

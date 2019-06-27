@@ -39,7 +39,7 @@
 
       .logo
         width: auto
-        max-width: 136px
+        width: 136px
         margin-bottom: 5px
 
         @media only screen and (max-width: 1400px)
@@ -152,6 +152,10 @@
             //-   a(href="#") Webinars
             li
               a(href="/exemplos") Templates
+            li
+              a(href="/o-que-e-crm") O que é CRM
+            li
+              a(href="/o-que-e-marketing") O que é Marketing
         .column.column-b
           h5 Funcionalidades
           ul
