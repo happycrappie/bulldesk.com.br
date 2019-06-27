@@ -988,7 +988,7 @@
                         .col-12.col-md-6.content
                           .logo
                             g-image(src="~/assets/images/cases/casabeta-logo.png" alt='Casa Beta')
-                          .description Quando pensamos em começar esse negócio já sabíamos que precisávamos de uma ferramenta de CRM e automação de marketing, e essa ferramenta era o Bulldesk. O Bulldesk nos auxiliou na criação do nosso site, na captação de leads e na determinação na origem de cada um deles. Dessa forma nós conseguimos observar que nossas campanhas mais bem sucedidas eram as do instagram e fazer boas decisões de investimento. Foram mais de 210 campanhas de automação de marketing criadas dentro do Bulldesk.
+                          .description Quando pensamos em começar esse negócio já sabíamos que precisávamos de uma ferramenta de CRM e automação de marketing, e essa ferramenta era o Bulldesk. O Bulldesk nos auxiliou na criação do nosso site, na criação de campanhas e landing pages que geraram centenas de leads.
                           .author Maria Fernanda
 
                   // W Koerich
