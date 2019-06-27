@@ -201,155 +201,50 @@
         @media only screen and (max-width: 990px)
           margin-top: 2.5rem
 
-      .nav
-        padding-left: 20px
+        .nav
+          padding-left: 20px
 
-        @media only screen and (max-width: 990px)
-          padding-left: 0px
+          @media only screen and (max-width: 990px)
+            padding-left: 0px
 
-        @media only screen and (min-width: 991px) and (max-width: 1300px)
-          padding-left: 30px
+          @media only screen and (min-width: 991px) and (max-width: 1300px)
+            padding-left: 30px
 
-        .nav-item
-          width: 20%
-          text-align: center
-          vertical-align: middle
+          .nav-item
+            width: 20%
+            text-align: center
+            vertical-align: middle
 
-          .nav-link
-            color: $gray-soft
-            font-weight: 700
-            font-size: 0.625rem
-            letter-spacing: 0.2px
-            line-height: 25px
-            text-transform: uppercase
-
-            @media only screen and (max-width: 400px)
-              font-size: 0.325rem
-              line-height: 15px
-              padding: 0.3rem 0.3rem
-
-            @media only screen and (min-width: 401px) and (max-width: 600px)
-              font-size: 0.425rem
-              line-height: 15px
-              padding: 0.3rem 0.5rem
-
-          .active
-            background-color: $purple
-            color: $white-gray
-            border-radius: 25px
-
-      .steps
-        list-style: none
-        padding: 0px
-        margin-top: 80px
-        margin-left: -50px
-
-        @media only screen and (max-width: 1300px)
-          margin-top: 40px
-          margin-left: -25px
-
-        li
-          text-align: center
-          display: list-item
-          float: left
-          width: 25%
-
-          .step
-            padding: 0 5px
-            z-index: 999
-            letter-spacing: 0.2px
-
-            .step-title
-              height: 20px
-              color: $pink
-              font-size: 0.625rem
+            .nav-link
+              color: $gray-soft
               font-weight: 700
-              line-height: 20px
+              font-size: 0.625rem
+              letter-spacing: 0.2px
+              line-height: 25px
               text-transform: uppercase
-              margin-bottom: 30px
 
-              @media only screen and (max-width: 440px)
-                font-size: 0.375rem
-
-              @media only screen and (min-width: 441px) and (max-width: 990px)
-                font-size: 0.475rem
-
-            .step-icon
-              background-color: $white
-              height: 92px
-              width: 92px
-              line-height: 92px
-              border-radius: 45px
-              margin: auto
-              z-index: 2
-              position: relative
-
-              @media only screen and (max-width: 440px)
-                border: 1px solid $gray-light
-                height: 36px
-                width: 36px
-                line-height: 36px
-
-              @media only screen and (min-width: 441px) and (max-width: 990px)
-                border: 1px solid $gray-light
-                height: 54px
-                width: 54px
-                line-height: 54px
-
-              @media only screen and (min-width: 991px) and (max-width: 1300px)
-                height: 82px
-                width: 82px
-                line-height: 82px
-
-              img
-                @media only screen and (max-width: 440px)
-                  width: 14px
-
-                @media only screen and (min-width: 441px) and (max-width: 990px)
-                  width: 22px
-
-              &:after
-                content: ''
-                background-image: url(~@/assets/images/line.png)
-                background-repeat: no-repeat
-                position: relative
-                display: block
-                top: -50%
-                right: -100%
-                height: 5px
-                width: 110%
-                z-index: 0
-
-                @media only screen and (max-width: 990px)
-                  width: 250%
-
-                @media only screen and (max-width: 440px)
-                  width: 200%
-
-            .step-subtitle
-              height: 36px
-              max-width: 162px
-              margin: auto
-              margin-top: 20px
-              font-size: 0.75rem
-
-              @media only screen and (max-width: 440px)
-                font-size: 0.55rem
+              @media only screen and (max-width: 400px)
+                font-size: 0.325rem
                 line-height: 15px
+                padding: 0.3rem 0.3rem
 
-              @media only screen and (min-width: 441px) and (max-width: 990px)
-                font-size: 0.6rem
-                line-height: 20px
+              @media only screen and (min-width: 401px) and (max-width: 600px)
+                font-size: 0.425rem
+                line-height: 15px
+                padding: 0.3rem 0.5rem
 
-          &:last-child
-            .step
-              .step-icon
-                background-color: $pink
-                border: 0px
+          .nav-item.active
+            .nav-link
+              background-color: $purple
+              color: $white-gray
+              border-radius: 25px
 
-                &:after
-                  background-image: none
-                  width: 0px
+        .examples
+          margin-top: 4rem
+
+          img
+            width: 100%
+
 
   .section-b
     margin-top: 6rem
@@ -937,39 +832,17 @@
               p.subtitle Veja como organizar essas e outras campanhas em réguas de relacionamento
             .col-lg-8.steps-col
                 b-nav(pills)
-                  b-nav-item(active) Aniversário
-                  b-nav-item Reaquecimento
-                  b-nav-item Inbound Marketing
-                  b-nav-item Whatsapp
-                  b-nav-item Check-in Hotel
-                ul.steps
-                  li
-                    .step
-                      .step-title &nbsp;
-                      .step-icon
-                        g-image(src='~/assets/icons/person.svg')
-                      .subtitle.step-subtitle Bruno vai fazer aniversário
-                  li
-                    .step
-                      .step-title 10 Dias antes
-                      .step-icon
-                        g-image(src='~/assets/icons/envelope@black.svg' alt='Envelope')
-                      .subtitle.step-subtitle Email:
-                        strong  "seu aniversário está chegando"
-                  li
-                    .step
-                      .step-title 1 Dia antes
-                      .step-icon
-                        g-image(src='~/assets/icons/envelope@black.svg' alt='Envelope')
-                      .subtitle.step-subtitle Email:
-                        strong  "é amanhã"
-                  li
-                    .step
-                      .step-title No dia do aniversário
-                      .step-icon
-                        g-image(src='~/assets/icons/envelope@white.svg' alt='Envelope')
-                      .subtitle.step-subtitle Email:
-                        strong  “mensagem de aniversário + cupom desconto”
+                  b-nav-item(:class="{ active: example == 0 }" @click="example = 0") Aniversário
+                  b-nav-item(:class="{ active: example == 1 }" @click="example = 1") Reaquecimento
+                  b-nav-item(:class="{ active: example == 2 }" @click="example = 2") Inbound Marketing
+                  b-nav-item(:class="{ active: example == 3 }" @click="example = 3") Whatsapp
+                  b-nav-item(:class="{ active: example == 4 }" @click="example = 4") Check-in Hotel
+                .examples
+                  g-image(src="~/assets/images/timeline/aniversario.png" alt="Fluxo de Aniversário" v-if="example == 0")
+                  g-image(src="~/assets/images/timeline/reaquecimento.png" alt="Fluxo de Reaquecimento" v-if="example == 1")
+                  g-image(src="~/assets/images/timeline/inbound-marketing.png" alt="Fluxo de Inbound Marketing" v-if="example == 2")
+                  g-image(src="~/assets/images/timeline/whatsapp.png" alt="Fluxo de Whatsapp" v-if="example == 3")
+                  g-image(src="~/assets/images/timeline/check-in-hotel.png" alt="Fluxo de Check-in Hotel" v-if="example == 4")
 
       .section.section-b
         .container
@@ -1164,6 +1037,7 @@
     data() {
       return {
         email: '',
+        example: 0,
         swiperOptions: {
           navigation: {
             nextEl: '.swiper-button-next',

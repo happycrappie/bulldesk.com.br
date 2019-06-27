@@ -432,18 +432,19 @@
               h5 Minhas informações estão seguras?
               p Sim. Utilizamos as mesmas tecnologias de plataformas como Spotify, Amazon e AirBnb utilizam. Seus dados não são compartilhados com terceiros e todas as informações são criptografaras.
 
-          .row.mb-5
-            .col-md-4
-              h5 Existe algum tempo mínimo de contrato?
-              p Não, o Bulldesk não tem nenhuma taxa de implementação ou fidelidade. Você contrata online, caso não queira mais usar é só cancelar. Prezamos pela satisfação dos nossos clientes.
+          .d-sm-none.d-md-block
+            .row.mb-5
+              .col-md-4
+                h5 Existe algum tempo mínimo de contrato?
+                p Não, o Bulldesk não tem nenhuma taxa de implementação ou fidelidade. Você contrata online, caso não queira mais usar é só cancelar. Prezamos pela satisfação dos nossos clientes.
 
-            .col-md-4
-              h5 Não tenho tempo para implementar, o que eu faço?
-              p Entramos em contato para agendar com você duas reuniões de implementação, para parametrizar as configurações iniciais de CRM e Automação de Marketing. Além de mostrar as melhores práticas de uso do sistema.
+              .col-md-4
+                h5 Não tenho tempo para implementar, o que eu faço?
+                p Entramos em contato para agendar com você duas reuniões de implementação, para parametrizar as configurações iniciais de CRM e Automação de Marketing. Além de mostrar as melhores práticas de uso do sistema.
 
-            .col-md-4
-              h5 Minhas informações estão seguras?
-              p Sim. Utilizamos as mesmas tecnologias de plataformas como Spotify, Amazon e AirBnb utilizam. Seus dados não são compartilhados com terceiros e todas as informações são criptografaras.
+              .col-md-4
+                h5 Minhas informações estão seguras?
+                p Sim. Utilizamos as mesmas tecnologias de plataformas como Spotify, Amazon e AirBnb utilizam. Seus dados não são compartilhados com terceiros e todas as informações são criptografaras.
 
           .row.pt-3
             .col-md-12.text-center
