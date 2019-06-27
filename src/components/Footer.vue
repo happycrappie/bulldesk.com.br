@@ -152,6 +152,10 @@
             //-   a(href="#") Webinars
             li
               a(href="/exemplos") Templates
+            li
+              a(href="/o-que-e-crm") O que é CRM
+            li
+              a(href="/o-que-e-marketing") O que é Marketing
         .column.column-b
           h5 Funcionalidades
           ul
