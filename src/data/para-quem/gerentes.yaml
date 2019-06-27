@@ -1,0 +1,58 @@
+---
+id: agencias
+title: Agências
+header:
+  h1: Transforme sua agência em uma máquina de resultados
+  p: Conheça o software mais completo de CRM com Automação de Marketing e com o
+    melhor custo benefício para a sua agência. Você duvida?
+section-a:
+  items:
+  - h4: Crie campanhas de marketing com alguns cliques
+    p: Já enviamos até um carro em direção a marte e você ainda perde horas de trabalho
+      criando campanhas? Com o Bulldesk em alguns cliques suas campanhas de inbound,
+      geração de leads, qualificação e etc, estarão prontas.
+  - h4: Comprove o ROI e o fee da sua agência
+    p: Você só continuará clientes se continuar comprovando o ROI frequentemente.
+      Já pensou ter informações como Custo de Aquisição de Cliente (CAC), Custo
+      por Lead (CPL), Origem do Lead, Quantidade de Leads, entre outras métricas
+      importantes em tempo real? No Bulldesk todos os resultados são atrelados ao
+      nosso bigdata analytics e exibidos em tempo real.
+  - h4: Aumente seu lucro sem diminuir os seus custos
+    p: Nossos preços foram pensados em você. Por isso que você não irá encontrar no Brasil nenhuma ferramenta com todas as funcionalidades que oferecemos no preço que oferecemos. Garantimos isso, se encontrar, vem falar com a gente.
+  - h4: Trabalhe em parceria com o seu cliente
+    p: Do que adianta a sua agência gerar diversos leads mas o seu cliente não conseguir gerar nenhuma venda? Assim que você gerar os leads, coloque os vendedores do seu cliente no CRM do Bulldesk para que eles possam dar atendimento aos leads gerados e você possa acompanhar as vendas.
+  - h4: Crie campanhas omnichannel
+    p: Mandar email é fácil. Mas quero ver mandar uma campanha que começa com um visitante preenchendo um formulário em uma landing page, depois recebe um email, se abrir o email entra em uma campanha de SMS e termina com o lead recebendo um Whatsapp de um vendedor. É fácil também, mas só no Bulldesk.
+  - h4: Fuja da burocracia
+    p: Pagar uma taxa de implementação obrigatória? Não ter privilégios por não ser Diamond? Ser parceiro Gold por 8 meses e depois virar member porque perdeu 1 cliente? Por isso que o Bulldesk tem uma única categoria de parceiro e um programa de parcerias simples. Venha conhecer!
+section-b:
+  h3: Se ainda faltam motivos faça um teste gratuito e veja na prática
+  subtitle: Insira seu e-mail abaixo e crie sua conta agora mesmo
+section-c:
+  h3:
+    - Toda as ferramentas que você precisa em um único lugar
+    - Porque ser nosso parceiro?
+  subtitle:
+    - Porque utilizar diversas ferramentas quando a gente tem tudo a sua agência precisa?
+    - Nosso programa de parceria é simples, oferecemos uma conta gratuita para a sua agência assim que você coloca um cliente pagante para o Bulldesk e além disso uma comissão recorrente de 20%. Sem burocracia, sem taxa de implementação, sem níveis ou seja lá o que for para complicar o que tem que ser descomplicado.
+  items:
+    - Receba os contatos do seu chat dentro do Bulldesk
+    - Envie campanhas de WhatsApp
+    - Integre com portais como Zap Imóveis, Vivá Real, e outros
+    - Crie campanhas de email marketing divulgando seus empreendimentos
+    - Acompanhe todo o processo comercial em um único lugar
+    - Construa páginas específicas para divulgar determinados empreendimentos
+    - "Automação de marketing: Automatize os processos que ninguém tem tempo de gerenciar"
+    - "Email marketing: Construa sua marca e seja referência para seus clientes e leads"
+    - "Omnichannel: Crie campanhas que comecem por email, SMS ou WhatApp"
+section-d:
+  h3: Fique tranquilo
+  br: você está em boa companhia
+  cases:
+    - image: "../../assets/images/cases/buscape-logo.png"
+      description: O jeito mais rápido e simples que encontramos para criar automações de marketing para nós e nossos clientes. Super recomendo!
+      author: BEATRIZ ALMEIDA
+    - image: "../../assets/images/cases/buscape-logo.png"
+      description: Com o Bulldesk foi possível captar dados, enviar e-mails automáticos, e-mail marketing e diversas outras funcionalidades que acontecem em tempo real.
+      author: ANTÔNIO FRANCISCO
+
