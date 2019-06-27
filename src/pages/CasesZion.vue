@@ -3,6 +3,8 @@
   @import '../assets/styles/_variables.scss'
 
   .hero
+    position: relative
+    z-index: 3
     margin-top: 45px
     margin-bottom: 25px
 
@@ -88,9 +90,12 @@
 
   .section-c
     position: relative
-    z-index: 2
+    z-index: 3
     margin-top: 50px
-    margin-bottom: 125px
+    margin-bottom: 180px
+
+    @media only screen and (max-width: map-get($grid-breakpoints, 'lg'))
+      text-align: center
 
     h2
       margin-top: 55px
@@ -124,15 +129,25 @@
       z-index: -1
       display: block
       width: 100vw
-      height: 1192px
+      height: calc(100% + 500px)
       background: bottom center no-repeat url(~@/assets/images/case-bg-section-d.png)
+      background-size: cover
+
+      @media only screen and (max-width: map-get($grid-breakpoints, 'lg'))
+        background-position: 40% bottom
 
     .row:first-of-type
       margin-bottom: 40px
 
+      @media only screen and (max-width: map-get($grid-breakpoints, 'lg'))
+        text-align: center
+
       h2
         font-size: 1.625rem
         font-weight: bold
+
+        @media only screen and (max-width: map-get($grid-breakpoints, 'lg'))
+          margin-bottom: 30px
 
       p
         font-size: 0.75rem
@@ -144,9 +159,15 @@
         font-size: 0.75rem
         line-height: 2.08
 
+        @media only screen and (max-width: map-get($grid-breakpoints, 'lg'))
+          text-align: center
+
       .bg
         padding-left: 0
         padding-right: 30px
+
+        @media only screen and (max-width: map-get($grid-breakpoints, 'lg'))
+          margin-bottom: 30px
 
         div
           padding: 84px 57px 64px 81px
@@ -156,6 +177,7 @@
         p
           font-size: 0.75rem
           line-height: 1
+          text-align: left
 
         q
           position: relative
@@ -188,6 +210,9 @@
     padding-bottom: 255px
     color: $white-gray
 
+    @media only screen and (max-width: map-get($grid-breakpoints, 'lg'))
+      padding-top: 0
+
     &:before
       content: ""
       position: absolute
@@ -203,11 +228,11 @@
       content: ""
       position: absolute
       left: 0
-      bottom: 100%
+      bottom: 50%
       z-index: -1
       display: block
       width: 100vw
-      height: 200px
+      height: 100%
       background: $black
 
     h2
@@ -265,32 +290,32 @@
 
     .section-c
       .container
-        .row.justify-content-between
-          .col-md-7
-            g-image(src="~/assets/images/case-zion-section-c.png", alt="")
-
-          .col-md-4
+        .row.flex-row-reverse.justify-content-between
+          .col-lg-4
             h2 Sobre o problema
             p De acordo com a diretora comercial do Zion, Marina Elisa Müller, o hotel tinha a necessidade de desenhar seu processo comercial. Com um atendimento que acontecia apenas no balcão do hotel, o Zion contava com um site pouco atrativo e nenhuma prospecção de clientes. Dessa forma, a equipe percebeu que era hora de mudar esse cenário e começou a buscar alternativas para marcar presença no mundo digital.
+
+          .col-lg-7
+            g-image(src="~/assets/images/case-zion-section-c.png", alt="")
 
     .section-d
       .container
         .row
-          .col-auto
+          .col-lg-auto
             h2 Sobre a solução
 
           .col
             p Diante da necessidade eminente de novas formas de fazer negócio, Marina fez uma pesquisa em busca de plataformas que facilitam e automatizam processos no marketing digital. Ao se deparar com o Bulldesk, a escolha foi feita e a estrutura comercial começou a se desenhar. Para ela, as razões de optar pelo Bulldesk foram o preço bom e o fato da plataforma ser completa.
 
         .row.justify-content-between.align-items-center
-          .col-7.bg
+          .col-lg-7.bg
             div
               p
                 q Vindo essa necessidade, junto com o Bulldesk, a gente criou esse setor (comercial). A gente fez um site novo, todo apelativo para vendas mesmo, com formulário, landing page. O Bulldesk nos auxiliou a organizar também: o lead entra ali e rapidamente a gente já responde pra tentar converter a venda,
                 br
                 | conta Marina
 
-          .col-5
+          .col-lg-5
            p Sendo Assim, o Bulldesk foi implantado na empresa no ano de 2017. Para Marina, a adaptação à plataforma foi natural, já que o setor comercial mal existia antes desse processo e a interface é de fácil compreensão.
               br
               br
@@ -303,13 +328,13 @@
             h2 Os resultados
 
         .row
-          .col-4
+          .col-lg-4
             p É por conta dessa abordagem, onde nenhum cliente se perde ou fica sem resposta, que o atendimento do hotel é elogiado sempre. “Eu notei, principalmente depois que a gente usou o Bulldesk, que a gente tem um rápido retorno. Os clientes elogiam muito o nosso atendimento na parte de reservas.”, diz Marina.
 
-          .col-4
+          .col-lg-4
             p De acordo com ela, os resultados começaram a aparecer rapidamente. “A gente utiliza já faz dois anos e de resultado a gente teve um crescimento bem grande porque o lead não se perde mais.”. Além do mais, a ajuda do Bulldesk para compor um site voltado para vendas também foi fundamental. “Antes, com o site antigo, era só tem um site de hotel, agora não. Agora a gente tem um site voltado para venda.”.
 
-          .col-4
+          .col-lg-4
             p Falando em números, o crescimento após dois anos de Bulldesk foi em torno de 175%. E a expectativa da equipe comercial é que o crescimento continue a crescer junto com o Bulldesk.
 
 </template>
