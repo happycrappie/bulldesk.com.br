@@ -1,0 +1,17 @@
+---
+id: notificar
+order: 9
+title: Campanha de Notificação de E-mail
+icon: '../../assets/icons/exemplos-icon-notification.svg'
+description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s
+header:
+  h1: Campanha de Notificação de E-mail
+  p:
+    - Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    - Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    - Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+
+section-a:
+  h2: Quer ver como é simples?
+  p: 'Dá um confere na imagem abaixo:'
+  image: '../../assets/images/example/notificar.png'

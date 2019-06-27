@@ -1,0 +1,17 @@
+---
+id: distribuir
+order: 8
+title: Campanha Distribuição de Leads
+icon: '../../assets/icons/exemplos-icon-win.svg'
+description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s
+header:
+  h1: Campanha Distribuição de Leads
+  p:
+    - Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    - Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    - Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+
+section-a:
+  h2: Quer ver como é simples?
+  p: 'Dá um confere na imagem abaixo:'
+  image: '../../assets/images/example/distribuir.png'
