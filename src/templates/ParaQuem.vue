@@ -357,7 +357,7 @@
             h3 {{ this.$page.content.section_c.h3[1] }}
             .subtitle {{ this.$page.content.section_c.subtitle[1] }}
 
-    .section.section-d
+    .section.section-d.d-none
       .container
         .row.scroll-reveal
           h3
