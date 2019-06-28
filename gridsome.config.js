@@ -44,7 +44,7 @@ module.exports = {
       options: {
         path: 'src/data/exemplo/*.yaml',
         typeName: 'Exemplo',
-        route: '/exemplo/:id'
+        route: '/exemplos/:id'
       }
     },
     {
@@ -52,7 +52,7 @@ module.exports = {
       options: {
         path: 'src/data/case/*.yaml',
         typeName: 'Case',
-        route: '/case/:id'
+        route: '/cases/:id'
       }
     }
   ],
