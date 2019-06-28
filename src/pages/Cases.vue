@@ -159,7 +159,6 @@
             p
               a(:href="'/cases/' + edge.node.id") {{ edge.node.description }}
 
-
     section.section-email
       .container.text-center
         .row.justify-content-center
