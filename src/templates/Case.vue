@@ -14,7 +14,7 @@
     h1
       font-size: 3.9375rem
       font-weight: bold
-      line-height: 0.87
+      line-height: 0.95
       color: $gray-dark
 
     .row
