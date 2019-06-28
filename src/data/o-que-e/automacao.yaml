@@ -46,23 +46,21 @@ section-c:
   p2: Caso você identifique algum desses problemas em sua empresa, o CRM pode te ajudar e muito. Para entender melhor, que tal conhecer as funcionalidades desse tipo de ferramenta?
 
 section-d:
-  h3: As funcionalidades de um bom CRM
+  h3: As funcionalidades de um bom software de Automação de Marketing
   p: Um bom CRM de vendas fornece a solução que sua equipe precisa para organizar o fluxo, agilizar processos, fidelizar o cliente e gerar relatórios completos sobre o perfil dos clientes e o trabalho da equipe. Para tanto, algumas funcionalidades são fundamentais em um bom CRM.
   items:
-    - h4: Automação de processos de venda
-      p: Premissa básica de uma ferramenta CRM, automatizar processos de vendas é fundamental para ganhar tempo para a equipe comercial. O CRM permite configurar atividades automáticas a partir da resposta do cliente e do estágio em que ele está no funil de vendas.
+    - h4: Criação de landing pages
+      p: nada como facilitar a criação de landing pages voltadas para vendas e conversão. Geralmente, os softwares de automação de marketing possuem templates voltados para objetivos diversos, agilizando o trabalho do marketing. Também é interessante que você possa customizar o domínio destas landing pages.
     - h4: Definição do funil de vendas em estágios
       p: O funil de vendas da empresa deve ser contemplado em uma ferramenta de CRM. É importante que estágios como Prospect, Contactado, Interessado e Negociando estejam disponíveis para quem trabalha com a ferramenta. Assim, o funil de vendas fica organizado e fluindo melhor.
-    - h4: Integração com mídias sociais
-      p: Plataformas de marketing digital voltadas para captação de leads ou nutrição de relacionamento com o cliente podem ser integradas com o CRM para deixar o processo sem falhas. Dessa maneira, o lead que entra por ações em redes sociais, por exemplo, cai automaticamente nas automações que já estiverem programadas para esse contato.
-    - h4: Integração com ações de marketing digital
-      p: "Além da integração com mídias sociais, é importante que o CRM integre-se à outras ações de marketing digital. Já imaginou criar uma landing page especial, com um formulário lindo e ter o lead que o preenche direto no seu pipeline de vendas? Com um CRM completo, isso é mais do que possível: é realidade!"
-    - h4: Controle de níveis acesso por equipes
-      p: "Como o intuito do CRM é otimizar o trabalho das equipes e integrá-las, é importante poder distinguir grupos de acesso. Ou seja: controlar e segmentar o que cada equipe tem permissão para fazer ou acessar. Essa medida garante que as informações fiquem mais protegidas e que as equipes respeitem as responsabilidades de cada uma. E o melhor: ainda assim os dados ficam reunidos em um só lugar, sem chances de serem perdidos."
-    - h4: Geração de relatórios e métricas
-      p: Analisar e pensar estrategicamente exige que seu CRM gere relatórios completos de forma rápida e intuitiva. Uma boa ferramenta apresenta as informações de clientes e da equipe para que o desempenho de todos seja analisado e aprimorado.
-    - h4: Armazenamento de dados
-      p: Os dados sempre são fundamentais para o pensamento estratégico. É por isso que o armazenamento de dados também é fundamental para um bom CRM, já que quanto mais informações, melhor para o futuro dos negócios.
+    - h4: Criação de formulários
+      p: formulários são uma ótima fonte de captação de leads. Na automação de marketing, eles devem ser criados com agilidade e serem facilmente inseridos na página desejada.
+    - h4: Modelos exclusivos de e-mail marketing
+      p: "enviar e-mails marketing personalizados e pessoais é um artifício muito eficaz no marketing digital. Ferramentas com modelos exclusivos ajudam a personalizar a mensagem e garantir que você nutra o relacionamento com o cliente."
+    - h4: Fluxo de ações para nutrição do lead
+      p: É essencial que a ferramenta ofereça um bom número de ações possíveis para as campanhas de automação. Quanto mais cenários diversos você puder planejar, melhor.
+    - h4: Liberdade nas regras de entrada
+      p: o gatilho para uma campanha de automação começar deve ser definido por você. O lead precisa responder quantos (e quais) formulários para receber seu primeiro e-mail? Ou seria melhor uma conversão via API? Ou quem sabe uma lista de segmentação dinâmica?
     - h4: Interface intuitiva
       p: Uma interface intuitiva contribui para a adaptação da equipe ao novo sistema. Além disso, a intenção do CRM é facilitar o trabalho! Portanto, uma interface que seja intuitiva e de fácil compreensão serve para todos usarem a ferramenta de forma mais eficaz.
 
