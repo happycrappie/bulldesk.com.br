@@ -6,28 +6,28 @@
     background-image: url(~@/assets/images/verticals-header.png)
     background-size: cover
     background-repeat: no-repeat
-    background-position: -12rem
+    background-position: -12rem -5.5rem
     height: 1200px
 
     @include media('screen', '<=ipad')
       background-image: url(~@/assets/images/verticals-header@no-btn.png)
-      background-position: -22rem
+      background-position: -64rem -5.5rem
 
     @include media('screen', '>ipad', '<=laptop')
-      background-position: -54rem
+      background-position: -48rem -7rem
 
     @include media('screen', '>laptop', '<=desktop-md')
-      background-position: -44rem
+      background-position: -44rem -5.5rem
 
     @include media('screen', '>desktop-md', '<=desktop-lg')
-      background-position: -34rem
+      background-position: -34rem -5.5rem
 
     @include media('screen', '>desktop-lg', '<=desktop-xl')
-      background-position: -24rem
+      background-position: -24rem -5.5rem
 
     .hero
       padding-top: 3rem
-      max-width: 550px
+      max-width: 570px
 
       h1.title
         color: $white-gray
@@ -35,7 +35,7 @@
       p.subtitle
         color: $white-gray
         width: auto
-        max-width: 325px
+        max-width: 245px
         margin-top: 2rem
 
         @include media('screen', '<=phone')
