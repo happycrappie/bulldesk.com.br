@@ -486,7 +486,7 @@
       display: block
       width: 100vw
       height: 911px
-      background: top center no-repeat url(~@/assets/images/verticals-bg-b.png)
+      background: top center no-repeat url(~@/assets/images/para-quem/bg-a.png)
 
     &:last-of-type
       padding-top: 115px

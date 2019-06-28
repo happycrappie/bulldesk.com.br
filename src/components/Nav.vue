@@ -150,12 +150,12 @@
               .col-12
                 b-dropdown-item(href="/o-que-faz/marketing") Marketing
                 b-dropdown-item(href="/o-que-faz/vendas") Vendas
-        //- b-nav-item-dropdown.cases(text="Cases")
-        //-   span.dropdown-icon
-        //-   .dropdown-container
-        //-     .row.no-gutters
-        //-       .col-12
-        //-         b-dropdown-item(:href="'/cases/' + item.node.id", v-for="(item) in $static.cases.edges", :key="item.id") {{ item.node.title }}
+        b-nav-item-dropdown.cases(text="O que é")
+          span.dropdown-icon
+          .dropdown-container
+            .row.no-gutters
+              .col-12
+                b-dropdown-item(:href="'/o-que-e/' + item.node.id", v-for="(item) in $static.what.edges", :key="item.id") {{ item.node.title }}?
         b-nav-item(href="/cases") Cases
         b-nav-item(href="/exemplos") Exemplos
         b-nav-item(href="/planos") Planos
@@ -165,8 +165,8 @@
 </template>
 
 <static-query>
-  query Cases {
-    cases: allCase (sortBy: "id", order: ASC) {
+  query What {
+    what: allOQueE (sortBy: "id", order: DESC) {
       edges {
         node {
           id

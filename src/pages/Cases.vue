@@ -74,6 +74,9 @@
           box-shadow: 0 10px 20px 0 rgba(165, 131, 224, 0.13)
           transition: all 0.2s linear
 
+          img
+            max-width: 100%
+
       h2
         margin: 0
 
@@ -115,7 +118,7 @@
       display: block
       width: 100vw
       height: 911px
-      background: top center no-repeat url(~@/assets/images/verticals-bg-b.png)
+      background: top center no-repeat url(~@/assets/images/para-quem/bg-a.png)
       pointer-events: none
 
     h3

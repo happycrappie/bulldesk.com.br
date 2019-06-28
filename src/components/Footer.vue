@@ -135,13 +135,19 @@
           h5 Informações
           ul
             li
+              a(href="/o-que-e/crm") O que é CRM?
+            li
+              a(href="/o-que-e/automacao") O que é Automação?
+            li
+              a(href="/exemplos") Exemplos
+            li
               a(href="/cases") Histórias de Sucesso
+            li
+              a(href="https://blog.bulldesk.com.br" target="_blank") Blog
             li
               a(href="http://ajuda.bulldesk.com.br" target="_blank") Central de Ajuda
             li
               a(href="http://ajuda.bulldesk.com.br" target="_blank") Treinamentos
-            li
-              a(href="https://blog.bulldesk.com.br" target="_blank") Blog
             //- li
             //-   a(href="#") Cursos
             //- li
@@ -150,19 +156,13 @@
             //-   a(href="#") Ebooks
             //- li
             //-   a(href="#") Webinars
-            li
-              a(href="/exemplos") Templates
-            li
-              a(href="/o-que-e-crm") O que é CRM
-            li
-              a(href="/o-que-e-marketing") O que é Marketing
         .column.column-b
           h5 Funcionalidades
           ul
             li
               a(href="https://ajuda.bulldesk.com.br/pt-br/article/automacao-de-marketing-atgu5x" target="_blank") Automação de Marketing
             li
-              a(href="https://ajuda.bulldesk.com.br/pt-br/article/funil-de-vendas-i5pkx2" target="_blank") Funíl de Vendas
+              a(href="https://ajuda.bulldesk.com.br/pt-br/article/funil-de-vendas-i5pkx2" target="_blank") Funil de Vendas
             li
               a(href="https://ajuda.bulldesk.com.br/pt-br/article/whatsapp-marketing-ahg33x" target="_blank") WhatsApp
             li
@@ -176,11 +176,11 @@
             li
               a(href="https://ajuda.bulldesk.com.br/pt-br/article/calendario-ar2ef4" target="_blank") Calendário
             li
-              a(href="https://ajuda.bulldesk.com.br/pt-br/article/link-tracker-1n0why9" target="_blank") Link Tracker / Progresso
+              a(href="https://ajuda.bulldesk.com.br/pt-br/article/link-tracker-1n0why9" target="_blank") Link Builder/Link Tracker
             li
               a(href="https://ajuda.bulldesk.com.br/pt-br/article/relatorios-p0moay" target="_blank") Relatórios
             li
-              a(href="https://ajuda.bulldesk.com.br/pt-br/article/controle-de-usuario-cv20c9" target="_blank") Usuários e Grupos
+              a(href="https://ajuda.bulldesk.com.br/pt-br/article/controle-de-usuario-cv20c9" target="_blank") Controle de Acesso
         .column.column-c
           h5 Pra quem é o Bulldesk
           ul
@@ -206,10 +206,10 @@
             li
               a(href="/o-que-faz/vendas") Vendas
         .column.column-d
-          h5 Sobre nós
+          h5 Sobre
           ul
             li
-              a(href="#") Quem somos
+              a(href="/quem-somos") Quem somos
             //- li
             //-   a(href="#") Vagas
             //- li
@@ -217,11 +217,11 @@
             //- li
             //-   a(href="#") Seja um parceiro
             li
-              a(href="#") Contato
-            li
-              a(href="https://docs.bulldesk.com.br/privacidade" target="_blank") Política de Privacidade
+              a(href="/contato") Contato
             li
               a(href="https://docs.bulldesk.com.br/termos-de-uso" target="_blank") Termos de Uso
+            li
+              a(href="https://docs.bulldesk.com.br/privacidade" target="_blank") Política de Privacidade
 </template>
 
 <script>

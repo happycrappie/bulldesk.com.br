@@ -410,6 +410,12 @@
     background-image: url(~@/assets/images/home-bg-c.png)
     background-position: -42rem
 
+    @media only screen and (max-width: 990px)
+      height: 1900px
+
+    @media only screen and (max-width: 490px)
+      height: 1700px
+
     @media only screen and (max-width: 440px)
       margin-top: -28rem
       background-position: -48rem 3rem
@@ -419,13 +425,13 @@
       background-position: -58rem
 
     @media only screen and (min-width: 990px) and (max-width: 1200px)
-      background-position: -54rem
+      background-position: -66rem
 
     @media only screen and (min-width: 1201px) and (max-width: 1400px)
-      background-position: -50rem
+      background-position: -58rem
 
     @media only screen and (min-width: 1401px) and (max-width: 1600px)
-      background-position: -46rem
+      background-position: -50rem
 
     @media only screen and (min-width: 1601px) and (max-width: 1800px)
       background-position: -42rem
@@ -448,7 +454,57 @@
     @media only screen and (min-width: 2501px)
       background-position: -14rem
 
-    .doted-square
+    .doted-square-a
+      position: absolute
+      left: 58rem
+      top: 2550px
+
+      @media only screen and (max-width: 2400px)
+        left: 50rem
+
+      @media only screen and (max-width: 2200px)
+        left: 46rem
+        top: 2520px
+
+      @media only screen and (max-width: 2100px)
+        left: 42rem
+
+      @media only screen and (max-width: 2000px)
+        left: 38rem
+
+      @media only screen and (max-width: 1900px)
+        left: 36rem
+        top: 2490px
+
+      @media only screen and (max-width: 1800px)
+        left: 32rem
+
+      @media only screen and (max-width: 1700px)
+        left: 30rem
+
+      @media only screen and (max-width: 1600px)
+        left: 26rem
+        top: 2460px
+
+      @media only screen and (max-width: 1500px)
+        left: 22rem
+
+      @media only screen and (max-width: 1400px)
+        left: 20rem
+
+      @media only screen and (max-width: 1300px)
+        left: 16rem
+
+      @media only screen and (max-width: 1200px)
+        left: 12rem
+
+      @media only screen and (max-width: 1100px)
+        left: 10rem
+
+      @media only screen and (max-width: 1025px)
+        display: none
+
+    .doted-square-b
       position: absolute
       left: 62%
       top: 3100px
@@ -456,8 +512,15 @@
       @media only screen and (max-width: 1025px)
         display: none
 
-      @media only screen and (max-width: 1600px)
+      @media only screen and (max-width: 1900px)
+        left: 68%
+
+      @media only screen and (max-width: 1700px)
         left: 70%
+        top: 3050px
+
+      @media only screen and (max-width: 1100px)
+        left: 73%
 
     .container
       padding-top: 57rem
@@ -465,7 +528,7 @@
       @media only screen and (max-width: 990px)
         padding-top: 38rem
 
-      @media only screen and (max-width: 440px)
+      @media only screen and (max-width: 490px)
         padding-top: 34rem
 
       .col-left
@@ -475,6 +538,10 @@
           float: right
           margin-right: 40px
 
+          @media only screen and (max-width: 990px)
+            margin-right: 0px
+            max-width: none
+
           h3
             color: $white-gray
             text-align: center
@@ -482,50 +549,86 @@
             @media only screen and (max-width: 990px)
               color: $purple
 
-        .image-a
-          width: 80%
-          height: 500px
-          margin: 50px auto
-          background-image: url(~@/assets/images/home-bg-c-2.png)
-          background-size: 100%
-          background-repeat: no-repeat
-
-        .image-b
-          height: 250px
-          width: 40%
-          background-image: url(~@/assets/images/elipse@opaque.png)
-          background-size: 100%
-          background-repeat: no-repeat
-          margin-top: -220px
-          margin-left: 255px
+        .images
+          margin-top: 8rem
 
           @media only screen and (max-width: 990px)
-            background-image: none
-            width: 0px
+            height: 525px
 
-        .image-c
-          width: 145%
-          height: 580px
-          background-image: url(~@/assets/images/home-bg-c-3.png)
-          background-size: 100%
-          background-repeat: no-repeat
-          margin-top: -570px
-          margin-left: -275px
+          @media only screen and (max-width: 590px)
+            height: 425px
 
-          @media only screen and (max-width: 400px)
-            width: 90%
-            height: 280px
-            margin-left: 20px
-
-          @media only screen and (min-width: 401px) and (max-width: 690px)
-            width: 100%
+          @media only screen and (max-width: 490px)
             height: 350px
-            margin-left: -20px
 
-          @media only screen and (min-width: 691px) and (max-width: 990px)
-            width: 120%
-            height: 480px
-            margin-left: -160px
+          .image-a
+            height: 400px
+            background-image: url(~@/assets/images/home-bg-c-2.png)
+            background-size: 400px 400px
+            background-repeat: no-repeat
+            background-position: 22rem
+
+            @media only screen and (max-width: 1300px)
+              background-position: 16rem
+
+            @media only screen and (max-width: 1000px)
+              background-position: 10rem
+
+            @media only screen and (max-width: 990px)
+              background-size: 350px 350px
+
+            @media only screen and (max-width: 590px)
+              background-size: 300px 300px
+              background-position: 8rem 1rem
+
+            @media only screen and (max-width: 490px)
+              background-size: 250px 250px
+              background-position: 5rem 1rem
+
+            @media only screen and (max-width: 400px)
+              background-position: 4rem 1rem
+
+            @media only screen and (max-width: 350px)
+              background-size: 200px 200px
+
+          .image-b
+            height: 225px
+            background-image: url(~@/assets/images/elipse@opaque.png)
+            background-size: 225px 225px
+            background-repeat: no-repeat
+            margin-top: -75px
+            background-position: 97%
+
+            @media only screen and (max-width: 990px)
+              background-image: none
+
+          .image-c
+            height: 700px
+            background-image: url(~@/assets/images/home-bg-c-3.png)
+            background-size: 700px 700px
+            background-repeat: no-repeat
+            margin-top: -575px
+            background-position: 4rem
+
+            @media only screen and (max-width: 1300px)
+              background-size: 650px 650px
+              background-position: 0rem
+
+            @media only screen and (max-width: 990px)
+              background-size: 500px 500px
+              background-position: 2rem 2rem
+
+            @media only screen and (max-width: 690px)
+              background-position: 2rem 2rem
+
+            @media only screen and (max-width: 590px)
+              background-size: 400px 400px
+
+            @media only screen and (max-width: 490px)
+              background-size: 300px 300px
+
+            @media only screen and (max-width: 400px)
+              background-position: 0rem 2rem
 
       .col-right
         padding-top: 105px
@@ -536,6 +639,12 @@
           margin-left: 0px
           padding-top: 0px
           text-align: center
+
+        @media only screen and (max-width: 690px)
+          padding-top: 2rem
+
+        @media only screen and (max-width: 320px)
+          padding-top: 1rem
 
         h4
           font-size: 0.875rem
@@ -593,10 +702,10 @@
       background-position: -26rem
 
     @media only screen and (max-width: 1600px)
-      background-position: -32rem
+      background-position: -36rem
 
     @media only screen and (max-width: 1400px)
-      background-position: -40rem -2rem
+      background-position: -42rem -2rem
 
     @media only screen and (max-width: 1200px)
       background-position: -46rem -2rem
@@ -660,6 +769,8 @@
           .logo
             text-align: center
             margin-top: 4rem
+            margin-left: auto
+            margin-right: auto
 
             img
               width: 25%
@@ -693,6 +804,9 @@
 
         @media only screen and (max-width: 320px)
           margin-top: -2rem
+
+        @media only screen and (min-width: 1300px)
+          margin-top: 8rem
 
         .image-row
           p
@@ -848,7 +962,7 @@
                   g-image(src="~/assets/images/timeline/aniversario.png" alt="Fluxo de Aniversário" v-if="example == 0")
                   g-image(src="~/assets/images/timeline/reaquecimento.png" alt="Fluxo de Reaquecimento" v-if="example == 1")
                   g-image(src="~/assets/images/timeline/inbound-marketing.png" alt="Fluxo de Inbound Marketing" v-if="example == 2")
-                  g-image.w-75(src="~/assets/images/timeline/whatsapp.png" alt="Fluxo de Whatsapp" v-if="example == 3")
+                  g-image(src="~/assets/images/timeline/whatsapp.png" alt="Fluxo de Whatsapp" v-if="example == 3")
                   g-image(src="~/assets/images/timeline/check-in-hotel.png" alt="Fluxo de Check-in Hotel" v-if="example == 4")
 
       .section.section-b
@@ -906,12 +1020,14 @@
                   g-image(src='~/assets/images/editor-footer.png' alt='')
 
       .section.section-c
-        g-image(src="~/assets/images/doted-square@3x4.png" class="doted-square" alt="")
+        g-image(src="~/assets/images/doted-square@3x2.png" class="doted-square-a" alt="")
+        g-image(src="~/assets/images/doted-square@3x4.png" class="doted-square-b" alt="")
         .container
           .row.scroll-reveal
             .col-lg-9.col-left
                 .title
                   h3 Você vai conhecer o verdadeiro software de automação
+                .images
                   .image-a
                   .image-b
                   .image-c
@@ -977,7 +1093,7 @@
                         .col-12.col-md-6.image
                           g-image(src="~/assets/images/cases/hotel-zion.png" alt="Imagem")
                         .col-12.col-md-6.content
-                          .logo
+                          .logo.w-50
                             g-image(src="~/assets/images/cases/hotel-zion-logo.png" alt='Hotel Zion')
                           .description Junto com o Bulldesk, a gente criou um setor comercial. Criamos o site novo, mais apelativo para vendas, com formulários e landing pages. O Bulldesk nos auxiliou a organizar a captação e nutrição de leads. Isso melhorou o nosso tempo de resposta e a nossa interação com os leads. Aumentando a nossa taxa de conversão de leads em clientes.
                           .author Marina Müller
@@ -989,7 +1105,7 @@
                         .col-12.col-md-6.image
                           g-image(src="~/assets/images/cases/casabeta.png" alt="Imagem")
                         .col-12.col-md-6.content
-                          .logo
+                          .logo.w-50
                             g-image(src="~/assets/images/cases/casabeta-logo.png" alt='Casa Beta')
                           .description Quando pensamos em começar esse negócio já sabíamos que precisávamos de uma ferramenta de CRM e automação de marketing, e essa ferramenta era o Bulldesk. O Bulldesk nos auxiliou na criação do nosso site, na criação de campanhas e landing pages que geraram centenas de leads.
                           .author Maria Fernanda
