@@ -8,35 +8,34 @@ header:
   image: '../../assets/images/case-zion-bg-hero.png'
 
 section-a:
-  h2: A Casa Beta
+  h2: A PassePag
   p:
-    - 'A Casa Beta é uma plataforma de cursos a distância que tem como principal público-alvo mulheres. Criada pela empreendedora Maria Fernanda Narciso, a empresa surgiu quando ela percebeu uma oportunidade de explorar um nicho pouco utilizado no Brasil: cursos criativos para mulheres.' 
-    - 'Pensando nisso ela criou uma empresa chamada Casa Beta. Criada em 2018, tem como missão inspirar mulheres através dos seus cursos e conteúdos que são cuidadosamente escolhidos para que se alinhem com a visão da marca. Alguns deles são:  Arranjos florais,  planejamento de rotina, crochê para iniciantes, tricô, bordado e diversas outras ideias criativas.'
+    - 'A Passepag é uma empresa de meios pagamento que oferece soluções tecnológicas e inovadoras para seus clientes através de máquinas de cartão. Além do meio físico, a Passepag oferece soluções também para o mundo online, através de seu e-commerce de integração com outras plataformas. A empresa faz parte da J&A Holding e está há mais de dois anos no mercado.' 
+    - 'Hoje, a Passepag atua em certos nichos de mercado, como beleza, saúde e educação, e volta sua estratégia para eles. A proposta da empresa, portanto, é especializar-se em soluções para determinados nichos, com o intuito de promover o melhor produto possível para seus clientes. Essas soluções são oferecidas diretamente na máquina, otimizando de diversas maneiras a experiência do usuário.'
 
 section-b:
   h2: Confira quais estratégias foram usadas
   p: Veja como funciona o Bulldesk e suas principais funções em um vídeo direto ao ponto. <b>Você vai se surpreender</b>.
-  videoID:
+  videoID: VEMo_8as5t8
   videoThumb: '../../assets/images/video-placeholder.jpg'
 
 section-c:
   h2: Desafios
-  p: O mercado de criação de cursos sempre foi um setor super concorrido. Existem diversos produtores, empresas e grandes players que exploram essa área criando e vendendo cursos online. O grande desafio da empresa era trazer para a internet algo que tivesse uma proposta diferente de tudo o que já existe, criando algo voltado exclusivamente para o empoderamento feminino.
+  p: De acordo com o gerente comercial da Passepag, Hugo Ponchio, a empresa costumava fazer a prospecção e manutenção de relacionamento com o Lead de forma manual. Por conta disso, muitos clientes perdiam-se, pois o processo não dava conta de todos os contatos realizados diariamente.
   image: '../../assets/images/case-zion-section-c.png'
 
 section-d:
   h2: Sobre a solução
-  p: Pensando nisso, o grande diferencial é que ao invés de começar o projeto sem nenhuma ferramenta, a Maria Fernanda colocou no seu planejamento antes mesmo de iniciar o projeto encontrar uma ferramenta de automação de marketing e CRM que  pudesse ajudá-la na organização e crescimento da empresa. O mais interessante de tudo isso é que a Casa Beta iniciou lado a lado com o Bulldesk, ou seja, desde o dia 1 a Casa Beta já estava com o Bulldesk integrado e funcionando
+  p: Não demorou para a Passepag perceber que uma boa estratégia digital e no porta a porta não vale muito sem organização e automatização de processos que agilizem o atendimento.  “Quando a gente conheceu o Bulldesk, o interessante foi que a solução nos atendia desde o início da captação do lead até a finalização da venda.”, conta Hugo. Esse aspecto foi fundamental para identificar quais estratégias estavam funcionando de fato, ou seja, quais personas e canais de venda performavam melhor. 
   depoimento:
-    depoimento: "Um dos principais elementos para criar algo que fosse diferente, foi o design moderno e prático do site, criando um mix entre e commerce e lifestyle. Com o site pronto foi possível integrar o Bulldesk e começar a geração de leads."
-    autor: conta Maria Fernanda
+    depoimento: "A gente captava o lead através das redes sociais, ele vinha para o nosso e-mail e nós fazíamos tudo manual: entrávamos em contato com ele, enviávamos a proposta. Era muito manual e passível de erro, porque você acaba não tendo um controle tão bom."
+    autor: conta Hugo Ponchio
 
-  p2: Ao instalar o Script de Monitoramento de Leads em seu site, a Casa Beta conseguiu mensurar e acompanhar a origem de todos os seus leads. Conseguindo observar que as plataformas que mais trouxeram resultados foram os anúncios no instagram e também no facebook, apesar de conseguir gerar também diversos leads de outros lugares.<br/><br/>
-      Outro ponto utilizado pela Casa Beta, foram as mais de 210 campanhas de automação de marketing  criadas dentro do Bulldesk. Diversas campanhas como por exemplo boas vindas, divulgação de produtos, abandono de carrinho, leads scoring, lançamentos e diversas outras.
+  p2: A automatização dos processos de marketing e vendas com o Bulldesk aconteceu naturalmente, assim como a contribuição da solução para as tomadas de decisão da empresa. “Com o Bulldesk a gente automatizou tudo. Nós sabemos em que canal o lead está entrando, a evolução desse lead.<br/><br/> Além disso, fazemos a interação com esse lead, já que a própria ferramenta nos dá os próximos passos. Ao mesmo tempo, sabemos quando interagir com o cliente, se ele finalizou a compra ou não e o porque ele não finalizou.”, diz Ponchio.
 
 section-e:
   h2: Os resultados
   items:
-    - p: Ao utilizar o Bulldesk, a Casa Beta acabou tendo todo o controle de geração de leads e automação de marketing, o que fez com que fosse possível focar mais em novas estratégias de conteúdo, divulgação e criação de cursos.
-    - p: 'A empresa também conseguiu melhorar a sua atuação em todas as frentes; aumentar a presença online, atrair mais visitantes para o site, convertê-los, qualificá-los e fechar mais vendas. "Se não fosse com o Bulldesk provavelmente teríamos que estar utilizando uma planilha de excel ou sabe-se lá o que", conta Maria.'
+    - p: Para Hugo, o uso do Bulldesk é um caminho sem volta. “Com o Bulldesk a gente começou a ter inteligência no nosso negócio. O principal resultado foi a organização. Eu acho que não tem como a empresa crescer comercialmente e ter resultados se você não está organizado.”, diz Hugo.
+    - p: 'Além disso, a otimização da captação e nutrição de leads e o funil de vendas perfeitamente delineado no Bulldesk, contribuíram para aumentar a taxa de conversão da empresa. “A gente teve um crescimento muito bom. Temos performado uma média de 5 a 8 % de conversão dos leads que a gente capta. E isso eu vejo que é por causa da ferramenta mesmo, porque hoje ela nos organiza a vida.”, conta.'
     - p: Em apenas 11 meses, a empresa foi de 0 a 17.494 leads gerados, chegando a bater 20,64% em sua taxa de conversão no mês de Janeiro.
