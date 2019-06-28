@@ -156,7 +156,7 @@
                 | {{ item }}
 
           div.col-lg-8
-            VideoLauncher(:videoID="$page.content.header.videoID" :image="$page.content.header.videoThumb")
+            VideoLauncher(:videoID="$page.content.header.videoID" :image="$page.content.header.videoThumb.src")
 
     section.container.topics-a
       .row

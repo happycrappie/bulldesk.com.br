@@ -10,7 +10,7 @@ header:
 section-a:
   h2: A Casa Beta
   p:
-    - 'A Casa Beta é uma plataforma de cursos a distância que tem como principal público-alvo mulheres. Criada pela empreendedora Maria Fernanda Narciso, a empresa surgiu quando ela percebeu uma oportunidade de explorar um nicho pouco utilizado no Brasil: cursos criativos para mulheres.' 
+    - 'A Casa Beta é uma plataforma de cursos a distância que tem como principal público-alvo mulheres. Criada pela empreendedora Maria Fernanda Narciso, a empresa surgiu quando ela percebeu uma oportunidade de explorar um nicho pouco utilizado no Brasil: cursos criativos para mulheres.'
     - 'Pensando nisso ela criou uma empresa chamada Casa Beta. Criada em 2018, tem como missão inspirar mulheres através dos seus cursos e conteúdos que são cuidadosamente escolhidos para que se alinhem com a visão da marca. Alguns deles são:  Arranjos florais,  planejamento de rotina, crochê para iniciantes, tricô, bordado e diversas outras ideias criativas.'
 
 section-b:
@@ -22,7 +22,7 @@ section-b:
 section-c:
   h2: Desafios
   p: O mercado de criação de cursos sempre foi um setor super concorrido. Existem diversos produtores, empresas e grandes players que exploram essa área criando e vendendo cursos online. O grande desafio da empresa era trazer para a internet algo que tivesse uma proposta diferente de tudo o que já existe, criando algo voltado exclusivamente para o empoderamento feminino.
-  image: '../../assets/images/case-zion-section-c.png'
+  image: '../../assets/images/cases/casabeta_print.png'
 
 section-d:
   h2: Sobre a solução
