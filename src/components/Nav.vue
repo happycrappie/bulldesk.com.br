@@ -62,7 +62,7 @@
 
     .nav-item.for-whom
       .dropdown-icon
-        left: 6.1rem
+        left: 5.7rem
 
       .dropdown-container
         min-width: 28rem
@@ -72,14 +72,14 @@
         left: -35%
 
         .dropdown-icon
-          left: 5rem
+          left: 4.3rem
 
         .dropdown-container
           min-width: 12rem
 
-    .nav-item.cases
+    .nav-item.what-it-is
       .dropdown-icon
-        left: 4.1rem
+        left: 4.7rem
 
     .navbar-collapse
       @include media('screen', '<=ipad')
@@ -150,7 +150,7 @@
               .col-12
                 b-dropdown-item(href="/o-que-faz/marketing") Marketing
                 b-dropdown-item(href="/o-que-faz/vendas") Vendas
-        b-nav-item-dropdown.cases(text="O que é")
+        b-nav-item-dropdown.what-it-is(text="O que é")
           span.dropdown-icon
           .dropdown-container
             .row.no-gutters
