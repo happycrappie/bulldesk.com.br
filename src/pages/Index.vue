@@ -410,6 +410,12 @@
     background-image: url(~@/assets/images/home-bg-c.png)
     background-position: -42rem
 
+    @media only screen and (max-width: 990px)
+      height: 1900px
+
+    @media only screen and (max-width: 490px)
+      height: 1700px
+
     @media only screen and (max-width: 440px)
       margin-top: -28rem
       background-position: -48rem 3rem
@@ -417,9 +423,6 @@
     @media only screen and (min-width: 441px) and (max-width: 990px)
       margin-top: -28rem
       background-position: -58rem
-
-    @media only screen and (min-width: 690px) and (max-width: 990px)
-      height: 1900px
 
     @media only screen and (min-width: 990px) and (max-width: 1200px)
       background-position: -66rem
@@ -525,7 +528,7 @@
       @media only screen and (max-width: 990px)
         padding-top: 38rem
 
-      @media only screen and (max-width: 440px)
+      @media only screen and (max-width: 490px)
         padding-top: 34rem
 
       .col-left
@@ -548,6 +551,15 @@
 
         .images
           margin-top: 8rem
+
+          @media only screen and (max-width: 990px)
+            height: 525px
+
+          @media only screen and (max-width: 590px)
+            height: 425px
+
+          @media only screen and (max-width: 490px)
+            height: 350px
 
           .image-a
             height: 400px
@@ -599,7 +611,8 @@
             background-position: 4rem
 
             @media only screen and (max-width: 1300px)
-              background-position: -2rem
+              background-size: 650px 650px
+              background-position: 0rem
 
             @media only screen and (max-width: 990px)
               background-size: 500px 500px
