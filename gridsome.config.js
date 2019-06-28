@@ -54,6 +54,14 @@ module.exports = {
         typeName: 'Case',
         route: '/case/:id'
       }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'src/data/o-que-e/*.yaml',
+        typeName: 'OQueE',
+        route: '/o-que-e/:id'
+      }
     }
   ],
   chainWebpack (config) {
