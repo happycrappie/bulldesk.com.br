@@ -418,6 +418,9 @@
       margin-top: -28rem
       background-position: -58rem
 
+    @media only screen and (min-width: 690px) and (max-width: 990px)
+      height: 1900px
+
     @media only screen and (min-width: 990px) and (max-width: 1200px)
       background-position: -66rem
 
@@ -458,6 +461,7 @@
 
       @media only screen and (max-width: 1600px)
         left: 70%
+        top: 3050px
 
     .container
       padding-top: 57rem
@@ -485,7 +489,7 @@
         .image-a
           width: 80%
           height: 500px
-          margin: 50px auto
+          margin: 100px auto
           background-image: url(~@/assets/images/home-bg-c-2.png)
           background-size: 100%
           background-repeat: no-repeat
@@ -496,7 +500,7 @@
           background-image: url(~@/assets/images/elipse@opaque.png)
           background-size: 100%
           background-repeat: no-repeat
-          margin-top: -220px
+          margin-top: -290px
           margin-left: 255px
 
           @media only screen and (max-width: 990px)
@@ -505,27 +509,31 @@
 
         .image-c
           width: 145%
-          height: 580px
+          height: 600px
           background-image: url(~@/assets/images/home-bg-c-3.png)
-          background-size: 100%
+          background-size: 100% 100%
           background-repeat: no-repeat
           margin-top: -570px
           margin-left: -275px
 
           @media only screen and (max-width: 400px)
             width: 90%
-            height: 280px
-            margin-left: 20px
+            height: 300px
+            margin-left: 8px
+            margin-top: -580px
 
           @media only screen and (min-width: 401px) and (max-width: 690px)
             width: 100%
-            height: 350px
+            height: 370px
             margin-left: -20px
 
           @media only screen and (min-width: 691px) and (max-width: 990px)
             width: 120%
-            height: 480px
-            margin-left: -160px
+            height: 500px
+            margin-left: -140px
+
+          @media only screen and (min-width: 991px) and (max-width: 1200px)
+            margin-left: -225px
 
       .col-right
         padding-top: 105px
@@ -536,6 +544,12 @@
           margin-left: 0px
           padding-top: 0px
           text-align: center
+
+        @media only screen and (max-width: 690px)
+          padding-top: 2rem
+
+        @media only screen and (max-width: 320px)
+          padding-top: 1rem
 
         h4
           font-size: 0.875rem
@@ -593,10 +607,10 @@
       background-position: -26rem
 
     @media only screen and (max-width: 1600px)
-      background-position: -32rem
+      background-position: -36rem
 
     @media only screen and (max-width: 1400px)
-      background-position: -40rem -2rem
+      background-position: -42rem -2rem
 
     @media only screen and (max-width: 1200px)
       background-position: -46rem -2rem
