@@ -971,7 +971,7 @@
             .col-lg-6
               h3 Uma ferramenta completa
                 br
-                span.text-pink acelerar as suas vendas |
+                span.text-pink para acelerar as suas vendas |
               .subtitle De maneira simples e intuitiva, criamos um software com tudo que você precisa quando o assunto é marketing e vendas. Conheça o Bulldesk e comece a gerar mais resultados através da inteligência comercial.
 
               .container.items
