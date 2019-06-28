@@ -419,13 +419,13 @@
       background-position: -58rem
 
     @media only screen and (min-width: 990px) and (max-width: 1200px)
-      background-position: -54rem
+      background-position: -66rem
 
     @media only screen and (min-width: 1201px) and (max-width: 1400px)
-      background-position: -50rem
+      background-position: -58rem
 
     @media only screen and (min-width: 1401px) and (max-width: 1600px)
-      background-position: -46rem
+      background-position: -50rem
 
     @media only screen and (min-width: 1601px) and (max-width: 1800px)
       background-position: -42rem
