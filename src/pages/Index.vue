@@ -730,6 +730,8 @@
           .logo
             text-align: center
             margin-top: 4rem
+            margin-left: auto
+            margin-right: auto
 
             img
               width: 25%
@@ -1045,10 +1047,10 @@
                   swiper-slide
                     .container
                       .row
-                        .col-12.col-md-6.image
+                        .col-12.col-md-6.ige
                           g-image(src="~/assets/images/cases/hotel-zion.png" alt="Imagem")
                         .col-12.col-md-6.content
-                          .logo
+                          .logo.w-50
                             g-image(src="~/assets/images/cases/hotel-zion-logo.png" alt='Hotel Zion')
                           .description Junto com o Bulldesk, a gente criou um setor comercial. Criamos o site novo, mais apelativo para vendas, com formulários e landing pages. O Bulldesk nos auxiliou a organizar a captação e nutrição de leads. Isso melhorou o nosso tempo de resposta e a nossa interação com os leads. Aumentando a nossa taxa de conversão de leads em clientes.
                           .author Marina Müller
@@ -1060,7 +1062,7 @@
                         .col-12.col-md-6.image
                           g-image(src="~/assets/images/cases/casabeta.png" alt="Imagem")
                         .col-12.col-md-6.content
-                          .logo
+                          .logo.w-50
                             g-image(src="~/assets/images/cases/casabeta-logo.png" alt='Casa Beta')
                           .description Quando pensamos em começar esse negócio já sabíamos que precisávamos de uma ferramenta de CRM e automação de marketing, e essa ferramenta era o Bulldesk. O Bulldesk nos auxiliou na criação do nosso site, na criação de campanhas e landing pages que geraram centenas de leads.
                           .author Maria Fernanda
