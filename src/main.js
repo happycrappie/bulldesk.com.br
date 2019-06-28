@@ -17,10 +17,21 @@ export default function (Vue, { router, head, isClient }) {
   head.meta.push({ name: 'og:type', content: 'website' });
   head.meta.push({ name: 'description', content: description });
   head.meta.push({ name: 'og:description', content: description });
+  head.meta.push({ name: 'og:image', content: '~/assets/images/bulldesk.png' });
   head.meta.push({ name: 'keywords', content: 'Automação de Marketing, CRM' });
 
   head.link.push({
     rel: 'stylesheet',
     href: 'https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap'
   });
+
+  router.beforeEach((to, _from, next) => {
+    head.meta.push({
+      key: 'og:url',
+      name: 'og:url',
+      content: process.env.GRIDSOME_BASE_PATH + to.path,
+    })
+
+    next()
+  })
 }

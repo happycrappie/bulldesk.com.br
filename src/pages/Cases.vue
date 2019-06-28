@@ -74,6 +74,9 @@
           box-shadow: 0 10px 20px 0 rgba(165, 131, 224, 0.13)
           transition: all 0.2s linear
 
+          img
+            max-width: 100%
+
       h2
         margin: 0
 
