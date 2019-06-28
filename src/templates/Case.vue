@@ -285,7 +285,7 @@
                 g-image(src="../assets/icons/play-button@black.svg", alt="")
 
           .col-lg-8
-            VideoLauncher(:videoID="this.$page.content.section_b.videoID" :image="this.$page.content.section_b.videoThumb")
+            VideoLauncher(:videoID="this.$page.content.section_b.videoID" :image="this.$page.content.section_b.videoThumb.src")
 
     .section-c
       .container
