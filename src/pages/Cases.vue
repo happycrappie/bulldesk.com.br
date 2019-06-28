@@ -145,7 +145,7 @@
         .row.justify-content-center.text-center
           h1.col-12 Cases
             span.dot.green
-          p.col-lg-7 Veja abaixo cases de nossos clientes.
+          p.col-lg-7 Veja abaixo algumas histórias de sucesso de nossos clientes.
 
     section.section-a
       .container
