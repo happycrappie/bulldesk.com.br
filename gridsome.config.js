@@ -54,6 +54,14 @@ module.exports = {
         typeName: 'Case',
         route: '/cases/:id'
       }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'src/data/o-que-e/*.yaml',
+        typeName: 'OQueE',
+        route: '/o-que-e/:id'
+      }
     }
   ],
   chainWebpack (config) {
@@ -63,11 +71,17 @@ module.exports = {
       .use('pug-plain-loader')
       .loader('pug-plain-loader');
 
-    const svgRule = config.module.rule('svg')
+    const svgRule = config.module.rule('svg');
+      inlineSvgRule = config.module.rule('inline-svg');
 
-    svgRule.uses.clear()
-    svgRule
-      .use('vue-svg-loader')
-      .loader('vue-svg-loader')
+      svgRule
+        .exclude
+        .add(/inline\.(.*)\.svg/)
+        .end()
+
+      inlineSvgRule
+        .test(/inline\.(.*)\.svg/)
+        .use('vue-svg-loader')
+        .loader('vue-svg-loader')
   }
 }
