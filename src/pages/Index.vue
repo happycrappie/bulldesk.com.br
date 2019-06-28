@@ -766,6 +766,9 @@
         @media only screen and (max-width: 320px)
           margin-top: -2rem
 
+        @media only screen and (min-width: 1300px)
+          margin-top: 8rem
+
         .image-row
           p
             color: $gray-dark
