@@ -46,6 +46,14 @@ module.exports = {
         typeName: 'Exemplo',
         route: '/exemplo/:id'
       }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'src/data/case/*.yaml',
+        typeName: 'Case',
+        route: '/case/:id'
+      }
     }
   ],
   chainWebpack (config) {
