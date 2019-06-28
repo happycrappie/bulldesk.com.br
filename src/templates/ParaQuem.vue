@@ -52,10 +52,7 @@
       top: 620px
 
   .section-a
-    margin-top: -18rem
-
-    @media only screen and (max-width: map-get($grid-breakpoints, 'sm'))
-      margin-top: -22rem
+    margin-top: -24rem
 
     .item
       padding: 1.5rem 2rem
