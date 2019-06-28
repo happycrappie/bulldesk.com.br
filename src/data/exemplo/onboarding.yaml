@@ -3,13 +3,13 @@ id: onboarding
 order: 4
 title: Campanha de Onboarding
 icon: '../../assets/icons/exemplos-icon-fist.svg'
-description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s
+description: Campanhas de onboarding são execelentes para você dar as boas vindas aos seus clientes e também educá-los de como utilizar o seu produto. Porque fazer manual se podemos automatizar?
 header:
   h1: Campanha de Onboarding
   p:
-    - Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-    - Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-    - Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    - Manter os clientes que você já tem é muitas vezes mais importantes do que gerar novos leads. E uma das estratégias para fazer com que seus clientes se sintam valorizados é através das campanhas de onboarding.
+    - Além disso, você pode utilizar as campanhas de onboarding para ensinar o seu cliente a usar o seu produto. Essa é uma forma de fazer com que o seu cliente tenha o máximo de satisfação possível com seu produto.
+    - As campanhas de onboarding ajudam você a manter e fidelizar clientes. No Bulldesk você pode programar uma campanha de onboarding automática que será ativada cada vez que você fechar um negócio.
 
 section-a:
   h2: Quer ver como é simples?
