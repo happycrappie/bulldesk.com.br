@@ -1,6 +1,8 @@
 ---
 id: casabeta
 title: Casa Beta
+logo: '../../assets/images/cases/hotel-zion-logo.png'
+description: Saiba como o Hotel Zion cresceu 175% em dois anos com a ajuda do Bulldesk
 header:
   h1: Como o Hotel Zion cresceu 175% em dois anos com a ajuda do Bulldesk
   image: '../../assets/images/case-zion-bg-hero.png'
