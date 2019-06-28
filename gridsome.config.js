@@ -44,7 +44,15 @@ module.exports = {
       options: {
         path: 'src/data/exemplo/*.yaml',
         typeName: 'Exemplo',
-        route: '/exemplo/:id'
+        route: '/exemplos/:id'
+      }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'src/data/case/*.yaml',
+        typeName: 'Case',
+        route: '/cases/:id'
       }
     }
   ],

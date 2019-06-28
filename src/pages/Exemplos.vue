@@ -149,12 +149,12 @@
         .row
           .col-lg-4.col-md-6(v-for="(edge, index) in $page.examples.edges")
             div
-              a(:href="'/exemplo/' + edge.node.id").d-flex.justify-content-center.align-items-center
+              a(:href="'/exemplos/' + edge.node.id").d-flex.justify-content-center.align-items-center
                 g-image(:src="edge.node.icon")
             h2
-              a(:href="'/exemplo/' + edge.node.id") {{ edge.node.title }}
+              a(:href="'/exemplos/' + edge.node.id") {{ edge.node.title }}
             p
-              a(:href="'/exemplo/' + edge.node.id") {{ edge.node.description }}
+              a(:href="'/exemplos/' + edge.node.id") {{ edge.node.description }}
 
 
     section.section-email
