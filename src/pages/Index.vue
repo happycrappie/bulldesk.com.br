@@ -535,6 +535,10 @@
           float: right
           margin-right: 40px
 
+          @media only screen and (max-width: 990px)
+            margin-right: 0px
+            max-width: none
+
           h3
             color: $white-gray
             text-align: center
@@ -542,54 +546,76 @@
             @media only screen and (max-width: 990px)
               color: $purple
 
-        .image-a
-          width: 80%
-          height: 500px
-          margin: 100px auto
-          background-image: url(~@/assets/images/home-bg-c-2.png)
-          background-size: 100%
-          background-repeat: no-repeat
+        .images
+          margin-top: 8rem
 
-        .image-b
-          height: 250px
-          width: 40%
-          background-image: url(~@/assets/images/elipse@opaque.png)
-          background-size: 100%
-          background-repeat: no-repeat
-          margin-top: -290px
-          margin-left: 255px
+          .image-a
+            height: 400px
+            background-image: url(~@/assets/images/home-bg-c-2.png)
+            background-size: 400px 400px
+            background-repeat: no-repeat
+            background-position: 22rem
 
-          @media only screen and (max-width: 990px)
-            background-image: none
-            width: 0px
+            @media only screen and (max-width: 1300px)
+              background-position: 16rem
 
-        .image-c
-          width: 145%
-          height: 600px
-          background-image: url(~@/assets/images/home-bg-c-3.png)
-          background-size: 100% 100%
-          background-repeat: no-repeat
-          margin-top: -570px
-          margin-left: -275px
+            @media only screen and (max-width: 1000px)
+              background-position: 10rem
 
-          @media only screen and (max-width: 400px)
-            width: 90%
-            height: 300px
-            margin-left: 8px
-            margin-top: -580px
+            @media only screen and (max-width: 990px)
+              background-size: 350px 350px
 
-          @media only screen and (min-width: 401px) and (max-width: 690px)
-            width: 100%
-            height: 370px
-            margin-left: -20px
+            @media only screen and (max-width: 590px)
+              background-size: 300px 300px
+              background-position: 8rem 1rem
 
-          @media only screen and (min-width: 691px) and (max-width: 990px)
-            width: 120%
-            height: 500px
-            margin-left: -140px
+            @media only screen and (max-width: 490px)
+              background-size: 250px 250px
+              background-position: 5rem 1rem
 
-          @media only screen and (min-width: 991px) and (max-width: 1200px)
-            margin-left: -225px
+            @media only screen and (max-width: 400px)
+              background-position: 4rem 1rem
+
+            @media only screen and (max-width: 350px)
+              background-size: 200px 200px
+
+          .image-b
+            height: 225px
+            background-image: url(~@/assets/images/elipse@opaque.png)
+            background-size: 225px 225px
+            background-repeat: no-repeat
+            margin-top: -75px
+            background-position: 97%
+
+            @media only screen and (max-width: 990px)
+              background-image: none
+
+          .image-c
+            height: 700px
+            background-image: url(~@/assets/images/home-bg-c-3.png)
+            background-size: 700px 700px
+            background-repeat: no-repeat
+            margin-top: -575px
+            background-position: 4rem
+
+            @media only screen and (max-width: 1300px)
+              background-position: -2rem
+
+            @media only screen and (max-width: 990px)
+              background-size: 500px 500px
+              background-position: 2rem 2rem
+
+            @media only screen and (max-width: 690px)
+              background-position: 2rem 2rem
+
+            @media only screen and (max-width: 590px)
+              background-size: 400px 400px
+
+            @media only screen and (max-width: 490px)
+              background-size: 300px 300px
+
+            @media only screen and (max-width: 400px)
+              background-position: 0rem 2rem
 
       .col-right
         padding-top: 105px
@@ -988,6 +1014,7 @@
             .col-lg-9.col-left
                 .title
                   h3 Você vai conhecer o verdadeiro software de automação
+                .images
                   .image-a
                   .image-b
                   .image-c
