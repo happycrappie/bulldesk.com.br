@@ -2,6 +2,9 @@
   @import 'node_modules/include-media/dist/_include-media.scss'
   @import '../assets/styles/_variables.scss'
 
+  header
+    z-index: 4
+
   .hero
     position: relative
     z-index: 3
