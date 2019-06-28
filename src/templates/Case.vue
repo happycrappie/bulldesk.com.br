@@ -273,7 +273,7 @@
             h2 {{ this.$page.content.section_a.h2 }}
             p(v-for="p in this.$page.content.section_a.p") {{ p }}
 
-    .section-b
+    .section-b(v-if="this.$page.content.section_b.videoID.length")
       .container
         .row.justify-content-between.align-items-center
           .col-lg-3
