@@ -208,16 +208,16 @@
         .column.column-d
           h5 Sobre
           ul
-            li
-              a(href="/quem-somos") Quem somos
+            //- li
+            //-   a(href="/quem-somos") Quem somos
             //- li
             //-   a(href="#") Vagas
             //- li
             //-   a(href="#") Encontre um parcero
             //- li
             //-   a(href="#") Seja um parceiro
-            li
-              a(href="/contato") Contato
+            //- li
+            //-   a(href="/contato") Contato
             li
               a(href="https://docs.bulldesk.com.br/termos-de-uso" target="_blank") Termos de Uso
             li
