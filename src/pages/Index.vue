@@ -1139,7 +1139,7 @@
                   | Veja mais histórias de sucesso
                   g-image(src="../assets/icons/play-button@white.svg", alt="")
 
-      .section.section-e
+      .section.section-e.d-none
         .container
           .row.scroll-reveal
             .col-12.col-lg-3
@@ -1152,7 +1152,7 @@
                 g-image(src="../assets/icons/play-button@black.svg", alt="")
             .col-12.col-lg-9
               .video-container
-                g-image(src='~/assets/images/home-video.png' alt='Video')
+                VideoLauncher(videoID="$page.content.header.videoID" image="$page.content.header.videoThumb.src")
               b-button.d-inline.d-lg-none(href="https://app.bulldesk.com.br/cadastro", variant="green")
                 | Teste grátis
                 g-image(src="../assets/icons/play-button@black.svg", alt="")
