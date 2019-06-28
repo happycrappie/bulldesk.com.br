@@ -116,19 +116,19 @@ section-h:
       p: Caso você não esteja conseguindo alcançar as metas. A partir das métricas você pode reavaliar suas estratégias e ver claramente o que está dando errado, em que parte do percurso entre captação e venda o seu lead está se perdendo. Assim, é possível que você trace uma nova rota de ação para consertar esses erros e alcançar suas metas. E mesmo que você não precise de uma correção de rota, aproveite das métricas para fazer uma revisão geral da sua empresa e criar estratégias de melhoria.
 
 section-i:
-  h3: Implemente o CRM em sua empresa
+  h3: Como escolher uma boa ferramenta de automação
   p: Com a plataforma de CRM devidamente escolhida e testada, é hora de implementar de fato o software na empresa. Mas para aproveitar todas as funcionalidades, você precisa preparar o terreno.
   items:
-    - h4: Estruture e organize o processo comercial da empresa
-      p: A plataforma deve adaptar-se ao seu processo comercial e não ao contrário. Por isso, antes de implementar a ferramenta, delineie perfeitamente como funciona o processo de vendas.
-    - h4: Separe e estruture os dados que serão importados para o CRM
-      p: A base de leads ou clientes que você já possui podem ser importadas para o novo sistema. Organize esses dados antes de implementá-lo.
-    - h4: Treine as equipes e explique a importância
-      p: Ninguém nasceu sabendo! Portanto, treine os funcionários que irão trabalhar com o CRM. Explique sobre como a ferramenta irá otimizar o trabalho de todos - e não substituí-los. É interessante não apenas ensinar sobre como usar a ferramenta, mas também o porquê de usá-la.
-    - h4: Importe os dados e faça a integração com outros sistemas
-      p: Boas ferramentas de CRM permitem a integração com outros sistemas. Caso você possua algum sistema para fazer a integração, faça-a.
-    - h4: Comece a usar e meça os resultados da implementação
-      p: Use a ferramenta e acompanhe de perto os dados gerados com a implementação. Acompanhe também o desenvolvimento dos colaboradores ao usar a ferramenta.
+    - h4: Funcionalidades
+      p: "Para te ajudar, preparamos uma lista compacta com as funcionalidades que são essenciais em uma boa ferramenta de automação de marketing: Criação de Landing Pages, Domínios customizados para Landing Pages, Criação e envio de E-mail Marketing, Templates Exclusivos (para Landing Pages e e-mail marketing), Fluxos de Automação, Criação de formulários, Integração com API, SMS Marketing, Monitoramento de Resultados, Gestão de Leads, Página exclusiva para cada Lead, Registros das atividades do Lead (cada página que ele visitou em seu site), Importação de Leads (de planilhas ou outro software), Lead Scoring, Integração com CRM"
+    - h4: Atendimento
+      p: Na hora de encontrar uma boa ferramenta de automação de marketing é necessário levar em consideração também o atendimento prestado pela empresa que está disponibilizando tal ferramenta. Esse atendimento é essencial tanto antecedendo a compra do produto, para responder quaisquer perguntas que o lead possa vir a ter. Assim como após a compra, seja para receber um feedback ou para  esclarecimento de dúvidas, mas o  canal de comunicação entre o cliente e a empresa deve estar sempre aberto.
+    - h4: Preço
+      p: A questão do preço também deve ser pensada na hora de adquirir uma ferramenta de automação. Claro que este deve vir atrelado com a qualidade, pois não adianta procurar pela ferramenta mais barata no mercado se ela não é uma ferramenta que possui todas as funcionalidades que você preciso e não irá satisfazer suas necessidades. Assim como, nem sempre a ferramenta mais cara será a melhor para você, dependendo dos seus objetivos e das funcionalidades que a ferramenta oferece tente encontrar a que lhe oferece o melhor custo benefício.
+    - h4: Treinamentos
+      p: Além disso, se assegure de que a empresa fornece um treinamento para que você aprenda a usar a ferramenta. É importante que esse treinamento seja oferecido para que aqueles que estiverem usando esse tipo de ferramenta pela primeira vez possam aprender quais são as suas funcionalidades e como usá-las. E mesmo para quem já utilizou ferramentas parecidas, o treinamento também é necessário para que o cliente consiga se familiarizar com as particularidades dessa nova ferramenta.
+    - h4: Facilidade de Uso
+      p: As funcionalidades da ferramenta devem ser reunidas numa interface intuitiva e simples de usar. O uso da ferramenta deve ser o mais simples possível, facilitando para que você crie estratégias inteligentes e complexas.
 
 section-j:
   h3: Mas será que o CRM é válido para todos os tamanhos de empresa?
