@@ -249,7 +249,7 @@
     position: relative
     z-index: 1
     margin-bottom: 130px
-    padding-top: 160px
+    padding-top: 180px
     padding-bottom: 120px
     color: $white-gray
 
@@ -468,7 +468,7 @@
             h2 As agências que saíram na frente e já utilizam o Bulldesk
             p.col-lg-10.mx-auto Fuja da burocracia dos grandes players e faça parte da comunidade crescente que usa o Bulldesk para transformar a agência em uma máquina de geração de leads.
 
-        ul.row.justify-content-around
+        //- ul.row.justify-content-around
           li.col-lg-auto.col-md-4.col-sm-2.text-center
             g-image(src="../assets/images/seja-um-parceiro-logos-section-d.png", alt="")
           li.col-lg-auto.col-md-4.col-sm-2.text-center
