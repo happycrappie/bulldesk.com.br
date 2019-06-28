@@ -544,7 +544,7 @@
 
           .col-lg-6.d-flex
             .align-self-end
-              g-image(src='~/assets/images/o-que-e-bg-2-section-b.png')
+              g-image(src='~/assets/images/o-que-e-bg-2-section-b@2x.png')
 
         ul.row.justify-content-between
           li.col-lg-6(v-for="item in this.$page.content.section_b.items")
