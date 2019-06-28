@@ -3,13 +3,13 @@ id: vendas
 order: 2
 title: Campanha de Vendas
 icon: '../../assets/icons/exemplos-icon-commerce.svg'
-description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s
+description: Quando alguém solicitar um contato com a equipe de vendas, sabe o que deve acontecer? Deve ir imediatamente para algum comercial. Meio óbvio, mas você faz isso?
 header:
   h1: Campanha de Vendas
   p:
-    - Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-    - Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-    - Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    - Campanhas de vendas são uma ótima forma de conseguir muitos leads e consequentemente aumentar as vendas em um curto período de tempo. Você pode usar diversos canais para alcançar e captar leads, como por exemplo formulários em landing pages.
+    - Com esse tipo de campanha você filtra os leads que já estão quentes, ou seja, próximos de realizar a compra e os distribui entre a sua equipe de vendas para eles finalizarem o negócio.
+    - Tudo isso é feito de forma automática. Você não precisa abrir nenhum e-mail nem checar nenhuma resposta de formulário. O Bulldesk encaminha seus leads automaticamente para a sua equipe de vendas.
 
 section-a:
   h2: Quer ver como é simples?
