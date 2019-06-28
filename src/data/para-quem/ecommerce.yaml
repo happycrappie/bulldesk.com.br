@@ -1,0 +1,57 @@
+---
+id: ecommerce
+title: Ecommerce
+header:
+  h1: Seja o e-commerce que não para de crescer
+  p: Aproveite o software mais completo de CRM com Automação de Marketing para revolucionar a maneira com que você interage com os clientes de seu e-commerce.
+section-a:
+  items:
+  - h4: Não perca nenhuma venda!
+    p: Acompanhe o lead desde os cliques iniciais até o pós venda com as funcionalidades CRM do Bulldesk. Nenhum cliente fica sem atendimento, já que estará desde o primeiro contato em seu pipeline de vendas.
+  - h4: Traga os clientes de carrinho cheio de volta!
+    p: Sabe aqueles clientes que enchem o carrinho e desaparecem? Então, eles são a oportunidade perfeita para receber lembretes e voltarem para finalizar a compra. Não perca o timing, programe um e-mail marketing matador para esta situação e aumente suas vendas!
+  - h4: Automatize processos de marketing digital.
+    p: Manter a presença no digital nunca foi tão fácil! Com o Bulldesk, você cria e-mails marketing, formulários e landing pages de forma rápida e intuitiva. Além disso, o cliente que interagir com seu conteúdo já pode ser direcionado automaticamente para as funcionalidades de CRM do Bulldesk. Assim, sua estratégia de marketing digital fica muito mais completa.
+  - h4: Lembre os clientes antigos que você existe
+    p: Pode ser que na vida real mandar aquele “Oi, sumido!” não seja tão efetivo quanto quando ele é direcionado à clientes antigos. Manter o relacionamento com quem já comprou de você é essencial e traz um bom retorno financeiro. Por isso, já deixe agendado um e-mail marketing para não deixar a interação entre vocês morrer.
+  - h4: Crie campanhas de marketing segmentadas em alguns cliques
+    p: "Com o Bulldesk, suas campanhas de inbound, geração de leads ou qualificação ficam prontas com apenas alguns cliques. Você pode segmentar os envios e os conteúdos a partir do comportamento de compra do cliente: basta ter a estratégia de marketing traçada e para executá-la com o Bulldesk."
+  - h4: Acelere as vendas do e-commerce
+    p: Com todos os clientes num só lugar, você organiza e agiliza seu processo comercial. Dessa forma, o processo entre a primeira visita até a concretização da compra se torna muito mais rápido e eficaz. Não perca mais nenhuma oportunidade com a agilidade que o Bulldesk te proporciona.
+  - h4: Garanta a satisfação dos clientes
+    p: A presença e a agilidade, mais do que nunca, são fatores importantes para garantir a satisfação do cliente. Aproveite os recursos de CRM e automação de marketing do Bulldesk para proporcionar rapidez no atendimento, monitorar pedidos e estar sempre presente na caixa de entrada do cliente.
+  - h4: Crie campanhas de marketing segmentadas em alguns cliques
+    p: Mandar e-mail é fácil. Quero ver uma campanha que começa com o cliente preenchendo um formulário em uma landing page, depois recebendo um email; se abrir o e-mail, entra em uma campanha de SMS e termina com o lead recebendo um Whatsapp de um vendedor da loja. É fácil também, mas só no Bulldesk.
+  - h4: Amplie seu lucro sem aumentar os custos
+    p: Nossos preços foram pensados em você. Confira os valores e comprove! Não existe outra plataforma no Brasil com todas as funcionalidades que oferecemos pelo valor que temos. É o melhor custo benefício que você pode encontrar.
+section-b:
+  h3: E aí, que tal bater recorde em vendas?
+  subtitle: Insira seu e-mail abaixo e crie sua conta agora mesmo
+section-c:
+  h3:
+    - Todas as ferramentas que você precisa para ser um e-commerce líder em vendas. E em um só lugar.
+    - Porque ser parceiro Bulldesk?
+  subtitle:
+    - Afinal, por que utilizar diversas ferramentas quando a gente tem tudo que seu e-commerce precisa para alcançar clientes novos e antigos?
+    - Não perca nenhuma venda. Acompanhe seus clientes desde os primeiros cliques até a finalização da compra. Crie estratégias de marketing eficazes com poucos cliques.
+  items:
+    - "CRM: O cliente num só lugar, desde os primeiros cliques até o pós venda. Quer melhor?"
+    - "Segmentação: Agrupe os seus clientes baseado em qualquer critério que você quiser."
+    - "Qualificação de lead: Utilize o lead scoring para encontrar os melhores compradores."
+    - "Monitoramento do site: Veja o que os visitantes fazem em seu site e crie campanhas e ofertas baseadas no comportamento."
+    - "Automação de marketing: Automatize os processos que ninguém tem tempo de gerenciar e não deixe nenhuma oportunidade de venda escapar."
+    - "Relatórios em tempo real: Mensure os seus resultados e veja o que funciona melhor para os clientes do e-commerce."
+    - "Email marketing: Construa sua marca e seja referência para seus clientes e leads. Aumente as vendas e transforme leads em oportunidades."
+    - "Omnichannel: Crie campanhas que comecem por email, passem por SMS e terminam no WhatsApp."
+    - "Whatsapp: O único com campanhas de WhatsApp integradas."
+section-d:
+  h3: Fique tranquilo
+  br: você está em boa companhia
+  cases:
+    - image: "../../assets/images/cases/buscape-logo.png"
+      description: Não sabia nada sobre plataformas digitais, fui buscar e encontrei o Bulldesk pelo custo ser mais acessível. Contratei. Como resultado, tivemos vendas com campanhas que já deram absolutamente certo, além da nutrição dos leads.
+      author: Marina Fernanda
+    - image: "../../assets/images/cases/buscape-logo.png"
+      description: O Bulldesk nos ajudou a interagir e criar uma relação com nossos leads de forma prática e automatizada. Assim, é possível atrair e nutrir leads de forma rápida, mas o contato continua sendo personalizado.
+      author: Sem Nome
+

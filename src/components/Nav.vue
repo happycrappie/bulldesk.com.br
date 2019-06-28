@@ -4,7 +4,7 @@
 
   nav.navbar.nav-layout
     padding: 15px 0
-    font-size: 0.85rem
+    font-size: 0.75rem
 
     .logo
       width: 140px
@@ -12,7 +12,7 @@
     .nav-item.trial
       .nav-link
         font-weight: 600
-        font-size: 0.8rem
+        font-size: 0.6875rem
         text-align: center
         padding: 9px 25px
         background: $green
@@ -20,7 +20,7 @@
         border-radius: 30px
 
         img
-          width: 12px
+          max-width: 12px
           margin: 0 0 2px 5px
 
         &:hover
@@ -29,24 +29,28 @@
 
     .nav-item
       .dropdown-menu
-        left: -45%
+        left: -48%
 
         .dropdown-icon
-          max-width: 20px
-          top: -0.9rem
           position: absolute
-          z-index: 1
-
-          img
-            width: 100%
+          border-width: 0 5px 5px 5px
+          border-color: transparent transparent #fafafa transparent
+          top: -10px
+          left: calc(50%) + 5px
+          margin-top: 0
+          margin-bottom: 0
+          width: 0
+          height: 0
+          border-style: solid
+          position: absolute
+          margin: 5px
 
         .dropdown-container
           padding: 1.2rem 2.5rem
           letter-spacing: 0.22px
           line-height: 25px
-          font-size: 0.8rem
+          font-size: 0.6875rem
           position: relative
-          z-index: 2
 
           h6
             color: $gray-dark
@@ -58,7 +62,7 @@
 
     .nav-item.for-whom
       .dropdown-icon
-        left: 7.5rem
+        left: 5.7rem
 
       .dropdown-container
         min-width: 28rem
@@ -68,13 +72,17 @@
         left: -35%
 
         .dropdown-icon
-          left: 5rem
+          left: 4.3rem
 
         .dropdown-container
           min-width: 12rem
 
+    .nav-item.what-it-is
+      .dropdown-icon
+        left: 4.7rem
+
     .navbar-collapse
-      @include media('screen', '<ipad')
+      @include media('screen', '<=ipad')
         background: $white
         margin-top: 0.8rem
         box-shadow: 0 1.5rem 4rem rgba(22,28,45,.15)
@@ -112,52 +120,81 @@
 
 <template lang="pug">
   b-navbar.d-flex.nav-layout(toggleable="lg2" :type="type")
-    b-navbar-brand
-      g-link(to="/")
-        g-image.logo(src="~/assets/images/logo@white.png" alt="Bulldesk" v-if="logo && logo == 'white'")
-        g-image.logo(src="~/assets/images/logo.png" alt="Bulldesk" v-else)
+    b-navbar-brand(href="/")
+      g-image.logo(src="../assets/images/logo@white.png" alt="Bulldesk" v-if="logo && logo == 'white'")
+      g-image.logo(src="../assets/images/logo.png" alt="Bulldesk" v-else)
     b-navbar-toggle(target="collapse")
     b-collapse#collapse(is-nav)
       b-navbar-nav.ml-auto
         b-nav-item-dropdown.for-whom(text="Pra quem é")
-          .dropdown-icon
-            g-image(src='~/assets/icons/poligono.svg')
+          span.dropdown-icon
           .dropdown-container
             .row.no-gutters
               .col-12.col-sm-6
                 h6.dropdown-header Vertical
-                b-dropdown-item(to="/para-quem/agencias") Agências
-                b-dropdown-item(to="/para-quem/construtoras") Construtoras
-                b-dropdown-item(to="/para-quem/ecommerce") Ecommerce
-                b-dropdown-item(to="/para-quem/ensino") Ensino
-                b-dropdown-item(to="/para-quem/hoteis") Hotéis
-                b-dropdown-item(to="/para-quem/ecommerce") SaaS
+                b-dropdown-item(href="/para-quem/agencias") Agências
+                b-dropdown-item(href="/para-quem/construtoras") Construtoras
+                b-dropdown-item(href="/para-quem/ecommerce") Ecommerce
+                b-dropdown-item(href="/para-quem/ensino") Ensino
+                b-dropdown-item(href="/para-quem/hoteis") Hotéis
+                b-dropdown-item(href="/para-quem/saas") SaaS
               .col-12.col-sm-6
                 h6.dropdown-header Equipes
-                b-dropdown-item(to="/para-quem/marketing") Marketing
-                b-dropdown-item(to="/para-quem/vendas") Vendas
-                b-dropdown-item(to="/para-quem/gerentes") Gerentes
+                b-dropdown-item(href="/para-quem/marketing") Marketing
+                b-dropdown-item(href="/para-quem/vendas") Vendas
+                b-dropdown-item(href="/para-quem/gerentes") Gerentes
         b-nav-item-dropdown.what-it-does(text="O que faz")
-          .dropdown-icon
-            g-image(src='~/assets/icons/poligono.svg')
+          span.dropdown-icon
           .dropdown-container
             .row.no-gutters
               .col-12
-                b-dropdown-item(to="/o-que-faz/marketing") Marketing
-                b-dropdown-item(to="/o-que-faz/vendas") Vendas
-        b-nav-item(to="/cases") Cases
-        b-nav-item(to="/exemplos") Exemplos
-        b-nav-item(to="/planos") Planos
+                b-dropdown-item(href="/o-que-faz/marketing") Marketing
+                b-dropdown-item(href="/o-que-faz/vendas") Vendas
+        b-nav-item-dropdown.what-it-is(text="O que é")
+          span.dropdown-icon
+          .dropdown-container
+            .row.no-gutters
+              .col-12
+                b-dropdown-item(:href="'/o-que-e/' + item.node.id", v-for="(item) in $static.what.edges", :key="item.id") {{ item.node.title }}?
+        b-nav-item(href="/cases") Cases
+        b-nav-item(href="/exemplos") Exemplos
+        b-nav-item(href="/planos") Planos
         b-nav-item(href="https://app.bulldesk.com.br" target="_blank") Login
         b-nav-item.trial(href="https://app.bulldesk.com.br/cadastro") Teste grátis
-          g-image(src='~/assets/icons/play-button@black.svg')
+          g-image(src="../assets/icons/play-button@black.svg")
 </template>
 
+<static-query>
+  query What {
+    what: allOQueE (sortBy: "id", order: DESC) {
+      edges {
+        node {
+          id
+          title
+        }
+      }
+    }
+  }
+</static-query>
+
 <script>
+  import { BNavbar, BNavbarBrand, BNavbarToggle, BCollapse, BNavbarNav, BInputGroup, BFormInput, BInputGroupAppend, BButton, BNavItemDropdown, BDropdownItem, BNavItem } from 'bootstrap-vue';
+
   export default {
+    components: {
+      BNavbar, BNavbarBrand, BNavbarToggle, BCollapse, BNavbarNav, BInputGroup, BFormInput, BInputGroupAppend, BButton, BNavItemDropdown, BDropdownItem, BNavItem
+    },
+
     props: {
       type: String,
-      logo: String
+      logo: {
+        type: String,
+        default: 'black'
+      }
+    },
+
+    mounted () {
+      console.log(this.$static.cases);
     }
   }
 </script>

@@ -2,59 +2,92 @@
   @import 'node_modules/include-media/dist/_include-media.scss'
   @import '../assets/styles/_variables.scss'
 
+  header.agencias-bg-image
+    background-image: url(~@/assets/images/para-quem/agencias.png)
+
+    @include media('screen', '<=ipad')
+      background-image: url(~@/assets/images/para-quem/agencias@no-ball.png)
+
+  header.construtoras-bg-image
+    background-image: url(~@/assets/images/para-quem/construtoras.png)
+
+    @include media('screen', '<=ipad')
+      background-image: url(~@/assets/images/para-quem/construtoras@no-ball.png)
+
+  header.ecommerce-bg-image
+    background-image: url(~@/assets/images/para-quem/ecommerce.png)
+
+    @include media('screen', '<=ipad')
+      background-image: url(~@/assets/images/para-quem/ecommerce@no-ball.png)
+
+  header.ensino-bg-image
+    background-image: url(~@/assets/images/para-quem/ensino.png)
+
+    @include media('screen', '<=ipad')
+      background-image: url(~@/assets/images/para-quem/ensino@no-ball.png)
+
+  header.gerentes-bg-image
+    background-image: url(~@/assets/images/para-quem/gerentes.png)
+
+    @include media('screen', '<=ipad')
+      background-image: url(~@/assets/images/para-quem/gerentes@no-ball.png)
+
+  header.hoteis-bg-image
+    background-image: url(~@/assets/images/para-quem/hoteis.png)
+
+    @include media('screen', '<=ipad')
+      background-image: url(~@/assets/images/para-quem/hoteis@no-ball.png)
+
+  header.marketing-bg-image
+    background-image: url(~@/assets/images/para-quem/marketing.png)
+
+    @include media('screen', '<=ipad')
+      background-image: url(~@/assets/images/para-quem/marketing@no-ball.png)
+
+  header.saas-bg-image
+    background-image: url(~@/assets/images/para-quem/saas.png)
+
+    @include media('screen', '<=ipad')
+      background-image: url(~@/assets/images/para-quem/saas@no-ball.png)
+
+  header.vendas-bg-image
+    background-image: url(~@/assets/images/para-quem/vendas.png)
+
+    @include media('screen', '<=ipad')
+      background-image: url(~@/assets/images/para-quem/vendas@no-ball.png)
+
   header
-    background-image: url(~@/assets/images/verticals-header.png)
     background-size: cover
     background-repeat: no-repeat
-    background-position: -12rem
+    background-position: -12rem -5.5rem
     height: 1200px
 
     @include media('screen', '<=ipad')
-      background-image: url(~@/assets/images/verticals-header@no-btn.png)
-      background-position: -22rem
+      background-position: -64rem -5.5rem
 
     @include media('screen', '>ipad', '<=laptop')
-      background-position: -54rem
+      background-position: -48rem -7rem
 
     @include media('screen', '>laptop', '<=desktop-md')
-      background-position: -44rem
+      background-position: -44rem -5.5rem
 
     @include media('screen', '>desktop-md', '<=desktop-lg')
-      background-position: -34rem
+      background-position: -34rem -5.5rem
 
     @include media('screen', '>desktop-lg', '<=desktop-xl')
-      background-position: -24rem
+      background-position: -24rem -5.5rem
 
     .hero
       padding-top: 3rem
-      max-width: 550px
+      max-width: 570px
 
-      h1
-        color: $gray-dark
-        line-height: 1
-        font-size: 4rem
-        font-weight: 700
+      h1.title
         color: $white-gray
-        letter-spacing: -0.94px
-        line-height: 55px
 
-        @include media('screen', '<=phone')
-          font-size: 3rem
-
-        @include media('screen', '>phone', '<=ipad')
-          font-size: 3.2rem
-
-        @include media('screen', '>ipad', '<=laptop')
-          font-size: 3.5rem
-
-      p
+      p.subtitle
         color: $white-gray
-        font-size: 1.2rem
-        font-weight: 400
-        letter-spacing: -0.24px
-        line-height: 25px
         width: auto
-        max-width: 325px
+        max-width: 245px
         margin-top: 2rem
 
         @include media('screen', '<=phone')
@@ -62,7 +95,7 @@
           margin-top: 1rem
 
         @include media('screen', '>phone', '<=laptop')
-          font-size: 1rem
+          font-size: 0.9rem
           margin-top: 1rem
 
     .icon
@@ -71,38 +104,49 @@
       top: 620px
 
   .section-a
-    margin-top: -18rem
-
-    @media only screen and (max-width: map-get($grid-breakpoints, 'sm'))
-      margin-top: -22rem
+    margin-top: -24rem
 
     .item
       padding: 1.5rem 2rem
+      letter-spacing: 0.2px
 
       h4
         color: $gray-dark
-        font-size: 1.2rem
+        font-size: 1.125rem
         font-weight: 700
-        letter-spacing: -0.27px
         line-height: 24px
 
       p
         color: $gray-light
-        font-size: 0.8rem
+        font-size: 0.75rem
         font-weight: 400
-        letter-spacing: 0.24px
         line-height: 25px
         margin-top: 1.5rem
 
   .section-b
-    background-image: url(~@/assets/images/verticals-bg-b.png)
+    background-image: url(~@/assets/images/para-quem/bg-a.png)
     background-size: cover
     height: 911px
     margin-top: -10rem
 
+    @include media('screen', '<=ipad')
+      background-position: -40rem 0rem
+
+    @include media('screen', '>ipad', '<=laptop')
+      background-position: -20rem 0rem
+
+    @include media('screen', '>laptop', '<=desktop-md')
+      background-position: -15rem 0rem
+
+    @include media('screen', '>desktop-md', '<=desktop-lg')
+      background-position: -10rem 0rem
+
     .container
       text-align: center
       padding-top: 29rem
+
+      @media only screen and (max-width: 600px)
+        padding-top: 25rem
 
       h3
         width: auto
@@ -123,7 +167,7 @@
 
   .section-c
     margin-top: 10rem
-    background-image: url(~@/assets/images/verticals-bg-c.png)
+    background-image: url(~@/assets/images/para-quem/bg-b.png)
     background-repeat: no-repeat
     background-position: 37rem 300px
     min-height: 900px
@@ -132,7 +176,8 @@
       background-position: 0rem 300px
 
     @media only screen and (max-width: map-get($grid-breakpoints, 'xl'))
-      background-image: none
+      background-size: 38%
+      background-position: 0rem 400px
 
     @include media('screen', '>laptop', '<=desktop-md')
       background-position: 8rem 300px
@@ -145,6 +190,7 @@
 
     @media only screen and (max-width: map-get($grid-breakpoints, 'lg2'))
       text-align: center
+      background-image: none
 
     .col-left
       .subtitle
@@ -167,9 +213,9 @@
 
         li
           color: $gray-dark
-          font-size: 0.8rem
+          font-size: 0.75rem
           font-weight: 400
-          letter-spacing: 0.24px
+          letter-spacing: 0.2px
           line-height: 30px
           padding-bottom: 0.5rem
 
@@ -200,7 +246,7 @@
           text-align: left
 
   .section-d
-    background-image: url(~@/assets/images/verticals-bg-d.png)
+    background-image: url(~@/assets/images/para-quem/bg-c.png)
     background-repeat: no-repeat
     background-size: cover
     height: 1000px
@@ -247,9 +293,9 @@
 
         p
           color: $gray-white
-          font-size: 0.8rem
+          font-size: 0.75rem
           font-weight: 400
-          letter-spacing: 0.24px
+          letter-spacing: 0.2px
           line-height: 25px
           margin-top: 2rem
 
@@ -258,7 +304,7 @@
 
         .author
           color: $gray-light
-          font-size: 0.7rem
+          font-size: 0.625rem
           font-weight: 700
           letter-spacing: 0.2px
           line-height: 20px
@@ -270,56 +316,57 @@
 
 <template lang="pug">
   Layout
-    header.d-flex
+    header.d-flex(:class="$page.content.id + '-bg-image'")
       .container
         Nav(type="dark" logo="white")
 
         .hero.d-flex.align-items-center
           div
-            h1 {{ this.$page.content.header.h1 }}
+            h1.title {{ this.$page.content.header.h1 }}
               span.dot.green
-            p {{ this.$page.content.header.p }}
+            p.subtitle {{ this.$page.content.header.p }}
 
     .section.section-a
       .container
-        .row
+        .row.scroll-reveal
           .item.col-12.col-sm-4(v-for="item in $page.content.section_a.items")
             h4 {{ item.h4 }}
             p {{ item.p }}
 
     .section.section-b
       .container
-        h3 {{ this.$page.content.section_b.h3 }}
-        .subtitle {{ this.$page.content.section_b.subtitle }}
-        email-input(:identifier='$page.content.id')
+        .scroll-reveal
+          h3 {{ this.$page.content.section_b.h3 }}
+          .subtitle {{ this.$page.content.section_b.subtitle }}
+          email-input(:identifier="$page.content.id")
 
     .section.section-c
       .container
-        .row
+        .row.scroll-reveal
           .col-12.col-lg2-4.col-left
             h3 {{ this.$page.content.section_c.h3[0] }}
             .subtitle {{ this.$page.content.section_c.subtitle[0] }}
           .col-12.col-lg2-8.col-right
             ul
               li(v-for="item in $page.content.section_c.items")
-                g-image(src='~/assets/icons/check.svg')
+                g-image(src="~/assets/icons/check.svg" alt="")
                 | {{ item }}
 
-            g-image.doted-square-a(src='~/assets/images/doted-square.jpg')
+            g-image.doted-square-a(src="~/assets/images/doted-square.jpg" alt="")
 
             h3 {{ this.$page.content.section_c.h3[1] }}
             .subtitle {{ this.$page.content.section_c.subtitle[1] }}
 
-    .section.section-d
+    .section.section-d.d-none
       .container
-        .row
+        .row.scroll-reveal
           h3
             | {{ this.$page.content.section_d.h3 }}
             br
             | {{ this.$page.content.section_d.br }}
-        .row.cases
+        .row.cases.scroll-reveal
           .col.col-12.col-sm-6(v-for="item in $page.content.section_d.cases")
-            g-image(:src="item.image")
+            g-image(:src="item.image" alt="Imagem")
             p.description {{ item.description }}
             p.author {{ item.author }}
 </template>
@@ -371,6 +418,12 @@
       Layout,
       Nav,
       EmailInput,
+    },
+
+    mounted () {
+      if (typeof window !== 'undefined') {
+        window.ScrollReveal({ reset: true }).reveal('.scroll-reveal');
+      }
     },
 
     metaInfo () {

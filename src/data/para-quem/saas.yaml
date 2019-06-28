@@ -1,0 +1,51 @@
+---
+id: saas
+title: SaaS
+header:
+  h1: Esteja pronto para fazer do seu SaaS o próximo unicórnio
+  p: "De SaaS para SaaS: conheça o software completo de CRM com Automação de Marketing para que você escale com rapidez e previsibilidade."
+section-a:
+  items:
+  - h4: O onboarding perfeito
+    p: A jornada do cliente não para quando ele assina a sua solução. com o Bulldesk você pode criar uma campanha de onboarding e fazer com que ela seja recebida por cada novo cliente! Quer ver uma pronta? É só fazer o teste gratuito!
+  - h4: Reduzir o churn nunca foi tão simples
+    p: Não espere pelo cancelamento, elabore campanhas de reengajamento para os usuários que não estão ativos nos últimos 10, 15, 30 dias (ou o que você achar melhor), evitando com que eles cancelem. Garantir que eles estejam realizando o percurso geral e não apenas pedaços do produto.
+  - h4: Ajudamos você a se organizar para escalar
+    p: Independente do tamanho do SaaS todo mundo acredita que pode crescer um pouco mais. Pensando nisso, com o Bulldesk você pode criar todo o seu processo de vendas em um único lugar. Fez uma campanha para gerar novos testes gratuitos? Sem problemas, crie uma automação para qualificar o lead automaticamente e assim que ele levantar a mão jogue para o pipeline de vendas.
+  - h4: Somos o seu maior exemplo
+    p: "Todo o nosso crescimento como Bulldesk foi feito utilizando somente uma única plataforma: o Bulldesk. Isso quer dizer que todas as campanhas, comunicados, automações, estratégias, inbound marketing, outbound marketing, tudo o que fazemos é feito única e exclusivamente utilizando o Bulldesk."
+  - h4: Uma infinidade de opções
+    p: Nós temos configurado campanhas de boas vindas, campanhas de treinamento, campanhas de pré-qualificação de leads, campanhas de qualificação de leads, de cold mail e por aí vai. Tudo o que precisamos para que você tenha um excelente atendimento. O melhor de tudo é que caso você queira, nós temos uma biblioteca contendo todas as nossas campanhas.
+  - h4: Acelere o seu processo de vendas
+    p: "Por mais self-service que o seu SaaS possa ser, você sempre tem que ter uma coisa em mente: um processo de vendas bem alinhado. E é com o Bulldesk que você consegue criar todas as etapas do seu funil de vendas e muito mais. Faça um teste gratuito e conheça!"
+section-b:
+  h3: E aí, quer acelerar o seu SaaS?
+  subtitle: Insira seu e-mail abaixo e crie sua conta agora mesmo
+section-c:
+  h3:
+    - A gasolina que faltava para você organizar, crescer e escalar o seu SaaS.
+    - Conforme você cresce, nós crescemos com você.
+  subtitle:
+    - Porque utilizar diversas ferramentas quando a gente tem tudo que você precisa?
+    - O Bulldesk foi feito para escalar com você. Estamos preparados para empresas que começam com uma lista limpa de usuários ou empresas que contam com um portfólio pesado de modelos e campanhas (e qualquer negócio no meio). O Bulldesk facilita a comunicação e o crescimento de SaaS com 100 usuários, 100.000 usuários ou 1.000.000 de usuários.
+  items:
+    - "Custo benefício: De SaaS para SaaS, temos o melhor custo-benefício do Brasil"
+    - "Organização das vendas: Gerencie todas as suas vendas e o relacionamento com o cliente em um único lugar."
+    - "Segmentação: Agrupe os seus clientes baseado em qualquer critério que você quiser."
+    - "Qualificação de lead: Utilize o lead scoring para encontrar os melhores leads."
+    - "Monitoramento do site: Veja o que os visitantes fazem em seu site e crie campanhas e ofertas baseadas no comportamento."
+    - "Automação de marketing: Automatize os processos que ninguém tem tempo de gerenciar."
+    - "Email marketing: Construa sua marca e seja referência para seus clientes e leads."
+    - "Omnichannel: Crie campanhas que comecem por email, passem por SMS e terminam no whatsapp."
+    - "Whatsapp: Precisa dizer mais? O único com campanhas de WhatsApp integradas."
+section-d:
+  h3: Fique tranquilo
+  br: você está em boa companhia
+  cases:
+    - image: "../../assets/images/cases/buscape-logo.png"
+      description: Com o Bulldesk nós abrimos os canais de comunicação entre empresa e o lead. Isso possibilitou que os leads entendessem mais sobre o nosso software e que tivessem total abertura para expressar dúvidas e dar seus feedbacks.
+      author: Sem Nome
+    - image: "../../assets/images/cases/buscape-logo.png"
+      description: Depois de contratar o Bulldesk começamos a notar a diferença em quantos leads que estavam no free trial contratavam nosso serviço. Os números foram de XX para XX em XX meses. Isso por conta das campanhas automatizadas e do onboarding que criamos utilizando o Bulldesk.
+      author: Sem Nome
+

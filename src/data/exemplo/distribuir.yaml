@@ -1,0 +1,16 @@
+---
+id: distribuir
+order: 8
+title: Campanha Distribuição de Leads
+icon: '../../assets/icons/exemplos-icon-win.svg'
+description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s
+header:
+  h1: Campanha Distribuição de Leads
+  p:
+    - No Bulldesk você pode importar sua lista de leads. Além disso é possível adicionar uma tag para os leads importados para que seja possível criar uma campanha segmentada direcionada para eles.
+    - Com o Bulldesk você ainda pode distribuir os leads que foram importados igualitariamente pela sua equipe de vendas. E designá-los para uma etapa específica do funil de vendas. Assim você consegue acompanhar sua trajetória até  fundo do funil.
+
+section-a:
+  h2: Quer ver como é simples?
+  p: 'Dá um confere na imagem abaixo:'
+  image: '../../assets/images/example/distribuir.png'

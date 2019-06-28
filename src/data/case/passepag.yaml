@@ -1,0 +1,41 @@
+---
+id: passepag
+title: PassePag
+logo: '../../assets/images/cases/passepag_description.png'
+description: Fintech com soluções inovadoras de pagamento? Temos! Venha conhecer o case de sucesso da PassPag, uma fintech que mais que dobrou as suas conversões em vendas utilizando o Bulldesk.
+header:
+  h1: Como a PassePag dobrou suas conversões em 2 meses.
+  image: '../../assets/images/cases/passepag_case_inside.png'
+
+section-a:
+  h2: A PassePag
+  p:
+    - 'A Passepag é uma empresa de meios pagamento que oferece soluções tecnológicas e inovadoras para seus clientes através de máquinas de cartão. Além do meio físico, a Passepag oferece soluções também para o mundo online, através de seu e-commerce de integração com outras plataformas. A empresa faz parte da J&A Holding e está há mais de dois anos no mercado.'
+    - 'Hoje, a Passepag atua em certos nichos de mercado, como beleza, saúde e educação, e volta sua estratégia para eles. A proposta da empresa, portanto, é especializar-se em soluções para determinados nichos, com o intuito de promover o melhor produto possível para seus clientes. Essas soluções são oferecidas diretamente na máquina, otimizando de diversas maneiras a experiência do usuário.'
+
+section-b:
+  h2: Confira quais estratégias foram usadas
+  p: Veja como funciona o Bulldesk e suas principais funções em um vídeo direto ao ponto. <b>Você vai se surpreender</b>.
+  videoID: VEMo_8as5t8
+  videoThumb: '../../assets/images/thumbs/case-passepag.png'
+
+section-c:
+  h2: Desafios
+  p: De acordo com o gerente comercial da Passepag, Hugo Ponchio, a empresa costumava fazer a prospecção e manutenção de relacionamento com o Lead de forma manual. Por conta disso, muitos clientes perdiam-se, pois o processo não dava conta de todos os contatos realizados diariamente.
+  image: '../../assets/images/cases/passepag_print.png'
+
+section-d:
+  h2: Sobre a solução
+  p: Não demorou para a Passepag perceber que uma boa estratégia digital e no porta a porta não vale muito sem organização e automatização de processos que agilizem o atendimento.  “Quando a gente conheceu o Bulldesk, o interessante foi que a solução nos atendia desde o início da captação do lead até a finalização da venda.”, conta Hugo. Esse aspecto foi fundamental para identificar quais estratégias estavam funcionando de fato, ou seja, quais personas e canais de venda performavam melhor.
+  depoimento:
+    depoimento: "A gente captava o lead através das redes sociais, ele vinha para o nosso e-mail e nós fazíamos tudo manual: entrávamos em contato com ele, enviávamos a proposta. Era muito manual e passível de erro, porque você acaba não tendo um controle tão bom."
+    autor: conta Hugo Ponchio
+
+  p2: A automatização dos processos de marketing e vendas com o Bulldesk aconteceu naturalmente, assim como a contribuição da solução para as tomadas de decisão da empresa. “Com o Bulldesk a gente automatizou tudo. Nós sabemos em que canal o lead está entrando, a evolução desse lead.<br/><br/> Além disso, fazemos a interação com esse lead, já que a própria ferramenta nos dá os próximos passos. Ao mesmo tempo, sabemos quando interagir com o cliente, se ele finalizou a compra ou não e o porque ele não finalizou.”, diz Ponchio.
+
+section-e:
+  h2: Os resultados
+  items:
+    - p: Para Hugo, o uso do Bulldesk é um caminho sem volta. “Com o Bulldesk a gente começou a ter inteligência no nosso negócio. O principal resultado foi a organização. Eu acho que não tem como a empresa crescer comercialmente e ter resultados se você não está organizado.”, diz Hugo.
+    - p: 'Além disso, a otimização da captação e nutrição de leads e o funil de vendas perfeitamente delineado no Bulldesk, contribuíram para aumentar a taxa de conversão da empresa. “A gente teve um crescimento muito bom. Temos performado uma média de 5 a 8% de conversão dos leads que a gente capta. E isso eu vejo que é por causa da ferramenta mesmo, porque hoje ela nos organiza a vida.”, conta.'
+    - p: '“Os relatórios são muito bons, o que é apresentado por eles é muito objetivo, muito transparente. A gente acessa de qualquer lugar: as vezes estou em viagem, usando a plataforma pelo celular e consigo saber o que está acontecendo: tanto nas vendas internas quanto nas vendas externas.”, afirma Hugo.'

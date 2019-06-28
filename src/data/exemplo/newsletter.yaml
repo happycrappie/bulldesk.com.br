@@ -1,0 +1,17 @@
+---
+id: newsletter
+order: 5
+title: Campanha de Newsletter
+icon: '../../assets/icons/exemplos-icon-document.svg'
+description: Gerou leads via blog e não sabe o que fazer com eles? As campanhas de Newsletter são uma excelente opção para você começar a se relacionar com a sua base de contatos.
+header:
+  h1: Campanha de Newsletter
+  p:
+    - A campanha de Newsletter é utilizada como uma forma de constantemente atualizar seus leads sobre seu blog, seu produto, etc. O newsletter tem uma frequência constante, podendo ser semanal ou quinzenal dependendo da sua estratégia.
+    - A constância do newsletter faz com que ele seja uma ótima forma de criar uma relação com seus leads e sempre se manter na mente deles. O Bulldesk se encarrega de enviar o seu newsletter automaticamente na frequência estipulada. Tudo que você precisa fazer é definir o conteúdo semanal.
+    - O importante na hora de criar um newsletter é mostrar a personalidade da sua empresa. Crie conteúdos interativos e informativos que vão fazer com que seu lead aproveite a leitura do seu newsletter.
+
+section-a:
+  h2: Quer ver como é simples?
+  p: 'Dá um confere na imagem abaixo:'
+  image: '../../assets/images/example/newsletter.png'
