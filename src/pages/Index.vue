@@ -1047,7 +1047,7 @@
                   swiper-slide
                     .container
                       .row
-                        .col-12.col-md-6.ige
+                        .col-12.col-md-6.image
                           g-image(src="~/assets/images/cases/hotel-zion.png" alt="Imagem")
                         .col-12.col-md-6.content
                           .logo.w-50
