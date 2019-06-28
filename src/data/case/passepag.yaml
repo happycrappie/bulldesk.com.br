@@ -10,23 +10,23 @@ header:
 section-a:
   h2: A PassePag
   p:
-    - 'A Passepag é uma empresa de meios pagamento que oferece soluções tecnológicas e inovadoras para seus clientes através de máquinas de cartão. Além do meio físico, a Passepag oferece soluções também para o mundo online, através de seu e-commerce de integração com outras plataformas. A empresa faz parte da J&A Holding e está há mais de dois anos no mercado.' 
+    - 'A Passepag é uma empresa de meios pagamento que oferece soluções tecnológicas e inovadoras para seus clientes através de máquinas de cartão. Além do meio físico, a Passepag oferece soluções também para o mundo online, através de seu e-commerce de integração com outras plataformas. A empresa faz parte da J&A Holding e está há mais de dois anos no mercado.'
     - 'Hoje, a Passepag atua em certos nichos de mercado, como beleza, saúde e educação, e volta sua estratégia para eles. A proposta da empresa, portanto, é especializar-se em soluções para determinados nichos, com o intuito de promover o melhor produto possível para seus clientes. Essas soluções são oferecidas diretamente na máquina, otimizando de diversas maneiras a experiência do usuário.'
 
 section-b:
   h2: Confira quais estratégias foram usadas
   p: Veja como funciona o Bulldesk e suas principais funções em um vídeo direto ao ponto. <b>Você vai se surpreender</b>.
   videoID: VEMo_8as5t8
-  videoThumb: '../../assets/images/video-placeholder.jpg'
+  videoThumb: '../../assets/images/thumbs/case-passepag.png'
 
 section-c:
   h2: Desafios
   p: De acordo com o gerente comercial da Passepag, Hugo Ponchio, a empresa costumava fazer a prospecção e manutenção de relacionamento com o Lead de forma manual. Por conta disso, muitos clientes perdiam-se, pois o processo não dava conta de todos os contatos realizados diariamente.
-  image: '../../assets/images/case-zion-section-c.png'
+  image: '../../assets/images/cases/passepag_print.png'
 
 section-d:
   h2: Sobre a solução
-  p: Não demorou para a Passepag perceber que uma boa estratégia digital e no porta a porta não vale muito sem organização e automatização de processos que agilizem o atendimento.  “Quando a gente conheceu o Bulldesk, o interessante foi que a solução nos atendia desde o início da captação do lead até a finalização da venda.”, conta Hugo. Esse aspecto foi fundamental para identificar quais estratégias estavam funcionando de fato, ou seja, quais personas e canais de venda performavam melhor. 
+  p: Não demorou para a Passepag perceber que uma boa estratégia digital e no porta a porta não vale muito sem organização e automatização de processos que agilizem o atendimento.  “Quando a gente conheceu o Bulldesk, o interessante foi que a solução nos atendia desde o início da captação do lead até a finalização da venda.”, conta Hugo. Esse aspecto foi fundamental para identificar quais estratégias estavam funcionando de fato, ou seja, quais personas e canais de venda performavam melhor.
   depoimento:
     depoimento: "A gente captava o lead através das redes sociais, ele vinha para o nosso e-mail e nós fazíamos tudo manual: entrávamos em contato com ele, enviávamos a proposta. Era muito manual e passível de erro, porque você acaba não tendo um controle tão bom."
     autor: conta Hugo Ponchio

@@ -17,12 +17,12 @@ section-b:
   h2: Confira quais estratégias foram usadas
   p: Veja como funciona o Bulldesk e suas principais funções em um vídeo direto ao ponto. <b>Você vai se surpreender</b>.
   videoID: XKwMEv_pqKg
-  videoThumb: '../../assets/images/video-placeholder.jpg'
+  videoThumb: '../../assets/images/thumbs/case-zion.png'
 
 section-c:
   h2: Sobre o problema
   p: De acordo com a diretora comercial do Zion, Marina Elisa Müller, o hotel tinha a necessidade de desenhar seu processo comercial. Com um atendimento que acontecia apenas no balcão do hotel, o Zion contava com um site pouco atrativo e nenhuma prospecção de clientes. Dessa forma, a equipe percebeu que era hora de mudar esse cenário e começou a buscar alternativas para marcar presença no mundo digital.
-  image: '../../assets/images/case-zion-section-c.png'
+  image: '../../assets/images/cases/hotel_zion_print.png'
 
 section-d:
   h2: Sobre a solução
