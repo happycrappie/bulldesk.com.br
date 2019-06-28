@@ -848,7 +848,7 @@
                   g-image(src="~/assets/images/timeline/aniversario.png" alt="Fluxo de Aniversário" v-if="example == 0")
                   g-image(src="~/assets/images/timeline/reaquecimento.png" alt="Fluxo de Reaquecimento" v-if="example == 1")
                   g-image(src="~/assets/images/timeline/inbound-marketing.png" alt="Fluxo de Inbound Marketing" v-if="example == 2")
-                  g-image.w-75(src="~/assets/images/timeline/whatsapp.png" alt="Fluxo de Whatsapp" v-if="example == 3")
+                  g-image(src="~/assets/images/timeline/whatsapp.png" alt="Fluxo de Whatsapp" v-if="example == 3")
                   g-image(src="~/assets/images/timeline/check-in-hotel.png" alt="Fluxo de Check-in Hotel" v-if="example == 4")
 
       .section.section-b
