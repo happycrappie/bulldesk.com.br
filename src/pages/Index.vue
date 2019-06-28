@@ -451,7 +451,57 @@
     @media only screen and (min-width: 2501px)
       background-position: -14rem
 
-    .doted-square
+    .doted-square-a
+      position: absolute
+      left: 58rem
+      top: 2550px
+
+      @media only screen and (max-width: 2400px)
+        left: 50rem
+
+      @media only screen and (max-width: 2200px)
+        left: 46rem
+        top: 2520px
+
+      @media only screen and (max-width: 2100px)
+        left: 42rem
+
+      @media only screen and (max-width: 2000px)
+        left: 38rem
+
+      @media only screen and (max-width: 1900px)
+        left: 36rem
+        top: 2490px
+
+      @media only screen and (max-width: 1800px)
+        left: 32rem
+
+      @media only screen and (max-width: 1700px)
+        left: 30rem
+
+      @media only screen and (max-width: 1600px)
+        left: 26rem
+        top: 2460px
+
+      @media only screen and (max-width: 1500px)
+        left: 22rem
+
+      @media only screen and (max-width: 1400px)
+        left: 20rem
+
+      @media only screen and (max-width: 1300px)
+        left: 16rem
+
+      @media only screen and (max-width: 1200px)
+        left: 12rem
+
+      @media only screen and (max-width: 1100px)
+        left: 10rem
+
+      @media only screen and (max-width: 1025px)
+        display: none
+
+    .doted-square-b
       position: absolute
       left: 62%
       top: 3100px
@@ -459,9 +509,15 @@
       @media only screen and (max-width: 1025px)
         display: none
 
-      @media only screen and (max-width: 1600px)
+      @media only screen and (max-width: 1900px)
+        left: 68%
+
+      @media only screen and (max-width: 1700px)
         left: 70%
         top: 3050px
+
+      @media only screen and (max-width: 1100px)
+        left: 73%
 
     .container
       padding-top: 57rem
@@ -920,7 +976,8 @@
                   g-image(src='~/assets/images/editor-footer.png' alt='')
 
       .section.section-c
-        g-image(src="~/assets/images/doted-square@3x4.png" class="doted-square" alt="")
+        g-image(src="~/assets/images/doted-square@3x2.png" class="doted-square-a" alt="")
+        g-image(src="~/assets/images/doted-square@3x4.png" class="doted-square-b" alt="")
         .container
           .row.scroll-reveal
             .col-lg-9.col-left
