@@ -9,7 +9,7 @@
 
   .hero.container
     h1
-      3rem
+      margin-top: 3rem
       font-weight: 700
       color: $gray-dark
       line-height: 1
