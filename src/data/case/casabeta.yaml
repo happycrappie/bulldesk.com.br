@@ -9,7 +9,7 @@ section-a:
   h2: A Casa Beta
   p:
     - 'A Casa Beta é uma plataforma de cursos a distância que tem como principal público-alvo mulheres. Criada pela empreendedora Maria Fernanda Narciso, a empresa surgiu quando ela percebeu uma oportunidade de explorar um nicho pouco utilizado no Brasil: cursos criativos para mulheres.' 
-    - 'Pensando nisso ela criou uma empresa chamada Casa Beta. Criada em 2018, tem como missão inspirar mulheres através dos seus cursos e conteúdos que são cuidadosamente escolhidos para que se alinhem com a visão da marca. Alguns deles são:  Arranjos florais,  planejamento de rotina, crochê para iniciantes, tricô, bordado e diversas outras ideias criativas.'
+    - 'Pensando nisso ela criou uma empresa chamada Casa Beta. Criada em 2018, tem como missão inspirar mulheres através dos seus cursos e conteúdos que são cuidadosamente escolhidos para que se alinhem com a visão da marca. Alguns deles são:  Arranjos florais,  planejamento de rotina, crochê para iniciantes, tricô, bordado e diversas outras ideias criativas.
 
 
 section-b:
@@ -19,19 +19,20 @@ section-b:
   videoThumb: '../../assets/images/video-placeholder.jpg'
 
 section-c:
-  h2: Sobre o problema
-  p: De acordo com a diretora comercial do Zion, Marina Elisa Müller, o hotel tinha a necessidade de desenhar seu processo comercial. Com um atendimento que acontecia apenas no balcão do hotel, o Zion contava com um site pouco atrativo e nenhuma prospecção de clientes. Dessa forma, a equipe percebeu que era hora de mudar esse cenário e começou a buscar alternativas para marcar presença no mundo digital.
+  h2: Desafios
+  p: O mercado de criação de cursos sempre foi um setor super concorrido. Existem diversos produtores, empresas e grandes players que exploram essa área criando e vendendo cursos online.
+O grande desafio da empresa era trazer para a internet algo que tivesse uma proposta diferente de tudo o que já existe, criando algo voltado exclusivamente para o empoderamento feminino.
   image: '../../assets/images/case-zion-section-c.png'
 
 section-d:
   h2: Sobre a solução
-  p: Diante da necessidade eminente de novas formas de fazer negócio, Marina fez uma pesquisa em busca de plataformas que facilitam e automatizam processos no marketing digital. Ao se deparar com o Bulldesk, a escolha foi feita e a estrutura comercial começou a se desenhar. Para ela, as razões de optar pelo Bulldesk foram o preço bom e o fato da plataforma ser completa.
+  p: Pensando nisso, o grande diferencial é que ao invés de começar o projeto sem nenhuma ferramenta, a Maria Fernanda colocou no seu planejamento antes mesmo de iniciar o projeto encontrar uma ferramenta de automação de marketing e CRM que  pudesse ajudá-la na organização e crescimento da empresa. O mais interessante de tudo isso é que a Casa Beta iniciou lado a lado com o Bulldesk, ou seja, desde o dia 1 a Casa Beta já estava com o Bulldesk integrado e funcionando
   depoimento:
-    depoimento: "Vindo essa necessidade, junto com o Bulldesk, a gente criou esse setor (comercial). A gente fez um site novo, todo apelativo para vendas mesmo, com formulário, landing page. O Bulldesk nos auxiliou a organizar também: o lead entra ali e rapidamente a gente já responde pra tentar converter a venda,"
-    autor: conta Marina
+    depoimento: "Um dos principais elementos para criar algo que fosse diferente, foi o design moderno e prático do site, criando um mix entre e commerce e lifestyle. Com o site pronto foi possível integrar o Bulldesk e começar a geração de leads."
+    autor: conta Maria Fernanda
 
-  p2: Sendo Assim, o Bulldesk foi implantado na empresa no ano de 2017. Para Marina, a adaptação à plataforma foi natural, já que o setor comercial mal existia antes desse processo e a interface é de fácil compreensão.<br/><br/>
-      As ferramentas mais usadas pelo Zion são a criação de e-mail marketing, formulários e landing pages. Além disso, é claro, aproveitam as funcionalidades de CRM do Bulldesk, acompanhando o lead do contato inicial até a hospedagem.
+  p2: Com a utilização do Bulldesk, a Casa Beta conseguiu algo muito mais importante do que gerar tráfego, gerar leads. Ou seja, de nada adianta ter tráfego se não existirem as conversões.<br/><br/>
+      Outro ponto utilizado pela Casa Beta, foram as mais de 210 campanhas de automação de marketing  criadas dentro do Bulldesk. Diversas campanhas como por exemplo boas vindas, divulgação de produtos, abandono de carrinho, leads scoring, lançamentos e diversas outras.
 
 section-e:
   h2: Os resultados
