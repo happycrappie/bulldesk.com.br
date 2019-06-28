@@ -2,15 +2,67 @@
   @import 'node_modules/include-media/dist/_include-media.scss'
   @import '../assets/styles/_variables.scss'
 
+  header.agencias-bg-image
+    background-image: url(~@/assets/images/verticals/agencias.png)
+
+    @include media('screen', '<=ipad')
+      background-image: url(~@/assets/images/verticals/agencias@no-ball.png)
+
+  header.cosntrutoras-bg-image
+    background-image: url(~@/assets/images/verticals/construturas.png)
+
+    @include media('screen', '<=ipad')
+      background-image: url(~@/assets/images/verticals/construturas@no-ball.png)
+
+  header.ecommerce-bg-image
+    background-image: url(~@/assets/images/verticals/ecommerce.png)
+
+    @include media('screen', '<=ipad')
+      background-image: url(~@/assets/images/verticals/ecommerce@no-ball.png)
+
+  header.ensino-bg-image
+    background-image: url(~@/assets/images/verticals/ensino.png)
+
+    @include media('screen', '<=ipad')
+      background-image: url(~@/assets/images/verticals/ensino@no-ball.png)
+
+  header.gerentes-bg-image
+    background-image: url(~@/assets/images/verticals/gerentes.png)
+
+    @include media('screen', '<=ipad')
+      background-image: url(~@/assets/images/verticals/gerentes@no-ball.png)
+
+  header.hoteis-bg-image
+    background-image: url(~@/assets/images/verticals/hoteis.png)
+
+    @include media('screen', '<=ipad')
+      background-image: url(~@/assets/images/verticals/hoteis@no-ball.png)
+
+  header.marketing-bg-image
+    background-image: url(~@/assets/images/verticals/marketing.png)
+
+    @include media('screen', '<=ipad')
+      background-image: url(~@/assets/images/verticals/marketing@no-ball.png)
+
+  header.saas-bg-image
+    background-image: url(~@/assets/images/verticals/saas.png)
+
+    @include media('screen', '<=ipad')
+      background-image: url(~@/assets/images/verticals/saas@no-ball.png)
+
+  header.vendas-bg-image
+    background-image: url(~@/assets/images/verticals/vendas.png)
+
+    @include media('screen', '<=ipad')
+      background-image: url(~@/assets/images/verticals/vendas@no-ball.png)
+
   header
-    background-image: url(~@/assets/images/verticals-header.png)
     background-size: cover
     background-repeat: no-repeat
     background-position: -12rem -5.5rem
     height: 1200px
 
     @include media('screen', '<=ipad')
-      background-image: url(~@/assets/images/verticals-header@no-btn.png)
       background-position: -64rem -5.5rem
 
     @include media('screen', '>ipad', '<=laptop')
