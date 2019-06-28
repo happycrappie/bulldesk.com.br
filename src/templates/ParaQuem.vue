@@ -3,58 +3,58 @@
   @import '../assets/styles/_variables.scss'
 
   header.agencias-bg-image
-    background-image: url(~@/assets/images/verticals/agencias.png)
+    background-image: url(~@/assets/images/para-quem/agencias.png)
 
     @include media('screen', '<=ipad')
-      background-image: url(~@/assets/images/verticals/agencias@no-ball.png)
+      background-image: url(~@/assets/images/para-quem/agencias@no-ball.png)
 
-  header.cosntrutoras-bg-image
-    background-image: url(~@/assets/images/verticals/construturas.png)
+  header.construtoras-bg-image
+    background-image: url(~@/assets/images/para-quem/construtoras.png)
 
     @include media('screen', '<=ipad')
-      background-image: url(~@/assets/images/verticals/construturas@no-ball.png)
+      background-image: url(~@/assets/images/para-quem/construtoras@no-ball.png)
 
   header.ecommerce-bg-image
-    background-image: url(~@/assets/images/verticals/ecommerce.png)
+    background-image: url(~@/assets/images/para-quem/ecommerce.png)
 
     @include media('screen', '<=ipad')
-      background-image: url(~@/assets/images/verticals/ecommerce@no-ball.png)
+      background-image: url(~@/assets/images/para-quem/ecommerce@no-ball.png)
 
   header.ensino-bg-image
-    background-image: url(~@/assets/images/verticals/ensino.png)
+    background-image: url(~@/assets/images/para-quem/ensino.png)
 
     @include media('screen', '<=ipad')
-      background-image: url(~@/assets/images/verticals/ensino@no-ball.png)
+      background-image: url(~@/assets/images/para-quem/ensino@no-ball.png)
 
   header.gerentes-bg-image
-    background-image: url(~@/assets/images/verticals/gerentes.png)
+    background-image: url(~@/assets/images/para-quem/gerentes.png)
 
     @include media('screen', '<=ipad')
-      background-image: url(~@/assets/images/verticals/gerentes@no-ball.png)
+      background-image: url(~@/assets/images/para-quem/gerentes@no-ball.png)
 
   header.hoteis-bg-image
-    background-image: url(~@/assets/images/verticals/hoteis.png)
+    background-image: url(~@/assets/images/para-quem/hoteis.png)
 
     @include media('screen', '<=ipad')
-      background-image: url(~@/assets/images/verticals/hoteis@no-ball.png)
+      background-image: url(~@/assets/images/para-quem/hoteis@no-ball.png)
 
   header.marketing-bg-image
-    background-image: url(~@/assets/images/verticals/marketing.png)
+    background-image: url(~@/assets/images/para-quem/marketing.png)
 
     @include media('screen', '<=ipad')
-      background-image: url(~@/assets/images/verticals/marketing@no-ball.png)
+      background-image: url(~@/assets/images/para-quem/marketing@no-ball.png)
 
   header.saas-bg-image
-    background-image: url(~@/assets/images/verticals/saas.png)
+    background-image: url(~@/assets/images/para-quem/saas.png)
 
     @include media('screen', '<=ipad')
-      background-image: url(~@/assets/images/verticals/saas@no-ball.png)
+      background-image: url(~@/assets/images/para-quem/saas@no-ball.png)
 
   header.vendas-bg-image
-    background-image: url(~@/assets/images/verticals/vendas.png)
+    background-image: url(~@/assets/images/para-quem/vendas.png)
 
     @include media('screen', '<=ipad')
-      background-image: url(~@/assets/images/verticals/vendas@no-ball.png)
+      background-image: url(~@/assets/images/para-quem/vendas@no-ball.png)
 
   header
     background-size: cover
@@ -124,7 +124,7 @@
         margin-top: 1.5rem
 
   .section-b
-    background-image: url(~@/assets/images/verticals-bg-b.png)
+    background-image: url(~@/assets/images/para-quem/bg-a.png)
     background-size: cover
     height: 911px
     margin-top: -10rem
@@ -167,7 +167,7 @@
 
   .section-c
     margin-top: 10rem
-    background-image: url(~@/assets/images/verticals-bg-c.png)
+    background-image: url(~@/assets/images/para-quem/bg-b.png)
     background-repeat: no-repeat
     background-position: 37rem 300px
     min-height: 900px
@@ -246,7 +246,7 @@
           text-align: left
 
   .section-d
-    background-image: url(~@/assets/images/verticals-bg-d.png)
+    background-image: url(~@/assets/images/para-quem/bg-c.png)
     background-repeat: no-repeat
     background-size: cover
     height: 1000px
@@ -316,7 +316,7 @@
 
 <template lang="pug">
   Layout
-    header.d-flex
+    header.d-flex(:class="$page.content.id + '-bg-image'")
       .container
         Nav(type="dark" logo="white")
 
