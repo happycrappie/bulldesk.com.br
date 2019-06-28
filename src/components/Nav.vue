@@ -29,16 +29,21 @@
 
     .nav-item
       .dropdown-menu
-        left: -45%
+        left: -48%
 
         .dropdown-icon
-          max-width: 20px
-          top: -0.9rem
           position: absolute
-
-          img
-            position: relative
-            width: 100%
+          border-width: 0 5px 5px 5px
+          border-color: transparent transparent #fafafa transparent
+          top: -10px
+          left: calc(50%) + 5px
+          margin-top: 0
+          margin-bottom: 0
+          width: 0
+          height: 0
+          border-style: solid
+          position: absolute
+          margin: 5px
 
         .dropdown-container
           padding: 1.2rem 2.5rem
@@ -57,7 +62,7 @@
 
     .nav-item.for-whom
       .dropdown-icon
-        left: 6rem
+        left: 6.1rem
 
       .dropdown-container
         min-width: 28rem
@@ -71,6 +76,10 @@
 
         .dropdown-container
           min-width: 12rem
+
+    .nav-item.cases
+      .dropdown-icon
+        left: 4.1rem
 
     .navbar-collapse
       @include media('screen', '<=ipad')
@@ -118,8 +127,7 @@
     b-collapse#collapse(is-nav)
       b-navbar-nav.ml-auto
         b-nav-item-dropdown.for-whom(text="Pra quem é")
-          .dropdown-icon
-            g-image(src='../assets/icons/poligono.svg')
+          span.dropdown-icon
           .dropdown-container
             .row.no-gutters
               .col-12.col-sm-6
@@ -136,13 +144,18 @@
                 b-dropdown-item(href="/para-quem/vendas") Vendas
                 b-dropdown-item(href="/para-quem/gerentes") Gerentes
         b-nav-item-dropdown.what-it-does(text="O que faz")
-          .dropdown-icon
-            g-image(src='../assets/icons/poligono.svg')
+          span.dropdown-icon
           .dropdown-container
             .row.no-gutters
               .col-12
                 b-dropdown-item(href="/o-que-faz/marketing") Marketing
                 b-dropdown-item(href="/o-que-faz/vendas") Vendas
+        //- b-nav-item-dropdown.cases(text="O que é")
+        //-   span.dropdown-icon
+        //-   .dropdown-container
+        //-     .row.no-gutters
+        //-       .col-12
+        //-         b-dropdown-item(:href="'/o-que-e/' + item.node.id", v-for="(item) in $static.what.edges", :key="item.id") {{ item.node.title }}?
         b-nav-item(href="/cases") Cases
         b-nav-item(href="/exemplos") Exemplos
         b-nav-item(href="/planos") Planos
@@ -150,6 +163,19 @@
         b-nav-item.trial(href="https://app.bulldesk.com.br/cadastro") Teste grátis
           g-image(src="../assets/icons/play-button@black.svg")
 </template>
+
+<static-query>
+  query What {
+    what: allOQueE (sortBy: "id", order: ASC) {
+      edges {
+        node {
+          id
+          title
+        }
+      }
+    }
+  }
+</static-query>
 
 <script>
   import { BNavbar, BNavbarBrand, BNavbarToggle, BCollapse, BNavbarNav, BInputGroup, BFormInput, BInputGroupAppend, BButton, BNavItemDropdown, BDropdownItem, BNavItem } from 'bootstrap-vue';
@@ -165,6 +191,10 @@
         type: String,
         default: 'black'
       }
+    },
+
+    mounted () {
+      console.log(this.$static.cases);
     }
   }
 </script>

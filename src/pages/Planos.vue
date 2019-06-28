@@ -464,7 +464,7 @@
   import Plans from '~/data/plans.yaml'
   import Nav from '../components/Nav'
   import Layout from '../layouts/Default'
-  import TickSvg from '../assets/icons/tick.svg'
+  import TickSvg from '../assets/icons/inline.tick.svg'
   import { BButton, BInputGroup, BFormInput, BSpinner } from 'bootstrap-vue';
   import axios from 'axios'
 

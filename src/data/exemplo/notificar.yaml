@@ -3,13 +3,13 @@ id: notificar
 order: 9
 title: Campanha de Notificação de E-mail
 icon: '../../assets/icons/exemplos-icon-notification.svg'
-description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s
+description: Já pensou toda vez que alguém solicitar um orçamento ou preencher um formulário de contato você ser notificado? Nesse exemplo você pode fazer isso e muito mais.
 header:
   h1: Campanha de Notificação de E-mail
   p:
-    - Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-    - Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-    - Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    - As campanhas de notificação de e-mail permitem que você consiga ter um controle de todos os leads que preenchem um formulário no seu site.  Assim, você consegue ter controles sobre todos os leads que entraram para o seu funil.
+    - Você pode escolher que tipo de notificações deseja receber. Além de leads convertidos por formulário é possível receber a notificação via e-mail de todos os negócios perdidos, negócios ganhos, etc.
+    - Com o Bulldesk nenhum lead vai passar despercebido. Você consegue ter uma visão geral e controle sobre tudo que está acontecendo com seu negócio.
 
 section-a:
   h2: Quer ver como é simples?

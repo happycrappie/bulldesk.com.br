@@ -3,13 +3,13 @@ id: pesquisa
 order: 7
 title: Campanha Pesquisa de Satisfação
 icon: '../../assets/icons/exemplos-icon-file.svg'
-description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s
+description: Saber o que os seus clientes pensam sobre a sua empresa é fundamental. Mas fazer isso de forma manual deve dar bastante trabalho. Nesse exemplo você confere como fazer isso usando o Bulldesk.
 header:
   h1: Campanha Pesquisa de Satisfação
   p:
-    - Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-    - Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-    - Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    - A campanha de satisfação é uma ótima forma de interagir com seus clientes e mostrar que você se importa com a opinião deles. Além disso, esse tipo de campanha fornece uma outra visão sobre seu produto. A visão do consumidor.
+    - O ponto de vista do consumidor é essencial para o marketing. Você está vendendo um produto para um público alvo e as opiniões desse público determinam o sucesso do seu produto. O feedback também é importante na hora de pensar em melhorias e inovações para o seu produto.
+    - Com o Bulldesk você consegue criar uma campanha de pesquisa de satisfação automatizada. Quando você atribui um cliente para negócio ganho uma cadeia de ações é acionada onde e seu cliente receberá dois emails, sendo um de boas vindas e um contendo a pesquisa.
 
 section-a:
   h2: Quer ver como é simples?
