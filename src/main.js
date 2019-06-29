@@ -29,7 +29,7 @@ export default function (Vue, { router, head, isClient }) {
     head.meta.push({
       key: 'og:url',
       name: 'og:url',
-      content: process.env.GRIDSOME_BASE_PATH + to.path,
+      content: 'https://bulldesk.com.br' + to.path,
     })
 
     next()
