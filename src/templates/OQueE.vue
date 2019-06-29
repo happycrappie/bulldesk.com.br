@@ -46,8 +46,8 @@
           line-height: 1.56
 
       &:last-child
-        margin-left: -30px
-        margin-right: -30px
+        // margin-left: -30px
+        // margin-right: -30px
 
         h3
           width: 100%
@@ -56,8 +56,8 @@
           font-weight: bold
 
         p
-          padding-left: 30px
-          padding-right: 30px
+          // padding-left: 30px
+          // padding-right: 30px
           text-align: left
           font-size: 0.75rem
           line-height: 2.08
@@ -128,8 +128,6 @@
       list-style: none
 
       li
-        max-width: calc(50% - 45px)
-
         h4
           margin: 0 0 15px
           font-size: 0.75rem
@@ -221,8 +219,6 @@
       list-style: none
 
       li
-        max-width: calc(50% - 45px)
-
         h4
           margin: 0 0 15px
           font-size: 0.75rem
@@ -290,13 +286,10 @@
       z-index: -1
       display: block
       width: 100vw
-      height: 1383px
+      height: calc(100% + 545px)
+      min-height: 1383px
       background: center no-repeat url(~@/assets/images/o-que-e-bg-section-f.png)
       background-size: cover
-
-    .row
-      margin-left: -30px
-      margin-right: -30px
 
     h3
       margin-bottom: 60px
@@ -307,8 +300,6 @@
 
     p
       margin-bottom: 30px
-      padding-left: 30px
-      padding-right: 30px
       font-size: 0.75rem
       line-height: 2.08
 
@@ -356,20 +347,16 @@
         color: $gray-dark
 
     ol
-      margin-left: -30px
-      margin-right: -30px
       padding-left: 0
       list-style: none
       counter-reset: number
 
       li
-        padding-left: 30px
-        padding-right: 30px
-
         h4
           position: relative
           min-height: 40px
           margin-bottom: 15px
+          padding-left: 17px
           font-size: 0.75rem
           line-height: 1.67
           color: $purple
@@ -379,11 +366,14 @@
             content: counter(number)
             position: absolute
             top: 0
-            right: calc(100% + 17px)
+            left: 0
             font-size: 0.75rem
             font-weight: bold
             line-height: 1.67
             color: $purple
+
+        p
+          padding-left: 17px
 
   .section-i
     position: relative
@@ -405,8 +395,6 @@
         color: $gray-dark
 
     ol
-      margin-left: -30px
-      margin-right: -30px
       margin-bottom: 0
       padding-left: 0
       list-style: none
@@ -414,13 +402,12 @@
 
       li
         margin-bottom: 40px
-        padding-left: 30px
-        padding-right: 30px
 
         h4
           position: relative
           min-height: 40px
           margin-bottom: 15px
+          padding-left: 17px
           font-size: 0.75rem
           line-height: 1.67
           color: $purple
@@ -430,7 +417,7 @@
             content: counter(number)
             position: absolute
             top: 0
-            right: calc(100% + 17px)
+            left: 0
             font-size: 0.75rem
             font-weight: bold
             line-height: 1.67
@@ -438,6 +425,7 @@
 
         p
           margin-bottom: 0
+          padding-left: 17px
 
   .section-j
     position: relative
@@ -453,8 +441,10 @@
       left: 0
       z-index: -1
       width: 100vw
-      height: 1383px
+      height: calc(100% + 472px)
+      min-height: 1383px
       background: top center no-repeat url(~@/assets/images/o-que-e-bg-section-j.png)
+      background-size: cover
 
     h3
       margin-bottom: 100px
@@ -542,12 +532,12 @@
               h3 {{ text.h3 }}
               p(v-for="p in text.p")(v-html="p")
 
-          .col-lg-6.d-flex
+          .col-lg-6.d-none.d-lg-flex
             .align-self-end
               g-image(src='~/assets/images/o-que-e-bg-2-section-b@2x.png')
 
         ul.row.justify-content-between
-          li.col-lg-6(v-for="item in this.$page.content.section_b.items")
+          li.col-12.col-md-6(v-for="item in this.$page.content.section_b.items")
             h4.d-flex.align-items-center
               g-image(src='~/assets/icons/check.svg')
               | {{ item.h4 }}
@@ -582,7 +572,7 @@
           p.col-lg-6 {{ this.$page.content.section_d.p }}
 
         ul.row.justify-content-between
-          li.col-lg-6(v-for="item in this.$page.content.section_d.items")
+          li.col-md-6(v-for="item in this.$page.content.section_d.items")
             h4.d-flex.align-items-center
               g-image(src='~/assets/icons/check.svg')
               | {{ item.h4 }}
@@ -607,10 +597,10 @@
           h3.col-12.text-center {{ this.$page.content.section_f.h3 }}
 
         .row
-          .col-6
+          .col-md-6
             p(v-for="p in this.$page.content.section_f.p1") {{ p }}
 
-          .col-6
+          .col-md-6
             p(v-for="p in this.$page.content.section_f.p2") {{ p }}
 
     section.section-g
@@ -646,7 +636,7 @@
         .row
           h3.col-12.text-center {{ this.$page.content.section_j.h3 }}
 
-          .col-4(v-for="item in this.$page.content.section_j.items")
+          .col-md-4(v-for="item in this.$page.content.section_j.items")
             h4 {{ item.h4 }}
             p {{ item.p }}
 
