@@ -934,6 +934,7 @@
           .hero.d-flex.align-items-center.scroll-reveal
             div
               h1.title Inteligência comercial de forma simples
+                div {{ this.$page }}
                 span.dot.green
               p.subtitle Ferramenta de controle vendas, gerenciamento de contatos e automação de relacionamento.
               email-input(placeholder="Insira seu email aqui" identifier="home")
@@ -1158,10 +1159,23 @@
                 g-image(src="../assets/icons/play-button@black.svg", alt="")
 </template>
 
+<page-query>
+  query Data {
+    data: allIndex {
+      edges {
+        node {
+          name
+        }
+      }
+    }
+  }
+</page-query>
+
 <script>
   import Layout from '../layouts/Default'
   import Nav from '../components/Nav'
   import EmailInput from '../components/EmailInput'
+  import VideoLauncher from '../components/VideoLauncher'
   import { BNav, BNavItem, BButton, } from 'bootstrap-vue'
 
   import 'swiper/dist/css/swiper.css'
@@ -1171,6 +1185,7 @@
       Layout,
       Nav,
       EmailInput,
+      VideoLauncher,
       BNav,
       BNavItem,
       BButton,
