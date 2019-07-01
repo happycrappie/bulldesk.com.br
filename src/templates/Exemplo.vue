@@ -159,8 +159,8 @@
 
         .row.justify-content-center
           .col-12.col-lg-5
-            a(href='#' target='_blank')
-              g-image(src='~/assets/icons/exemplo-icon-printer.svg')
+            a(href="" @click="print($page.content.section_a.image.src)")
+              g-image(src="~/assets/icons/exemplo-icon-printer.svg")
               strong Imprima esse fluxo e guarde com você.
               | Ele vai te ajudar nas suas configurações de campanha.
 
@@ -213,6 +213,27 @@
     data () {
       return {
         email: ''
+      }
+    },
+
+    methods: {
+      print(source) {
+          var Pagelink = "about:blank";
+          var pwa = window.open(Pagelink, "_new");
+
+          pwa.document.open();
+          pwa.document.write(this.imagetoPrint(source));
+          pwa.document.close();
+      },
+
+      imagetoPrint(source)
+      {
+          return "<html><head><scri"+"pt>function step1(){\n" +
+                  "setTimeout('step2()', 10);}\n" +
+                  "function step2(){window.print();window.close()}\n" +
+                  "</scri" + "pt><style lang='css'>\n" +
+                  "img { width: 100% }</style></head><body onload='step1()'>\n" +
+                  "<img src='" + source + "' /></body></html>";
       }
     }
   }
