@@ -73,7 +73,13 @@
       margin-top: 30px
 
       .input-group
+        min-height: 60px
         margin-bottom: 20px
+
+        p
+          margin-bottom: 0
+          text-align: center
+          color: $green
 
       input
         height: 60px
@@ -157,7 +163,7 @@
                   br
                   | Tem dúvidas?
                   |
-                  a(href="#") Leia nosso blog.
+                  a(href="http://blog.bulldesk.com.br/") Leia nosso blog.
 
           .col-12.col-md-7.col-lg-5
             form(@submit.prevent="submit()")
@@ -169,10 +175,11 @@
                 b-form-input.phone-input(type="text", :placeholder="inputPhonePlaceholder", v-model="phone", required)
               b-input-group.message-group
                 b-form-input.message-input(type="text", :placeholder="inputMessagePlaceholder", v-model="message", required)
-              b-input-group
-                b-button.email-button.d-flex.justify-content-center.align-items-center(type="submit", :disabled="busy" variant="green")
+              b-input-group.justify-content-center.align-items-center
+                b-button.email-button.d-flex.justify-content-center.align-items-center(type="submit", v-if="! success", :disabled="busy", variant="green")
                   span(v-if="! busy") Enviar
                   b-spinner.ml-1(small, v-else)
+                p(v-if="success") Mensagem enviada com sucesso
 
 
 </template>
@@ -180,6 +187,7 @@
 <script>
   import Layout from '../layouts/Default'
   import Nav from '../components/Nav'
+  import axios from 'axios';
   import { BInputGroup, BFormInput, BInputGroupAppend, BButton, BSpinner } from 'bootstrap-vue';
 
   export default {
@@ -219,6 +227,7 @@
         phone: '',
         message: '',
         busy: false,
+        success: false
       }
     },
 
@@ -248,13 +257,19 @@
 
         axios.post(process.env.GRIDSOME_BULLDESK_API_URL + '/conversion', data)
           .then((response) => {
+            this.success = true;
             this.busy = false;
 
-            // if (this.emit) {
-            //   return this.$emit('convert', true);
-            // }
+            if (this.emit) {
+              return this.$emit('convert', true);
+            }
 
-            // window.location.href = process.env.GRIDSOME_BULLDESK_APP_URL + '/cadastro?email=' + this.email;
+            this.name = '';
+            this.email = '';
+            this.phone = '';
+            this.message = '';
+
+            setTimeout(() => this.success = false, 5000);
           })
           .catch((error) => {
             console.log(error);
