@@ -227,7 +227,8 @@
         phone: '',
         message: '',
         busy: false,
-        success: false
+        success: false,
+        identifier: 'contato'
       }
     },
 
