@@ -1062,65 +1062,16 @@
             .col-12.swiper
               ClientOnly
                 swiper(ref='swiper' :options='swiperOptions')
-                  // Buscapé
-                  swiper-slide
+                  swiper-slide(v-for="(c, index) in this.$page.data.edges[0].node.cases" :key="c.name")
                     .container
                       .row
                         .col-12.col-md-6.image
-                          g-image(src="~/assets/images/cases/buscape.png" alt="Imagem")
+                          img(:src="c.image.src" alt="Imagem")
                         .col-12.col-md-6.content
-                          .logo
-                            g-image(src="~/assets/images/cases/buscape-logo.png" alt="Buscape")
-                          .description Com o Bulldesk foi possível captar os dados de leads, automatizar o envio de e-mails e dessa forma maximizar a performance da equipe de marketing e vendas. Além disso, a equipe Bulldesk mostrou-se comprometida o tempo todo. O atendimento antes, durante e depois da execução da ação de marketing foi extraordinário.
-                          .author Antônio Francisco
-
-                  // Passepag
-                  swiper-slide
-                    .container
-                      .row
-                        .col-12.col-md-6.image
-                          g-image(src="~/assets/images/cases/passepag.png" alt="Imagem")
-                        .col-12.col-md-6.content
-                          .logo
-                            g-image(src="~/assets/images/cases/passepag-logo.png" alt="Passepag")
-                          .description Com os relatórios do Bulldesk nós conseguimos ter uma visão geral dos nossos negócios e das nossas equipes. Dessa forma nós otimizamos os processos e aumentamos a produtividade das equipes de vendas e marketing. Além disso, ao automatizar as campanhas, já focadas nas plataformas que produziam melhores resultados segundo o relatório, nós reduzimos o nosso ciclo de vendas.
-                          .author Hugo Ponchio
-
-                  // Zion
-                  swiper-slide
-                    .container
-                      .row
-                        .col-12.col-md-6.image
-                          g-image(src="~/assets/images/cases/hotel-zion.png" alt="Imagem")
-                        .col-12.col-md-6.content
-                          .logo.w-50
-                            g-image(src="~/assets/images/cases/hotel-zion-logo.png" alt='Hotel Zion')
-                          .description Junto com o Bulldesk, a gente criou um setor comercial. Criamos o site novo, mais apelativo para vendas, com formulários e landing pages. O Bulldesk nos auxiliou a organizar a captação e nutrição de leads. Isso melhorou o nosso tempo de resposta e a nossa interação com os leads. Aumentando a nossa taxa de conversão de leads em clientes.
-                          .author Marina Müller
-
-                  // Casa Beta
-                  swiper-slide
-                    .container
-                      .row
-                        .col-12.col-md-6.image
-                          g-image(src="~/assets/images/cases/casabeta.png" alt="Imagem")
-                        .col-12.col-md-6.content
-                          .logo.w-50
-                            g-image(src="~/assets/images/cases/casabeta-logo.png" alt='Casa Beta')
-                          .description Quando pensamos em começar esse negócio já sabíamos que precisávamos de uma ferramenta de CRM e automação de marketing, e essa ferramenta era o Bulldesk. O Bulldesk nos auxiliou na criação do nosso site, na criação de campanhas e landing pages que geraram centenas de leads.
-                          .author Maria Fernanda
-
-                  // W Koerich
-                  swiper-slide
-                    .container
-                      .row
-                        .col-12.col-md-6.image
-                          g-image(src="~/assets/images/cases/wkoerich.png" alt="Imagem")
-                        .col-12.col-md-6.content
-                          .logo
-                            g-image(src="~/assets/images/cases/wkoerich-logo.png" alt='W Koerich')
-                          .description Com o Bulldesk nós conseguimos alinhar os objetivos e metas das nossas equipes de marketing e vendas. Isso fez com que o desempenho das equipes aumentasse. Além disso, o Bulldesk é uma ferramenta que pode ser completamente adaptada ao seu tipo de negócio. Fica a critério do administrador o nível de acesso que será dado aos outros usuários. Isso permite que as funções sejam bem delimitadas e cada equipe tenha acesso apenas ao necessário para sua função.
-                          .author Victor Koerich
+                          .logo(:class="c.logo_class")
+                            g-image(:src="c.logo.src" :alt="c.alt")
+                          .description {{ c.description }}
+                          .author {{ c.author }}
 
                   // Swiper Buttons
                   .swiper-button-prev(slot='button-prev')
@@ -1158,10 +1109,30 @@
                 g-image(src="../assets/icons/play-button@black.svg", alt="")
 </template>
 
+<page-query>
+  query Data {
+    data: allIndex {
+      edges {
+        node {
+          cases {
+            image,
+            logo,
+            logo_class,
+            alt,
+            description,
+            author
+          }
+        }
+      }
+    }
+  }
+</page-query>
+
 <script>
   import Layout from '../layouts/Default'
   import Nav from '../components/Nav'
   import EmailInput from '../components/EmailInput'
+  import VideoLauncher from '../components/VideoLauncher'
   import { BNav, BNavItem, BButton, } from 'bootstrap-vue'
 
   import 'swiper/dist/css/swiper.css'
@@ -1171,6 +1142,7 @@
       Layout,
       Nav,
       EmailInput,
+      VideoLauncher,
       BNav,
       BNavItem,
       BButton,

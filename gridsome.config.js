@@ -62,7 +62,15 @@ module.exports = {
         typeName: 'OQueE',
         route: '/o-que-e/:id'
       }
-    }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'src/data/index.yaml',
+        typeName: 'Index',
+        route: '/'
+      }
+    },
   ],
   chainWebpack (config) {
     config.module

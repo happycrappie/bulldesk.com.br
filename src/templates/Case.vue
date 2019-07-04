@@ -3,6 +3,7 @@
   @import '../assets/styles/_variables.scss'
 
   header
+    position: relative
     z-index: 4
 
   .hero
@@ -44,6 +45,7 @@
       width: 100vw
       height: 1075px
       background: bottom center no-repeat url(~@/assets/images/case-bg-section-a.png)
+      pointer-events: none
 
     h2
       margin: 0 0 45px
