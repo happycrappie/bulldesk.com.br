@@ -109,7 +109,7 @@
               return this.$emit('convert', true);
             }
 
-            (event) => helpers.conversionCallback(event, process.env.GRIDSOME_BULLDESK_APP_URL + '/cadastro?email=' + this.email);
+            helpers.conversionCallback(event, process.env.GRIDSOME_BULLDESK_APP_URL + '/cadastro?email=' + this.email);
           })
           .catch((error) => {
             console.log(error);

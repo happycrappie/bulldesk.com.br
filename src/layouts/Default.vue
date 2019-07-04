@@ -27,7 +27,7 @@
         const links = document.querySelectorAll('.google-conversion');
 
         for (var i = 0; i < links.length; i++) {
-          links[i].addEventListener('click', (e) => helpers.conversionCallback(e));
+          links[i].addEventListener('click', helpers.conversionCallback);
         }
       }
     },
