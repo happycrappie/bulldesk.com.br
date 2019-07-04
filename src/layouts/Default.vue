@@ -37,7 +37,7 @@
             event_callback: redirect,
           });
 
-          setTimeout(redirect, 400);
+          setTimeout(redirect, 1000);
 
           return false;
         };
