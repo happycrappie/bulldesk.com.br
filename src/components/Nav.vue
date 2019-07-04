@@ -160,7 +160,7 @@
         b-nav-item(href="/exemplos") Exemplos
         b-nav-item(href="/planos") Planos
         b-nav-item(href="https://app.bulldesk.com.br" target="_blank") Login
-        b-nav-item.trial(href="https://app.bulldesk.com.br/cadastro") Teste grátis
+        b-nav-item.trial.google-conversion(href="https://app.bulldesk.com.br/cadastro") Teste grátis
           g-image(src="../assets/icons/play-button@black.svg")
 </template>
 
@@ -194,7 +194,7 @@
     },
 
     mounted () {
-      console.log(this.$static.cases);
+      //
     }
   }
 </script>
