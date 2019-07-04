@@ -170,27 +170,27 @@
 </template>
 
 <page-query>
- query Posts ($page: Int) {
-  posts: allWordPressPost (page: $page, perPage: 10) @paginate {
-    pageInfo {
-      totalPages
-      currentPage
-    }
-    edges {
-      node {
-        id
-        title
-        path
-        excerpt
-        slug
-        featuredMedia {
+  query Posts ($page: Int) {
+    posts: allWordPressPost (page: $page, perPage: 10) @paginate {
+      pageInfo {
+        totalPages
+        currentPage
+      }
+      edges {
+        node {
           id
-          sourceUrl
+          title
+          path
+          excerpt
+          slug
+          featuredMedia {
+            id
+            sourceUrl
+          }
         }
       }
     }
   }
-}
 </page-query>
 
 <script>
