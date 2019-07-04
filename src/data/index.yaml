@@ -1,0 +1,40 @@
+cases:
+  - name: buscape
+    image: '../assets/images/cases/buscape.png'
+    logo: '../assets/images/cases/buscape-logo.png'
+    logo_class: ''
+    alt: Buscapé
+    description: Com o Bulldesk foi possível captar os dados de leads, automatizar o envio de e-mails e dessa forma maximizar a performance da equipe de marketing e vendas. Além disso, a equipe Bulldesk mostrou-se comprometida o tempo todo. O atendimento antes, durante e depois da execução da ação de marketing foi extraordinário.
+    author: Antônio Francisco
+
+  - name: passepag
+    image: '../assets/images/cases/passepag.png'
+    logo: '../assets/images/cases/passepag-logo.png'
+    logo_class: ''
+    alt: Passepag
+    description: Com os relatórios do Bulldesk nós conseguimos ter uma visão geral dos nossos negócios e das nossas equipes. Dessa forma nós otimizamos os processos e aumentamos a produtividade das equipes de vendas e marketing. Além disso, ao automatizar as campanhas, já focadas nas plataformas que produziam melhores resultados segundo o relatório, nós reduzimos o nosso ciclo de vendas.
+    author: Hugo Ponchio
+
+  - name: hotel zion
+    image: '../assets/images/cases/hotel-zion.png'
+    logo: '../assets/images/cases/hotel-zion-logo.png'
+    logo_class: 'w-50'
+    alt: Hotel Zion
+    description: Junto com o Bulldesk, a gente criou um setor comercial. Criamos o site novo, mais apelativo para vendas, com formulários e landing pages. O Bulldesk nos auxiliou a organizar a captação e nutrição de leads. Isso melhorou o nosso tempo de resposta e a nossa interação com os leads. Aumentando a nossa taxa de conversão de leads em clientes.
+    author: Marina Müller
+
+  - name: casabeta
+    image: '../assets/images/cases/casabeta.png'
+    logo: '../assets/images/cases/casabeta-logo.png'
+    logo_class: 'w-50'
+    alt: Casa Beta
+    description: Quando pensamos em começar esse negócio já sabíamos que precisávamos de uma ferramenta de CRM e automação de marketing, e essa ferramenta era o Bulldesk. O Bulldesk nos auxiliou na criação do nosso site, na criação de campanhas e landing pages que geraram centenas de leads.
+    author: Maria Fernanda
+
+  - name: wkoerich
+    image: '../assets/images/cases/wkoerich.png'
+    logo: '../assets/images/cases/wkoerich-logo.png'
+    logo_class: ''
+    alt: W Koerich
+    description: Com o Bulldesk nós conseguimos alinhar os objetivos e metas das nossas equipes de marketing e vendas. Isso fez com que o desempenho das equipes aumentasse. Além disso, o Bulldesk é uma ferramenta que pode ser completamente adaptada ao seu tipo de negócio. Fica a critério do administrador o nível de acesso que será dado aos outros usuários. Isso permite que as funções sejam bem delimitadas e cada equipe tenha acesso apenas ao necessário para sua função.
+    author: Victor Koerich

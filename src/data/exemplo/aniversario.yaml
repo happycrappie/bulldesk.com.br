@@ -3,7 +3,7 @@ id: aniversario
 order: 1
 title: Campanha de Aniversário
 icon: '../../assets/icons/exemplos-icon-confetti.svg'
-description: 'Dar parabeéns para os aniversariantes do mês de dezembro já é coisa do passado. Com o Bulldesk você consegue enviar uma série de mensagens de acordoo com a data do aniversário do seu lead. Quer saber como? É só clicar aqui.'
+description: 'Dar parabeéns para os aniversariantes do mês de dezembro já é coisa do passado. Com o Bulldesk você consegue enviar uma série de mensagens de acordo com a data do aniversário do seu lead. Quer saber como? É só clicar aqui.'
 header:
   h1: Campanha de Aniversário
   p:
