@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32.1" height="30.029" viewBox="0 0 32.1 30.029">
+    <defs>
+        <style>
+            .cls-1,.cls-2{fill:#f6f5f8;stroke:#130f19;stroke-width:.3px}.cls-2{fill:#1feaa4}
+        </style>
+    </defs>
+    <g id="message" transform="translate(.15 -16.646)">
+        <g id="Grupo_237" data-name="Grupo 237" transform="translate(0 16.814)">
+            <g id="Grupo_236" data-name="Grupo 236">
+                <path id="Caminho_355" d="M31.775 28.043a.469.469 0 0 0-.029-.162.812.812 0 0 0-.32-.452l-4.552-3.164v-3.393a.814.814 0 0 0-.814-.814h-5.237l-4.456-3.1a.814.814 0 0 0-.928 0l-4.485 3.1H5.74a.814.814 0 0 0-.814.814v3.352L.352 27.386a.813.813 0 0 0-.352.658v.014l.024 17.654a.814.814 0 0 0 .814.813l30.147-.041a.814.814 0 0 0 .813-.815zm-4.9-1.795l2.6 1.808-2.6 1.809zM15.9 18.62l2.069 1.438H13.82zm-9.345 3.067h18.69V31l-6.275 4.361-2.559-1.985-.011-.008a.814.814 0 0 0-.987.008l-2.577 2-6.281-4.342zM4.926 26.2v3.7l-2.68-1.852zm-3.3 3.408l9.855 6.811-9.83 7.632zm1.596 15.285l12.69-9.843 12.645 9.808zm17.1-8.486l9.83-6.834.02 14.475z" class="cls-1" data-name="Caminho 355" transform="translate(0 -16.814)"/>
+            </g>
+        </g>
+        <g id="Grupo_239" data-name="Grupo 239" transform="translate(9.572 24.944)">
+            <g id="Grupo_238" data-name="Grupo 238">
+                <path id="Caminho_356" d="M165.963 147.713h-11.027a.814.814 0 0 0 0 1.629h11.026a.814.814 0 0 0 0-1.629z" class="cls-2" data-name="Caminho 356" transform="translate(-154.122 -147.713)"/>
+            </g>
+        </g>
+        <g id="Grupo_241" data-name="Grupo 241" transform="translate(9.572 29.179)">
+            <g id="Grupo_240" data-name="Grupo 240">
+                <path id="Caminho_357" d="M165.963 215.9h-11.027a.814.814 0 1 0 0 1.629h11.026a.814.814 0 1 0 0-1.629z" class="cls-2" data-name="Caminho 357" transform="translate(-154.122 -215.895)"/>
+            </g>
+        </g>
+    </g>
+</svg>

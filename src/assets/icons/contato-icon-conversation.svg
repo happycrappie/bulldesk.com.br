@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="conversation" width="34.695" height="34.695" viewBox="0 0 34.695 34.695">
+    <defs>
+        <style>
+            .cls-1{fill:#f6f5f8}.cls-2{fill:#1feaa4}
+        </style>
+    </defs>
+    <g id="Grupo_220" data-name="Grupo 220" transform="translate(0 11.791)">
+        <g id="Grupo_219" data-name="Grupo 219">
+            <path id="Caminho_344" d="M23.446 183.826a.678.678 0 0 0-.678.678v4.676a3.392 3.392 0 0 1-3.388 3.388h-7.316a.678.678 0 0 0-.678.677v1.347l-1.617-1.617a.678.678 0 0 0-.621-.407h-4.4a3.392 3.392 0 0 1-3.388-3.388v-10.436a3.392 3.392 0 0 1 3.388-3.388h6.844a.678.678 0 0 0 0-1.355H4.743A4.749 4.749 0 0 0 0 178.744v10.436a4.749 4.749 0 0 0 4.743 4.743H8.8l2.783 2.783a.678.678 0 0 0 1.157-.479v-2.3h6.639a4.749 4.749 0 0 0 4.743-4.743V184.5a.678.678 0 0 0-.676-.674z" class="cls-1" data-name="Caminho 344" transform="translate(0 -174)"/>
+        </g>
+    </g>
+    <g id="Grupo_222" data-name="Grupo 222" transform="translate(13.282)">
+        <g id="Grupo_221" data-name="Grupo 221">
+            <path id="Caminho_345" d="M207.564 0h-1.715a9.849 9.849 0 1 0 0 19.7h1.715a9.868 9.868 0 0 0 2.5-.32l2.536 2.53a.678.678 0 0 0 1.157-.479V17.51a9.944 9.944 0 0 0 2.589-3.192 9.743 9.743 0 0 0 1.07-4.469A9.86 9.86 0 0 0 207.564 0zm5.1 16.639a.678.678 0 0 0-.27.541v2.62l-1.658-1.657a.677.677 0 0 0-.678-.168 8.5 8.5 0 0 1-2.5.374h-1.715a8.494 8.494 0 0 1 0-16.988h1.715a8.494 8.494 0 0 1 5.1 15.283z" class="cls-2" data-name="Caminho 345" transform="translate(-196)"/>
+        </g>
+    </g>
+    <g id="Grupo_224" data-name="Grupo 224" transform="translate(21.309 4.748)">
+        <g id="Grupo_223" data-name="Grupo 223">
+            <path id="Caminho_346" d="M320.193 72.73a2.875 2.875 0 0 0-2.66-2.66 2.847 2.847 0 0 0-2.159.764 2.879 2.879 0 0 0-.912 2.1.678.678 0 1 0 1.355 0 1.514 1.514 0 0 1 1.622-1.51 1.514 1.514 0 0 1 .224 2.987 1.282 1.282 0 0 0-1.01 1.257v1.628a.678.678 0 1 0 1.355 0V75.72a2.854 2.854 0 0 0 2.185-2.99z" class="cls-2" data-name="Caminho 346" transform="translate(-314.462 -70.063)"/>
+        </g>
+    </g>
+    <g id="Grupo_226" data-name="Grupo 226" transform="translate(23.501 13.982)">
+        <g id="Grupo_225" data-name="Grupo 225">
+            <path id="Caminho_347" d="M347.957 206.529a.678.678 0 1 0 .2.479.683.683 0 0 0-.2-.479z" class="cls-2" data-name="Caminho 347" transform="translate(-346.8 -206.33)"/>
+        </g>
+    </g>
+    <g id="Grupo_228" data-name="Grupo 228" transform="translate(3.659 21.007)">
+        <g id="Grupo_227" data-name="Grupo 227">
+            <path id="Caminho_348" d="M68.976 310h-14.3a.678.678 0 1 0 0 1.355h14.3a.678.678 0 1 0 0-1.355z" class="cls-1" data-name="Caminho 348" transform="translate(-54 -310)"/>
+        </g>
+    </g>
+    <g id="Grupo_230" data-name="Grupo 230" transform="translate(17.958 24.802)">
+        <g id="Grupo_229" data-name="Grupo 229">
+            <path id="Caminho_349" d="M266.157 366.2a.677.677 0 1 0 .2.479.682.682 0 0 0-.2-.479z" class="cls-1" data-name="Caminho 349" transform="translate(-265 -366)"/>
+        </g>
+    </g>
+    <g id="Grupo_232" data-name="Grupo 232" transform="translate(3.659 24.802)">
+        <g id="Grupo_231" data-name="Grupo 231">
+            <path id="Caminho_350" d="M66.311 366H54.678a.678.678 0 0 0 0 1.355h11.633a.678.678 0 1 0 0-1.355z" class="cls-1" data-name="Caminho 350" transform="translate(-54 -366)"/>
+        </g>
+    </g>
+    <g id="Grupo_234" data-name="Grupo 234" transform="translate(3.659 17.212)">
+        <g id="Grupo_233" data-name="Grupo 233">
+            <path id="Caminho_351" d="M64.571 254h-9.893a.678.678 0 0 0 0 1.355h9.894a.678.678 0 1 0 0-1.355z" class="cls-1" data-name="Caminho 351" transform="translate(-54 -254)"/>
+        </g>
+    </g>
+</svg>
