@@ -65,6 +65,7 @@
     components: {
       BModal,
     },
+
     props: {
       videoID: String,
       image: String
