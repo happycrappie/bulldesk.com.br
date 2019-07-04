@@ -1,5 +1,5 @@
 export default {
-  conversionCallback: function(event, location = null) {
+  conversionCallback: (event, location = null) => {
     event.preventDefault();
 
     const redirect = () => {
