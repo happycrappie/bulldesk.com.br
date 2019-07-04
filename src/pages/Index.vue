@@ -1103,7 +1103,7 @@
                 g-image(src="../assets/icons/play-button@black.svg", alt="")
             .col-12.col-lg-9
               .video-container
-                VideoLauncher(videoID="$page.content.header.videoID" image="$page.content.header.videoThumb.src")
+                //- VideoLauncher(videoID="$page.content.header.videoID" image="$page.content.header.videoThumb.src")
               b-button.d-inline.d-lg-none(href="https://app.bulldesk.com.br/cadastro", variant="green")
                 | Teste grátis
                 g-image(src="../assets/icons/play-button@black.svg", alt="")
