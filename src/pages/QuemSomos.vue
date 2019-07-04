@@ -161,7 +161,7 @@
 
           .col-md-4
             g-image(src="~/assets/images/quem-somos-foto-6@2x.png")
-            g-image(src="~/assets/images/quem-somos-foto-7@2x.png")
+            //- g-image(src="~/assets/images/quem-somos-foto-7@2x.png")
 
     section.section-b
       .container
