@@ -42,7 +42,7 @@
 </style>
 
 <template lang="pug">
-  form(@submit.prevent="submit()")
+  form(@submit.prevent="submit($event)")
     b-input-group.email-group
       b-form-input.email-input(type="email", :placeholder="inputPlaceholder", v-model="email", required)
       b-input-group-append
@@ -53,7 +53,8 @@
 
 <script>
   import axios from 'axios';
-  import { BInputGroup, BFormInput, BInputGroupAppend, BButton } from 'bootstrap-vue';
+  import helpers from '../shared/helpers';
+  import { BInputGroup, BFormInput, BInputGroupAppend, BButton, BSpinner } from 'bootstrap-vue';
 
   export default {
     props: {
@@ -63,7 +64,7 @@
     },
 
     components: {
-      BInputGroup, BFormInput, BInputGroupAppend, BButton
+      BInputGroup, BFormInput, BInputGroupAppend, BButton, BSpinner
     },
 
     computed: {
@@ -80,7 +81,7 @@
     },
 
     methods: {
-      submit() {
+      submit(event) {
         if (! this.email) {
           return;
         }
@@ -108,7 +109,7 @@
               return this.$emit('convert', true);
             }
 
-            window.location.href = process.env.GRIDSOME_BULLDESK_APP_URL + '/cadastro?email=' + this.email;
+            helpers.conversionCallback(event, process.env.GRIDSOME_BULLDESK_APP_URL + '/cadastro?email=' + this.email);
           })
           .catch((error) => {
             console.log(error);

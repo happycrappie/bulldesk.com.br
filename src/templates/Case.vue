@@ -282,7 +282,7 @@
             h2 {{ this.$page.content.section_b.h2 }}
             p(v-html="this.$page.content.section_b.p")
 
-            b-button(href="https://app.bulldesk.com.br/cadastro", variant="green")
+            b-button.google-conversion(href="https://app.bulldesk.com.br/cadastro", variant="green")
                 | Teste grátis
                 g-image(src="../assets/icons/play-button@black.svg", alt="")
 
