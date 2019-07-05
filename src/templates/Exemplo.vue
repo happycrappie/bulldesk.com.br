@@ -159,7 +159,7 @@
 
         .row.justify-content-center
           .col-12.col-lg-5
-            a(href='#' target='_blank')
+            a(href='' v-b-modal.pdf-modal)
               g-image(src='~/assets/icons/exemplo-icon-printer.svg')
               strong Imprima esse fluxo e guarde com você.
               | Ele vai te ajudar nas suas configurações de campanha.
@@ -172,6 +172,12 @@
         .row.justify-content-center
           h4.col-md-4 Insira seu e-mail abaixo e crie sua conta agora mesmo
         email-input(:identifier="'exemplo' + this.$page.content.id")
+
+    b-modal#pdf-modal(centered hide-footer=true)
+      .container.pdf-modal-container
+        .row
+          .col-12
+            div IM MODAL
 
 </template>
 
@@ -196,12 +202,14 @@
   import Layout from '../layouts/Default'
   import Nav from '../components/Nav'
   import EmailInput from '../components/EmailInput'
+  import { VBModal } from 'bootstrap-vue'
 
   export default {
     components: {
       Layout,
       Nav,
       EmailInput,
+      VBModal,
     },
 
     metaInfo () {
