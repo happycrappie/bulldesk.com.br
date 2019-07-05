@@ -4,7 +4,7 @@ order: 6
 title: Campanha de Visitantes Planos e Preços
 icon: '../../assets/icons/exemplos-icon-visitor.svg'
 description: Nesse exmplo você pode ver como ativar uma campanha baseado em uma visita de alguma página no seu site. Clica e confere!
-pdf: '/static/docs/exemplos/campanha_visitantes.pdf'
+pdf: '/docs/exemplos/campanha_visitantes.pdf'
 header:
   h1: Campanha de Visitantes Planos e Preços
   p:

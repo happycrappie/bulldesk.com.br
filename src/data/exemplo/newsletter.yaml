@@ -4,7 +4,7 @@ order: 5
 title: Campanha de Newsletter
 icon: '../../assets/icons/exemplos-icon-document.svg'
 description: Gerou leads via blog e não sabe o que fazer com eles? As campanhas de Newsletter são uma excelente opção para você começar a se relacionar com a sua base de contatos.
-pdf: '/static/docs/exemplos/campanha_newsletter.pdf'
+pdf: '/docs/exemplos/campanha_newsletter.pdf'
 header:
   h1: Campanha de Newsletter
   p:

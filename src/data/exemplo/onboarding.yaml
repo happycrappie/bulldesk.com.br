@@ -4,7 +4,7 @@ order: 4
 title: Campanha de Onboarding
 icon: '../../assets/icons/exemplos-icon-fist.svg'
 description: Campanhas de onboarding são execelentes para você dar as boas vindas aos seus clientes e também educá-los de como utilizar o seu produto. Porque fazer manual se podemos automatizar?
-pdf: '/static/docs/exemplos/campanha_onboarding.pdf'
+pdf: '/docs/exemplos/campanha_onboarding.pdf'
 header:
   h1: Campanha de Onboarding
   p:
