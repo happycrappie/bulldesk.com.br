@@ -10,8 +10,9 @@ header:
     - As campanhas de notificação de e-mail permitem que você consiga ter um controle de todos os leads que preenchem um formulário no seu site.  Assim, você consegue ter controles sobre todos os leads que entraram para o seu funil.
     - Você pode escolher que tipo de notificações deseja receber. Além de leads convertidos por formulário é possível receber a notificação via e-mail de todos os negócios perdidos, negócios ganhos, etc.
     - Com o Bulldesk nenhum lead vai passar despercebido. Você consegue ter uma visão geral e controle sobre tudo que está acontecendo com seu negócio.
+  image: '../../assets/images/example/notificar.png'
 
 section-a:
   h2: Quer ver como é simples?
   p: 'Dá um confere na imagem abaixo:'
-  image: '../../assets/images/example/notificar.png'
+  image: '../../assets/images/example/notificar-exemplo.png'

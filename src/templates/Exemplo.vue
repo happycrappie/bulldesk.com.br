@@ -146,7 +146,7 @@
             p(v-for="p in this.$page.content.header.p") {{ p }}
 
           .col-lg-5.d-md-none.d-lg-block
-            g-image(src='~/assets/images/exemplo-bg-hero.png')
+            g-image(:src='$page.content.header.image')
 
     section.section-a
       .container
@@ -182,6 +182,7 @@
       header {
         h1
         p
+        image
       }
       section_a {
         h2
