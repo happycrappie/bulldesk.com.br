@@ -4,6 +4,7 @@ order: 8
 title: Campanha Distribuição de Leads
 icon: '../../assets/icons/exemplos-icon-win.svg'
 description: 'O que você acha que deve acontecer quando alguém solicita um orçamento? Alguém da equipe de vendas deve entrar em contato, certo? Mas então por que você não faz isso? Clique aqui e veja como parar de perder vendas.'
+pdf: '/static/docs/exemplos/leads_novos_negocios.pdf'
 header:
   h1: Campanha Distribuição de Leads
   p:

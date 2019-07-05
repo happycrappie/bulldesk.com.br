@@ -4,6 +4,7 @@ order: 9
 title: Campanha de Notificação de E-mail
 icon: '../../assets/icons/exemplos-icon-notification.svg'
 description: Já pensou toda vez que alguém solicitar um orçamento ou preencher um formulário de contato você ser notificado? Nesse exemplo você pode fazer isso e muito mais.
+pdf: '/static/docs/exemplos/campanha_notificacao_email.pdf'
 header:
   h1: Campanha de Notificação de E-mail
   p:

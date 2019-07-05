@@ -4,6 +4,7 @@ order: 2
 title: Campanha de Vendas
 icon: '../../assets/icons/exemplos-icon-commerce.svg'
 description: Quando alguém solicitar um contato com a equipe de vendas, sabe o que deve acontecer? Deve ir imediatamente para algum comercial. Meio óbvio, mas você faz isso?
+pdf: '/static/docs/exemplos/campanha_vendas.pdf'
 header:
   h1: Campanha de Vendas
   p:
