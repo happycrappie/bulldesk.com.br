@@ -220,13 +220,14 @@
 
           .row.justify-content-center
             h4.col-md-4 Insira seu e-mail abaixo e crie sua conta agora mesmo
-          email-input(:identifier="'exemplo' + this.$page.content.id")
+          email-input(:identifier="'exemplo-' + this.$page.content.id")
 
 </template>
 
 <page-query>
   query ($id: String!) {
     content: exemplo (id: $id) {
+      id
       title
       pdf
       header {
@@ -282,7 +283,7 @@
 
         let data = {
           token: process.env.GRIDSOME_BULLDESK_TOKEN,
-          identifier: 'exemplo' + this.$page.content.id,
+          identifier: 'exemplo-' + this.$page.content.id,
           name: this.name,
           email: this.email
         };
