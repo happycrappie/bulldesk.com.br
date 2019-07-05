@@ -132,8 +132,11 @@
 
   #pdf-modal
       h5
-        margin-bottom: 2rem
         font-weight: 700
+
+      form
+        width: 94%
+        margin: auto
 
       label
         font-size: 0.875rem
@@ -150,12 +153,13 @@
           background-color: $white
           border-color: $white-gray
 
-      button
+      .submit-button
         color: $white
         margin-top: 1rem
 
         &:disabled
           cursor: not-allowed
+          pointer-events: all !important
 </style>
 
 <template lang="pug">
@@ -192,12 +196,11 @@
                 strong Imprima esse fluxo e guarde com você.
                 | Ele vai te ajudar nas suas configurações de campanha.
 
-          b-modal#pdf-modal(hide-header=true hide-footer=true)
+          b-modal#pdf-modal(hide-footer=true)
+            div(slot="modal-title") Preencha seus dados para continuar
             .container.pdf-modal-container
               .row
                 .col-12
-                  h5 Preencha seus dados para continuar
-
                   form(@submit.prevent="submit($event)")
                     b-form-group(id="fieldset-name" label="Nome" label-for="name")
                       b-form-input(id="name" type="text", placeholder="Digite seu nome completo", v-model="name", required)
@@ -206,7 +209,7 @@
                       b-form-input(id="email" type="email", placeholder="Digite seu e-mail", v-model="email", required)
 
                     .text-center
-                      b-button(type="submit", :disabled="busy || ! name || ! email" variant="purple") Visualizar material
+                      b-button.submit-button(type="submit", :disabled="busy || ! name || ! email" variant="purple") Visualizar material
                         g-image(src="~/assets/icons/play-button@white.svg", v-if="! busy")
                         b-spinner.ml-1(small, v-else)
 
