@@ -2,8 +2,18 @@
 <html ${htmlAttrs}>
   <head>
     ${head}
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-862908766"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-862908766'); </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-862908766"></script>
     <script>
+      window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-862908766');
+
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-65677980-5', 'auto');
+      ga('send', 'pageview');
+
       window.BulldeskSettings = { token: '565333c25126f542d7aecfd179bc525b' };
       !function(a,b,c){if('object'!=typeof c){var d=function(){d.c(arguments)};d.q=[],d.c=function(a){d.q.push(a)},a.Bulldesk=d;var e=b.createElement('script');e.type='text/javascript',e.async=!0,e.id='bulldesk-analytics',e.src='https://static.bulldesk.com.br/bulldesk.js';var f=b.getElementsByTagName('script')[0];f.parentNode.insertBefore(e,f)}}(window,document,window.Bulldesk);
     </script>
