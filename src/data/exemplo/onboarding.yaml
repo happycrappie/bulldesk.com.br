@@ -10,8 +10,9 @@ header:
     - Manter os clientes que você já tem é muitas vezes mais importantes do que gerar novos leads. E uma das estratégias para fazer com que seus clientes se sintam valorizados é através das campanhas de onboarding.
     - Além disso, você pode utilizar as campanhas de onboarding para ensinar o seu cliente a usar o seu produto. Essa é uma forma de fazer com que o seu cliente tenha o máximo de satisfação possível com seu produto.
     - As campanhas de onboarding ajudam você a manter e fidelizar clientes. No Bulldesk você pode programar uma campanha de onboarding automática que será ativada cada vez que você fechar um negócio.
+  image: '../../assets/images/example/onboarding.png'
 
 section-a:
   h2: Quer ver como é simples?
   p: 'Dá um confere na imagem abaixo:'
-  image: '../../assets/images/example/onboarding.png'
+  image: '../../assets/images/example/onboarding-exemplo.png'
