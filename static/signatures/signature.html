@@ -4,19 +4,17 @@
       <table>
         <tr>
           <td style="width: 154px;">
-            <img src="images/marcel.png" alt="Avatar" style="margin-left: 5px;" width="129">
+            <img id="avatar" src="" alt="Avatar" style="margin-left: 5px;" width="129">
           </td>
           <td style="padding-top: 27px;">
-            <h4 style="margin: 0px;
-                       font-size: 18px;
-                       font-weight: 700;">
-              Marcel Macedo
+            <h4 id="name" style="margin: 0px;
+                                 font-size: 18px;
+                                 font-weight: 700;">
             </h4>
-            <h5 style="margin-top: 1px;
-                       margin-bottom: 0px;
-                       font-size: 13px;
-                       font-weight: 400;">
-              No fancy title here
+            <h5 id="description" style="margin-top: 1px;
+                                        margin-bottom: 0px;
+                                        font-size: 13px;
+                                        font-weight: 400;">
             </h5>
             <p style="font-size: 11px;
                       font-weight: 400;
@@ -94,3 +92,36 @@
     </td>
   </tr>
 </table>
+
+<script type="text/javascript">
+  function getUrlParameter(param) {
+    param = param.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+    var regex = new RegExp('[\\?&]' + param + '=([^&#]*)');
+    var results = regex.exec(location.search);
+    return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+  }
+
+  function cleanUpSpecialChars(str) {
+    return str
+        .replace(/[àáâãä]/g,"a")
+        .replace(/[èéêẽë]/g,"e")
+        .replace(/[ìíîĩï]/g,"i")
+        .replace(/[òóôõö]/g,"o")
+        .replace(/[ùúûũü]/g,"u")
+        .replace(/[ç]/g,"c")
+        .replace(/[^a-z0-9]/gi,'');
+  }
+
+  function getAvatarPathByName(name) {
+    name = name.split(" ")[0].toLowerCase();
+
+    return 'images/avatars/' + cleanUpSpecialChars(name) + '.png';
+  }
+
+  var name = getUrlParameter('name');
+  var description = getUrlParameter('description');
+
+  document.getElementById('avatar').setAttribute('src', getAvatarPathByName(name));
+  document.getElementById('name').innerHTML = name;
+  document.getElementById('description').innerHTML = description;
+</script>
