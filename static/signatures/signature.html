@@ -96,8 +96,10 @@
 <script type="text/javascript">
   function getUrlParameter(param) {
     param = param.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+
     var regex = new RegExp('[\\?&]' + param + '=([^&#]*)');
     var results = regex.exec(location.search);
+
     return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
   }
 
@@ -120,8 +122,11 @@
 
   var name = getUrlParameter('name');
   var description = getUrlParameter('description');
+  var avatar = getUrlParameter('avatar');
 
-  document.getElementById('avatar').setAttribute('src', getAvatarPathByName(name));
+  avatar = avatar ? 'images/avatars/' + avatar : getAvatarPathByName(name);
+
+  document.getElementById('avatar').setAttribute('src', avatar);
   document.getElementById('name').innerHTML = name;
   document.getElementById('description').innerHTML = description;
 </script>
