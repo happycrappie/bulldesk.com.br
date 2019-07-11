@@ -6,5 +6,9 @@ module.exports = {
   css: [
     './dist/assets/css/*.css'
   ],
+  whitelist: [
+    'spinner-border-sm',
+    'spinner-border'
+  ],
   rejected: true
 }
