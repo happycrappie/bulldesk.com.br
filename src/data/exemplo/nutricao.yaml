@@ -4,14 +4,16 @@ order: 10
 title: Campanha de Nutrição de Leads
 icon: '../../assets/icons/exemplos-icon-resume.svg'
 description: Não existem vendas sem relacionamento. Nesse exemplo você consegue ver uma campanha de relacionamento com os seus leads, com o obejtivo de acelerar suas vendas.
+pdf: '/docs/exemplos/nutricao_leads.pdf'
 header:
   h1: Campanha de Nutrição de Leads
   p:
     - Através de uma campanha de nutrição de leads você consegue construir um relacionamento com seu lead. Isso faz com que você consiga guiá-los pela jornada de compras. Aprendizado, reconhecimento do problema, consideração da solução e decisão de compra.
     - Dessa forma, os leads só chegam nos vendedores quando já estão prontos para compra. Isso economiza o tempo e otimiza a produtividade de sua equipe de venda, já que não vai perder tempo fazendo incontáveis ligações para leads que não sabem se estão prontos para comprar.
     - A nutrição de leads é essencial para que você consiga converter seus leads em clientes. E para isso o Bulldesk te ajuda a criar uma campanha de nutrição de leads automatizada. No final dessa campanha seu lead já estarão mais informados e próximos da compra.
+  image: '../../assets/images/example/nutricao.png'
 
 section-a:
   h2: Quer ver como é simples?
   p: 'Dá um confere na imagem abaixo:'
-  image: '../../assets/images/example/nutricao.png'
+  image: '../../assets/images/example/nutricao-exemplo.png'

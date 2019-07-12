@@ -4,14 +4,16 @@ order: 1
 title: Campanha de Aniversário
 icon: '../../assets/icons/exemplos-icon-confetti.svg'
 description: 'Dar parabeéns para os aniversariantes do mês de dezembro já é coisa do passado. Com o Bulldesk você consegue enviar uma série de mensagens de acordo com a data do aniversário do seu lead. Quer saber como? É só clicar aqui.'
+pdf: '/docs/exemplos/campanha_aniversario.pdf'
 header:
   h1: Campanha de Aniversário
   p:
     - 'Sabe aquela coisa chata de ter que ficar pegando a sua lista de contatos dos aniversariantes do mês, e subir na sua ferramenta de envio de email marketing e enviar um conteúdo com algo do tipo:  “Parabéns aniversariantes de Julho!”? Aquela mesma mensagem de sempre, bem genérica, sabe né?'
     - Então, com o Bulldesk você não precisa mais ter esse trabalhão todo! Através da data de nascimento dos seus leads, você pode ativar uma campanha que irá acontecer automaticamente sempre que a data do aniversariante estiver chegando.
     - E o que você ganha com isso? Uma gigantesca economia de tempo e a possibilidade de conseguir enviar um conteúdo totalmente personalizado para os seus leads, destacando-se da concorrência.
+  image: '../../assets/images/example/aniversario.png'
 
 section-a:
   h2: Quer ver como é simples?
   p: 'Dá um confere na imagem abaixo:'
-  image: '../../assets/images/example/aniversario.png'
+  image: '../../assets/images/example/aniversario-exemplo.png'

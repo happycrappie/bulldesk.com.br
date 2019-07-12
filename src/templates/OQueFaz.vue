@@ -179,7 +179,7 @@
             | {{ item.h3 }}
           p {{ item.p }}
 
-      b-button.d-lg-inline(href="https://app.bulldesk.com.br/cadastro", variant="green")
+      b-button.d-lg-inline.google-conversion(href="https://app.bulldesk.com.br/cadastro", variant="green")
         | Quero fazer um teste gratuito
         g-image(src='~/assets/icons/play-button@black.svg')
 

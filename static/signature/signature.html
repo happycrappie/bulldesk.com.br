@@ -1,0 +1,132 @@
+<table border="0" cellpadding="0" cellspacing="0" width="600px" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #130f19;">
+  <tr>
+    <td>
+      <table>
+        <tr>
+          <td style="width: 154px;">
+            <img id="avatar" src="" alt="Avatar" style="margin-left: 5px;" width="129">
+          </td>
+          <td style="padding-top: 27px;">
+            <h4 id="name" style="margin: 0px;
+                                 font-size: 18px;
+                                 font-weight: 700;">
+            </h4>
+            <h5 id="description" style="margin-top: 1px;
+                                        margin-bottom: 0px;
+                                        font-size: 13px;
+                                        font-weight: 400;">
+            </h5>
+            <p style="font-size: 11px;
+                      font-weight: 400;
+                      line-height: 16px;
+                      margin-top: 8px;
+                      margin-bottom: 0px;
+                      line-height: 16px;
+                      width: 333px;">
+              R. Rua Paschoal Apóstolo Pítsica, 4876 - Agronômica, Florianópolis Condominio Centro Executivo Luiz Elias Daux, 5º andar.
+            </p>
+            <p style="font-size: 13px;
+                      font-weight: 400;
+                      line-height: 16px;
+                      margin-top: 8px;">
+              bulldesk.com.br
+            </p>
+            <img src="images/logo.jpg" alt="Logo" style="width: 107px; margin-top: 15px;">
+          </td>
+        </tr>
+      </table>
+      <table>
+        <tr>
+          <td style="padding-left: 72px; padding-top: 20px;">
+            <p style="font-size: 12px;
+                      font-weight: 400;
+                      width: 193px;">
+              Teste o bulldesk <strong>gratuitamente por 7 dias.</strong> Não perca tempo.
+            </p>
+          </td>
+          <td style="padding-left: 10px; padding-top: 20px;">
+            <a href="https://app.bulldesk.com.br/cadastro" target="_blank"
+               style="background-color: #1feaa4;
+                      font-size: 12px;
+                      font-weight: 700;
+                      line-height: 13px;
+                      text-decoration: none;
+                      border-radius: 300px;
+                      padding: 12px 25px 11px 26px;
+                      cursor: pointer;">
+              <span style="color: #130f19 !important;">
+                teste agora
+              </span>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: 72px; padding-top: 15px;">
+            <p style="color: #857a98;
+                      font-size: 10px;
+                      font-weight: 400;">
+              Hey! Não imprima papel :)
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: 72px; padding-top: 15px;">
+            <a href="https://www.instagram.com/bulldeskcrm" target="_blank" style=" margin-right: 22px; cursor: pointer; text-decoration: none;">
+              <img alt="Instragram" src="images/instagram.png" width="17px">
+            </a>
+            <a href="https://www.facebook.com/bulldeskcrm" target="_blank" style="margin-right: 22px; cursor: pointer; text-decoration: none;">
+              <img src="images/facebook.png" alt="Facebook" width="10px">
+            </a>
+            <a href="https://www.youtube.com/channel/UCF2cpwuAJZk2KXJB6NetWIg?view_as=subscriber" target="_blank" style="margin-right: 22px; cursor: pointer; text-decoration: none;">
+              <img src="images/youtube.png" alt="Youtube" width="17px">
+            </a>
+            <a href="https://twitter.com/bulldeskcrm" target="_blank" style="margin-right: 22px; cursor: pointer; text-decoration: none;">
+              <img src="images/twitter.png" alt="Twitter" width="17px">
+            </a>
+            <a href="https://www.linkedin.com/company/bulldesk" target="_blank" style="cursor: pointer; text-decoration: none;">
+              <img src="images/linkedin.png" alt="Linkedin" width="14px">
+            </a>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  function getUrlParameter(param) {
+    param = param.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+
+    var regex = new RegExp('[\\?&]' + param + '=([^&#]*)');
+    var results = regex.exec(location.search);
+
+    return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+  }
+
+  function cleanUpSpecialChars(str) {
+    return str
+        .replace(/[àáâãä]/g,"a")
+        .replace(/[èéêẽë]/g,"e")
+        .replace(/[ìíîĩï]/g,"i")
+        .replace(/[òóôõö]/g,"o")
+        .replace(/[ùúûũü]/g,"u")
+        .replace(/[ç]/g,"c")
+        .replace(/[^a-z0-9]/gi,'');
+  }
+
+  function getAvatarPathByName(name) {
+    name = name.split(" ")[0].toLowerCase();
+
+    return 'images/avatars/' + cleanUpSpecialChars(name) + '.png';
+  }
+
+  var name = getUrlParameter('name');
+  var description = getUrlParameter('description');
+  var avatar = getUrlParameter('avatar');
+
+  avatar = avatar ? 'images/avatars/' + avatar : getAvatarPathByName(name);
+
+  document.getElementById('avatar').setAttribute('src', avatar);
+  document.getElementById('name').innerHTML = name;
+  document.getElementById('description').innerHTML = description;
+</script>

@@ -504,7 +504,7 @@
   Layout
     header.d-flex
       .container
-        Nav(type="dark" logo="white")
+        Nav(type="dark", logo="white")
 
     section.hero
       .container
@@ -530,7 +530,7 @@
           .col-lg-6
             div(v-for="text in this.$page.content.section_b.texts")
               h3 {{ text.h3 }}
-              p(v-for="p in text.p")(v-html="p")
+              p(v-for="p in text.p", v-html="p")
 
           .col-lg-6.d-none.d-lg-flex
             .align-self-end

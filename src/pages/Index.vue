@@ -991,7 +991,7 @@
                     | Relatórios ao vivo
 
               .know-more
-                b-button(href="https://app.bulldesk.com.br/cadastro", variant="purple")
+                b-button.google-conversion(href="https://app.bulldesk.com.br/cadastro", variant="purple")
                   | Conheça mais
                   g-image(src="../assets/icons/play-button@white.svg", alt="")
 
@@ -1046,7 +1046,7 @@
                         g-image(src='~/assets/icons/income.svg' alt='Renda')
                       td
                         | Automatizar marketing e vendas
-                b-button(href="https://app.bulldesk.com.br/cadastro", variant="green")
+                b-button.google-conversion(href="https://app.bulldesk.com.br/cadastro", variant="green")
                   | Teste grátis
                   g-image(src="../assets/icons/play-button@black.svg", alt="")
 
@@ -1098,13 +1098,13 @@
               .subtitle
                 | Veja como funciona o Bulldesk e suas principais funções em um vídeo direto ao ponto.
                 strong  Você vai se surpreender.
-              b-button.d-none.d-lg-inline(href="https://app.bulldesk.com.br/cadastro", variant="green")
+              b-button.d-none.d-lg-inline.google-conversion(href="https://app.bulldesk.com.br/cadastro", variant="green")
                 | Teste grátis
                 g-image(src="../assets/icons/play-button@black.svg", alt="")
             .col-12.col-lg-9
               .video-container
                 //- VideoLauncher(videoID="$page.content.header.videoID" image="$page.content.header.videoThumb.src")
-              b-button.d-inline.d-lg-none(href="https://app.bulldesk.com.br/cadastro", variant="green")
+              b-button.d-inline.d-lg-none.google-conversion(href="https://app.bulldesk.com.br/cadastro", variant="green")
                 | Teste grátis
                 g-image(src="../assets/icons/play-button@black.svg", alt="")
 </template>

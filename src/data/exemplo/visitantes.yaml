@@ -4,14 +4,16 @@ order: 6
 title: Campanha de Visitantes Planos e Preços
 icon: '../../assets/icons/exemplos-icon-visitor.svg'
 description: Nesse exmplo você pode ver como ativar uma campanha baseado em uma visita de alguma página no seu site. Clica e confere!
+pdf: '/docs/exemplos/campanha_visitantes.pdf'
 header:
   h1: Campanha de Visitantes Planos e Preços
   p:
     - Muitas vezes o lead vai até a página de preços e muda de ideia no último minuto. Com o Bulldesk você pode monitorar seus leads e saber quando eles estão prontos para a compra. Às vezes o que falta é um último empurrãozinho para o seu lead se tornar um cliente.
     - Aqui você consegue rastrear os leads cadastrados no seu CRM que visitaram a sua página de planos e preços. Dessa forma você sabe quais de seus leads já estão prontos para realizar a compra.
     - O Bulldesk consegue automatizar uma série de e-mails para enviar para esses leads para que nenhum deles escape. Assim, sua taxa de conversão e lucro crescem cada vez mais.
+  image: '../../assets/images/example/visitantes.png'
 
 section-a:
   h2: Quer ver como é simples?
   p: 'Dá um confere na imagem abaixo:'
-  image: '../../assets/images/example/visitantes.png'
+  image: '../../assets/images/example/visitantes-exemplo.png'

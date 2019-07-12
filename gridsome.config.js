@@ -4,12 +4,6 @@ module.exports = {
   siteUrl: 'https://bulldesk.com.br',
   plugins: [
     {
-      use: '@gridsome/plugin-google-analytics',
-      options: {
-        id: 'UA-65677980-5'
-      }
-    },
-    {
       use: '@gridsome/plugin-sitemap',
       options: {
         cacheTime: 600000
