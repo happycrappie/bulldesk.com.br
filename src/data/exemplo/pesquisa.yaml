@@ -4,6 +4,7 @@ order: 7
 title: Campanha Pesquisa de Satisfação
 icon: '../../assets/icons/exemplos-icon-file.svg'
 description: Saber o que os seus clientes pensam sobre a sua empresa é fundamental. Mas fazer isso de forma manual deve dar bastante trabalho. Nesse exemplo você confere como fazer isso usando o Bulldesk.
+pdf: '/docs/exemplos/pesquisa_satisfacao.pdf'
 header:
   h1: Campanha Pesquisa de Satisfação
   p:
