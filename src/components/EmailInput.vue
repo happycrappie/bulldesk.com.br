@@ -48,7 +48,7 @@
       b-input-group-append
         b-button.email-button(type="submit", :disabled="busy" variant="green")
           g-image(src="~/assets/icons/play-button@black.svg", v-if="! busy")
-          b-spinner.ml-1(small, v-else)
+          b-spinner(small, v-else)
 </template>
 
 <script>
@@ -103,9 +103,9 @@
 
         axios.post(process.env.GRIDSOME_BULLDESK_API_URL + '/conversion', data)
           .then((response) => {
-            this.busy = false;
-
             if (this.emit) {
+              this.busy = false;
+
               return this.$emit('convert', true);
             }
 

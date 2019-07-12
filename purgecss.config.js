@@ -6,5 +6,8 @@ module.exports = {
   css: [
     './dist/assets/css/*.css'
   ],
+  whitelistPatternsChildren: [
+    /^spinner-border.*/
+  ],
   rejected: true
 }
