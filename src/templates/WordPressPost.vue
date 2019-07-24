@@ -54,6 +54,81 @@
         a
           margin-left: 18px
 
+  .section-b
+    margin-top: 150px
+
+    h2
+      margin-bottom: 45px
+      font-size: 1.375rem
+      color: $gray-dark
+
+    .row
+      .col
+        margin-bottom: 30px
+
+        &:nth-child(4)
+          display: none
+
+        article
+          display: flex
+          flex-direction: column
+          height: 495px
+          color: $gray-dark
+          background: $white-gray
+          box-shadow: 0 0 0px 0 rgba(74, 44, 126, 0.37)
+          transition: all 0.1s linear
+          transform: translateZ(0)
+
+          &:hover
+            box-shadow: 0 0 20px 0 rgba(74, 44, 126, 0.37)
+
+          > *
+            padding-left: 30px
+            padding-right: 30px
+
+          .article-featured
+            flex: 0 0 auto
+            width: 100%
+            height: 247px
+            padding-left: 0
+            padding-right: 0
+            overflow: hidden
+            background: #cccccc
+
+            a
+              display: block
+              height: 100%
+
+            img
+              display: block
+              width: 100%
+              height: 100%
+              object-fit: cover
+
+          small
+            margin-top: 40px
+            margin-bottom: 10px
+            font-size: 0.625rem
+            font-weight: bold
+            color: inherit
+
+          h3
+            flex-grow: 1
+            margin-bottom: 20px
+            font-size: 1.125rem
+            line-height: 1.2
+
+          a
+            color: inherit
+
+            &[href]:hover
+              text-decoration: none
+              color: $purple
+
+          time
+            margin-bottom: 40px
+            font-size: 0.75rem
+
 </style>
 <style lang="sass">
   @import 'node_modules/include-media/dist/_include-media.scss'
@@ -84,14 +159,13 @@
       img
         max-width: 100%
 
-
 </style>
 
 <template lang="pug">
   Layout
     header.d-flex
       .container
-        Nav(type="light" logo="black")
+        NavBlog
 
     article
       section.hero
@@ -102,7 +176,7 @@
               h1
                 a(:href="$page.post.path") {{ $page.post.title }}
                   span.dot.green
-              time {{ $page.post.date }}
+              time {{ $page.post.date | date }}
 
       section.section-a
         .container
@@ -125,12 +199,32 @@
                 a(:href="'https://www.linkedin.com/shareArticle?mini=true&url=' + $page.post.path + '&title='+ $page.post.title +'&summary=&source='" target="_blank")
                   g-image(src='../assets/icons/linkedin.svg')
 
+    section.section-b(v-if="$page.post.categories[0].belongsTo.edges")
+      .container
+        .row
+          .col-12
+            h2.text-center Mais posts de
+              strong  "{{ $page.post.categories[0].title }}"
+
+          .col.col-sm-12.col-lg-4(v-for="(edge, index) in $page.post.categories[0].belongsTo.edges", :style="{order:index}", v-if="$page.post != edge.node")
+            article
+              div.article-featured
+                a(:href="edge.node.path").d-flex.justify-content-center.align-items-center
+                  g-image(:src="edge.node.featuredMedia.sourceUrl", v-if="edge.node.featuredMedia")
+              small
+                a {{ $page.post.categories[0].title }}
+              h3
+                a(:href="edge.node.path") {{ edge.node.title }}
+              time {{edge.node.date | date}}
+
+
 
 </template>
 
 <page-query>
   query Post ($path: String!) {
     post: wordPressPost (path: $path) {
+      id
       title
       content
       date
@@ -146,6 +240,27 @@
         id
         title
         path
+        belongsTo (page: 1, perPage: 4) @paginate {
+          pageInfo {
+            totalPages
+            currentPage
+          }
+          edges {
+            node {
+              ... on WordPressPost {
+                id
+                title
+                path
+                excerpt
+                date
+                featuredMedia {
+                  id
+                  sourceUrl
+                }
+              }
+            }
+          }
+        }
       }
       tags {
         id
@@ -158,13 +273,17 @@
 
 <script>
   import Layout from '../layouts/Default'
-  import Nav from '../components/Nav'
+  import NavBlog from '../components/NavBlog'
   import EmailInput from '../components/EmailInput'
+  import helpers from '../shared/helpers'
 
   export default {
+    filters: {
+      date: helpers.convertDate
+    },
     components: {
       Layout,
-      Nav,
+      NavBlog,
       EmailInput,
     },
 
