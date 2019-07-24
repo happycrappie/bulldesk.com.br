@@ -185,6 +185,36 @@
               a
                 color: inherit
 
+        &.newsletter
+          order: 3
+
+          >div
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            height: 100%
+            padding-left: 30px
+            padding-right: 30px
+            background: $purple
+
+          h2
+            margin-bottom: 20px
+            font-size: 1.625rem
+            font-weight: bold
+            color: $white-gray
+
+            span
+              color: $green
+
+          p
+            max-width: 230px
+            line-height: 1.56
+            color: $white-gray
+
+          form
+            width: 100%
+            margin: 0
 </style>
 <style lang="sass">
   .section-a
@@ -195,28 +225,17 @@
             p
               margin-bottom: 0
 
-  // footer
-  //   position: relative
-  //   margin-top: 250px !important
-
-  //   &:before
-  //     content: ""
-  //     position: absolute
-  //     bottom: 0
-  //     left: 0
-  //     z-index: -1
-  //     display: block
-  //     width: 100vw
-  //     height: 712px
-  //     background: bottom center no-repeat url(~@/assets/images/blog-bg-footer.png)
-  //     background-size: cover
+        &.newsletter
+          .email-group
+            margin-top: 0
+            padding-right: 0
 </style>
 
 <template lang="pug">
   Layout
     header.d-flex
       .container
-        Nav(type="light" logo="black")
+        NavBlog
 
     section.hero
       .container
@@ -237,7 +256,7 @@
               h2
                 a(:href="edge.node.path") {{ edge.node.title }}
               div.article-body(v-html="edge.node.excerpt")
-              time {{edge.node.date}}
+              time {{ edge.node.date | date }}
 
           .col.col-sm-12.col-lg-6.col-xl-4.popular
             div
@@ -253,6 +272,13 @@
                   div
                     g-image(:src="edge.node.featuredMedia.sourceUrl", v-if="edge.node.featuredMedia")
 
+          .col.col-sm-12.col-lg-6.col-xl-4.newsletter.d-flex.align-items-center
+            div.text-center
+              h2 Aproveite e faça um
+               span  teste Gratuito
+               |  na melhor ferramenta integrando CRM e automação de Mkt
+              p Insira seu e-mail abaixo e crie sua conta agora mesmo
+              email-input(identifier="blog")
 
 </template>
 
@@ -287,13 +313,18 @@
 
 <script>
   import Layout from '../layouts/Default'
-  import Nav from '../components/Nav'
+  import NavBlog from '../components/NavBlog'
   import EmailInput from '../components/EmailInput'
+  import helpers from '../shared/helpers'
+
 
   export default {
+    filters: {
+      date: helpers.convertDate
+    },
     components: {
       Layout,
-      Nav,
+      NavBlog,
       EmailInput,
     },
 
