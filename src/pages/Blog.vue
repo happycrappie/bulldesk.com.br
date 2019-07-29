@@ -280,6 +280,7 @@
               p Insira seu e-mail abaixo e crie sua conta agora mesmo
               email-input(identifier="blog")
 
+    ExitModal(aggressive=true)
 </template>
 
 <page-query>
@@ -316,7 +317,7 @@
   import NavBlog from '../components/NavBlog'
   import EmailInput from '../components/EmailInput'
   import helpers from '../shared/helpers'
-
+  import ExitModal from '../components/ExitModal'
 
   export default {
     filters: {
@@ -326,6 +327,7 @@
       Layout,
       NavBlog,
       EmailInput,
+      ExitModal,
     },
 
     metaInfo: {
