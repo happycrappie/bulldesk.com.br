@@ -2,35 +2,35 @@
   @import '../assets/styles/_variables.scss'
 
   #exit-modal
-  h5
-    font-weight: 700
+    h5
+      font-weight: 700
 
-  form
-    width: 94%
-    margin: auto
+    form
+      width: 94%
+      margin: auto
 
-  label
-    font-size: 0.875rem
+    label
+      font-size: 0.875rem
 
-  .form-control
-    color: $gray-light
-    background-color: $white-gray
-    border: none
-    padding: 15px
-    font-size: 0.75rem
-    height: 50px
+    .form-control
+      color: $gray-light
+      background-color: $white-gray
+      border: none
+      padding: 15px
+      font-size: 0.75rem
+      height: 50px
 
-    &:focus
-      background-color: $white
-      border-color: $white-gray
+      &:focus
+        background-color: $white
+        border-color: $white-gray
 
-  .submit-button
-    color: $white
-    margin-top: 1rem
+    .submit-button
+      color: $white
+      margin-top: 1rem
 
-    &:disabled
-      cursor: not-allowed
-      pointer-events: all !important
+      &:disabled
+        cursor: not-allowed
+        pointer-events: all !important
 </style>
 
 <template lang="pug">
