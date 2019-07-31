@@ -100,6 +100,20 @@
           time
             margin-bottom: 40px
             font-size: 0.75rem
+    .load-more
+      margin-top: 75px
+
+      p
+        text-align: center
+
+        a
+          font-size: 0.875rem
+          text-decoration: underline
+          color: $gray-dark
+
+          &:hover
+            cursor: pointer
+            color: $purple
 
 </style>
 <style lang="sass">
@@ -139,6 +153,11 @@
                 a(:href="edge.node.path") {{ edge.node.title }}
               div.article-body(v-html="edge.node.excerpt")
               time {{ edge.node.date | date }}
+
+        .row.load-more(v-if="$page.category.belongsTo.pageInfo.totalPages > 1 && $page.category.belongsTo.pageInfo.totalPages > $page.category.belongsTo.pageInfo.currentPage")
+          .col
+            p
+              a(@click="loadMore($event)") Confira mais conteúdos
 
 
 </template>
@@ -197,5 +216,19 @@ query Category ($path: String, $page: Int) {
     metaInfo: {
       title: 'Blog',
     },
+
+    methods: {
+      async loadMore(event) {
+        try {
+          const results = await this.$fetch(window.location.pathname + '/' + (this.$page.category.belongsTo.pageInfo.currentPage+1) )
+          if(results.data.category.belongsTo.edges.length > 0) {
+            this.$page.category.belongsTo.pageInfo.currentPage = this.$page.category.belongsTo.pageInfo.currentPage + 1
+            this.$page.category.belongsTo.edges = this.$page.category.belongsTo.edges.concat(results.data.category.belongsTo.edges)
+          }
+        } catch (error) {
+          console.log(error)
+        }
+      }
+    }
   }
 </script>
