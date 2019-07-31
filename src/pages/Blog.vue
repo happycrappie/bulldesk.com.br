@@ -215,6 +215,22 @@
           form
             width: 100%
             margin: 0
+
+    .load-more
+      margin-top: 75px
+
+      p
+        text-align: center
+
+        a
+          font-size: 0.875rem
+          text-decoration: underline
+          color: $gray-dark
+
+          &:hover
+            cursor: pointer
+            color: $purple
+
 </style>
 <style lang="sass">
   .section-a
@@ -280,6 +296,11 @@
               p Insira seu e-mail abaixo e crie sua conta agora mesmo
               email-input(identifier="blog")
 
+        .row.load-more(v-if="$page.posts.pageInfo.totalPages > 1 && $page.posts.pageInfo.totalPages > $page.posts.pageInfo.currentPage")
+          .col
+            p
+              a(@click="loadMore($event)") Confira mais conteúdos
+
     ExitModal(aggressive=true)
 </template>
 
@@ -333,5 +354,20 @@
     metaInfo: {
       title: 'Blog',
     },
+
+    methods: {
+      async loadMore(event) {
+
+        try {
+          const results = await this.$fetch(window.location.pathname + '/' + (this.$page.posts.pageInfo.currentPage+1) )
+          if(results.data.posts.edges.length > 0) {
+            this.$page.posts.pageInfo.currentPage = this.$page.posts.pageInfo.currentPage + 1
+            this.$page.posts.edges = this.$page.posts.edges.concat(results.data.posts.edges)
+          }
+        } catch (error) {
+          console.log(error)
+        }
+      }
+    }
   }
 </script>
