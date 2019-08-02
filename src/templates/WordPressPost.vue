@@ -206,7 +206,7 @@
             h2.text-center Mais posts de
               strong  "{{ $page.post.categories[0].title }}"
 
-          .col.col-sm-12.col-lg-4(v-for="(edge, index) in $page.post.categories[0].belongsTo.edges", :style="{order:index}", v-if="$page.post != edge.node")
+          .col.col-12.col-lg-4(v-for="(edge, index) in $page.post.categories[0].belongsTo.edges", :style="{order:index}", v-if="$page.post != edge.node")
             article
               div.article-featured
                 a(:href="edge.node.path").d-flex.justify-content-center.align-items-center

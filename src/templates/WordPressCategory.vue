@@ -142,7 +142,7 @@
     section.section-a
       .container
         .row
-          .col.col-sm-12.col-lg-6.col-xl-4(v-for="(edge, index) in $page.category.belongsTo.edges", :style="{order:index}")
+          .col.col-12.col-lg-6.col-xl-4(v-for="(edge, index) in $page.category.belongsTo.edges", :style="{order:index}")
             article
               div.article-featured
                 a(:href="edge.node.path").d-flex.justify-content-center.align-items-center
