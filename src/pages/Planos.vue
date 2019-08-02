@@ -141,21 +141,23 @@
           background-color: $white-gray
 
       // Standard
-      &:nth-child(2)
+      &:nth-child(3)
         // @media only screen and (max-width: 420px)
         //   margin-top: 70px
 
         .detail
           // min-height: 515px
           margin-top: 0
-          background-color: $white
+          // background-color: $white
+          background-color: $white-gray
           // border-radius: 0 10px 10px 0
 
       // Premium
-      &:nth-child(3)
+      &:nth-child(2)
         .detail
           // min-height: 581px
-          background-color: $white-gray
+          // background-color: $white-gray
+          background-color: $white
           box-shadow: 0 20px 30px rgba(69, 39, 123, 0.18)
 
       // Enterprise
@@ -487,7 +489,7 @@
       return {
         plansList: Plans.list,
         plansTable: Plans.table,
-        best: 1,
+        best: 2,
         form: {
           name: '',
           email: '',
