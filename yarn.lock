@@ -6634,6 +6634,11 @@ osenv@0, osenv@^0.1.0, osenv@^0.1.4:
     os-homedir "^1.0.0"
     os-tmpdir "^1.0.0"
 
+ouibounce@^0.0.12:
+  version "0.0.12"
+  resolved "https://registry.yarnpkg.com/ouibounce/-/ouibounce-0.0.12.tgz#3266f02364f7bd02873423b7b5df7850ca5743cf"
+  integrity sha1-MmbwI2T3vQKHNCO3td94UMpXQ88=
+
 oust@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/oust/-/oust-0.4.0.tgz#4fcd18128fa35cb1f85455e697fbd278d8804e92"

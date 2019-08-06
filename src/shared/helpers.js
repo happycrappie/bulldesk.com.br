@@ -14,5 +14,9 @@ export default {
     setTimeout(redirect, 1000);
 
     return false;
+  },
+  convertDate: (value) => {
+    const date = new Date(value)
+    return date.toLocaleDateString(['pt-BR'], {month: 'long', day: '2-digit'})
   }
 }

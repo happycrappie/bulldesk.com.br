@@ -8,165 +8,300 @@
 
   .hero
     position: relative
-    z-index: 2
-    margin: 60px 0 140px
-    color: $gray-dark
+    margin-bottom: 100px
+    padding-top: 100px
+
+    &:before
+      content: ""
+      position: absolute
+      top: -72px
+      left: 0
+      z-index: -1
+      width: 100vw
+      height: 883px
+      background: bottom center no-repeat url(~@/assets/images/blog-bg-hero.png)
+      background-size: cover
 
     h1
-      margin: 0 0 40px
+      font-size: 3.9375rem
       font-weight: bold
-
-    p
-      line-height: 1.56
-
-  .section-a
-    position: relative
-    z-index: 1
-    margin-bottom: 120px
-    background: $white-gray
-
-    &:before
-      content: ""
-      position: absolute
-      left: 0
-      bottom: calc(100% - 260px)
-      z-index: -1
-      display: block
-      width: 100vw
-      height: 593px
-      background: bottom center no-repeat url(~@/assets/images/exemplos-bg-section-a.png)
-
-    &:after
-      content: ""
-      position: absolute
-      left: 0
-      top: 100%
-      z-index: -1
-      display: block
-      width: 100vw
-      height: 300px
-      background: $white-gray
-
-    .col-lg-4
-      margin-bottom: 40px
+      line-height: 0.87
       color: $gray-dark
 
-      a
-        transition: all 0.2s linear
+  .section-a
+    .row
+      counter-reset: posts
 
-        &:hover
-          text-decoration: none
+      .col
+        margin-bottom: 30px
 
-      div
-        position: relative
-        width: 100%
-        height: 0
-        padding-bottom: 50%
-        background: #ffffff
-
-        a
-          position: absolute
-          top: 0
-          left: 0
-          width: 100%
-          height: 100%
-          border: 1px solid $gray-white
-          box-shadow: 0 10px 20px 0 rgba(165, 131, 224, 0.13)
-          transition: all 0.2s linear
-
-          img
-            max-width: 100%
-
-      h2
-        margin: 0
-
-        a
-          display: block
-          padding: 30px 0 15px
-          font-size: 1.125rem
-          font-weight: bold
-          line-height: 1.33
+        article
+          display: flex
+          flex-direction: column
+          height: 495px
           color: $gray-dark
+          background: $white-gray
+          box-shadow: 0 0 0px 0 rgba(74, 44, 126, 0.37)
+          transition: all 0.1s linear
+          transform: translateZ(0)
+
+          &:hover
+            box-shadow: 0 0 20px 0 rgba(74, 44, 126, 0.37)
+
+          > *
+            padding-left: 30px
+            padding-right: 30px
+
+          .article-featured
+            flex: 0 0 auto
+            width: 100%
+            height: 247px
+            padding-left: 0
+            padding-right: 0
+            overflow: hidden
+            background: #cccccc
+
+            a
+              display: block
+              height: 100%
+
+            img
+              display: block
+              width: 100%
+              height: 100%
+              object-fit: cover
+
+          small
+            margin-top: 40px
+            margin-bottom: 10px
+            font-size: 0.625rem
+            font-weight: bold
+            color: inherit
+
+          h2
+            flex-grow: 1
+            margin-bottom: 20px
+            font-size: 1.125rem
+            line-height: 1.2
+
+          a
+            color: inherit
+
+            &[href]:hover
+              text-decoration: none
+              color: $purple
+
+          .article-body
+            display: none
+            font-size: 0.75rem
+            line-height: 1.67
+            color: $white-gray
+
+          time
+            margin-bottom: 40px
+            font-size: 0.75rem
+
+        &:first-child
+          flex: 0 0 100%
+          max-width: 100%
+          order: 0
+
+          article
+            flex-wrap: wrap
+            height: 404px
+            color: $white-gray
+            background: #1E1A26
+
+            >*
+              width: 34%
+
+            .article-featured
+              width: 66%
+              height: 100%
+              flex: 0 0 100%
+
+            h2
+              flex-grow: 0
+
+            .article-body
+              display: block
+              flex-grow: 1
+
+            a
+              &[href]:hover
+                color: $gray-light
+
+        &.popular
+          order: 0
+
+          >div
+            height: 495px
+            padding: 27px 30px
+            background: $white-gray
+
+          h2
+            font-size: 1.375rem
+            font-weight: bold
+            color: $gray-dark
+
+          ul
+            padding-left: 0
+            list-style: none
+
+            li
+              display: flex
+              margin-bottom: 30px
+              color: $gray-dark
+
+              &:last-child
+                margin-bottom: 0
+
+              div
+                &:first-child
+                  flex: 1 1 auto
+
+                &:last-child
+                  flex: 0 0 100px
+                  overflow: hidden
+                  height: 69px
+                  margin-left: 15px
+
+                  img
+                    width: 100%
+                    height: 100%
+                    object-fit: cover
+
+              p
+                margin-bottom: 7px
+                font-size: 0.625rem
+                line-height: 1.67
+
+                time
+                  display: none
+
+              h3
+                font-size: 0.75rem
+
+              a
+                color: inherit
+
+        &.newsletter
+          order: 3
+
+          >div
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            height: 100%
+            padding-left: 30px
+            padding-right: 30px
+            background: $purple
+
+          h2
+            margin-bottom: 20px
+            font-size: 1.625rem
+            font-weight: bold
+            color: $white-gray
+
+            span
+              color: $green
+
+          p
+            max-width: 230px
+            line-height: 1.56
+            color: $white-gray
+
+          form
+            width: 100%
+            margin: 0
+
+    .load-more
+      margin-top: 75px
 
       p
-        margin: 0
+        text-align: center
 
         a
-          display: block
-          font-size: 0.75rem
-          line-height: 2.08
-          color: $gray-light
+          font-size: 0.875rem
+          text-decoration: underline
+          color: $gray-dark
 
-      &:hover
-        div
-          a
-            box-shadow: 0 10px 20px 0 rgba(165, 131, 224, 0.39)
+          &:hover
+            cursor: pointer
+            color: $purple
 
-  .section-email
-    position: relative
-    z-index: 1
-    padding-top: 190px
-    padding-bottom: 140px
-    margin-bottom: 80px
-    color: $white-gray
+</style>
+<style lang="sass">
+  .section-a
+    .row
+      .col
+        article
+          .article-body
+            p
+              margin-bottom: 0
 
-    &:before
-      content: ""
-      position: absolute
-      top: -280px
-      left: 0
-      display: block
-      width: 100vw
-      height: 911px
-      background: top center no-repeat url(~@/assets/images/para-quem/bg-a.png)
-      pointer-events: none
-
-    h3
-      margin: 0 0 20px
-      font-size: 1.625rem
-      font-weight: bold
-      line-height: 1.15
-
-    h4
-      margin-bottom: 0
-      font-size: 1rem
-      line-height: 1.56
-
+        &.newsletter
+          .email-group
+            margin-top: 0
+            padding-right: 0
 </style>
 
 <template lang="pug">
   Layout
     header.d-flex
       .container
-        Nav(type="light" logo="black")
+        NavBlog
 
     section.hero
       .container
-        .row.justify-content-center.text-center
-          h1.col-12 Blog
+        .row
+          h1.col-lg-10.col-md-12 Conteúdo inteligente feito pra você
             span.dot.green
-          p.col-lg-7 Veja abaixo algumas histórias de sucesso de nossos clientes.
 
     section.section-a
       .container
         .row
-          .col-lg-4.col-md-6(v-for="(edge, index) in $page.posts.edges")
+          .col.col-sm-12.col-lg-6.col-xl-4(v-for="(edge, index) in $page.posts.edges", :style="{order:index}")
+            article
+              div.article-featured
+                a(:href="edge.node.path").d-flex.justify-content-center.align-items-center
+                  g-image(:src="edge.node.featuredMedia.sourceUrl", v-if="edge.node.featuredMedia")
+              small
+                a {{edge.node.categories[0].title}}
+              h2
+                a(:href="edge.node.path") {{ edge.node.title }}
+              div.article-body(v-html="edge.node.excerpt")
+              time {{ edge.node.date | date }}
+
+          .col.col-sm-12.col-lg-6.col-xl-4.popular
             div
-              a(href="xxx").d-flex.justify-content-center.align-items-center
-                g-image(:src="edge.node.featuredMedia.sourceUrl", v-if="edge.node.featuredMedia")
-            h2
-              a(:href="edge.node.path") {{ edge.node.title }}
-            p(v-html="edge.node.excerpt")
+              h2 Mais populares
+              ul
+                li(v-for="(edge, index) in $page.posts.edges" v-if="index <= 3")
+                  div
+                    p
+                      strong {{edge.node.categories[0].title}}
+                      time {{edge.node.date}}
+                    h3
+                      a(:href="edge.node.path") {{edge.node.title}}
+                  div
+                    g-image(:src="edge.node.featuredMedia.sourceUrl", v-if="edge.node.featuredMedia")
 
-    section.section-email
-      .container.text-center
-        .row.justify-content-center
-          h3.col-md-6 Teste grátis nossa ferramenta que une CRM com Automação de Marketing
+          .col.col-sm-12.col-lg-6.col-xl-4.newsletter.d-flex.align-items-center
+            div.text-center
+              h2 Aproveite e faça um
+               span  teste Gratuito
+               |  na melhor ferramenta integrando CRM e automação de Mkt
+              p Insira seu e-mail abaixo e crie sua conta agora mesmo
+              email-input(identifier="blog")
 
-        .row.justify-content-center
-          h4.col-md-4 Insira seu e-mail abaixo e crie sua conta agora mesmo
-        //- email-input(identifier="cases")
+        .row.load-more(v-if="$page.posts.pageInfo.totalPages > 1 && $page.posts.pageInfo.totalPages > $page.posts.pageInfo.currentPage")
+          .col
+            p
+              a(@click="loadMore($event)") Confira mais conteúdos
 
+    ExitModal(aggressive=true)
 </template>
 
 <page-query>
@@ -183,6 +318,11 @@
           path
           excerpt
           slug
+          categories {
+            title
+            path
+          }
+          date
           featuredMedia {
             id
             sourceUrl
@@ -195,18 +335,39 @@
 
 <script>
   import Layout from '../layouts/Default'
-  import Nav from '../components/Nav'
+  import NavBlog from '../components/NavBlog'
   import EmailInput from '../components/EmailInput'
+  import helpers from '../shared/helpers'
+  import ExitModal from '../components/ExitModal'
 
   export default {
+    filters: {
+      date: helpers.convertDate
+    },
     components: {
       Layout,
-      Nav,
+      NavBlog,
       EmailInput,
+      ExitModal,
     },
 
     metaInfo: {
-      title: 'Cases',
+      title: 'Blog',
     },
+
+    methods: {
+      async loadMore(event) {
+
+        try {
+          const results = await this.$fetch(window.location.pathname + '/' + (this.$page.posts.pageInfo.currentPage+1) )
+          if(results.data.posts.edges.length > 0) {
+            this.$page.posts.pageInfo.currentPage = this.$page.posts.pageInfo.currentPage + 1
+            this.$page.posts.edges = this.$page.posts.edges.concat(results.data.posts.edges)
+          }
+        } catch (error) {
+          console.log(error)
+        }
+      }
+    }
   }
 </script>
