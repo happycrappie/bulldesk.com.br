@@ -188,7 +188,7 @@ query Category ($path: String, $page: Int) {
               id
               sourceUrl
             }
-        	}
+          }
         }
       }
     }
