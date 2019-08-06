@@ -102,34 +102,37 @@
             font-size: 0.75rem
 
         &:first-child
-          flex: 0 0 100%
-          max-width: 100%
-          order: 0
-
           article
-            flex-wrap: wrap
-            height: 404px
             color: $white-gray
             background: #1E1A26
-
-            >*
-              width: 34%
-
-            .article-featured
-              width: 66%
-              height: 100%
-              flex: 0 0 100%
-
-            h2
-              flex-grow: 0
-
-            .article-body
-              display: block
-              flex-grow: 1
 
             a
               &[href]:hover
                 color: $gray-light
+
+          @media only screen and (min-width: 992px)
+            flex: 0 0 100%
+            max-width: 100%
+            order: 0
+
+            article
+              flex-wrap: wrap
+              height: 404px
+
+              >*
+                width: 34%
+
+              .article-featured
+                width: 66%
+                height: 100%
+                flex: 0 0 100%
+
+              h2
+                flex-grow: 0
+
+              .article-body
+                display: block
+                flex-grow: 1
 
         &.popular
           order: 0
@@ -138,6 +141,9 @@
             height: 495px
             padding: 27px 30px
             background: $white-gray
+
+            @media only screen and (max-width: 991px)
+              height: auto
 
           h2
             font-size: 1.375rem
@@ -194,8 +200,7 @@
             align-items: center
             justify-content: center
             height: 100%
-            padding-left: 30px
-            padding-right: 30px
+            padding: 30px
             background: $purple
 
           h2
@@ -262,7 +267,7 @@
     section.section-a
       .container
         .row
-          .col.col-sm-12.col-lg-6.col-xl-4(v-for="(edge, index) in $page.posts.edges", :style="{order:index}")
+          .col.col-12.col-lg-6.col-xl-4(v-for="(edge, index) in $page.posts.edges", :style="{order:index}")
             article
               div.article-featured
                 a(:href="edge.node.path").d-flex.justify-content-center.align-items-center
@@ -274,7 +279,7 @@
               div.article-body(v-html="edge.node.excerpt")
               time {{ edge.node.date | date }}
 
-          .col.col-sm-12.col-lg-6.col-xl-4.popular
+          .col.col-12.col-lg-6.col-xl-4.popular
             div
               h2 Mais populares
               ul
@@ -288,7 +293,7 @@
                   div
                     g-image(:src="edge.node.featuredMedia.sourceUrl", v-if="edge.node.featuredMedia")
 
-          .col.col-sm-12.col-lg-6.col-xl-4.newsletter.d-flex.align-items-center
+          .col.col-12.col-lg-6.col-xl-4.newsletter.d-flex.align-items-center
             div.text-center
               h2 Aproveite e faça um
                span  teste Gratuito
