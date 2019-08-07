@@ -74,7 +74,7 @@ module.exports = {
         perPage: 100,
         concurrent: 10,
         routes: {
-          post: '/blog/:year/:month/:day/:slug',
+          post: '/blog/:slug',
           post_tag: '/blog/tag/:slug'
         }
       }

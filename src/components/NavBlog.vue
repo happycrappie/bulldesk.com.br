@@ -201,19 +201,19 @@
             .row.no-gutters
               .col-12
                 b-dropdown-item(:href="item.node.path", v-for="(item) in $static.category.edges", :key="item.id") {{ item.node.title }}
-        b-nav-item(href="/#") Novidades
-        b-nav-item-dropdown(text="Materiais Gratuitos")
-          span.dropdown-icon
-          .dropdown-container
-            .row.no-gutters
-              .col-12
-                b-dropdown-item(href="/#") Link
-                b-dropdown-item(href="/#") Link
-                b-dropdown-item(href="/#") Link
-                b-dropdown-item(href="/#") Link
-                b-dropdown-item(href="/#") Link
-                b-dropdown-item(href="/#") Link
-        b-nav-form(action="/blog")
+        //- b-nav-item(href="/#") Novidades
+        //- b-nav-item-dropdown(text="Materiais Gratuitos")
+        //-   span.dropdown-icon
+        //-   .dropdown-container
+        //-     .row.no-gutters
+        //-       .col-12
+        //-         b-dropdown-item(href="/#") Link
+        //-         b-dropdown-item(href="/#") Link
+        //-         b-dropdown-item(href="/#") Link
+        //-         b-dropdown-item(href="/#") Link
+        //-         b-dropdown-item(href="/#") Link
+        //-         b-dropdown-item(href="/#") Link
+        //- b-nav-form(action="/blog")
           b-form-input(id="search" name="s" placeholder="Sua busca" )
           b-button(type="submit")
             g-image(src="../assets/icons/search.svg")
