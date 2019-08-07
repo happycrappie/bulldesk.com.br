@@ -219,7 +219,7 @@
             g-image(src="../assets/icons/search.svg")
           label(for="search")
             g-image(src="../assets/icons/search.svg")
-        b-nav-item.trial.google-conversion(href="https://app.bulldesk.com.br/cadastro") Teste grátis
+        b-nav-item.ml-auto.trial.google-conversion(href="https://app.bulldesk.com.br/cadastro") Teste grátis
           g-image(src="../assets/icons/play-button@black.svg")
 </template>
 
