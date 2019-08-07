@@ -190,13 +190,13 @@
 
             .col-12.col-lg-10.post-share
               p.d-flex.justify-content-center.align-items-center Compartilhe
-                a(:href="'https://www.facebook.com/sharer/sharer.php?u=' + $page.post.path" target="_blank")
+                a(:href="'https://www.facebook.com/sharer/sharer.php?u=' + currentURL" target="_blank")
                   g-image(src='../assets/icons/facebook.svg')
 
-                a(:href="'https://twitter.com/home?status='+ $page.post.path + ' ' + $page.post.title" target="_blank")
+                a(:href="'https://twitter.com/intent/tweet?url='+ currentURL" target="_blank")
                   g-image(src='../assets/icons/twitter.svg')
 
-                a(:href="'https://www.linkedin.com/shareArticle?mini=true&url=' + $page.post.path + '&title='+ $page.post.title +'&summary=&source='" target="_blank")
+                a(:href="'https://www.linkedin.com/shareArticle?mini=true&url=' + currentURL + '&title='+ $page.post.title +'&summary=&source='" target="_blank")
                   g-image(src='../assets/icons/linkedin.svg')
 
     section.section-b(v-if="$page.post.categories[0].belongsTo.edges")
@@ -289,6 +289,12 @@
       Layout,
       NavBlog,
       EmailInput,
+    },
+
+    data () {
+      return {
+        currentURL: window.location.href
+      }
     },
 
     metaInfo () {
