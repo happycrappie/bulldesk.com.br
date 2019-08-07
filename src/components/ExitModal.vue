@@ -35,7 +35,7 @@
 
 <template lang="pug">
   b-modal#exit-modal(hide-footer=true)
-    div(slot="modal-title") Já vai? Receba as novidades
+    div(slot="modal-title") Já vai? Receba nossas novidades
     .container.pdf-modal-container
       .row
         .col-12
