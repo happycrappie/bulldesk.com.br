@@ -35,19 +35,19 @@
 
 <template lang="pug">
   b-modal#exit-modal(hide-footer=true)
-    div(slot="modal-title") Lorem ipsum dolor sit amet.
+    div(slot="modal-title") Já vai? Receba as novidades
     .container.pdf-modal-container
       .row
         .col-12
           form(@submit.prevent="submit($event)")
             b-form-group(id="fieldset-name" label="Nome" label-for="name")
-              b-form-input(id="name" type="text", placeholder="Digite seu nome completo", v-model="name", required)
+              b-form-input(id="name" type="text", placeholder="Digite seu nome", v-model="name", required)
 
             b-form-group(id="fieldset-email" label="E-mail" label-for="email")
-              b-form-input(id="email" type="email", placeholder="Digite seu e-mail", v-model="email", required)
+              b-form-input(id="email" type="email", placeholder="Digite seu melhor e-mail", v-model="email", required)
 
             .text-center
-              b-button.submit-button(type="submit", :disabled="busy || ! name || ! email" variant="purple") Lorem, ipsum.
+              b-button.submit-button(type="submit", :disabled="busy || ! name || ! email" variant="purple") Enviar
                 g-image(src="~/assets/icons/play-button@white.svg", v-if="! busy")
                 b-spinner.ml-1(small, v-else)
 </template>
@@ -93,19 +93,16 @@
       submit () {
         this.busy = true;
 
+        let BulldeskSettings = window.BulldeskSettings || {};
+
         let data = {
           token: process.env.GRIDSOME_BULLDESK_TOKEN,
           identifier: 'blog-exit-modal',
           name: this.name,
-          email: this.email
+          email: this.email,
+          client: BulldeskSettings.client,
+          domain: BulldeskSettings.domain
         };
-
-        try {
-          data.client = window.BulldeskSettings.client;
-          data.domain = window.BulldeskSettings.domain;
-        } catch (e) {
-          //
-        }
 
         axios.post(process.env.GRIDSOME_BULLDESK_API_URL + '/conversion', data)
           .then((response) => {
