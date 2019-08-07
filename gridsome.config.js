@@ -65,6 +65,20 @@ module.exports = {
         route: '/'
       }
     },
+    {
+      use: '@gridsome/source-wordpress',
+      options: {
+        baseUrl: 'https://wp.bulldesk.com.br', // required
+        apiBase: 'wp-json',
+        typeName: 'WordPress',
+        perPage: 100,
+        concurrent: 10,
+        routes: {
+          post: '/blog/:year/:month/:day/:slug',
+          post_tag: '/blog/tag/:slug'
+        }
+      }
+    },
   ],
   chainWebpack (config) {
     config.module
