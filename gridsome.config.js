@@ -75,7 +75,9 @@ module.exports = {
         concurrent: 10,
         routes: {
           post: '/blog/:slug',
-          post_tag: '/blog/tag/:slug'
+          post_tag: '/blog/tag/:slug',
+          category: '/blog/category/:slug',
+          author: '/blog/author/:slug'
         }
       }
     },
