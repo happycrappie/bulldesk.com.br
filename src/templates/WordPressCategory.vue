@@ -213,8 +213,27 @@ query Category ($path: String, $page: Int) {
       EmailInput,
     },
 
-    metaInfo: {
-      title: 'Blog',
+    data () {
+      return {
+        currentURL: typeof window !== 'undefined' ? window.location.href : '',
+      }
+    },
+
+    metaInfo () {
+      return {
+        title: 'Arquivos ' + this.$page.category.title + ' - Bulldesk',
+        meta: [
+          { key: 'og:type', property: 'og:type', content: 'object' },
+          { key: 'og:title', property: 'og:title', content: 'Arquivos ' + this.$page.category.title + ' - Bulldesk' },
+          { key: 'og:url', property: 'og:url', content: this.currentURL },
+          { key: 'og:site_name', property: 'og:site_name', content: 'Bulldesk' },
+          { key: 'twitter:card', property: 'twitter:card', content: 'summary' },
+          { key: 'twitter:title', property: 'twitter:title', content: 'Arquivos ' + this.$page.category.title + ' - Bulldesk' },
+        ],
+        link: [
+          { key:'canonical', rel: 'canonical', href: this.currentURL },
+        ]
+      }
     },
 
     methods: {

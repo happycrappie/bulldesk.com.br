@@ -302,25 +302,20 @@
       let metaDescription = this.$page.post.excerpt.replace(/<\/?p[^>]*>/g, "");
 
       let metaTags = [
-        { name: 'description', content: metaDescription },
-        { property: 'og:locale', content: 'pt_BR' },
-        { property: 'og:type', content: 'article' },
-        { property: 'og:title', content: this.$page.post.title },
-        { property: 'og:description', content: metaDescription },
-        { property: 'og:url', content: this.currentURL },
-        { property: 'og:site_name', content: 'Bulldesk' },
-        { property: 'article:section', content: this.$page.post.categories[0].title },
-        { property: 'article:published_time', content: this.$page.post.date },
-        { property: 'article:modified_time', content: this.$page.post.modified },
-        { property: 'og:updated_time', content: this.$page.post.modified },
-        // { property: 'og:image', content: this.$page.post.featuredMedia.sourceUrl },
-        // { property: 'og:image:secure_url', content: this.$page.post.featuredMedia.sourceUrl },
-        // { property: 'og:image:width', content: this.$page.post.featuredMedia.mediaDetails.width },
-        // { property: 'og:image:height', content: this.$page.post.featuredMedia.mediaDetails.height },
-        { property: 'twitter:card', content: 'summary' },
-        { property: 'twitter:description', content: metaDescription },
-        { property: 'twitter:title', content: this.$page.post.title },
-        // { property: 'twitter:image', content: this.$page.post.featuredMedia.sourceUrl },
+        { key: 'description', name: 'description', content: metaDescription },
+        { key: 'og:locale', property: 'og:locale', content: 'pt_BR' },
+        { key: 'og:type', property: 'og:type', content: 'article' },
+        { key: 'og:title', property: 'og:title', content: this.$page.post.title },
+        { key: 'og:description', property: 'og:description', content: metaDescription },
+        { key: 'og:url', property: 'og:url', content: this.currentURL },
+        { key: 'og:site_name', property: 'og:site_name', content: 'Bulldesk' },
+        { key: 'article:section', property: 'article:section', content: this.$page.post.categories[0].title },
+        { key: 'article:published_time', property: 'article:published_time', content: this.$page.post.date },
+        { key: 'article:modified_time', property: 'article:modified_time', content: this.$page.post.modified },
+        { key: 'og:updated_time', property: 'og:updated_time', content: this.$page.post.modified },
+        { key: 'twitter:card', property: 'twitter:card', content: 'summary' },
+        { key: 'twitter:description', property: 'twitter:description', content: metaDescription },
+        { key: 'twitter:title', property: 'twitter:title', content: this.$page.post.title },
       ];
 
       // TAGS LOOP
@@ -328,6 +323,14 @@
         property: 'article:tag',
         content: e.title
       }));
+
+      if(this.$page.post.featuredMedia){
+        metaTags.push({ key: 'og:image', property: 'og:image', content: this.$page.post.featuredMedia.sourceUrl });
+        metaTags.push({ key: 'og:image:secure_url', property: 'og:image:secure_url', content: this.$page.post.featuredMedia.sourceUrl });
+        metaTags.push({ key: 'twitter:image', property: 'twitter:image', content: this.$page.post.featuredMedia.sourceUrl });
+        metaTags.push({ key: 'og:image:width', property: 'og:image:width', content: this.$page.post.featuredMedia.mediaDetails.width });
+        metaTags.push({ key: 'og:image:height', property: 'og:image:height', content: this.$page.post.featuredMedia.mediaDetails.height });
+      };
 
       return {
         title: this.$page.post.title,
