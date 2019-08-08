@@ -190,13 +190,13 @@
 
             .col-12.col-lg-10.post-share
               p.d-flex.justify-content-center.align-items-center Compartilhe
-                a(:href="'https://www.facebook.com/sharer/sharer.php?u=' + $page.post.path" target="_blank")
+                a(:href="'https://www.facebook.com/sharer/sharer.php?u=' + currentURL" target="_blank")
                   g-image(src='../assets/icons/facebook.svg')
 
-                a(:href="'https://twitter.com/home?status='+ $page.post.path + ' ' + $page.post.title" target="_blank")
+                a(:href="'https://twitter.com/intent/tweet?url='+ currentURL" target="_blank")
                   g-image(src='../assets/icons/twitter.svg')
 
-                a(:href="'https://www.linkedin.com/shareArticle?mini=true&url=' + $page.post.path + '&title='+ $page.post.title +'&summary=&source='" target="_blank")
+                a(:href="'https://www.linkedin.com/shareArticle?mini=true&url=' + currentURL + '&title='+ $page.post.title +'&summary=&source='" target="_blank")
                   g-image(src='../assets/icons/linkedin.svg')
 
     section.section-b(v-if="$page.post.categories[0].belongsTo.edges")
@@ -226,14 +226,18 @@
     post: wordPressPost (path: $path) {
       id
       title
+      excerpt
       content
       date
+      dateGmt
+      modified
       path
       featuredMedia {
         sourceUrl
         altText
         mediaDetails {
           width
+          height
         }
       }
       categories {
@@ -281,14 +285,51 @@
     filters: {
       date: helpers.convertDate
     },
+
     components: {
       Layout,
       NavBlog,
       EmailInput,
     },
 
-    metaInfo: {
-      title: 'Blog',
+    data () {
+      return {
+        currentURL: window.location.href
+      }
+    },
+
+    metaInfo () {
+      let metaDescription = this.$page.post.excerpt.replace(/<\/?p[^>]*>/g, "");
+
+      let metaTags = [
+        { name: 'description', content: metaDescription },
+        { property: 'og:locale', content:'pt_BR' },
+        { property: 'og:type', content:'article' },
+        { property: 'og:title', content:this.$page.post.title },
+        { property: 'og:description', content:metaDescription },
+        { property: 'og:url', content: window.location.href },
+        { property: 'og:site_name', content: 'Bulldesk' },
+        { property: 'article:section', content: this.$page.post.categories[0].title },
+        { property: 'article:published_time', content: this.$page.post.date },
+        { property: 'article:modified_time', content: this.$page.post.modified },
+        { property: 'og:updated_time', content: this.$page.post.modified },
+        { property: 'og:image', content: this.$page.post.featuredMedia.sourceUrl },
+        { property: 'og:image:secure_url', content: this.$page.post.featuredMedia.sourceUrl },
+        { property: 'og:image:width', content: this.$page.post.featuredMedia.mediaDetails.width },
+        { property: 'og:image:height', content: this.$page.post.featuredMedia.mediaDetails.height },
+        { property: 'twitter:card', content: 'summary' },
+        { property: 'twitter:description', content: metaDescription },
+        { property: 'twitter:title', content: this.$page.post.title },
+        { property: 'twitter:image', content: this.$page.post.featuredMedia.sourceUrl },
+      ];
+
+      // TAGS LOOP
+      this.$page.post.tags.map((e) => metaTags.push({ property: 'article:tag', content: e.title }));
+
+      return {
+        title: this.$page.post.title,
+        meta: metaTags
+      }
     },
   }
 </script>
