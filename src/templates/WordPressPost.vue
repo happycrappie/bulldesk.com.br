@@ -294,7 +294,7 @@
 
     data () {
       return {
-        currentURL: window.location.href
+        currentURL: typeof window !== 'undefined' ? window.location.href : '';
       }
     },
 
