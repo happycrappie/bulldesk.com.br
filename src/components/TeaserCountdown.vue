@@ -1,4 +1,4 @@
-<style lang="sass">
+<style lang="sass" scoped>
   @import '../assets/styles/_variables.scss'
 
   .countdown-container
