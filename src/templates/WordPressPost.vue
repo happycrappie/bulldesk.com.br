@@ -324,13 +324,13 @@
         content: e.title
       }));
 
-      if(this.$page.post.featuredMedia){
+      if (this.$page.post.featuredMedia) {
         metaTags.push({ key: 'og:image', property: 'og:image', content: this.$page.post.featuredMedia.sourceUrl });
         metaTags.push({ key: 'og:image:secure_url', property: 'og:image:secure_url', content: this.$page.post.featuredMedia.sourceUrl });
         metaTags.push({ key: 'twitter:image', property: 'twitter:image', content: this.$page.post.featuredMedia.sourceUrl });
         metaTags.push({ key: 'og:image:width', property: 'og:image:width', content: this.$page.post.featuredMedia.mediaDetails.width });
         metaTags.push({ key: 'og:image:height', property: 'og:image:height', content: this.$page.post.featuredMedia.mediaDetails.height });
-      };
+      }
 
       return {
         title: this.$page.post.title,
