@@ -14,10 +14,11 @@ export default function (Vue, { router, head, isClient }) {
 
   head.htmlAttrs = { lang: 'pt-br' }
 
-  head.meta.push({ name: 'og:type', content: 'website' });
-  head.meta.push({ name: 'description', content: description });
-  head.meta.push({ name: 'og:description', content: description });
-  head.meta.push({ name: 'og:image', content: 'https://app.bulldesk.com.br/build/images/og.jpg' });
+  head.meta.push({ key: 'type', name: 'og:type', content: 'website' });
+  head.meta.push({ key: 'description', name: 'description', content: description });
+  head.meta.push({ key: 'og:description', name: 'og:description', property: description });
+  head.meta.push({ key: 'og:image', name: 'og:image', property: 'https://app.bulldesk.com.br/build/images/og.jpg' });
+  head.meta.push({ key: 'og:locale', property: 'og:locale', content: 'pt_BR'}),
   head.meta.push({ name: 'keywords', content: 'Automação de Marketing, CRM' });
 
   head.link.push({

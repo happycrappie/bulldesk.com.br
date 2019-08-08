@@ -356,8 +356,30 @@
       ExitModal,
     },
 
-    metaInfo: {
-      title: 'Blog',
+    data () {
+      return {
+        currentURL: typeof window !== 'undefined' ? window.location.href : '',
+      }
+    },
+
+    metaInfo() {
+      return{
+        title: 'Bulldesk - CRM e Automação',
+        meta: [
+          { key: 'description', name: 'description', content: 'CRM e Automação'},
+          { key: 'og:type', property: 'og:type', content: 'website'},
+          { key: 'og:title', property: 'og:title', content: 'Bulldesk - CRM e Automação'},
+          { key: 'og:description', property: 'og:description', content: 'CRM e Automação'},
+          { key: 'og:url', property: 'og:url', content: this.currentURL },
+          { key: 'og:site_name', property: 'og:site_name', content: 'Bulldesk'},
+          { key: 'twitter:card', property: 'twitter:card', content: 'summary'},
+          { key: 'twitter:description', property: 'twitter:description', content: 'CRM e Automação'},
+          { key: 'twitter:title', property: 'twitter:title', content: 'Bulldesk - CRM e Automação'},
+        ],
+        link: [
+          { key:'canonical', rel: 'canonical', href: this.currentURL },
+        ]
+      }
     },
 
     methods: {
