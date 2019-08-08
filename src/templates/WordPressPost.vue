@@ -285,6 +285,7 @@
     filters: {
       date: helpers.convertDate
     },
+
     components: {
       Layout,
       NavBlog,
@@ -299,30 +300,31 @@
 
     metaInfo () {
       let metaDescription = this.$page.post.excerpt.replace(/<\/?p[^>]*>/g, "");
+
       let metaTags = [
-        {name:'description', content:metaDescription},
-        {property:'og:locale', content:'pt_BR'},
-        {property:'og:type', content:'article'},
-        {property:'og:title', content:this.$page.post.title},
-        {property:'og:description', content:metaDescription},
-        {property:'og:url', content:window.location.href},
-        {property:'og:site_name', content:'Bulldesk'},
-        {property:'article:section', content:this.$page.post.categories[0].title},
-        {property:'article:published_time', content:this.$page.post.date},
-        {property:'article:modified_time', content:this.$page.post.modified},
-        {property:'og:updated_time', content:this.$page.post.modified},
-        {property:'og:image', content:this.$page.post.featuredMedia.sourceUrl},
-        {property:'og:image:secure_url', content:this.$page.post.featuredMedia.sourceUrl},
-        {property:'og:image:width', content:this.$page.post.featuredMedia.mediaDetails.width},
-        {property:'og:image:height', content:this.$page.post.featuredMedia.mediaDetails.height},
-        {property:'twitter:card', content:'summary'},
-        {property:'twitter:description', content:metaDescription},
-        {property:'twitter:title', content:this.$page.post.title},
-        {property:'twitter:image', content:this.$page.post.featuredMedia.sourceUrl},
+        { name: 'description', content: metaDescription },
+        { property: 'og:locale', content:'pt_BR' },
+        { property: 'og:type', content:'article' },
+        { property: 'og:title', content:this.$page.post.title },
+        { property: 'og:description', content:metaDescription },
+        { property: 'og:url', content: window.location.href },
+        { property: 'og:site_name', content: 'Bulldesk' },
+        { property: 'article:section', content: this.$page.post.categories[0].title },
+        { property: 'article:published_time', content: this.$page.post.date },
+        { property: 'article:modified_time', content: this.$page.post.modified },
+        { property: 'og:updated_time', content: this.$page.post.modified },
+        { property: 'og:image', content: this.$page.post.featuredMedia.sourceUrl },
+        { property: 'og:image:secure_url', content: this.$page.post.featuredMedia.sourceUrl },
+        { property: 'og:image:width', content: this.$page.post.featuredMedia.mediaDetails.width },
+        { property: 'og:image:height', content: this.$page.post.featuredMedia.mediaDetails.height },
+        { property: 'twitter:card', content: 'summary' },
+        { property: 'twitter:description', content: metaDescription },
+        { property: 'twitter:title', content: this.$page.post.title },
+        { property: 'twitter:image', content: this.$page.post.featuredMedia.sourceUrl },
       ];
 
       // TAGS LOOP
-      this.$page.post.tags.map((e) => metaTags.push({property: 'article:tag', content: e.title}));
+      this.$page.post.tags.map((e) => metaTags.push({ property: 'article:tag', content: e.title }));
 
       return {
         title: this.$page.post.title,
