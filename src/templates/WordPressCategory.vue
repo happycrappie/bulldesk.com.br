@@ -81,7 +81,7 @@
           h2
             flex-grow: 1
             margin-bottom: 20px
-            font-size: 1.125rem
+            font-size: 1.25rem
             line-height: 1.2
 
           a
@@ -111,9 +111,19 @@
           text-decoration: underline
           color: $gray-dark
 
+          svg
+            margin-left: 10px
+
+            *
+              transition: all 0.2s linear
+
           &:hover
             cursor: pointer
             color: $purple
+
+            svg
+              *
+                stroke: $purple
 
 </style>
 <style lang="sass">
@@ -158,6 +168,8 @@
           .col
             p
               a(@click="loadMore($event)") Confira mais conteúdos
+                svg(xmlns="http://www.w3.org/2000/svg" width="5" height="7.7" viewBox="0 0 4.74 7.65")
+                  path(d="M.5,7.15,4.23,3.82.5.5" transform="translate(0)" fill="none" stroke="#3b334a" stroke-linecap="round" stroke-linejoin="round")
 
 
 </template>

@@ -115,7 +115,7 @@
           h3
             flex-grow: 1
             margin-bottom: 20px
-            font-size: 1.125rem
+            font-size: 1.25rem
             line-height: 1.2
 
           a
