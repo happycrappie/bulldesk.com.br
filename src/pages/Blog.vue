@@ -422,12 +422,9 @@
       }
     },
 
-    mounted () {
-      console.log(this.isSearching);
-      console.log(this.search);
-
+    created () {
       if (this.isSearching) {
-        this.searchPosts(this.search);
+        window.location.href = '/blog-search?s=' + this.search;
       }
     },
 
@@ -452,36 +449,6 @@
           this.$page.posts.edges = this.$page.posts.edges.concat(results.data.posts.edges);
         }
       },
-
-      async searchPosts (query) {
-        const fetched = await this.$fetch('/blog-search')
-        const allPosts = fetched.data.allPosts;
-
-        let index = new Flexsearch({
-          tokenize: 'forward',
-          doc: {
-            id: 'id',
-            field: [
-              'title',
-              // 'content'
-            ]
-          }
-        });
-
-        index.add(allPosts.edges.map(e => e.node));
-
-        let results = index.search({
-          query: query,
-          limit: this.perPage,
-        });
-
-        this.$page.posts.pageInfo.currentPage = 1;
-        this.$page.posts.edges = results.map((result) => {
-          return { node: result };
-        });
-
-        console.log(results);
-      }
     }
   }
 </script>
