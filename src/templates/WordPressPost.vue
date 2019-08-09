@@ -115,7 +115,7 @@
           h3
             flex-grow: 1
             margin-bottom: 20px
-            font-size: 1.125rem
+            font-size: 1.25rem
             line-height: 1.2
 
           a
@@ -276,7 +276,7 @@
 </page-query>
 
 <script>
-  import Layout from '../layouts/Default'
+  import Layout from '../layouts/FooterDark'
   import NavBlog from '../components/NavBlog'
   import EmailInput from '../components/EmailInput'
   import helpers from '../shared/helpers'
