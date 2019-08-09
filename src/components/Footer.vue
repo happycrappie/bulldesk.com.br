@@ -1,4 +1,4 @@
-<style lang="sass">
+<style lang="sass" scoped>
   @import '../assets/styles/_variables.scss'
 
   footer
@@ -103,30 +103,64 @@
       ul:last-child
         li
           padding-left: 15px
+
+    &.dark
+      position: relative
+      padding-top: 21.6875rem !important
+      background: top center no-repeat url(~@/assets/images/blog-bg-footer.png)
+
+      &:after
+        content: ""
+        position: absolute
+        left: 0
+        bottom: 0
+        z-index: -1
+        width: 100%
+        height: calc(100% - 712px)
+        background: $black
+
+      .column
+        h5
+          color: $white-gray
+
+        ul
+          li
+            color: $gray-soft
+
+            a
+              color: $gray-soft
+
 </style>
 
 <template lang="pug">
-  footer.py-5.text-left
+  footer.py-5.text-left(:class="type")
     .container
       .row
         .bulldesk
-          img(src='../assets/images/logo.png' class='logo')
+          g-image.logo(src="../assets/images/logo@white.png" alt="Bulldesk" v-if="type && type == 'dark'")
+          g-image.logo(src="../assets/images/logo.png" alt="Bulldesk" v-else)
+
           ul
             li
               a(href="https://www.instagram.com/bulldeskcrm" target="_blank")
-                g-image(src='../assets/icons/instagram.svg')
+                g-image(src='../assets/icons/instagram@white.svg' v-if="type && type == 'dark'")
+                g-image(src='../assets/icons/instagram.svg' v-else)
             li
               a(href="https://facebook.com/bulldeskcrm" target="_blank")
-                g-image(src='../assets/icons/facebook.svg')
+                g-image(src='../assets/icons/facebook@white.svg' v-if="type && type == 'dark'")
+                g-image(src='../assets/icons/facebook.svg' v-else)
             li
               a(href="https://www.youtube.com/channel/UCF2cpwuAJZk2KXJB6NetWIg?view_as=subscriber" target="_blank")
-                g-image(src='../assets/icons/youtube.svg')
+                g-image(src='../assets/icons/youtube@white.svg' v-if="type && type == 'dark'")
+                g-image(src='../assets/icons/youtube.svg' v-else)
             li
               a(href="https://twitter.com/bulldeskcrm" target="_blank")
-                g-image(src='../assets/icons/twitter.svg')
+                g-image(src='../assets/icons/twitter@white.svg' v-if="type && type == 'dark'")
+                g-image(src='../assets/icons/twitter.svg' v-else)
             li
               a(href="https://www.linkedin.com/company/bulldesk/" target="_blank")
-                g-image(src='../assets/icons/linkedin.svg')
+                g-image(src='../assets/icons/linkedin@white.svg' v-if="type && type == 'dark'")
+                g-image(src='../assets/icons/linkedin.svg' v-else)
           .button-container
             b-button.google-conversion(href="https://app.bulldesk.com.br/cadastro", variant="green")
               | Teste grátis
@@ -230,6 +264,12 @@
   export default {
     components: {
       BButton,
-    }
+    },
+    props: {
+      type: {
+        type: String,
+        default: 'light'
+      }
+    },
   }
 </script>

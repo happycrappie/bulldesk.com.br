@@ -225,7 +225,7 @@
 
 <static-query>
   query Category ($page: Int) {
-    category: allWordPressCategory (page: $page, perPage: 10) @paginate {
+    category: allWordPressCategory (page: $page, perPage: 100, sortBy: "title", order: ASC ) @paginate {
       pageInfo {
         totalPages
         currentPage
