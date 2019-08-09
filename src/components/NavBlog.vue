@@ -225,11 +225,7 @@
 
 <static-query>
   query Category ($page: Int) {
-    category: allWordPressCategory (page: $page, perPage: 100, sortBy: "title", order: ASC ) @paginate {
-      pageInfo {
-        totalPages
-        currentPage
-      }
+    category: allWordPressCategory (page: $page, perPage: 100, sortBy: "title", order: ASC) {
       edges {
         node {
           id
@@ -239,11 +235,7 @@
       }
     }
   }
-
-
 </static-query>
-
-
 
 <script>
   import { BNavbar, BNavbarBrand, BNavbarToggle, BCollapse, BNavbarNav, BInputGroup, BFormInput, BInputGroupAppend, BButton, BNavItemDropdown, BDropdownItem, BNavItem, BNavForm } from 'bootstrap-vue';
