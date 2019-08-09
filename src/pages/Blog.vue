@@ -116,6 +116,10 @@
             line-height: 1.67
             color: $white-gray
 
+            &::v-deep
+              p
+                margin-bottom: 0
+
           time
             margin-bottom: 40px
             font-size: 0.75rem
@@ -240,6 +244,11 @@
             width: 100%
             margin: 0
 
+          &::v-deep
+            .email-group
+              margin-top: 0
+              padding-right: 0
+
     .load-more
       margin-top: 75px
 
@@ -265,20 +274,6 @@
               *
                 stroke: $purple
 
-</style>
-<style lang="sass">
-  .section-a
-    .row
-      .col
-        article
-          .article-body
-            p
-              margin-bottom: 0
-
-        &.newsletter
-          .email-group
-            margin-top: 0
-            padding-right: 0
 </style>
 
 <template lang="pug">
