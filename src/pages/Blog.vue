@@ -341,8 +341,8 @@
 </template>
 
 <page-query>
-  query Posts ($page: Int) {
-    posts: allWordPressPost (page: $page, perPage: 10) @paginate {
+  query PaginatedPosts ($page: Int, $perPage: Int) {
+    posts: allWordPressPost (page: $page, perPage: $perPage) @paginate {
       pageInfo {
         totalPages
         currentPage
@@ -375,6 +375,7 @@
   import EmailInput from '../components/EmailInput'
   import helpers from '../shared/helpers'
   import ExitModal from '../components/ExitModal'
+  import Flexsearch from 'flexsearch'
 
   export default {
     filters: {
@@ -387,14 +388,8 @@
       ExitModal,
     },
 
-    data () {
-      return {
-        currentURL: typeof window !== 'undefined' ? window.location.href : '',
-      }
-    },
-
     metaInfo() {
-      return{
+      return {
         title: 'Bulldesk - CRM e Automação',
         meta: [
           { key: 'description', name: 'description', content: 'CRM e Automação'},
@@ -412,23 +407,80 @@
           { key:'canonical', rel: 'canonical', href: this.currentURL },
         ],
         script: [
-          { type: 'application/ld+json', innerHTML: '{"@context":"https://schema.org","@type":"WebSite","@id":"' + this.currentURL + '/#website","url":"' + this.currentURL + '","name":"Bulldesk","potentialAction":{"@type":"SearchAction","target":"' + this.currentURL + '?s={search_term_string}","query-input":"required name=search_term_string"}}'},
+          {
+            type: 'application/ld+json',
+            innerHTML: '{"@context":"https://schema.org","@type":"WebSite","@id":"' + this.currentURL + '/#website","url":"' + this.currentURL + '","name":"Bulldesk","potentialAction":{"@type":"SearchAction","target":"' + this.currentURL + '?s={search_term_string}","query-input":"required name=search_term_string"}}'
+          },
         ]
       }
     },
 
-    methods: {
-      async loadMore(event) {
+    data () {
+      return {
+        currentURL: typeof window !== 'undefined' ? window.location.href : '',
+        perPage: 10
+      }
+    },
 
-        try {
-          const results = await this.$fetch(window.location.pathname + '/' + (this.$page.posts.pageInfo.currentPage+1) )
-          if(results.data.posts.edges.length > 0) {
-            this.$page.posts.pageInfo.currentPage = this.$page.posts.pageInfo.currentPage + 1
-            this.$page.posts.edges = this.$page.posts.edges.concat(results.data.posts.edges)
-          }
-        } catch (error) {
-          console.log(error)
+    mounted () {
+      console.log(this.isSearching);
+      console.log(this.search);
+
+      if (this.isSearching) {
+        this.searchPosts(this.search);
+      }
+    },
+
+    computed: {
+      isSearching () {
+        return new URLSearchParams(window.location.search).has('s');
+      },
+
+      search () {
+        return new URLSearchParams(window.location.search).get('s');
+      }
+    },
+
+    methods: {
+      async loadMore (event) {
+        let next = this.$page.posts.pageInfo.currentPage + 1;
+
+        const results = await this.$fetch(window.location.pathname + '/' + next)
+
+        if (results.data.posts.edges.length > 0) {
+          this.$page.posts.pageInfo.currentPage = next;
+          this.$page.posts.edges = this.$page.posts.edges.concat(results.data.posts.edges);
         }
+      },
+
+      async searchPosts (query) {
+        const fetched = await this.$fetch('/blog-search')
+        const allPosts = fetched.data.allPosts;
+
+        let index = new Flexsearch({
+          tokenize: 'forward',
+          doc: {
+            id: 'id',
+            field: [
+              'title',
+              // 'content'
+            ]
+          }
+        });
+
+        index.add(allPosts.edges.map(e => e.node));
+
+        let results = index.search({
+          query: query,
+          limit: this.perPage,
+        });
+
+        this.$page.posts.pageInfo.currentPage = 1;
+        this.$page.posts.edges = results.map((result) => {
+          return { node: result };
+        });
+
+        console.log(results);
       }
     }
   }
