@@ -381,6 +381,7 @@
     filters: {
       date: helpers.convertDate
     },
+
     components: {
       Layout,
       NavBlog,

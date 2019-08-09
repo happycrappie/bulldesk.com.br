@@ -263,6 +263,7 @@
     filters: {
       date: helpers.convertDate
     },
+
     components: {
       Layout,
       NavBlog,
@@ -311,12 +312,6 @@
 
       this.searchPosts(this.search);
     },
-
-    // mounted () {
-    //   if (this.isSearching) {
-    //     this.searchPosts(this.search);
-    //   }
-    // },
 
     computed: {
       isSearching () {
