@@ -406,9 +406,13 @@
           { key: 'twitter:card', property: 'twitter:card', content: 'summary'},
           { key: 'twitter:description', property: 'twitter:description', content: 'CRM e Automação'},
           { key: 'twitter:title', property: 'twitter:title', content: 'Bulldesk - CRM e Automação'},
+          { key: "google-site-verification", name: "google-site-verification", content: 'L97WJceo9AVFbFuUMmeBrfVdxE-7hMYhW7b9qdl-ga4'},
         ],
         link: [
           { key:'canonical', rel: 'canonical', href: this.currentURL },
+        ],
+        script: [
+          { type: 'application/ld+json', innerHTML: '{"@context":"https://schema.org","@type":"WebSite","@id":"' + this.currentURL + '/#website","url":"' + this.currentURL + '","name":"Bulldesk","potentialAction":{"@type":"SearchAction","target":"' + this.currentURL + '?s={search_term_string}","query-input":"required name=search_term_string"}}'},
         ]
       }
     },
