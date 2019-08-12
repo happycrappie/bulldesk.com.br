@@ -209,7 +209,7 @@ query Category ($path: String, $page: Int) {
 </page-query>
 
 <script>
-  import Layout from '../layouts/FooterDark'
+  import Layout from '../layouts/Blog'
   import NavBlog from '../components/NavBlog'
   import EmailInput from '../components/EmailInput'
 
