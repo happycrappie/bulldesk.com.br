@@ -213,8 +213,8 @@
         //-         b-dropdown-item(href="/#") Link
         //-         b-dropdown-item(href="/#") Link
         //-         b-dropdown-item(href="/#") Link
-        //- b-nav-form(action="/blog")
-          b-form-input(id="search" name="s" placeholder="Sua busca" )
+        b-nav-form(action="/blog-search")
+          b-form-input(id="search", name="s", placeholder="Sua busca", :value="search")
           b-button(type="submit")
             g-image(src="../assets/icons/search.svg")
           label(for="search")
@@ -250,6 +250,12 @@
       logo: {
         type: String,
         default: 'black'
+      }
+    },
+
+    computed: {
+      search () {
+        return new URLSearchParams(window.location.search).get('s');
       }
     },
 
