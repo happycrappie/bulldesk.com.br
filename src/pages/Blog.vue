@@ -427,7 +427,7 @@
       },
 
       isSearching () {
-        return this.search.length;
+        return this.search && this.search.length;
       },
     },
 
