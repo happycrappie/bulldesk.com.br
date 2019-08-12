@@ -312,7 +312,7 @@
     },
 
     created () {
-      if (! this.isSearching) {
+      if (typeof window !== 'undefined' && ! this.isSearching) {
         return window.location.href = '/blog';
       }
 

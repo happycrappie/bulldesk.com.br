@@ -414,7 +414,7 @@
     },
 
     created () {
-      if (this.isSearching) {
+      if (typeof window !== 'undefined' && this.isSearching) {
         window.location.href = '/blog-search?s=' + this.search;
       }
     },
