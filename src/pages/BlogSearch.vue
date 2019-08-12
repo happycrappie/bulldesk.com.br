@@ -201,7 +201,7 @@
     section.section-a
       .container
         .row
-          .col.col-12.col-lg-6.col-xl-4(v-for="(edge, index) in $page.posts.edges")
+          .col.col-12.col-lg-6.col-xl-4(v-for="(edge, index) in filteredPosts.edges")
             article
               div.article-featured
                 a(:href="edge.node.path").d-flex.justify-content-center.align-items-center
@@ -226,7 +226,7 @@
 
 <page-query>
   query Posts {
-    posts: allWordPressPost {
+    allPosts: allWordPressPost {
       edges {
         node {
           id
@@ -252,7 +252,7 @@
 </page-query>
 
 <script>
-  import Layout from '../layouts/FooterDark'
+  import Layout from '../layouts/Blog'
   import NavBlog from '../components/NavBlog'
   import EmailInput from '../components/EmailInput'
   import ExitModal from '../components/ExitModal'
@@ -296,33 +296,9 @@
     data () {
       return {
         currentURL: typeof window !== 'undefined' ? window.location.href : '',
-        perPage: 10
-      }
-    },
-
-    created () {
-      if (! this.isSearching) {
-        return window.location.href = '/blog';
-      }
-
-      this.searchPosts(this.search);
-    },
-
-    computed: {
-      isSearching () {
-        return new URLSearchParams(window.location.search).has('s');
-      },
-
-      search () {
-        return new URLSearchParams(window.location.search).get('s');
-      }
-    },
-
-    methods: {
-      async searchPosts (query) {
-        const fetched = await this.$fetch('/blog-search')
-
-        let index = new Flexsearch({
+        perPage: 10,
+        filteredPosts: [],
+        flex: new Flexsearch({
           tokenize: 'forward',
           doc: {
             id: 'id',
@@ -331,16 +307,38 @@
               'content'
             ]
           }
-        });
+        }),
+      }
+    },
 
-        index.add(fetched.data.posts.edges.map(e => e.node));
+    created () {
+      if (! this.isSearching) {
+        return window.location.href = '/blog';
+      }
 
-        let results = index.search({
+      this.flex.add(this.$page.allPosts.edges.map(e => e.node));
+
+      this.searchPosts(this.search);
+    },
+
+    computed: {
+      search () {
+        return new URLSearchParams(window.location.search).get('s');
+      },
+
+      isSearching () {
+        return this.search.length;
+      },
+    },
+
+    methods: {
+      async searchPosts (query) {
+        let results = this.flex.search({
           query: query,
           limit: this.perPage,
         });
 
-        this.$page.posts.edges = results.map((result) => {
+        this.filteredPosts.edges = results.map((result) => {
           return { node: result };
         });
       }
