@@ -1,10 +1,13 @@
 import { TooltipPlugin, ModalPlugin, ButtonPlugin } from 'bootstrap-vue'
+import Helpers from './shared/helpers'
 import './assets/styles/main.sass'
 
 export default function (Vue, { router, head, isClient }) {
   Vue.use(ModalPlugin);
   Vue.use(ButtonPlugin);
   Vue.use(TooltipPlugin);
+
+  Vue.filter('date', (date) => Helpers.convertDate);
 
   if (isClient) {
     window.ScrollReveal = require('scrollreveal').default;

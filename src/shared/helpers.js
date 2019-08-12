@@ -15,8 +15,6 @@ export default {
 
     return false;
   },
-  convertDate: (value) => {
-    const date = new Date(value)
-    return date.toLocaleDateString(['pt-BR'], {month: 'long', day: '2-digit'})
-  }
+
+  convertDate: (value) => new Date(value).toLocaleDateString(['pt-BR'], { month: 'long', day: '2-digit' })
 }

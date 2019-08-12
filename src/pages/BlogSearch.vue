@@ -255,15 +255,10 @@
   import Layout from '../layouts/FooterDark'
   import NavBlog from '../components/NavBlog'
   import EmailInput from '../components/EmailInput'
-  import helpers from '../shared/helpers'
   import ExitModal from '../components/ExitModal'
   import Flexsearch from 'flexsearch'
 
   export default {
-    filters: {
-      date: helpers.convertDate
-    },
-
     components: {
       Layout,
       NavBlog,
