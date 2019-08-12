@@ -256,7 +256,7 @@
   import NavBlog from '../components/NavBlog'
   import EmailInput from '../components/EmailInput'
   import ExitModal from '../components/ExitModal'
-  import Flexsearch from 'flexsearch'
+  import FlexSearch from 'flexsearch'
 
   export default {
     components: {
@@ -298,7 +298,7 @@
         currentURL: typeof window !== 'undefined' ? window.location.href : '',
         perPage: 10,
         filteredPosts: [],
-        flex: new Flexsearch({
+        flex: new FlexSearch({
           tokenize: 'forward',
           doc: {
             id: 'id',
