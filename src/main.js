@@ -7,7 +7,7 @@ export default function (Vue, { router, head, isClient }) {
   Vue.use(ButtonPlugin);
   Vue.use(TooltipPlugin);
 
-  Vue.filter('date', (date) => Helpers.convertDate);
+  Vue.filter('date', Helpers.convertDate);
 
   if (isClient) {
     window.ScrollReveal = require('scrollreveal').default;
