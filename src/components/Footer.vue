@@ -265,6 +265,7 @@
     components: {
       BButton,
     },
+
     props: {
       type: {
         type: String,

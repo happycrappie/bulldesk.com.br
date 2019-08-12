@@ -29,6 +29,7 @@
       margin-top: 1rem
 
       &:disabled
+        opacity: 1
         cursor: not-allowed
         pointer-events: all !important
 </style>
