@@ -323,7 +323,9 @@
 
     computed: {
       search () {
-        return new URLSearchParams(window.location.search).get('s');
+        if (typeof window !== 'undefined') {
+          return new URLSearchParams(window.location.search).get('s');
+        }
       },
 
       isSearching () {

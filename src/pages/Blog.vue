@@ -420,13 +420,15 @@
     },
 
     computed: {
-      isSearching () {
-        return new URLSearchParams(window.location.search).has('s');
+      search () {
+        if (typeof window !== 'undefined') {
+          return new URLSearchParams(window.location.search).get('s');
+        }
       },
 
-      search () {
-        return new URLSearchParams(window.location.search).get('s');
-      }
+      isSearching () {
+        return this.search.length;
+      },
     },
 
     methods: {
