@@ -54,6 +54,31 @@
         a
           margin-left: 18px
 
+    .post-content
+      color: $gray-dark
+
+      &::v-deep
+        h2
+          margin-bottom: 20px
+          font-size: 1.25rem
+          font-weight: bold
+
+        p,
+        li
+          margin-bottom: 20px
+          font-size: 0.875rem
+          line-height: 2.14
+
+        a
+          text-decoration: underline
+          color: $purple
+
+          &:hover
+            color: $gray-light
+
+        img
+          max-width: 100%
+
   .section-b
     margin-top: 150px
 
@@ -128,36 +153,6 @@
           time
             margin-bottom: 40px
             font-size: 0.75rem
-
-</style>
-<style lang="sass">
-  @import 'node_modules/include-media/dist/_include-media.scss'
-  @import '../assets/styles/_variables.scss'
-
-  .section-a
-    .post-content
-      color: $gray-dark
-
-      h2
-        margin-bottom: 20px
-        font-size: 1.25rem
-        font-weight: bold
-
-      p,
-      li
-        margin-bottom: 20px
-        font-size: 0.875rem
-        line-height: 2.14
-
-      a
-        text-decoration: underline
-        color: $purple
-
-        &:hover
-          color: $gray-light
-
-      img
-        max-width: 100%
 
 </style>
 
@@ -276,16 +271,11 @@
 </page-query>
 
 <script>
-  import Layout from '../layouts/FooterDark'
+  import Layout from '../layouts/Blog'
   import NavBlog from '../components/NavBlog'
   import EmailInput from '../components/EmailInput'
-  import helpers from '../shared/helpers'
 
   export default {
-    filters: {
-      date: helpers.convertDate
-    },
-
     components: {
       Layout,
       NavBlog,

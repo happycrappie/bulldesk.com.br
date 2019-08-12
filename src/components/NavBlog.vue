@@ -213,8 +213,8 @@
         //-         b-dropdown-item(href="/#") Link
         //-         b-dropdown-item(href="/#") Link
         //-         b-dropdown-item(href="/#") Link
-        //- b-nav-form(action="/blog")
-          b-form-input(id="search" name="s" placeholder="Sua busca" )
+        b-nav-form(action="/blog-search")
+          b-form-input(id="search", name="s", placeholder="Sua busca", :value="search")
           b-button(type="submit")
             g-image(src="../assets/icons/search.svg")
           label(for="search")
@@ -225,11 +225,7 @@
 
 <static-query>
   query Category ($page: Int) {
-    category: allWordPressCategory (page: $page, perPage: 100, sortBy: "title", order: ASC ) @paginate {
-      pageInfo {
-        totalPages
-        currentPage
-      }
+    category: allWordPressCategory (page: $page, perPage: 100, sortBy: "title", order: ASC) {
       edges {
         node {
           id
@@ -239,11 +235,7 @@
       }
     }
   }
-
-
 </static-query>
-
-
 
 <script>
   import { BNavbar, BNavbarBrand, BNavbarToggle, BCollapse, BNavbarNav, BInputGroup, BFormInput, BInputGroupAppend, BButton, BNavItemDropdown, BDropdownItem, BNavItem, BNavForm } from 'bootstrap-vue';
@@ -259,6 +251,14 @@
         type: String,
         default: 'black'
       }
+    },
+
+    computed: {
+      search () {
+        if (typeof window !== 'undefined') {
+          return new URLSearchParams(window.location.search).get('s');
+        }
+      },
     },
 
     mounted () {

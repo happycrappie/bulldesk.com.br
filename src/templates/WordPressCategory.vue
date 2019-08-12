@@ -100,6 +100,7 @@
           time
             margin-bottom: 40px
             font-size: 0.75rem
+
     .load-more
       margin-top: 75px
 
@@ -124,17 +125,6 @@
             svg
               *
                 stroke: $purple
-
-</style>
-<style lang="sass">
-  .section-a
-    .row
-      .col
-        article
-          .article-body
-            p
-              margin-bottom: 0
-
 </style>
 
 <template lang="pug">
@@ -209,16 +199,11 @@ query Category ($path: String, $page: Int) {
 </page-query>
 
 <script>
-  import Layout from '../layouts/FooterDark'
+  import Layout from '../layouts/Blog'
   import NavBlog from '../components/NavBlog'
   import EmailInput from '../components/EmailInput'
-  import helpers from '../shared/helpers'
-
 
   export default {
-    filters: {
-      date: helpers.convertDate
-    },
     components: {
       Layout,
       NavBlog,

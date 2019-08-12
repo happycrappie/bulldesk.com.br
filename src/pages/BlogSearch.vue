@@ -116,22 +116,18 @@
             line-height: 1.67
             color: $white-gray
 
-            &::v-deep
-              p
-                margin-bottom: 0
-
           time
             margin-bottom: 40px
             font-size: 0.75rem
 
-        &:first-child
-          article
-            color: $white-gray
-            background: #1E1A26
+        // &:first-child
+        //   article
+        //     color: $white-gray
+        //     background: #1E1A26
 
-            a
-              &[href]:hover
-                color: $gray-light
+        //     a
+        //       &[href]:hover
+        //         color: $gray-light
 
           @media only screen and (min-width: 992px)
             flex: 0 0 100%
@@ -156,63 +152,6 @@
               .article-body
                 display: block
                 flex-grow: 1
-
-        &.popular
-          order: 0
-
-          >div
-            height: 495px
-            padding: 27px 30px
-            background: $white-gray
-
-            @media only screen and (max-width: 991px)
-              height: auto
-
-          h2
-            font-size: 1.375rem
-            font-weight: bold
-            color: $gray-dark
-
-          ul
-            padding-left: 0
-            list-style: none
-
-            li
-              display: flex
-              margin-bottom: 30px
-              color: $gray-dark
-
-              &:last-child
-                margin-bottom: 0
-
-              div
-                &:first-child
-                  flex: 1 1 auto
-
-                &:last-child
-                  flex: 0 0 100px
-                  overflow: hidden
-                  height: 69px
-                  margin-left: 15px
-
-                  img
-                    width: 100%
-                    height: 100%
-                    object-fit: cover
-
-              p
-                margin-bottom: 7px
-                font-size: 0.625rem
-                line-height: 1.67
-
-                time
-                  display: none
-
-              h3
-                font-size: 0.75rem
-
-              a
-                color: inherit
 
         &.newsletter
           order: 3
@@ -244,36 +183,6 @@
             width: 100%
             margin: 0
 
-          &::v-deep
-            .email-group
-              margin-top: 0
-              padding-right: 0
-
-    .load-more
-      margin-top: 75px
-
-      p
-        text-align: center
-
-        a
-          font-size: 0.875rem
-          text-decoration: underline
-          color: $gray-dark
-
-          svg
-            margin-left: 10px
-
-            *
-              transition: all 0.2s linear
-
-          &:hover
-            cursor: pointer
-            color: $purple
-
-            svg
-              *
-                stroke: $purple
-
 </style>
 
 <template lang="pug">
@@ -285,13 +194,14 @@
     section.hero
       .container
         .row
-          h1.col-lg-10.col-md-12 Conteúdo inteligente feito pra você
-            span.dot.green
+          h1.col-lg-10.col-md-12 Buscando
+            small.ml-2 {{ search }}
+            //- span.dot.green
 
     section.section-a
       .container
         .row
-          .col.col-12.col-lg-6.col-xl-4(v-for="(edge, index) in $page.posts.edges", :style="{order:index}")
+          .col.col-12.col-lg-6.col-xl-4(v-for="(edge, index) in filteredPosts.edges")
             article
               div.article-featured
                 a(:href="edge.node.path").d-flex.justify-content-center.align-items-center
@@ -303,20 +213,6 @@
               div.article-body(v-html="edge.node.excerpt")
               time {{ edge.node.date | date }}
 
-          .col.col-12.col-lg-6.col-xl-4.popular
-            div
-              h2 Mais populares
-              ul
-                li(v-for="(edge, index) in $page.posts.edges" v-if="index <= 3")
-                  div
-                    p
-                      strong {{edge.node.categories[0].title}}
-                      time {{edge.node.date}}
-                    h3
-                      a(:href="edge.node.path") {{edge.node.title}}
-                  div
-                    g-image(:src="edge.node.featuredMedia.sourceUrl", v-if="edge.node.featuredMedia")
-
           .col.col-12.col-lg-6.col-xl-4.newsletter.d-flex.align-items-center
             div.text-center
               h2 Aproveite e faça um
@@ -325,29 +221,20 @@
               p Insira seu e-mail abaixo e crie sua conta agora mesmo
               email-input(identifier="blog")
 
-        .row.load-more(v-if="$page.posts.pageInfo.totalPages > 1 && $page.posts.pageInfo.totalPages > $page.posts.pageInfo.currentPage")
-          .col
-            p
-              a(@click="loadMore($event)") Confira mais conteúdos
-                svg(xmlns="http://www.w3.org/2000/svg" width="5" height="7.7" viewBox="0 0 4.74 7.65")
-                  path(d="M.5,7.15,4.23,3.82.5.5" transform="translate(0)" fill="none" stroke="#3b334a" stroke-linecap="round" stroke-linejoin="round")
-
-    ExitModal(aggressive=true)
+    //- ExitModal(aggressive=true)
 </template>
 
 <page-query>
-  query PaginatedPosts ($page: Int, $perPage: Int) {
-    posts: allWordPressPost (page: $page, perPage: $perPage) @paginate {
-      pageInfo {
-        totalPages
-        currentPage
-      }
+  query Posts {
+    allPosts: allWordPressPost {
       edges {
         node {
           id
           title
           path
           excerpt
+          content
+          modified
           slug
           categories {
             title
@@ -369,7 +256,7 @@
   import NavBlog from '../components/NavBlog'
   import EmailInput from '../components/EmailInput'
   import ExitModal from '../components/ExitModal'
-  import Flexsearch from 'flexsearch'
+  import FlexSearch from 'flexsearch'
 
   export default {
     components: {
@@ -379,7 +266,7 @@
       ExitModal,
     },
 
-    metaInfo() {
+    metaInfo () {
       return {
         title: 'Bulldesk - CRM e Automação',
         meta: [
@@ -409,14 +296,29 @@
     data () {
       return {
         currentURL: typeof window !== 'undefined' ? window.location.href : '',
-        perPage: 10
+        perPage: 10,
+        filteredPosts: [],
+        flex: new FlexSearch({
+          tokenize: 'forward',
+          doc: {
+            id: 'id',
+            field: [
+              'title',
+              'content'
+            ]
+          }
+        }),
       }
     },
 
     created () {
-      if (typeof window !== 'undefined' && this.isSearching) {
-        window.location.href = '/blog-search?s=' + this.search;
+      if (typeof window !== 'undefined' && ! this.isSearching) {
+        return window.location.href = '/blog';
       }
+
+      this.flex.add(this.$page.allPosts.edges.map(e => e.node));
+
+      this.searchPosts(this.search);
     },
 
     computed: {
@@ -432,16 +334,17 @@
     },
 
     methods: {
-      async loadMore (event) {
-        let next = this.$page.posts.pageInfo.currentPage + 1;
+      async searchPosts (query) {
+        let results = this.flex.search({
+          query: query,
+          limit: this.perPage,
+        });
 
-        const results = await this.$fetch(window.location.pathname + '/' + next)
-
-        if (results.data.posts.edges.length > 0) {
-          this.$page.posts.pageInfo.currentPage = next;
-          this.$page.posts.edges = this.$page.posts.edges.concat(results.data.posts.edges);
-        }
-      },
+        this.filteredPosts.edges = results.map((result) => {
+          return { node: result };
+        });
+      }
     }
   }
 </script>
+
