@@ -435,7 +435,7 @@
       async loadMore (event) {
         let next = this.$page.posts.pageInfo.currentPage + 1;
 
-        const results = await this.$fetch(window.location.pathname + '/' + next)
+        const results = await this.$fetch('/blog/' + next)
 
         if (results.data.posts.edges.length > 0) {
           this.$page.posts.pageInfo.currentPage = next;
