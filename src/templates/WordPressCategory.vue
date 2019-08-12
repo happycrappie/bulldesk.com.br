@@ -100,6 +100,7 @@
           time
             margin-bottom: 40px
             font-size: 0.75rem
+
     .load-more
       margin-top: 75px
 
@@ -124,17 +125,6 @@
             svg
               *
                 stroke: $purple
-
-</style>
-<style lang="sass">
-  .section-a
-    .row
-      .col
-        article
-          .article-body
-            p
-              margin-bottom: 0
-
 </style>
 
 <template lang="pug">
