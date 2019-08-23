@@ -408,7 +408,7 @@
 
     data () {
       return {
-        currentURL: typeof window !== 'undefined' ? window.location.href : '',
+        currentURL: typeof window !== 'undefined' ? window.location.href : 'https://bulldesk.com.br/blog',
         perPage: 10
       }
     },
