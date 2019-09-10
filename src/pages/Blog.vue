@@ -215,7 +215,7 @@
                 color: inherit
 
         &.newsletter
-          order: 3
+          order: 4
 
           >div
             display: flex
@@ -248,6 +248,89 @@
             .email-group
               margin-top: 0
               padding-right: 0
+
+        &.banner
+          order: 0
+          position: relative
+          display: flex
+          align-items: center
+          height: 215px
+
+          img
+            width: 100%
+            height: 100%
+            object-fit: cover
+
+          > div
+            position: absolute
+            left: 25%
+            width: 190px
+
+            @media only screen and (max-width: 1300px)
+              left: 20%
+
+            @media only screen and (max-width: 991px)
+              left: 30px
+
+            @media only screen and (max-width: 640px)
+              top: 30px
+              left: 0
+              right: 0
+              width: 100%
+              margin: auto
+              padding: 0 30px
+              text-align: center
+
+            h2
+              font-size: 1.625rem
+              font-weight: bold
+              letter-spacing: -0.40px
+              line-height: 1.15
+              color: $gray-dark
+
+              @media only screen and (max-width: 640px)
+                font-size: 1.125rem
+
+              span
+                color: $green
+
+            p
+              font-size: 0.875rem
+              line-height: 1.29
+              color: $gray-dark
+
+              // @media only screen and (max-width: 640px)
+              //   display: none
+
+          .email-input-component
+            position: absolute
+            right: 22%
+            width: 100%
+            max-width: 310px
+
+            @media only screen and (max-width: 1300px)
+              right: 20%
+
+            @media only screen and (max-width: 991px)
+              right: 30px
+
+            @media only screen and (max-width: 640px)
+              bottom: 30px
+              left: 30px
+              margin: auto
+
+            &::v-deep
+              .email-group
+                margin-top: 0
+
+        &.ad
+          order: 2
+          height: 495px
+
+          img
+            width: 100%
+            height: 100%
+            object-fit: cover
 
     .load-more
       margin-top: 75px
@@ -303,6 +386,16 @@
               div.article-body(v-html="edge.node.excerpt")
               time {{ edge.node.date | date }}
 
+          .col.col-12.banner
+            g-image(src="../assets/images/banner-blog@2x.png", alt="Junte-se aos 7.389 leitores do nosso blog")
+            div
+              h2 Junte-se aos
+                span  7.389
+                |  leitores do nosso blog
+              p Cadastre-se e receba conteúdos Exclusivos do Bulldesk.
+
+            email-input(identifier="blog")
+
           .col.col-12.col-lg-6.col-xl-4.popular
             div
               h2 Mais populares
@@ -316,6 +409,10 @@
                       a(:href="edge.node.path") {{edge.node.title}}
                   div
                     g-image(:src="edge.node.featuredMedia.sourceUrl", v-if="edge.node.featuredMedia")
+
+          .col.col-12.col-lg-6.col-xl-4.ad
+            a
+              g-image(src="../assets/images/ebook@2x.png", alt="e-book Como usar o WhatsApp Marketing para vender muito mais")
 
           .col.col-12.col-lg-6.col-xl-4.newsletter.d-flex.align-items-center
             div.text-center
