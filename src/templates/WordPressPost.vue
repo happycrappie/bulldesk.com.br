@@ -79,6 +79,60 @@
         img
           max-width: 100%
 
+    .post-aside
+      position: relative
+
+      div
+        position: sticky
+        top: 15px
+        margin-bottom: 20px
+        padding: 28px 20px 35px
+        background: $white-gray
+
+        h2
+          max-width: 189px
+          margin-bottom: 20px
+          font-size: 1.125rem
+          font-weight: bold
+          line-height: 1.33
+          color: $gray-dark
+
+          @media only screen and (max-width: 991px)
+            max-width: 380px
+            margin-left: auto
+            margin-right: auto
+            text-align: center
+
+          span
+            color: $green
+
+        p
+          font-size: 0.875rem
+          line-height: 1.43
+          color: $gray-dark
+
+          @media only screen and (max-width: 991px)
+            max-width: 380px
+            margin-left: auto
+            margin-right: auto
+            text-align: center
+
+        .email-input-component
+
+          &::v-deep
+            .email-input
+              height: 43px
+              padding-left: 20px
+              padding-right: 45px
+              font-size: 0.75rem
+
+            .btn
+              width: 37px
+              height: 37px
+              margin-top: 3.5px
+              margin-left: -40px
+              padding: 0
+
   .section-b
     margin-top: 150px
 
@@ -180,8 +234,21 @@
               a(:href="$page.post.path").d-flex.justify-content-center.align-items-center
                 g-image(:src="$page.post.featuredMedia.sourceUrl")
 
-            .col-12.col-lg-10.post-content
-              div(v-html="$page.post.content")
+            .col-12
+              .row.flex-row-reverse.justify-content-end
+                .col-12.col-md-7.col-lg-8.post-content
+                  div(v-html="$page.post.content")
+
+                .col-12.col-md-5.col-lg-3.post-aside
+                  div
+                    h2 Crie campanhas de e-mail marketing e organize seu funil de vendas em
+                      span  único lugar.
+                    p Sua conta é liberada imediatamente.
+                      br
+                      | Teste por
+                      strong  14 dias gratuitos.
+
+                    email-input(identifier="blog")
 
             .col-12.col-lg-10.post-share
               p.d-flex.justify-content-center.align-items-center Compartilhe
@@ -211,8 +278,6 @@
               h3
                 a(:href="edge.node.path") {{ edge.node.title }}
               time {{edge.node.date | date}}
-
-
 
 </template>
 
