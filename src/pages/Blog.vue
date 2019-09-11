@@ -101,7 +101,7 @@
             flex-grow: 1
             margin-bottom: 20px
             font-size: 1.25rem
-            line-height: 1.2
+            line-height: 1.3
 
           a
             color: inherit
@@ -112,7 +112,7 @@
 
           .article-body
             display: none
-            font-size: 0.75rem
+            font-size: 1rem
             line-height: 1.67
             color: $white-gray
 
@@ -179,7 +179,7 @@
 
             li
               display: flex
-              margin-bottom: 30px
+              margin-bottom: 15px
               color: $gray-dark
 
               &:last-child
@@ -209,7 +209,7 @@
                   display: none
 
               h3
-                font-size: 0.75rem
+                font-size: 0.875rem
 
               a
                 color: inherit
