@@ -217,6 +217,9 @@
         &.newsletter
           order: 4
 
+          @media only screen and (max-width: 1299px)
+            order: 2
+
           >div
             display: flex
             flex-direction: column
@@ -326,6 +329,9 @@
         &.ad
           order: 2
           height: 495px
+
+          @media only screen and (max-width: 1299px)
+            order: 1
 
           img
             width: 100%
